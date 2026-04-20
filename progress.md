@@ -13,6 +13,8 @@ Last updated: 2026-04-20
 - [x] Draft first wave of priority topic files
 - [ ] Establish source refresh cadence by domain
 - [ ] Backfill `## 정보 출처` sections with live sources
+- [x] Insert Russia into geopolitics coverage and normalize directory numbering
+- [x] Add Arctic cross-domain early-warning memo
 
 ## Scope created in this pass
 - [x] `README.md`
@@ -50,6 +52,12 @@ Last updated: 2026-04-20
 - [x] `08_economics/fiscal_policy/ai_productivity_gdp.md`
 - [x] `08_economics/labor_markets/automation_vs_augmentation.md`
 - [x] `13_scenarios/base_case.md`
+- [x] `06_geopolitics/07_russia/annual.md`
+- [x] `00_foundations/arctic_integration_memo.md`
+
+## Structure fixes completed
+- [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`
+- [x] Existing country directories after Russia shifted by +1 to preserve unique prefixes
 
 ## Working rules
 - [ ] Use current official sources before writing or updating any substantive file

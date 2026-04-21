@@ -1,6 +1,6 @@
 # Progress
 
-Last updated: 2026-04-20
+Last updated: 2026-04-21
 
 ## Current phase
 - [x] Read the source brief in `The world in 2035.md`
@@ -83,16 +83,18 @@ Last updated: 2026-04-20
 - [x] `10_international_organizations/imf_weo.md`
 - [x] `08_economics/fiscal_policy/ai_productivity_gdp.md`
 - [x] `08_economics/labor_markets/automation_vs_augmentation.md`
+- [x] `09_corporate_roadmaps/ai_labs/openai.md`
+- [x] `09_corporate_roadmaps/semiconductors/nvidia.md`
 
 ## Remaining high-value writing targets
-- [ ] `09_corporate_roadmaps/ai_labs/openai.md`
-- [ ] `09_corporate_roadmaps/semiconductors/nvidia.md`
 - [ ] `06_geopolitics/01_usa/annual.md`
 - [ ] `06_geopolitics/02_china/annual.md`
 - [ ] `06_geopolitics/07_russia/annual.md`
 - [ ] `05_space/spacex/starship_roadmap.md`
 - [ ] `01_climate_and_nature/tipping_points/amoc.md`
 - [ ] `01_climate_and_nature/tipping_points/arctic_ice.md`
+- [ ] `09_corporate_roadmaps/cloud_hyperscalers/microsoft_azure.md`
+- [ ] `10_international_organizations/iea_weo.md`
 
 ## Structure fixes completed
 - [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`

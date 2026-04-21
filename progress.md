@@ -93,13 +93,18 @@ Last updated: 2026-04-21
 - [x] `01_climate_and_nature/tipping_points/arctic_ice.md`
 - [x] `09_corporate_roadmaps/cloud_hyperscalers/microsoft_azure.md`
 - [x] `10_international_organizations/iea_weo.md`
+- [x] `05_space/spacex/starlink.md`
+- [x] `06_geopolitics/03_india/annual.md`
+- [x] `06_geopolitics/06_korea/annual.md`
+- [x] `10_international_organizations/who.md`
+- [x] `02_technology/biotech/longevity.md`
 
 ## Remaining high-value writing targets
-- [ ] `05_space/spacex/starlink.md`
-- [ ] `06_geopolitics/03_india/annual.md`
-- [ ] `06_geopolitics/06_korea/annual.md`
-- [ ] `10_international_organizations/who.md`
-- [ ] `11_science/longevity/roadmap_annual.md`
+- [ ] `02_technology/semiconductors/roadmap_annual.md`
+- [ ] `03_energy/grid/ai_optimization.md`
+- [ ] `05_space/geopolitics_space/dual_use.md`
+- [ ] `10_international_organizations/nato_ai_strategy.md`
+- [ ] `13_scenarios/climate_emergency.md`
 
 ## Structure fixes completed
 - [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`

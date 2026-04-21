@@ -17,6 +17,7 @@ Last updated: 2026-04-20
 - [x] Add Arctic cross-domain early-warning memo
 - [x] Launch second-wave parallel scaffold expansion
 - [ ] Convert core scaffold files into source-backed first-pass drafts
+- [x] Eliminate all blueprint-level missing markdown files
 
 ## Scope created in this pass
 - [x] `README.md`
@@ -71,12 +72,27 @@ Last updated: 2026-04-20
 - [x] `01_climate_and_nature/ai_climate_tools/prediction_resolution.md`
 - [x] `01_climate_and_nature/nature_tech_convergence.md`
 
+## Full blueprint coverage
+- [x] Blueprint markdown paths from `The world in 2035.md` exist in the workspace
+- [x] Missing-file count reached `0` against the curated blueprint list
+- [ ] Most newly created files are still scaffold-only and need source-backed expansion
+
 ## Source-backed files completed in this wave
 - [x] `01_climate_and_nature/overview_annual.md`
 - [x] `10_international_organizations/ipcc_ar7.md`
 - [x] `10_international_organizations/imf_weo.md`
 - [x] `08_economics/fiscal_policy/ai_productivity_gdp.md`
 - [x] `08_economics/labor_markets/automation_vs_augmentation.md`
+
+## Remaining high-value writing targets
+- [ ] `09_corporate_roadmaps/ai_labs/openai.md`
+- [ ] `09_corporate_roadmaps/semiconductors/nvidia.md`
+- [ ] `06_geopolitics/01_usa/annual.md`
+- [ ] `06_geopolitics/02_china/annual.md`
+- [ ] `06_geopolitics/07_russia/annual.md`
+- [ ] `05_space/spacex/starship_roadmap.md`
+- [ ] `01_climate_and_nature/tipping_points/amoc.md`
+- [ ] `01_climate_and_nature/tipping_points/arctic_ice.md`
 
 ## Structure fixes completed
 - [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`
@@ -90,6 +106,6 @@ Last updated: 2026-04-20
 - [ ] Include Base, Upside, and Downside in every forecast file
 
 ## Blockers
-- [ ] `gh auth status` reports an invalid GitHub token, so remote repository creation and first push are blocked until authentication is refreshed
 - [x] GitHub publishing work is intentionally deferred by user request
+- [x] GitHub issue is reclassified: this repo is simply not connected to a GitHub remote yet; it is not a content-work blocker
 - [ ] Full-repo source backfill remains the main open workload; continue by domain wave rather than waiting on blockers

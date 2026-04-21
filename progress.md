@@ -85,16 +85,21 @@ Last updated: 2026-04-21
 - [x] `08_economics/labor_markets/automation_vs_augmentation.md`
 - [x] `09_corporate_roadmaps/ai_labs/openai.md`
 - [x] `09_corporate_roadmaps/semiconductors/nvidia.md`
+- [x] `06_geopolitics/01_usa/annual.md`
+- [x] `06_geopolitics/02_china/annual.md`
+- [x] `06_geopolitics/07_russia/annual.md`
+- [x] `05_space/spacex/starship_roadmap.md`
+- [x] `01_climate_and_nature/tipping_points/amoc.md`
+- [x] `01_climate_and_nature/tipping_points/arctic_ice.md`
+- [x] `09_corporate_roadmaps/cloud_hyperscalers/microsoft_azure.md`
+- [x] `10_international_organizations/iea_weo.md`
 
 ## Remaining high-value writing targets
-- [ ] `06_geopolitics/01_usa/annual.md`
-- [ ] `06_geopolitics/02_china/annual.md`
-- [ ] `06_geopolitics/07_russia/annual.md`
-- [ ] `05_space/spacex/starship_roadmap.md`
-- [ ] `01_climate_and_nature/tipping_points/amoc.md`
-- [ ] `01_climate_and_nature/tipping_points/arctic_ice.md`
-- [ ] `09_corporate_roadmaps/cloud_hyperscalers/microsoft_azure.md`
-- [ ] `10_international_organizations/iea_weo.md`
+- [ ] `05_space/spacex/starlink.md`
+- [ ] `06_geopolitics/03_india/annual.md`
+- [ ] `06_geopolitics/06_korea/annual.md`
+- [ ] `10_international_organizations/who.md`
+- [ ] `11_science/longevity/roadmap_annual.md`
 
 ## Structure fixes completed
 - [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`

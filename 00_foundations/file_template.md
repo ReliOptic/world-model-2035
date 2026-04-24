@@ -57,3 +57,11 @@ Use this default structure for substantive topic files unless a narrower special
 - Record whether a statement is sourced or inferred.
 - Use annual milestones even when the underlying source is quarterly or event-driven.
 
+## Hard rules for substantive files
+- Every `2026년 4월 현재 상태` bullet must cite a real 2025-2026 era source in the `정보 출처` block with URL and `2026-04 확인` date.
+- `확률` column must include at least two values above `75%` and at least two values below `40%` across the 10-year table. Clustering all years in the `55-70%` band is forbidden because it carries no discriminating information.
+- `낙관 시나리오`와 `지연 시나리오` cells must state the triggering precondition ("if X happens"), not paraphrase the Base milestone.
+- `연결 문서` links must use relative paths only (`../topic.md`, `../../section/topic.md`), never absolute paths or URL-encoded paths.
+- Minimum length for substantive files: 50 content lines after headers.
+- No placeholder brackets like `[공식 출처 입력]` or `[출처명]` may remain in a file marked 🟢 or 🟡.
+

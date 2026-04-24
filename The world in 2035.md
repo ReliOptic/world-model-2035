@@ -365,47 +365,49 @@ world-model-2035/
 │   │   ├── semiconductor_strategy.md
 │   │   ├── nps_scenarios.md
 │   │   └── geopolitical_squeeze.md
-│   ├── 07_germany/
+│   ├── 07_russia/
+│   │   └── annual.md
+│   ├── 08_germany/
 │   │   ├── annual.md
 │   │   ├── energy_transition.md
 │   │   └── industrial_decline.md
-│   ├── 08_uk/
+│   ├── 09_uk/
 │   │   ├── annual.md
 │   │   └── ai_safety_hub.md
-│   ├── 09_france/
+│   ├── 10_france/
 │   │   ├── annual.md
 │   │   └── nuclear_ai_sovereignty.md
-│   ├── 10_saudi_arabia/
+│   ├── 11_saudi_arabia/
 │   │   ├── annual.md
 │   │   └── vision2030_ai.md
-│   ├── 11_uae/
+│   ├── 12_uae/
 │   │   ├── annual.md
 │   │   └── neutral_ai_hub.md
-│   ├── 12_brazil/
+│   ├── 13_brazil/
 │   │   ├── annual.md
 │   │   └── cop30_amazon.md
-│   ├── 13_indonesia/
+│   ├── 14_indonesia/
 │   │   ├── annual.md
 │   │   └── nickel_battery.md
-│   ├── 14_canada/
+│   ├── 15_canada/
 │   │   ├── annual.md
 │   │   └── ai_research_energy.md
-│   ├── 15_australia/
+│   ├── 16_australia/
 │   │   ├── annual.md
 │   │   └── aukus_rare_earth.md
-│   ├── 16_israel/
+│   ├── 17_israel/
 │   │   ├── annual.md
 │   │   └── defense_ai.md
-│   ├── 17_singapore/
+│   ├── 18_singapore/
 │   │   ├── annual.md
 │   │   └── asean_ai_hub.md
-│   ├── 18_nordics/
+│   ├── 19_nordics/
 │   │   ├── annual.md
 │   │   └── welfare_ai_model.md
-│   ├── 19_taiwan/
+│   ├── 20_taiwan/
 │   │   ├── annual.md
 │   │   └── tsmc_geopolitics.md
-│   └── 20_south_africa/
+│   └── 21_south_africa/
 │       ├── annual.md
 │       └── g20_africa_voice.md
 │

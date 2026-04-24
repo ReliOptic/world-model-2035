@@ -1,0 +1,102 @@
+name: Freshness and prediction audit
+
+on:
+  schedule:
+    - cron: '0 3 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Freshness audit
+        id: freshness
+        run: python .github/scripts/freshness_audit.py
+
+      - name: Commit freshness status updates
+        if: steps.freshness.outputs.changed == 'true'
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          git add -A -- '*.md'
+          git commit -m "Auto-update freshness indicators"
+          git push
+
+      - name: Post freshness report issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STALE_COUNT: ${{ steps.freshness.outputs.stale_count }}
+          REPORT_PATH: ${{ steps.freshness.outputs.report_path }}
+        run: |
+          if [ -z "$STALE_COUNT" ] || [ "$STALE_COUNT" = "0" ]; then
+            echo "No stale files; skipping issue."
+            exit 0
+          fi
+          TITLE="Freshness audit $(date +%Y-%m)"
+          BODY_FILE="$REPORT_PATH"
+          if [ ! -f "$BODY_FILE" ]; then
+            echo "Report file missing at $BODY_FILE"
+            exit 0
+          fi
+          EXISTING=$(gh issue list --search "\"$TITLE\" in:title" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file "$BODY_FILE"
+          else
+            gh issue create --title "$TITLE" --body-file "$BODY_FILE" --label freshness
+          fi
+
+      - name: Prediction deadline audit
+        id: predictions
+        run: python .github/scripts/prediction_audit.py
+
+      - name: Open prediction resolution issues
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DUE_COUNT: ${{ steps.predictions.outputs.due_count }}
+          DUE_PATH: ${{ steps.predictions.outputs.output_path }}
+        run: |
+          if [ -z "$DUE_COUNT" ] || [ "$DUE_COUNT" = "0" ]; then
+            echo "No predictions due; skipping issue creation."
+            exit 0
+          fi
+          if [ ! -f "$DUE_PATH" ]; then
+            echo "Due predictions file missing at $DUE_PATH"
+            exit 0
+          fi
+          while IFS='|' read -r pid topic statement deadline confidence source; do
+            [ -z "$pid" ] && continue
+            TITLE="Resolve $pid: $topic"
+            EXISTING=$(gh issue list --search "\"$TITLE\" in:title" --state all --json number --jq '.[0].number // empty')
+            if [ -n "$EXISTING" ]; then
+              echo "Issue already exists for $pid (#$EXISTING); skipping."
+              continue
+            fi
+            BODY="**Statement**: $statement
+
+          **Evaluation window closed**: $deadline
+
+          **Confidence at creation**: $confidence%
+
+          **Source file**: \`$source\`
+
+          Update the corresponding row in \`14_predictions_log/2026_predictions.md\` with an outcome tag (\`Hit\` / \`Miss\` / \`Mixed\` / \`Unscorable\`) and a one-line resolution note.
+          "
+            gh issue create --title "$TITLE" --body "$BODY" --label prediction-resolution
+          done < "$DUE_PATH"

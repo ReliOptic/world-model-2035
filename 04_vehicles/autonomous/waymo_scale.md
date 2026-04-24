@@ -1,5 +1,5 @@
 # Waymo Scale
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Waymo는 `2026년 2월` 기준으로 미국 10개 대도시권에서 완전 자율주행 서비스를 운영 중이다. Phoenix, San Francisco, Los Angeles, Austin, Atlanta, Miami, Dallas, Houston, San Antonio, Orlando가 대상이며, 이는 2024년 말 대비 4개 도시 추가다.

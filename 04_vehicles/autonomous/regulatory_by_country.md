@@ -1,5 +1,5 @@
 # 자율주행 국가별 규제
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 미국은 연방 차원의 자율주행 전용 입법이 없는 상태에서 NHTSA의 `AV STEP`(ADS-equipped Vehicle Safety, Transparency, and Evaluation Program)이 자발적 보고 및 심사 프레임워크로 운영 중이다. 2026년에는 연방 AV 법안이 복수 발의됐다. S.1798 `Autonomous Vehicle Acceleration Act of 2025`와 하원의 `SELF DRIVE Act 2026`(중형 트럭 중심)이 심사 중이다.

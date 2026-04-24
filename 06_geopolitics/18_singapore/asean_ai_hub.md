@@ -1,5 +1,5 @@
 # 싱가포르 ASEAN AI 허브 — AI Verify Foundation, MAS, Sentinel AI Safety Centre
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - IMDA는 2026년 4월 생성형 AI 시스템의 테스트 방법론을 표준화하는 최초의 국제 표준(ISO/IEC 42119-8)을 제안했다. 2026년 싱가포르 AI 안전 레드팀 챌린지에는 14개 아시아 국가가 참여해 영어와 지역 언어에서의 데이터 유출 리스크를 테스트했다. https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2026/singapore-champions-new-global-ai-testing-standardisation-efforts

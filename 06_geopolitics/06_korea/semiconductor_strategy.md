@@ -1,5 +1,5 @@
 # 한국 반도체 전략 — K-칩스법, 용인 클러스터, 삼성·SK하이닉스 HBM
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 삼성과 SK하이닉스는 전 세계 HBM 생산의 약 90%를 장악하고 있다. SK하이닉스는 HBM 시장의 62%를 점유하며 선두이고, Micron이 삼성을 제치고 2위로 올라선 구도다. 2026년 HBM4 전쟁이 AI 슈퍼사이클의 핵심 경쟁축이다. https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/

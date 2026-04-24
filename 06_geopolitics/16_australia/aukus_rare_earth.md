@@ -1,5 +1,5 @@
 # 호주 AUKUS와 희토류 — Pillar 1/2, Virginia급 잠수함, Lynas, Iluka
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - AUKUS Pillar 1(핵추진 잠수함)에서 미국은 2030년대 초 버지니아급 잠수함 3-5척을 호주에 매각하고, 2027년부터 미 해군·영국 해군이 서호주 기지에서 장기 순환 배치를 시작한다. 최대 버지니아급 4척 + 아스튜트급 1척이 호주 기지에서 운용될 예정이다. https://navalinstitute.com.au/update-on-virginia-class-submarine-program-aukus-submarine-pillar-1/

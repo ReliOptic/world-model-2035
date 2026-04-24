@@ -1,5 +1,5 @@
 # 2026 Predictions
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-10
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-10
 
 This file records testable predictions anchored in 2026 that can be scored against observed outcomes. Each entry has a subject, a falsifiable condition, an evaluation window, a confidence band, and a pointer to the source file that justifies it.
 

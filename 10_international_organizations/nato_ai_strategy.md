@@ -1,5 +1,5 @@
 # NATO AI Strategy
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - NATO는 더 이상 AI를 연구 의제로만 다루지 않는다. `2021년 10월` 원전략은 `4개 aims`, `6개 outcomes`, `6개 Principles of Responsible Use`를 제시했고, `2024년 7월` 개정 전략은 생성형 AI와 frontier/foundation 모델을 반영해 `9개 updated outcomes`로 확장했다.

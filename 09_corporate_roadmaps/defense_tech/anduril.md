@@ -1,5 +1,5 @@
 # Anduril Industries
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - `2026년 3월` 미 육군으로부터 `최대 $20B, 10년` 기업 협약(Enterprise Agreement) 수주. Lattice OS 기반 대드론·공중 방어 시스템의 전군 확장 생산이 핵심. 특수작전사령부(SOCOM)와 별도로 `$1B 카운터드론 IDIQ 10년` + `$86M 자율 소프트웨어` 계약도 체결. ([Anduril Federal Contracts Deep Dive](https://fed-spend.com/blog/anduril-federal-contracts-deep-dive))

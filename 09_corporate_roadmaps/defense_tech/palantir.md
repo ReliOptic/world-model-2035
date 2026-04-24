@@ -1,5 +1,5 @@
 # Palantir
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Q4 2025 매출 `$1.41B` (+70% YoY), FY2025 전체 매출 약 `$3.8B`. FY2026 가이던스 `$7.19B`(+61% YoY). US 상업 매출 FY2025 `$1.465B`(YoY 약 2배), 2026 가이던스 `$3.1B+`. 조정 영업이익 2026 목표 `$4.1B` 근접. ([Palantir Q4 2025 Press Release](https://investors.palantir.com/news-details/2026/Palantir-Reports-Q4-2025-U-S--Comm-Revenue-Growth-of-137-YY-and-Revenue-Growth-of-70-YY-Issues-FY-2026-Revenue-Guidance-of-61-YY-and-U-S--Comm-Revenue-Guidance-of-115-YY-Crushing-Consensus-Expectations/))

@@ -1,5 +1,5 @@
 # Unknown Unknowns
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 이 문서는 "무엇이 올지 모른다"에 대한 taxonomy 파일이다. 구체적 사건을 예측하는 것이 아니라, "우리가 잘 모델링하지 못하는 범주가 무엇인지"를 정리한다. Nassim Taleb의 `Black Swan`(2007)과 `Antifragile`(2012) 프레임, WEF `Global Risks Report` 방법론, Good Judgment Project / Metaculus의 예측 토너먼트 문헌을 근거로 한다.

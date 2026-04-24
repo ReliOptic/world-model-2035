@@ -1,5 +1,5 @@
 # SMIC / Huawei HiSilicon
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - SMIC의 `N+2`(7nm급) FinFET 공정은 TechInsights가 Huawei Mate 60 Pro에서 확인했다. Kirin 9000s·Kirin 9010·Kirin X90(MatBook Fold) 모두 N+2 기반임이 분해 분석으로 검증됐다. Kirin 9010은 Kirin 9100에 앞서 동일 N+2 노드를 유지했다. (출처: TechInsights N+2 분석 시리즈)

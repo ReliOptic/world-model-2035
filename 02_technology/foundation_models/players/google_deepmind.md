@@ -1,5 +1,5 @@
 # Google DeepMind — 기술 프로파일 (Foundation Models / Tech-Angle)
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 > 이 파일은 모델 아키텍처·과학 AI·Project Astra 등 기술 각도를 다룬다. 기업 재무·Google 클라우드 포지셔닝은 `02_technology/bigtech_positioning/google.md` 참조.
 

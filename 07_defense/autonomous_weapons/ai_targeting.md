@@ -1,5 +1,5 @@
 # AI 표적화 전망
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Pentagon의 AI 표적화 핵심 축은 `Project Maven`에서 `Maven Smart System(MSS)`로 이동했다. 국방부는 `2024년 5월` Palantir와 `$480M` IDIQ 계약을 맺었고, `$795M`을 추가해 `2029년`까지 계약 상한을 `$1.275B`로 확대했다. `2026년 3월 9일` Deputy Secretary Steve Feinberg 메모는 Maven을 `2026년 9월(FY26 말)` 공식 `program of record`로 전환하고 감독권을 NGA에서 CDAO로 이관한다고 밝혔다.

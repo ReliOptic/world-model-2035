@@ -1,5 +1,5 @@
 # 영국 AI 안전 허브 (AISI + Bletchley/Seoul/Paris + Compute)
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - `AI Safety Institute`는 `2023년 11월 1일 Bletchley Park AI Safety Summit`에서 창설됐고, `2025년 2월` DSIT(Department for Science, Innovation and Technology) 조직 개편으로 `AI Security Institute(AISI)`로 개칭되었다. `AISI`는 `frontier AI` 평가, 위험 평가, 모델 접근 프로토콜 운영을 맡는다.

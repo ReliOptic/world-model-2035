@@ -1,5 +1,5 @@
 # 이스라엘 국방 AI — Lavender/Gospel, Rafael/Elbit/IAI AI 제품
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 이스라엘 방산 3사(Rafael·Elbit·IAI)는 2024년 역대 최고 수출 실적인 약 148억 달러를 달성했고, 2025년도 유사 수준이 예상된다. SIPRI 2024년 랭킹에서 Elbit은 25위, IAI는 31위, Rafael은 34위로 모두 전년 대비 순위 상승했다. https://breakingdefense.com/2026/01/israeli-defense-industry-looks-to-capitalize-on-hard-won-combat-lessons-2026-preview/

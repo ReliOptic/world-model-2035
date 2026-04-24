@@ -1,5 +1,5 @@
 # DARPA / DIU / OSC 전망
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - `2025년 8월 27일` Secretary of War Pete Hegseth 메모는 Replicator 2 자원을 새로운 `JIATF 401`(Joint Interagency Task Force)로 통합해 `C-sUAS` 역량 개발 선도 조직으로 지정했다. `CTO, DIU, SCO, DARPA, CDAO, OSC`는 이제 한 집합으로 운영되는 `OSW innovation operating system`으로 재정의됐다.

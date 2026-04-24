@@ -1,5 +1,5 @@
 # Google DeepMind
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Google DeepMind는 2023년 4월 Google Brain과 DeepMind의 통합으로 설립됐다. 2026년 4월 현재 Demis Hassabis가 CEO를 맡으며 Alphabet의 핵심 AI 연구·제품 조직으로 기능한다.

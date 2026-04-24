@@ -1,5 +1,5 @@
 # Commonwealth Fusion Systems
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - SPARC 토카막 조립이 2026년 1월 CES에서 공식 착수됐다. 총 `18개` 고자기장 초전도 자석 중 첫 번째가 설치됐으며, 각 자석은 `24톤` 무게에 `20테슬라` 자기장을 생성한다(MRI 대비 약 13배). 나머지 자석은 `2026년 여름 말`까지 완전 링 완성 목표. ([TechCrunch CFS SPARC magnet install](https://techcrunch.com/2026/01/06/commonwealth-fusion-systems-installs-reactor-magnet-lands-deal-with-nvidia/))

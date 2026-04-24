@@ -1,5 +1,5 @@
 # 포스트 양자 암호
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - NIST는 `2024년 8월 13일` FIPS 203·204·205 세 가지 포스트 양자 암호(PQC) 표준을 최종 확정했다. FIPS 203(`ML-KEM`, Module-Lattice Key-Encapsulation Mechanism)은 키 교환, FIPS 204(`ML-DSA`, Module-Lattice Digital Signature Algorithm)는 디지털 서명, FIPS 205(`SLH-DSA`, Stateless Hash-Based Digital Signature Algorithm)는 해시 기반 서명이다. (출처: NIST FIPS 203/204/205 최종 발표 2024-08)

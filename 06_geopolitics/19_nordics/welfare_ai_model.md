@@ -1,5 +1,5 @@
 # 노르딕스 복지 AI 모델 — SE/FI/DK/NO AI 전략, New Nordics AI
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - New Nordics AI 센터가 2025년 10월 출범했다. 덴마크·핀란드·노르웨이·아이슬란드·스웨덴 5개국 국가 AI 기관이 공동으로 설립했으며, 북유럽국가협의회(NMR)가 3년간 3,000만 덴마크 크로네(약 430만 달러)를 지원한다. https://www.nordicinnovation.org/programs/new-nordics-ai-preparation-project

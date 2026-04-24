@@ -1,5 +1,5 @@
 # NextEra Energy
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - NextEra Energy 총 발전 용량 `73GW`. NextEra Energy Resources(NEER)는 연말 기준 약 `33,410MW` 순 발전 용량으로 세계 최대 풍력·태양광 발전 기업 지위 유지. ([NextEra Energy Wikipedia](https://en.wikipedia.org/wiki/NextEra_Energy))

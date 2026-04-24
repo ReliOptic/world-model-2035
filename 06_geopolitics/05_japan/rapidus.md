@@ -1,5 +1,5 @@
 # 일본 Rapidus — 2nm Hokkaido IIM-1과 첨단 반도체 부활
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Rapidus는 2026년 2월 기준 명목상 청사진을 넘어 실질 운영 단계로 진입했다. 최초 2nm 공정 설계 키트(PDK)를 얼리 액세스 고객에게 배포했고, 2026년 2월 ¥267.6억(약 17억 달러)의 정부·민간 복합 펀딩을 완료했다. https://www.rapidus.inc/en/news_topics/information/rapidus-secures-267-6-billion-yen-in-funding-from-japan-government-and-private-sector-companies/

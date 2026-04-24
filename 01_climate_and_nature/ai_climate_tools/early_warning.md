@@ -1,5 +1,5 @@
 # AI Climate Tools: Early Warning Systems
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - WMO의 Global Status of Multi-Hazard Early Warning Systems 2025 보고서는 전 세계 119개국(60%)이 다중위험 조기경보 시스템(MHEWS) 운영을 보고했다고 밝혔다. 이는 10년 전 대비 113% 증가다.

@@ -1,5 +1,5 @@
 # UAE 중립 AI 허브 — G42, MGX, Falcon/Jais, Stargate UAE
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Stargate UAE가 2025년 트럼프 대통령 방문 이후 공식 출범했다. G42·OpenAI·Oracle·NVIDIA·SoftBank·Cisco가 파트너로 참여하며, 아부다비에 5기가와트 규모의 UAE-미국 AI 캠퍼스를 건설한다. 1기가와트 규모의 첫 컴퓨트 클러스터가 G42에 의해 구축되며 OpenAI·Oracle이 운영한다. 첫 200MW 클러스터는 2026년 내 가동 예정이다. https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae

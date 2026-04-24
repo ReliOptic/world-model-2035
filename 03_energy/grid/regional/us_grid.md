@@ -1,5 +1,5 @@
 # US Grid
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - FERC는 `2025년 12월 18일` AI 데이터센터의 발전소 인접(co-location) 서비스를 촉진하기 위한 새로운 규칙을 PJM에 지시했다. PJM은 Firm Contract Demand Transmission Service, Non-Firm Contract Demand Transmission Service 등 3가지 신규 송전 서비스를 신설해야 한다. PJM은 `2026년 1월`까지 co-location 신뢰성 우려 보고서를 제출했다.

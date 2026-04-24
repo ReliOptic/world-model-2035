@@ -1,5 +1,5 @@
 # Google Cloud
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Google Cloud Q4 2025 매출 `$17.7B` (+48% YoY). Alphabet 전체 2025 매출 `$400B+` 초과, Google Cloud 연환산 런레이트 `$70B+` 달성. Gemini 엔터프라이즈 유료 MAU Q1 2026 QoQ `+40%`. Gemini 서빙 단위 비용은 2025년 한 해 동안 `78%` 절감됐다. ([Alphabet Q4 FY2025](https://futurumgroup.com/insights/alphabet-q4-fy-2025-highlights-cloud-acceleration-and-enterprise-ai-momentum/))

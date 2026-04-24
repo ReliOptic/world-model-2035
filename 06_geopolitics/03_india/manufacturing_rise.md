@@ -1,5 +1,5 @@
 # 인도 제조업 부흥 — PLI, 애플 생태계, 반도체 조립
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 인도는 2026년 초 기준 글로벌 아이폰 생산의 약 25%를 담당하며 연간 약 5,500만 대, 수출액 약 230억 달러를 달성했다. Apple은 Foxconn·Tata Electronics와의 파트너십을 통해 인도를 중국 이후 두 번째 핵심 생산 거점으로 확립 중이다. https://www.whalesbook.com/news/English/industrial-goodsservices/Apple-Drives-Indias-Leap-to-Designed-in-India-Tech-Hub/69e73b6abca97ee10699672d

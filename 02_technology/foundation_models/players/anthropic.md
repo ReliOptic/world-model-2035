@@ -1,5 +1,5 @@
 # Anthropic — 기술 프로파일 (Foundation Models / Tech-Angle)
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 > 이 파일은 모델 아키텍처·역량·훈련 인프라 각도에서 Anthropic을 다룬다. 기업 재무·밸류에이션·파트너십은 `09_corporate_roadmaps/ai_labs/anthropic.md`를 참조.
 

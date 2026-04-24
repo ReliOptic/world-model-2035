@@ -1,5 +1,5 @@
 # 중국 대만 시나리오
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Pentagon `2025 Annual Report to Congress: Military and Security Developments Involving the PRC` (2025-12-23)는 PLA의 `2027 fight-and-win Taiwan` 목표를 재확인. 2024년 PLA는 `해상·지상 타격, 미군 태평양 자산 타격, 주요 항구 봉쇄` 등 침공 구성요소 훈련을 포괄적으로 수행.

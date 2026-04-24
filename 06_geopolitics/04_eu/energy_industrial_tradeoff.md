@@ -1,5 +1,5 @@
 # EU 에너지-산업 트레이드오프 — REPowerEU, Clean Industrial Deal, CBAM, ETS2
-**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Clean Industrial Deal(CID)은 2025년 2월 26일 European Commission이 발표한 EU 산업 경쟁력·탈탄소화 통합 전략이다. Draghi 보고서가 강조한 에너지 비용·혁신·규제 완화 의제를 흡수하며, 전략적 산업 분야에 대한 EU 차원의 지원을 대폭 확대한다. https://insights.policy-insider.ai/25-01-2026-titlecbam-implementation-eu-ets-rules-clean-industrial-deal/

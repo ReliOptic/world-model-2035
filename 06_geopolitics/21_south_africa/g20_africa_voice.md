@@ -55,7 +55,7 @@
 
 ## 정보 출처
 - G20 South Africa 2025 official website https://www.g20.org/en/g20-south-africa-2025 2026-04 확인
-- Wikipedia G20 South Africa 2025 summit https://en.wikipedia.org/wiki/2025_G20_Johannesburg_summit 2026-04 확인
+- South Africa G20 official site https://www.g20.org/ 2026-04 확인
 - Africa Renewal UN G20 South Africa permanent member https://www.un.org/africarenewal/magazine/2025/south-africa-g20-presidency-africa 2026-04 확인
 - JET-P South Africa factsheet COP29 update https://www.climatefinancelab.org/project/just-energy-transition-partnership-south-africa/ 2026-04 확인
 - Reuters US withdraws from South Africa JET-P February 2025 https://www.reuters.com/business/energy/us-withdraws-south-africa-energy-transition-partnership-2025-02/ 2026-04 확인

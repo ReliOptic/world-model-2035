@@ -14,7 +14,7 @@ Last updated: 2026-04-26
 - [x] Freshness and prediction audits run locally with zero stale files and zero due predictions
 - [x] Internal link audit run locally: 0 bare connection bullets, 0 broken internal links
 - [x] Structure audit run locally: 254 markdown content files and 243 forecast files scanned, 0 errors
-- [ ] Source-quality audit run locally: 0 source-section errors, 34 high-risk files still use at least one lower-authority source that should be replaced in a second-pass review
+- [x] Source-quality audit run locally: 0 source-section errors, 34 high-risk files reviewed; lower-authority source warnings reduced to 0
 
 ## Current phase
 - [x] Read the source brief in `The world in 2035.md`
@@ -138,7 +138,7 @@ Last updated: 2026-04-26
 - [ ] 일부 climate/science 파일에서 확률 상한이 `65%`로 고정됨 (참조 파일 `pandemic_early_warning.md` 동일). 확률 분산 규칙(`≥2 >75%`) 재검증 필요
 - [x] 전체 파일 대상 `연결 문서` 경로가 상대 경로 표준을 따르는지 일괄 감사 필요 — 2026-04-26 내부 링크 감사/정규화 도구 추가
 - [x] `14_predictions_log/2026_predictions.md`의 12개 예측(P26-01~P26-12)의 분기 체크인 일정 배정 — prediction audit workflow가 마감 예측을 월간 감지
-- [ ] 고위험 도메인(반도체, AI labs, 지정학, climate tipping, SMR/fusion, labor)의 출처 품질을 2차 리뷰로 승격
+- [x] 고위험 도메인(반도체, AI labs, 지정학, climate tipping, SMR/fusion, labor)의 출처 품질을 2차 리뷰로 승격 — 2026-04-26 lower-authority source warnings 34→0
 
 ## Structure fixes completed
 - [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`

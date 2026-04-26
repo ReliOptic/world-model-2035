@@ -54,10 +54,10 @@
 
 ## 정보 출처
 - Federal Register EO 14179 https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence 2026-04 확인
-- Wikipedia EO 14110 https://en.wikipedia.org/wiki/Executive_Order_14110 2026-04 확인
-- Wikipedia EO 14179 https://en.wikipedia.org/wiki/Executive_Order_14179 2026-04 확인
+- Federal Register Executive Order 14110 https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence 2026-04 확인
+- Federal Register Executive Order 14179 https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence 2026-04 확인
 - NIST CAISI homepage https://www.nist.gov/caisi 2026-04 확인
 - NIST AI Agent Standards Initiative https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure 2026-04 확인
-- Wikipedia SB 1047 https://en.wikipedia.org/wiki/Safe_and_Secure_Innovation_for_Frontier_Artificial_Intelligence_Models_Act 2026-04 확인
+- California Legislative Information SB-1047 https://www.leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1047 2026-04 확인
 - Perkins Coie SB 1047 veto analysis https://perkinscoie.com/insights/update/implications-california-governor-newsoms-veto-ai-safety-bill-sb-1047 2026-04 확인
 - Morgan Lewis California AI laws 2024 https://www.morganlewis.com/pubs/2024/10/california-governor-vetoes-ai-safety-bill-sb-1047-signs-ab-2013-requiring-generative-ai-transparency 2026-04 확인

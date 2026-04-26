@@ -56,6 +56,6 @@
 - [Helion: groundbreaking on Orion] [https://www.helionenergy.com/articles/helion-secures-land-and-begins-building-site-of-worlds-first-fusion-power-plant/] [2026-04-23]
 - [S&P Global: Helion breaks ground, 2028 target] [https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/073025-helion-energy-breaks-ground-on-fusion-power-plant-slated-to-be-online-in-2028] [2026-04-23]
 - [DCD: Helion begins work, expects Microsoft delivery 2028] [https://www.datacenterdynamics.com/en/news/helion-begins-work-at-fusion-plant-expects-to-deliver-power-to-microsoft-by-2028/] [2026-04-23]
-- [Carbon Credits: Helion Orion construction] [https://carboncredits.com/microsoft-msft-to-get-fusion-power-as-helion-energy-kicks-off-orion-plant-construction/] [2026-04-23]
+- [Helion — world’s first fusion energy purchase agreement with Microsoft](https://www.helionenergy.com/articles/helion-announces-worlds-first-fusion-ppa-with-microsoft/) [2026-04-26 확인]
 - [NEI Magazine: Helion permit for Orion] [https://www.neimagazine.com/news/helion-clears-key-permit-for-orion/] [2026-04-23]
-- [Helion Energy Wikipedia] [https://en.wikipedia.org/wiki/Helion_Energy] [2026-04-23]
+- [Helion Energy official site](https://www.helionenergy.com/) [2026-04-26 확인]

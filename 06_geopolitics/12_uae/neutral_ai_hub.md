@@ -58,5 +58,5 @@
 - UAE AI story US partnership https://www.uaepreferred.com/ai-story 2026-04 확인
 - Middle East AI News US-UAE G42 https://www.middleeastainews.com/p/us-uae-ai-partnership-g42-us-plans 2026-04 확인
 - Times of Israel UAE AI economy https://blogs.timesofisrael.com/how-the-uae-became-an-emerging-superpower-in-the-global-ai-economy/ 2026-04 확인
-- Wikipedia Stargate LLC https://en.wikipedia.org/wiki/Stargate_LLC 2026-04 확인
+- OpenAI `Introducing Stargate UAE` https://openai.com/index/introducing-stargate-uae/ 2026-04 확인
 - LPGP Connect UAE data centres https://www.lpgpconnect.com/insights/uae-data-centres-scale-up-as-ai-demand-surges 2026-04 확인

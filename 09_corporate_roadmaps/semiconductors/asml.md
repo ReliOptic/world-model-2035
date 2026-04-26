@@ -70,9 +70,9 @@
 ## 정보 출처
 - [ASML Q1 2026 Financial Results](https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results) [2026-04-24]
 - [ASML Q1 2026 Earnings: €8.8B Revenue and €40B Guidance Raise](https://tech-insider.org/asml-q1-2026-revenue-earnings-guidance-raise-ai-chip/) [2026-04-24]
-- [AI Super-Cycle Propels ASML to Record Q1 Earnings as High-NA EUV Enters HVM](https://markets.financialcontent.com/stocks/article/marketminute-2026-4-15-ai-super-cycle-propels-asml-to-record-q1-earnings-as-high-na-euv-enters-high-volume-manufacturing) [2026-04-24]
+- [ASML Q1 2026 financial results](https://www.asml.com/en/news/press-releases/2026/q1-2026-financial-results) [2026-04-26 확인]
 - [ASML reports €32.7B total net sales in 2025](https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results) [2026-04-24]
 - [ASML expects impact of updated export restrictions to fall within 2025 outlook](https://www.asml.com/en/news/press-releases/2024/asml-expects-impact-of-updated-export-restrictions-to-fall-within-outlook-for-2025) [2026-04-24]
-- [ASML prepared for China rare-earth export controls — Tom's Hardware](https://www.tomshardware.com/tech-industry/semiconductors/asml-is-prepared-for-chinas-rare-earth-export-controls-finance-head-says-company-has-stock-thanks-to-long-lead-times) [2026-04-24]
+- [ASML 2025 Annual Report](https://www.asml.com/en/news/press-releases/2026/asml-publishes-2025-annual-report) [2026-04-26 확인]
 - [ASML stock sinks amid tightening China restrictions — CNBC](https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html) [2026-04-24]
 - Inference note: 2026-2035 annual milestones are repository inferences anchored to ASML official financial results, press releases, and Investor Day targets.

@@ -61,4 +61,4 @@
 - BIS press release on AI Diffusion Rule rescission https://www.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens 2026-04 확인
 - NIST CAISI https://www.nist.gov/caisi 2026-04 확인
 - NIST AI Agent Standards Initiative https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure 2026-04 확인
-- Wikipedia Stargate LLC https://en.wikipedia.org/wiki/Stargate_LLC 2026-04 확인
+- OpenAI `Announcing the Stargate Project` https://openai.com/index/announcing-the-stargate-project/ 2026-04 확인

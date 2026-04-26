@@ -59,6 +59,6 @@
 - TechInsights Kirin X90 SMIC N+2 MatBook https://www.techinsights.com/blog/huawei-matebook-fold-uses-kirin-x90-built-smics-7nm-n2-node 2026-04 확인
 - TechInsights SMIC N+3 Kirin 9030 confirmed https://www.techinsights.com/blog/smic-n3-confirmed-kirin-9030-analysis-reveals-how-close-smic-5nm 2026-04 확인
 - iFixit Kirin 9010 reality check https://www.ifixit.com/News/95646/huaweis-kirin-9010-is-a-reality-check-for-chinas-semiconductor-ambitions 2026-04 확인
-- Tom's Hardware Huawei Kirin 9100 7nm stall https://www.tomshardware.com/tech-industry/huawei-sticks-to-7nm-for-latest-processor-as-chinas-chip-advancements-stall 2026-04 확인
+- TechInsights Huawei Mate 70 Pro+ teardown summary https://www.techinsights.com/blog/summary-huawei-mate-70-pro-pla-al10-deep-dive-teardown 2026-04 확인
 - SemiWiki SMIC 5nm life or death https://semiwiki.com/forum/threads/huawei-the-leader-in-chinese-semiconductor-development%E2%80%A6-%E2%80%98life-or-death%E2%80%99-for-smic-5nm-mass-production-next-year.22690/ 2026-04 확인
 - TechInsights HiSilicon Kirin 9000s SMIC 7nm N+2 process flow https://www.techinsights.com/blog/hisilicon-kirin-9000s-smic-7nm-n2-process-flow-analysis 2026-04 확인

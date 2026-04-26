@@ -59,4 +59,4 @@
 - Jerusalem Post Rafael IAI Elbit SIPRI rankings https://www.jpost.com/defense-and-tech/article-876865 2026-04 확인
 - Times of Israel IAI Rafael privatization https://www.timesofisrael.com/israel-eyes-privatization-of-defense-giants-iai-and-rafael-via-public-share-sale/ 2026-04 확인
 - Dropsitepews Israel weapons industry https://www.dropsitenews.com/p/this-has-redefined-israels-global 2026-04 확인
-- Wikipedia AI-assisted targeting Gaza https://en.wikipedia.org/wiki/AI-assisted_targeting_in_the_Gaza_Strip 2026-04 확인
+- IEMed Yearbook `The Israeli Military’s Use of AI in Gaza` https://www.iemed.org/publication/the-israeli-militarys-use-of-ai-in-gaza-operational-efficiency-at-the-cost-of-humanity/ 2026-04 확인

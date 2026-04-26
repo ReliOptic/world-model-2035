@@ -59,6 +59,6 @@
 - Intel `Core Ultra Series 3 CES 2026` https://newsroom.intel.com/artificial-intelligence/ces-2026-intel-core-ultra-series-3-debut-first-built-on-intel-18a 2026-04 확인
 - Intel `18A process page` https://www.intel.com/content/www/us/en/foundry/process/18a.html 2026-04 확인
 - Intel Foundry `milestones press` https://newsroom.intel.com/intel-foundry/intel-foundry-achieves-major-milestones 2026-04 확인
-- Tom's Hardware `Intel 14A Nova Lake Diamond Rapids roadmap` https://www.tomshardware.com/tech-industry/semiconductors/intel-chip-roadmap-2026-2028 2026-04 확인
-- Tom's Hardware `Intel High-NA EUV EXE:5200B` https://www.tomshardware.com/tech-industry/semiconductors/intel-installs-industrys-first-commercial-high-na-euv-lithography-tool-asml-twinscan-exe-5200b-sets-the-stage-for-14a 2026-04 확인
+- Intel Foundry 14A official process page https://www.intel.com/content/www/us/en/foundry/process/14a.html 2026-04 확인
+- Intel and ASML High-NA collaboration archive PDF https://download.intel.com/newsroom/archive/2025/en-us-2022-01-18-intel-and-asml-strengthen-their-collaboration-to-drive-highna-into-manufacturing-in-2025.pdf 2026-04 확인
 - StorageReview `Panther Lake and Clearwater Forest on 18A` https://www.storagereview.com/news/intel-unwraps-core-ultra-series-3-panther-lake-and-xeon-6-clearwater-forest-on-intel-18a 2026-04 확인

@@ -58,6 +58,6 @@
 - PIB India Common Compute 34000 GPUs https://www.pib.gov.in/PressReleasePage.aspx?PRID=2132817&reg=3&lang=2 2026-04 확인
 - IndiaAI 18000 GPU announcement https://indiaai.gov.in/article/union-minister-of-electronics-it-railways-and-i-b-announces-the-availability-of-18-000-affordable-ai-compute-units 2026-04 확인
 - Sarvam sovereign LLM https://www.sarvam.ai/blogs/indias-sovereign-llm 2026-04 확인
-- Sarvam Wikipedia https://en.wikipedia.org/wiki/Sarvam_AI 2026-04 확인
+- Sarvam AI `The government of India selects Sarvam to build India's sovereign LLM` https://www.sarvam.ai/blogs/indias-sovereign-llm/ 2026-04 확인
 - Digit India AI Impact Summit 2026 https://www.digit.in/features/general/indian-llm-models-ai-rise-india.html 2026-04 확인
 - Rest of World frugal AI Sarvam Krutrim https://restofworld.org/2026/india-frugal-ai-sarvam-krutrim-sovereign/ 2026-04 확인

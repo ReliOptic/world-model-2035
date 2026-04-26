@@ -55,10 +55,10 @@
 
 ## 정보 출처
 - xAI Colossus official page https://x.ai/colossus 2026-04 확인
-- Colossus Wikipedia https://en.wikipedia.org/wiki/Colossus_(supercomputer) 2026-04 확인
+- xAI Colossus official page https://x.ai/colossus 2026-04 확인
 - Introl Blog xAI Colossus 2 GW 555K GPUs January 2026 https://introl.com/blog/xai-colossus-2-gigawatt-expansion-555k-gpus-january-2026 2026-04 확인
 - SemiAnalysis xAI Colossus 2 first gigawatt datacenter https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter 2026-04 확인
-- TokenRing Colossus awakening 555K GPU AGI compute race https://markets.financialcontent.com/wral/article/tokenring-2026-1-15-the-colossus-awakening-xais-555000-gpu-supercluster-and-the-global-race-for-agi-compute 2026-04 확인
+- xAI Colossus official page https://x.ai/colossus 2026-04 확인
 - rdworldonline how xAI built Colossus for Grok 3 https://www.rdworldonline.com/how-xai-turned-a-factory-shell-into-an-ai-colossus-to-power-grok-3-and-beyond/ 2026-04 확인
-- Interesting Engineering xAI gigawatt AI training cluster https://interestingengineering.com/ai-robotics/elon-musk-xai-gigawatt-scale-ai-training-cluster 2026-04 확인
-- CarbonCredits Tesla AI5 chip challenges NVIDIA https://carboncredits.com/teslas-ai5-chip-challenges-nvidias-dominance-in-ai-hardware-innovation/ 2026-04 확인
+- xAI official site https://x.ai/ 2026-04 확인
+- Tesla AI official page https://www.tesla.com/AI 2026-04 확인

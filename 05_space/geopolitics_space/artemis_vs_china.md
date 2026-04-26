@@ -68,11 +68,11 @@
 - [../spacex/starship_roadmap.md](../spacex/starship_roadmap.md)
 
 ## 정보 출처
-- [Artemis III - Wikipedia] [https://en.wikipedia.org/wiki/Artemis_III] [2026-04-23]
-- [Starship HLS - Wikipedia] [https://en.wikipedia.org/wiki/Starship_HLS] [2026-04-23]
+- [NASA — Artemis mission architecture update](https://www.nasa.gov/directorates/esdmd/nasa-strengthens-artemis-adds-mission-refines-overall-architecture/) [2026-04-26 확인]
+- [NASA OIG — Management of the Human Landing System contracts](https://oig.nasa.gov/wp-content/uploads/2026/03/final-report-ig-26-004-nasas-management-of-the-human-landing-system-contracts.pdf) [2026-04-26 확인]
 - [NASA Safety Panel Estimates Significant Delays for Starship HLS] [https://spacepolicyonline.com/news/nasa-safety-panel-estimates-significant-delays-for-starship-hls/] [2026-04-23]
 - [NASA Strengthens Artemis: Adds Mission, Refines Overall Architecture] [https://www.nasa.gov/directorates/esdmd/nasa-strengthens-artemis-adds-mission-refines-overall-architecture/] [2026-04-23]
-- [International Lunar Research Station - Wikipedia] [https://en.wikipedia.org/wiki/International_Lunar_Research_Station] [2026-04-23]
+- [CNSA — International Lunar Research Station guide for partnership](https://www.cnsa.gov.cn/english/n6465645/n6465648/c6812150/content.html) [2026-04-26 확인]
 - [China advances planning of International Lunar Research Station] [https://www.globaltimes.cn/page/202504/1332711.shtml] [2026-04-23]
-- [Chang'e 8 - Wikipedia] [https://en.wikipedia.org/wiki/Chang%27e_8] [2026-04-23]
+- [CNSA — Chang'e-8 lunar mission international cooperation](https://www.cnsa.gov.cn/english/n6465652/n6465653/c10670293/content.html) [2026-04-26 확인]
 - Inference note: 2026-2035 milestones are repository inferences anchored to NASA·CNSA official roadmaps and independent oversight reports.

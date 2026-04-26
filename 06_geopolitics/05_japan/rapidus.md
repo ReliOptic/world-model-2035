@@ -57,6 +57,6 @@
 - The Register Japan semiconductor comeback https://www.theregister.com/2026/04/14/japan_semiconductor_industry_comeback_rapidus/ 2026-04 확인
 - The Register Rapidus $1.7B funding https://www.theregister.com/2026/02/27/rapidus_funding/ 2026-04 확인
 - Tech Funding News Rapidus $4B government https://techfundingnews.com/japan-rapidus-4b-funding-semiconductors/ 2026-04 확인
-- FinancialContent Rapidus 2nm milestones https://markets.financialcontent.com/stocks/article/tokenring-2026-2-6-japans-2nm-moonshot-rapidus-secures-billion-dollar-backing-as-hokkaido-factory-hits-critical-milestones 2026-04 확인
+- Rapidus funding announcement https://www.rapidus.inc/en/news_topics/information/rapidus-secures-267-6-billion-yen-in-funding-from-japan-government-and-private-sector-companies/ 2026-04 확인
 - TrendForce Rapidus 1.4nm 2029 plans https://www.trendforce.com/news/2025/11/26/news-rapidus-reportedly-gears-up-for-2029-1-4nm-production-with-second-hokkaido-fab-to-catch-foundry-giants/ 2026-04 확인
-- TechSpot Rapidus 2nm plans https://www.techspot.com/news/111959-japan-rapidus-ramps-up-2-nm-chip-plans.html 2026-04 확인
+- Rapidus IIM-1 GAA transistor success https://www.rapidus.inc/en/interview/it0005/ 2026-04 확인

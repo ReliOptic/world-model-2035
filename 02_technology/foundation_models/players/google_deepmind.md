@@ -64,8 +64,8 @@
 - Google DeepMind `Gemini 2.5 thinking updates` https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/ 2026-04 확인
 - Google DeepMind `Project Astra` https://deepmind.google/technologies/gemini/project-astra/ 2026-04 확인
 - Google I/O 2025 recap https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-updates-io-2025/ 2026-04 확인
-- Gemini Wikipedia https://en.wikipedia.org/wiki/Gemini_(language_model) 2026-04 확인
-- Google DeepMind Wikipedia https://en.wikipedia.org/wiki/Google_DeepMind 2026-04 확인
+- Google DeepMind Gemini official model page https://deepmind.google/models/gemini/ 2026-04 확인
+- Google DeepMind models page https://deepmind.google/en/models/ 2026-04 확인
 - Isomorphic Labs `IsoDDE` https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier 2026-04 확인
 - Fortune `AlphaFold five years` https://fortune.com/2025/11/28/google-deepmind-alphafold-science-ai-killer-app/ 2026-04 확인
 - DataCamp `Gemini 2.5 Pro` https://www.datacamp.com/blog/gemini-2-5-pro 2026-04 확인

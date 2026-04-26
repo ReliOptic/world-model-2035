@@ -54,7 +54,7 @@
 ## 정보 출처
 - AISI `About The AI Security Institute` https://www.aisi.gov.uk/about 2026-04 확인
 - AISI `Blog` https://www.aisi.gov.uk/blog 2026-04 확인
-- Wikipedia `AI Safety Summit` https://en.wikipedia.org/wiki/AI_Safety_Summit 2026-04 확인
+- UK Government `AI Safety Summit 2023` https://www.gov.uk/government/topical-events/ai-safety-summit-2023 2026-04 확인
 - Bletchley Park `World's first AI Safety Summit` https://www.bletchleypark.org.uk/bletchley-park-makes-history-again-as-host-of-the-worlds-first-ai-safety-summit/ 2026-04 확인
 - techUK `Navigating the AI safety landscape AISI` https://www.techuk.org/resource/navigating-the-ai-safety-landscape-a-comprehensive-overview-of-the-ai-safety-institute-aisi.html 2026-04 확인
 - CSIS `UK AI Summit Debrief Part 2: International AI Safety Governance` https://www.csis.org/analysis/uk-ai-summit-debrief-part-2-state-international-ai-safety-governance 2026-04 확인

@@ -55,7 +55,7 @@
 ## 정보 출처
 - TechInsights SMIC 7nm https://www.techinsights.com/blog/chinas-smic-plays-7-nm-card 2026-04 확인
 - TechInsights SMIC next generation process https://www.techinsights.com/blog/smics-next-generation-process 2026-04 확인
-- Tom's Hardware SMIC domestic immersion DUV https://www.tomshardware.com/tech-industry/semiconductors/chinas-largest-foundry-testing-first-domestic-immersion-duv-lithography-tool-smic-takes-significant-step-on-road-to-wafer-fab-equipment-self-sufficiency 2026-04 확인
+- Bits&Chips `SMIC tests domestically developed immersion tool` https://bits-chips.com/article/smic-tests-domestically-developed-immersion-tool/ 2026-04 확인
 - TrendForce China lithography push https://www.trendforce.com/news/2025/11/10/news-decoding-chinas-lithography-push-to-challenge-asml-from-sicarrier-to-alternative-euv-paths/ 2026-04 확인
 - ITIF How Innovative Is China in Semiconductors https://www2.itif.org/2024-china-semiconductors.pdf 2026-04 확인
 - Semiecosystem Can China Make 5nm https://marklapedus.substack.com/p/can-china-make-5nm-chips 2026-04 확인

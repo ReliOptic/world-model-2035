@@ -56,7 +56,7 @@
 
 ## 정보 출처
 - Daily Maverick GNU coalition survival analysis 2026 https://www.dailymaverick.co.za/article/2026-01-gnu-survival-prospects-south-africa/ 2026-04 확인
-- South Africa GNU Wikipedia https://en.wikipedia.org/wiki/South_African_Government_of_National_Unity_(2024) 2026-04 확인
+- South African Government `Operationalisation of the Government of National Unity` https://www.gov.za/news/speeches/minister-khumbudzo-ntshavheni-operationalisation-government-national-unity-04-jul 2026-04 확인
 - IMF World Economic Outlook April 2026 South Africa https://www.imf.org/en/Publications/WEO/weo-database/2026/April 2026-04 확인
 - BusinessTech South Africa load shedding stages 2025 https://businesstech.co.za/news/energy/load-shedding-2025-eskom-update/ 2026-04 확인
 - G20 South Africa 2025 official site https://www.g20.org/en/g20-south-africa-2025 2026-04 확인

@@ -59,6 +59,6 @@
 - ASML `TWINSCAN EXE:5000` https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5000 2026-04 확인
 - ASML `Q2 2025 results` https://www.asml.com/en/news/press-releases/2025/q2-2025-financial-results 2026-04 확인
 - ASML `2025 Annual Report` https://www.asml.com/en/news/press-releases/2026/asml-publishes-2025-annual-report 2026-04 확인
-- Tom's Hardware `Intel EXE:5200B installation` https://www.tomshardware.com/tech-industry/semiconductors/intel-installs-industrys-first-commercial-high-na-euv-lithography-tool-asml-twinscan-exe-5200b-sets-the-stage-for-14a 2026-04 확인
+- ASML TWINSCAN EXE:5200B product page https://www.asml.com/products/euv-lithography-systems/twinscan-exe-5200b 2026-04 확인
 - Bits&Chips `Intel acceptance testing EXE:5200B` https://bits-chips.com/article/intel-begins-acceptance-testing-of-asmls-exe5200b-high-na-euv-scanner/ 2026-04 확인
-- FinancialContent `ASML High-NA commercial production` https://markets.financialcontent.com/stocks/article/tokenring-2026-1-22-the-380-million-gamble-asmls-high-na-euv-machines-enter-commercial-production-for-the-sub-2nm-era 2026-04 확인
+- ASML Q4 2025 investor call transcript https://ourbrand.asml.com/m/285dcba22c2bf203/original/2026_01_28-ASML-Transcript-investor-call-Q4-2025.pdf 2026-04 확인

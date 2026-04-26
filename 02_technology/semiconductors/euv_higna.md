@@ -57,7 +57,7 @@
 
 ## 정보 출처
 - ASML TWINSCAN EXE:5200B product page https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b 2026-04 확인
-- Intel installs EXE:5200B Tom's Hardware https://www.tomshardware.com/tech-industry/semiconductors/intel-installs-industrys-first-commercial-high-na-euv-lithography-tool-asml-twinscan-exe-5200b-sets-the-stage-for-14a 2026-04 확인
+- ASML TWINSCAN EXE:5200B product page https://www.asml.com/products/euv-lithography-systems/twinscan-exe-5200b 2026-04 확인
 - imec EXE:5200 Q4 2026 qualification TrendForce https://www.trendforce.com/news/2026/03/19/news-imec-secures-asmls-most-advanced-exe5200-high-na-euv-for-sub-2nm-4q26-qualification-target/ 2026-04 확인
 - ASML EXE:5000 product page https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5000 2026-04 확인
 - NVIDIA co-packaged optics and EXE context https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/ 2026-04 확인

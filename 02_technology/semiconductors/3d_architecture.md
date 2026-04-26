@@ -61,4 +61,4 @@
 - imec IEDM 2025 contributions https://www.imec-int.com/en/events/imec-70th-international-electron-devices-meeting-iedm 2026-04 확인
 - TSMC CFET IEDM 2025 https://marklapedus.substack.com/p/imec-tsmc-samsung-ibm-make-progress 2026-04 확인
 - imec monolithic CFET scaling https://www.imec-int.com/en/articles/performance-boosters-scale-monolithic-cfet-across-multiple-logic-technology-nodes 2026-04 확인
-- TSMC CoWoS roadmap Tom's Hardware https://www.tomshardware.com/tech-industry/semiconductors/tsmc-unveils-process-technology-roadmap-through-2029-a12-a13-n2u-announced-a16-slips-to-2027 2026-04 확인
+- TSMC 3DFabric official technology page https://www.tsmc.com/english/dedicatedFoundry/technology/3DFabric 2026-04 확인

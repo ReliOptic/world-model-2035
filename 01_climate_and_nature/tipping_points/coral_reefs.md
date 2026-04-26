@@ -75,5 +75,5 @@
 - [ICRI — 84% of world's coral reefs impacted in most intense global bleaching event ever (2025)] [https://icriforum.org/4gbe-2025/] [2026-04-23]
 - [Coral Reefs — The Fourth Global Coral Bleaching Event: Where do we go from here? (2024)] [https://link.springer.com/article/10.1007/s00338-024-02504-w] [2026-04-23]
 - [NOAA Coral Reef Watch — Current Global Bleaching Status] [https://coralreefwatch.noaa.gov/satellite/research/coral_bleaching_report.php] [2026-04-23]
-- [Wikipedia — 2023–2025 global coral bleaching event] [https://en.wikipedia.org/wiki/2023%E2%80%932025_global_coral_bleaching_event] [2026-04-23]
+- [NOAA Coral Reef Watch — Current global bleaching status update](https://coralreefwatch.noaa.gov/satellite/research/coral_bleaching_report.php) [2026-04-26 확인]
 - Inference note: 2026-2035 annual milestones are repository inferences anchored to IPCC AR6 ocean chapter, NOAA Coral Reef Watch data, and ICRI official statements.

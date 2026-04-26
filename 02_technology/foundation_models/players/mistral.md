@@ -59,7 +59,7 @@
 - Mistral AI models 2026 guide TheAITokens https://www.theaitokens.com/learn/mistral-ai-models-2026-guide 2026-04 확인
 - Mistral pioneers sovereign AI Europe AIBusiness https://aibusiness.com/foundation-models/mistral-pioneers-sovereign-ai-in-europe 2026-04 확인
 - Mistral AI review 2026 Davos $1B revenue https://cocondesneiges.fr/en/ai/mistral-ai-review/ 2026-04 확인
-- Mistral AI Wikipedia https://en.wikipedia.org/wiki/Mistral_AI 2026-04 확인
+- Mistral AI official Le Chat product page https://mistral.ai/products/le-chat 2026-04 확인
 - ESG.ai Mistral sovereign AI Europe https://esg.ai/mistral-ai-how-europes-sovereign-ai-pioneer-outmaneuvers-american-giants/ 2026-04 확인
 - Codestral legal page Mistral https://legal.mistral.ai/ai-governance/models/codestral 2026-04 확인
 - DataNorth complete guide Mistral AI https://datanorth.ai/blog/the-complete-guide-to-mistral-ai 2026-04 확인

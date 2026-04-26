@@ -57,7 +57,7 @@
 - METI `GX Policy / GX2040 Vision` https://www.enecho.meti.go.jp/en/category/special/article/detail_214.html 2026-04 확인
 - METI `Japan Climate Transition Bond Framework (Revised 2025.06)` https://www.meti.go.jp/policy/energy_environment/global_warming/climate_transition_bond_framework_en.pdf 2026-04 확인
 - ICAP `Japan's Cabinet approves policy roadmap including plans for national ETS` https://icapcarbonaction.com/en/news/japans-cabinet-approves-policy-roadmap-including-plans-national-ets 2026-04 확인
-- JASM / Wikipedia `Japan Advanced Semiconductor Manufacturing` https://en.wikipedia.org/wiki/Japan_Advanced_Semiconductor_Manufacturing 2026-04 확인
+- TSMC Japan 3DIC R&D Center and JASM official page https://pr.tsmc.com/english/news/2848 2026-04 확인
 - Trendforce `TSMC Kumamoto Fab 2 upgrade to 3nm (2026.02)` https://www.trendforce.com/news/2026/02/05/news-tsmc-reportedly-to-upgrade-kumamoto-2nd-plant-from-67nm-to-3nm-boosting-japans-chip-capabilities/ 2026-04 확인
 - Digitimes `TSMC 3nm Kumamoto` https://www.digitimes.com/news/a20260205PD230/tsmc-3nm-production-chips-kumamoto.html 2026-04 확인
 - Toyota Global Newsroom `Multi-pathway approach and customer-focused innovation` https://newsroom.toyota.eu/toyota-reinforces-its-multi-pathway-approach-and-its-commitment-to-customer-focused-innovation/ 2026-04 확인

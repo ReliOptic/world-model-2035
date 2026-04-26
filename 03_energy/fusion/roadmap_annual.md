@@ -67,7 +67,7 @@
 - ANS `Tokamak Energy spherical design` https://www.ans.org/news/article-4447/tokamak-energy-bets-its-spherical-design-will-deliver-fusion-energy-in-the-early-2030s/ 2026-04 확인
 - ITER `New baseline` https://www.iter.org/node/20687/new-baseline-prioritize-robust-start-exploitation 2026-04 확인
 - IPP `Implications of new ITER schedule` https://www.ipp.mpg.de/5434926/ITER_baseline_2024 2026-04 확인
-- Interesting Engineering `China BEST 5x gain 2027` https://interestingengineering.com/innovation/chinas-best-nuclear-fusion-reactor-2027 2026-04 확인
+- Chinese Academy of Sciences Institute of Plasma Physics — BEST/EAST fusion research news https://english.ipp.cas.cn/ 2026-04 확인
 - IEEE Spectrum `China Takes Bold Leap in Fusion` https://spectrum.ieee.org/china-nuclear-fusion-reactor 2026-04 확인
 - FIA `Over $2.5B Invested` https://www.fusionindustryassociation.org/over-2-5-billion-invested-in-fusion-industry-in-past-year/ 2026-04 확인
 - ANS `Funding growth for private fusion` https://www.ans.org/news/2025-12-05/article-7599/report-funding-growth-for-private-fusion-companies/ 2026-04 확인

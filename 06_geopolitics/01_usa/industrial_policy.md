@@ -55,10 +55,10 @@
 
 ## 정보 출처
 - Manufacturing Dive CHIPS awards tracker https://www.manufacturingdive.com/news/chips-and-science-act-tracker-semiconductor-manufacturing/734039/ 2026-04 확인
-- Wikipedia CHIPS and Science Act https://en.wikipedia.org/wiki/CHIPS_and_Science_Act 2026-04 확인
+- NIST `CHIPS for America` https://www.nist.gov/chips 2026-04 확인
 - Congress.gov IRA repeal in FY2025 reconciliation https://www.congress.gov/crs-product/IN12624 2026-04 확인
 - Akin Gump IRA cuts OBBBA https://www.akingump.com/en/insights/alerts/significant-cuts-to-ira-clean-energy-tax-credits-included-in-enacted-reconciliation-bill 2026-04 확인
-- Wikipedia Tariffs second Trump administration https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration 2026-04 확인
+- White House fact sheet on U.S.-China trade agreement https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-strikes-deal-on-economic-and-trade-relations-with-china/ 2026-04 확인
 - Congress.gov CRS Presidential 2025 Tariff Actions https://www.congress.gov/crs-product/R48549 2026-04 확인
 - Trade Compliance Resource Hub Trump 2.0 tariff tracker https://www.tradecomplianceresourcehub.com/2026/04/19/trump-2-0-tariff-tracker/ 2026-04 확인
 - Tax Foundation Trump tariff tracker https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/ 2026-04 확인

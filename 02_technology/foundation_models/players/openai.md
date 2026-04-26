@@ -63,7 +63,7 @@
 - OpenAI `Introducing GPT-5` https://openai.com/index/introducing-gpt-5/ 2026-04 확인
 - OpenAI `Introducing o3 and o4-mini` https://openai.com/index/introducing-o3-and-o4-mini/ 2026-04 확인
 - OpenAI `Introducing GPT-5.2` https://openai.com/index/introducing-gpt-5-2/ 2026-04 확인
-- OpenAI Wikipedia `GPT-5` https://en.wikipedia.org/wiki/GPT-5 2026-04 확인
-- OpenAI Wikipedia `OpenAI o3` https://en.wikipedia.org/wiki/OpenAI_o3 2026-04 확인
+- OpenAI GPT-5 official page https://openai.com/gpt-5 2026-04 확인
+- OpenAI `Introducing o3 and o4-mini` https://openai.com/index/introducing-o3-and-o4-mini/ 2026-04 확인
 - GPT-5 Technical Overview https://cirra.ai/articles/gpt-5-technical-overview 2026-04 확인
 - Sapphire Ventures `2026 Outlook` https://sapphireventures.com/blog/2026-outlook-10-ai-predictions-shaping-enterprise-infrastructure-the-next-wave-of-innovation/ 2026-04 확인

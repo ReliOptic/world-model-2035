@@ -58,6 +58,6 @@
 - NucNet `France confirms six new nuclear plants roadmap 2026.05` https://www.nucnet.org/news/france-publishes-energy-roadmap-that-confirms-plans-for-six-new-nuclear-power-plants-2-5-2026 2026-04 확인
 - Nvidia Blog `France Bolsters National AI Strategy With NVIDIA Infrastructure` https://blogs.nvidia.com/blog/france-sovereign-ai-infrastructure/ 2026-04 확인
 - France 2030 `Mistral AI company profile` https://france2030.ai/companies/mistral-ai/ 2026-04 확인
-- Wikipedia `Mistral AI` https://en.wikipedia.org/wiki/Mistral_AI 2026-04 확인
+- France/Germany finance ministry press release on Mistral AI and SAP sovereign AI partnership https://presse.economie.gouv.fr/?p=165494 2026-04 확인
 - Ministère Économie `France-Allemagne Mistral SAP IA souveraine` https://presse.economie.gouv.fr/?p=165524 2026-04 확인
 - Introl `France's AI Sovereignty Push` https://introl.com/blog/france-ai-sovereignty-mistral-sovereign-cloud-2025 2026-04 확인

@@ -60,5 +60,5 @@
 - AI Crucible Chinese models comparison 2026 https://ai-crucible.com/articles/chinese-models-comparison/ 2026-04 확인
 - Groundy Chinese AI model ecosystem comparison https://groundy.com/articles/the-chinese-ai-model-ecosystem-deepseek-qwen-kimi-doubao-and-ernie-compared/ 2026-04 확인
 - abhs.in China AI 2026 reality check vs GPT Claude https://www.abhs.in/blog/china-ai-models-2026-deepseek-qwen-kimi-vs-gpt-claude-reality-check 2026-04 확인
-- DeepSeek Wikipedia https://en.wikipedia.org/wiki/DeepSeek 2026-04 확인
+- DeepSeek-R1 official release notes https://api-docs.deepseek.com/news/news250120 2026-04 확인
 - IT Pro DeepSeek R1 one year anniversary https://www.itpro.com/technology/artificial-intelligence/deepseek-r1-one-year-anniversary-what-next 2026-04 확인

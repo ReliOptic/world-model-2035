@@ -61,5 +61,5 @@
 - Micron `HBM4 high-volume production` https://investors.micron.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin 2026-04 확인
 - JEDEC `JESD270-4 HBM4 standard` https://www.jedec.org/standards-documents/docs/jesd270-4a 2026-04 확인
 - JEDEC `HBM4 press release` https://www.jedec.org/news/pressreleases/jedec%C2%AE-and-industry-leaders-collaborate-release-jesd270-4-hbm4-standard-advancing 2026-04 확인
-- Tom's Hardware `SK hynix HBM4 2048-bit` https://www.tomshardware.com/pc-components/dram/sk-hynix-completes-development-of-hbm4-2-048-bit-interface-and-10-gt-s-speeds-promised 2026-04 확인
+- SK hynix HBM4 development and mass production readiness https://news.skhynix.com/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/ 2026-04 확인
 - TrendForce `NVIDIA HBM4 16-layer race` https://www.trendforce.com/news/2026/01/09/news-nvidia-demand-fuels-hbm4-race-12-layer-ramps-16-layer-push-by-sk-hynix-samsung-and-micron/ 2026-04 확인

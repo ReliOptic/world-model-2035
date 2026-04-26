@@ -56,7 +56,7 @@
 - [EUROfusion: BEST research plan release] [https://euro-fusion.org/eurofusion-news/eurofusion-asipp-best-research-plan/] [2026-04-23]
 - [ChinaTalk: All in on fusion] [https://www.chinatalk.media/p/all-in-on-fusion] [2026-04-23]
 - [NEI Magazine: China's fusion roadmap] [https://www.neimagazine.com/analysis/china-fusion-roadmap-7436879/] [2026-04-23]
-- [Wikipedia: China Fusion Engineering Test Reactor] [https://en.wikipedia.org/wiki/China_Fusion_Engineering_Test_Reactor] [2026-04-23]
+- [Institute of Plasma Physics, CAS — CFETR support facilities groundbreaking](https://english.ipp.cas.cn/syxw/201812/t20181214_275108.html) [2026-04-26 확인]
 - [IGCC: Fusion and China's quest for energy independence] [https://ucigcc.org/blog/fusion-and-chinas-quest-for-energy-independence/] [2026-04-23]
 - [PMC: Recent progress in Chinese fusion research] [https://pmc.ncbi.nlm.nih.gov/articles/PMC9256834/] [2026-04-23]
 - [FPA 2024: ASIPP overview (Song)] [https://www.firefusionpower.org/FPA24_5-1_Song_Session%205.pdf] [2026-04-23]

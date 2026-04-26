@@ -64,4 +64,4 @@
 - Google `Gemini universal AI assistant (I/O 2025)` https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-universal-ai-assistant/ 2026-04 확인
 - TechCrunch `Google rolls out Project Mariner` https://techcrunch.com/2025/05/20/google-rolls-out-project-mariner-its-web-browsing-ai-agent/ 2026-04 확인
 - Apple `New Apple Intelligence features are available today` https://www.apple.com/newsroom/2025/09/new-apple-intelligence-features-are-available-today/ 2026-04 확인
-- Wikipedia `iOS 26` https://en.wikipedia.org/wiki/IOS_26 2026-04 확인
+- Apple iOS official page https://www.apple.com/ios/ 2026-04 확인

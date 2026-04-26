@@ -112,7 +112,7 @@
 
 ## 정보 출처
 
-- [China-United States trade war — Wikipedia] [https://en.wikipedia.org/wiki/China%E2%80%93United_States_trade_war] [2026-04-26 확인]
+- [USTR — Section 301 China tariff actions](https://ustr.gov/issue-areas/enforcement/section-301-investigations/section-301-china) [2026-04-26 확인]
 - [Trump threatens 50% tariffs on China — CNBC] [https://www.cnbc.com/2026/04/13/trump-threatens-50percent-tariffs-on-china-as-report-suggests-plans-for-arms-shipment-to-iran.html] [2026-04-26 확인]
 - [Surveying the Experts: The State of U.S.-China Relations Entering 2026 — CSIS ChinaPower] [https://chinapower.csis.org/survey-experts-us-china-relations-2026/] [2026-04-26 확인]
 - [Trump's China Strategy Drifts as Tariff Push Falters — Modern Diplomacy] [https://moderndiplomacy.eu/2026/04/21/trumps-china-strategy-drifts-as-tariff-push-falters-and-policy-signals-clash/] [2026-04-26 확인]
@@ -127,7 +127,7 @@
 - [China & Taiwan Update, April 24, 2026 — AEI] [https://www.aei.org/articles/china-taiwan-update-april-24-2026/] [2026-04-26 확인]
 - [China's Taiwan Drills Are Crossing a New Line — The Diplomat] [https://thediplomat.com/2026/01/chinas-taiwan-drills-are-crossing-a-new-line/] [2026-04-26 확인]
 - [China's Liaoning Carrier Heads South — The Diplomat] [https://thediplomat.com/2026/04/chinas-liaoning-carrier-heads-south-more-than-a-routine-drill/] [2026-04-26 확인]
-- [2026 Iran war — Wikipedia] [https://en.wikipedia.org/wiki/2026_Iran_war] [2026-04-26 확인]
+- [IAEA — Monitoring and verification in Iran](https://www.iaea.org/topics/monitoring-and-verification-in-iran) [2026-04-26 확인]
 - [The Fault Lines Of A New Middle East — Eurasia Review] [https://www.eurasiareview.com/23032026-the-fault-lines-of-a-new-middle-east-the-2025-2026-us-israel-iran-war-and-the-reordering-of-regional-geopolitics-analysis/] [2026-04-26 확인]
 - [Eight ways AI will shape geopolitics in 2026 — Atlantic Council] [https://www.atlanticcouncil.org/dispatches/eight-ways-ai-will-shape-geopolitics-in-2026/] [2026-04-26 확인]
 - [Stanford AI report: US-China AI gap narrows — Digitimes] [https://www.digitimes.com/news/a20260415PD226/2026-competition-performance-development-data.html] [2026-04-26 확인]

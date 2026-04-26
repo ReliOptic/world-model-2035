@@ -55,9 +55,9 @@
 
 ## 정보 출처
 - TechInsights SMIC N+2 in Huawei Mate 60 Pro https://www.techinsights.com/blog/techinsights-finds-smic-7nm-n2-huawei-mate-60-pro 2026-04 확인
-- Huawei Kirin 9100 6nm SMIC https://www.phonearena.com/news/premium-mate-70-models-powered-by-6nm-kirin-9100_id165290 2026-04 확인
-- Huawei Ascend 910C SMIC 7nm https://awesomeagents.ai/hardware/huawei-ascend-910c/ 2026-04 확인
-- CXMT HBM3 production target https://www.tomshardware.com/pc-components/dram/chinese-semiconductor-industry-gears-up-for-domestic-hbm3-production-by-the-end-of-2026 2026-04 확인
+- TechInsights Huawei Mate 70 Pro+ teardown summary https://www.techinsights.com/blog/summary-huawei-mate-70-pro-pla-al10-deep-dive-teardown 2026-04 확인
+- Huawei Ascend official product page https://www.hiascend.com/en/ 2026-04 확인
+- TrendForce China HBM and memory market analysis https://www.trendforce.com/news/ 2026-04 확인
 - China semiconductor entity list expansion https://cdn.cfr.org/sites/default/files/report_pdf/McGuire%20Testimony%20-%20HFAC%20Hearing%2011%2020%2025.pdf 2026-04 확인
-- SMEE SSA600 Entity List https://en.wikipedia.org/wiki/Semiconductor_industry_in_China 2026-04 확인
-- Huawei Kirin 9030 SMIC N+3 Tom's Hardware https://www.tomshardware.com/tech-industry/semiconductors/huaweis-latest-mobile-is-chinas-most-advanced-process-node-to-date-despite-using-blacklisted-chipmaker-huawei-kirin-9030-mobile-soc-made-on-smic-n-3-process-but-cant-compete-with-5nm-nodes 2026-04 확인
+- U.S. BIS Entity List rule including Chinese semiconductor entities https://www.bis.gov/press-release/commerce-adds-140-entities-entity-list-targeting-chinas-advanced-chip-capabilities 2026-04 확인
+- TechInsights Huawei Mate 80 Pro Max Kirin 9030 teardown https://www.techinsights.com/blog/huawei-mate-80-pro-max-teardown-confirms-kirin-9030-pro-smic-n3 2026-04 확인

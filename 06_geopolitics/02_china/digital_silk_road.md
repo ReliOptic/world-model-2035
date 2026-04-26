@@ -54,7 +54,7 @@
 
 ## 정보 출처
 - CFR China's Digital Silk Road https://www.cfr.org/china-digital-silk-road/ 2026-04 확인
-- Wikipedia Digital Silk Road https://en.wikipedia.org/wiki/Digital_Silk_Road 2026-04 확인
+- CSIS `The Digital Silk Road: China’s Quest to Wire the World and Win the Future` https://www.csis.org/analysis/digital-silk-road-chinas-quest-wire-world-and-win-future 2026-04 확인
 - MERICS Networking the Belt and Road https://merics.org/en/tracker/networking-belt-and-road-future-digital 2026-04 확인
 - Global Times PBoC CIPS enhancement https://www.globaltimes.cn/page/202510/1346013.shtml 2026-04 확인
 - China gov RMB cross-border payment rules revision https://english.www.gov.cn/news/202512/27/content_WS694f8842c6d00ca5f9a084c9.html 2026-04 확인

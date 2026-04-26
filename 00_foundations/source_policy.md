@@ -36,8 +36,8 @@ Every substantive file should end with:
 - copying consensus narratives without checking the underlying primary document
 
 ## 연결 문서
-- [METHODOLOGY.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/METHODOLOGY.md)
-- [update_freshness.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/update_freshness.md)
+- [METHODOLOGY.md](../METHODOLOGY.md)
+- [update_freshness.md](update_freshness.md)
 
 ## 정보 출처
 - This is a repository policy file derived from the project brief in `The world in 2035.md` on 2026-04-20.

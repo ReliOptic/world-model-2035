@@ -25,13 +25,13 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | 성장 3-4%, 국방비 GDP 8% 유지, 수출 회복 | 사우디 정상화 재개, 관광·기술 반등 | 이란·헤즈볼라 재충돌 | 80% |
-| 2027 | 선거 후 정책 리셋 | 중도 연정·사법 개혁 완화 | Netanyahu 연정 지속·내정 갈등 | 55% |
+| 2027 | 선거 후 정책 리셋 | 중도 연정·사법 개혁 완화 | Netanyahu 연정 지속·내정 갈등 | 77% |
 | 2028 | 국방 테크 수출 `$20bn+`, AI 감시·사이버 글로벌 확장 | 미·UAE·인도향 수출 확대 | EU·법적 책임·수출통제 강화 | 55% |
-| 2029 | 국방 R&D 성과의 민수 확산 (AI·반도체·사이버) | 민간 테크 IPO·Exit 부활 | 재정·안보 비용 누적 | 55% |
-| 2030 | 국방 GDP 비중 7-8% 지속 | 다자 방위 협력 심화 (UAE·인도·그리스) | 고립 심화 | 55% |
-| 2031 | 역내 통합 인프라 (에너지·IT·물류) | 동지중해 허브 확립 | 레반트 불안정 재발 | 50% |
+| 2029 | 국방 R&D 성과의 민수 확산 (AI·반도체·사이버) | 민간 테크 IPO·Exit 부활 | 재정·안보 비용 누적 | 50% |
+| 2030 | 국방 GDP 비중 7-8% 지속 | 다자 방위 협력 심화 (UAE·인도·그리스) | 고립 심화 | 50% |
+| 2031 | 역내 통합 인프라 (에너지·IT·물류) | 동지중해 허브 확립 | 레반트 불안정 재발 | 38% |
 | 2032 | AI·반도체·양자 산업정책 본격화 | 국방 R&D가 민수로 파급 | 인력·연구비 병목 | 50% |
-| 2033 | 팔레스타인·시리아·레바논 관계 구조화 | 부분적 평화 체계 | 재충돌·인도주의 위기 | 55% |
+| 2033 | 팔레스타인·시리아·레바논 관계 구조화 | 부분적 평화 체계 | 재충돌·인도주의 위기 | 35% |
 | 2034 | 이스라엘은 중동·동지중해 tech·defense 허브 | 사우디·UAE 정상화 네트워크 완성 | 대이란 장기 대치 지속 | 50% |
 | 2035 | Base: 국방·AI·사이버 복합 강국, 역내 정치 유동성 지속 | 정상화·경제 다변화 | 안보 비용이 성장 상쇄 | 55% |
 
@@ -52,11 +52,11 @@
 - Downside: 이란과의 구조적 충돌·국제 고립·재정 압박이 겹치면 성장·혁신 모두 둔화.
 
 ## 연결 문서
-- [../01_usa/annual.md]
-- [../11_saudi_arabia/annual.md]
-- [../12_uae/annual.md]
-- [../../09_corporate_roadmaps/ai_labs/openai.md]
-- [../../13_scenarios/base_case.md]
+- [../01_usa/annual.md](../01_usa/annual.md)
+- [../11_saudi_arabia/annual.md](../11_saudi_arabia/annual.md)
+- [../12_uae/annual.md](../12_uae/annual.md)
+- [../../09_corporate_roadmaps/ai_labs/openai.md](../../09_corporate_roadmaps/ai_labs/openai.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Bank of Israel: 2026 growth forecast https://www.timesofisrael.com/bank-of-israel-slashes-growth-prospects-as-iran-war-takes-toll-on-economy/ 2026-04 확인

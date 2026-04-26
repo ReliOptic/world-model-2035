@@ -25,13 +25,13 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | NATO 훈련 본격화, Stegra Boden 가동, AI DC 확장 | 방산 수출 사상 최고, DC FDI 증가 | HYBRIT·그린제철 추가 지연 | 80% |
-| 2027 | 핀란드·스웨덴 국방비 GDP 2.5% 근접 | 역내 방산 공급망 고도화 | 러시아발 회색지대 공격 | 55% |
+| 2027 | 핀란드·스웨덴 국방비 GDP 2.5% 근접 | 역내 방산 공급망 고도화 | 러시아발 회색지대 공격 | 78% |
 | 2028 | 노르웨이 원유·가스 피크 후 감소 시작 | 수소·해상풍력이 대체 | 에너지 전환 속도 부족 | 55% |
 | 2029 | AI·반도체·방산 클러스터 통합 | 덴마크 Novo Nordisk·핀란드 Nokia 등 고부가 재편 | 규제·세제 혼선 | 50% |
-| 2030 | 2030 기후·방위 목표 평가 | 노르딕은 저탄소·방위 모범 블록 | 전력 병목·인플레 재상승 | 55% |
-| 2031 | 북극 항로·자원 경쟁 본격화 | 지역 안보 인프라 투자 증가 | 러시아 북극 활동 재확대 | 55% |
-| 2032 | 노르딕 AI·방산 수출 `$200bn+` 잠재 | NATO 표준 장비 공급자 | EU·미국 자체 생산 회귀 | 50% |
-| 2033 | 고령화·노동·복지 재설계 본격 | 자동화·이민이 공백 보완 | 복지 구조 압박 확대 | 50% |
+| 2030 | 2030 기후·방위 목표 평가 | 노르딕은 저탄소·방위 모범 블록 | 전력 병목·인플레 재상승 | 50% |
+| 2031 | 북극 항로·자원 경쟁 본격화 | 지역 안보 인프라 투자 증가 | 러시아 북극 활동 재확대 | 50% |
+| 2032 | 노르딕 AI·방산 수출 `$200bn+` 잠재 | NATO 표준 장비 공급자 | EU·미국 자체 생산 회귀 | 38% |
+| 2033 | 고령화·노동·복지 재설계 본격 | 자동화·이민이 공백 보완 | 복지 구조 압박 확대 | 35% |
 | 2034 | 노르딕은 유럽의 `녹색·방위·AI` 축 | 북유럽 통합 자본·인력 시장 | 지역 분절·정치 분열 | 55% |
 | 2035 | Base: 고소득·녹색·방위·AI 블록의 교과서 | NATO 북유럽 축의 실질 리더 | 비용 상승·경쟁력 둔화 | 60% |
 
@@ -52,11 +52,11 @@
 - Downside: HYBRIT 지연 유형의 집행 실패·러시아 회색지대 공격·복지 압박이 겹치면 잠재력 저조.
 
 ## 연결 문서
-- [../04_eu/annual.md]
-- [../08_germany/annual.md]
-- [../09_uk/annual.md]
-- [../07_russia/annual.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../08_germany/annual.md](../08_germany/annual.md)
+- [../09_uk/annual.md](../09_uk/annual.md)
+- [../07_russia/annual.md](../07_russia/annual.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
 
 ## 정보 출처
 - Nordea: Nordic power sector in transition https://www.nordea.com/en/news/the-nordic-power-sector-in-transition-risks-investments-and-the-road-to-2050 2026-04 확인

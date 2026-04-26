@@ -47,11 +47,11 @@
 - Downside: 지정학 위기와 AI 공격 고도화가 동시 진행되어 대규모 민간 피해를 유발하는 사건이 반복 발생.
 
 ## 연결 문서
-- [./ai_offense_defense.md]
-- [../autonomous_weapons/counter_autonomous.md]
-- [../nuclear/modernization.md]
-- [../../03_energy/grid/ai_optimization.md]
-- [../../13_scenarios/base_case.md]
+- [./ai_offense_defense.md](./ai_offense_defense.md)
+- [../autonomous_weapons/counter_autonomous.md](../autonomous_weapons/counter_autonomous.md)
+- [../nuclear/modernization.md](../nuclear/modernization.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - CISA Volt Typhoon AA24-038A https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a 2026-04 확인

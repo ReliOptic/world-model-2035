@@ -51,14 +51,14 @@
 - Downside: 데이터·블록·제도 공백이 누적돼 2035년에 `우리가 놓친 범주`가 시스템 위험의 주요 변수로 드러난다. 이 경우 본 저장소 확률표 전체를 사후적으로 재보정해야 한다.
 
 ## 연결 문서
-- [black_swans.md]
-- [positive_surprises.md]
-- [interaction_effects.md]
-- [../13_scenarios/base_case.md]
-- [../13_scenarios/delayed.md]
-- [../13_scenarios/bifurcated.md]
-- [../13_scenarios/climate_emergency.md]
-- [../10_international_organizations/nato_ai_strategy.md]
+- [black_swans.md](black_swans.md)
+- [positive_surprises.md](positive_surprises.md)
+- [interaction_effects.md](interaction_effects.md)
+- [../13_scenarios/base_case.md](../13_scenarios/base_case.md)
+- [../13_scenarios/delayed.md](../13_scenarios/delayed.md)
+- [../13_scenarios/bifurcated.md](../13_scenarios/bifurcated.md)
+- [../13_scenarios/climate_emergency.md](../13_scenarios/climate_emergency.md)
+- [../10_international_organizations/nato_ai_strategy.md](../10_international_organizations/nato_ai_strategy.md)
 
 ## 정보 출처
 - Nassim N. Taleb `The Black Swan` (2007) Wikipedia summary https://en.wikipedia.org/wiki/The_Black_Swan:_The_Impact_of_the_Highly_Improbable 2026-04 확인

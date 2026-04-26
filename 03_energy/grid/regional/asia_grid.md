@@ -19,8 +19,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | 중국 UHV 추가 노선 완공, 인도 ISTS 신규 투자 확대, ASEAN GMS 소규모 연계 확대 | 인도 2026년 ISTS 투자 사상 최대, ASEAN 새 연계 계약 | 중국-ASEAN 정치 갈등으로 지역 연계 협력 지연 | 70% 중국 UHV |
-| 2027 | 인도 ISTS 200GW+ 재생에너지 송전 지원, 한국 KEPCO 신재생 HVDC 노선 착공 | 인도 재생에너지 300GW 달성, ISTS가 병목 해소 | 토지 수용·허가 지연으로 인도 ISTS 확장 둔화 | 60% |
+| 2026 | 중국 UHV 추가 노선 완공, 인도 ISTS 신규 투자 확대, ASEAN GMS 소규모 연계 확대 | 인도 2026년 ISTS 투자 사상 최대, ASEAN 새 연계 계약 | 중국-ASEAN 정치 갈등으로 지역 연계 협력 지연 | 85% 중국 UHV |
+| 2027 | 인도 ISTS 200GW+ 재생에너지 송전 지원, 한국 KEPCO 신재생 HVDC 노선 착공 | 인도 재생에너지 300GW 달성, ISTS가 병목 해소 | 토지 수용·허가 지연으로 인도 ISTS 확장 둔화 | 80% |
 | 2028 | ASEAN Power Grid 2~3개 국경간 신규 송전 계통 완공 | 동남아 전력 가격 수렴으로 에너지 협력 심화 | 지정학 갈등 또는 자국 전력 보호주의로 국경 연계 중단 | 50% |
 | 2029 | 중국 UHV 총연장 세계 최장 유지, 인도 ISTS 재생에너지 500GW 목표 달성 근접 | 인도가 2030년 목표 조기 달성 | 인도 전력망 병목이 재생에너지 성장 속도를 따라가지 못함 | 55% |
 | 2030 | 아시아 전력망은 국내 UHV·HVDC 발전이 주류, 국경간 연계는 부분적 | 한·일 HVDC 연계 시험 가동 | 한·일·중 지정학 긴장으로 국경간 전력 거래 정체 | 40% 한일 연계 |
@@ -59,7 +59,7 @@
 
 ## 연결 문서
 - [../ai_optimization.md](../ai_optimization.md)
-- [../../03_energy/renewables/storage.md](../../03_energy/renewables/storage.md)
+- [../../renewables/storage.md](../../renewables/storage.md)
 
 ## 정보 출처
 - IEEE Spectrum Asia Super Grid https://spectrum.ieee.org/trio-of-nations-aim-to-hook-asia-super-grid-to-grids-of-the-world 2026-04 확인

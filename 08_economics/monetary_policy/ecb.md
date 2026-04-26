@@ -46,10 +46,10 @@
 - Downside: 재정 분절화 + 에너지 충격 + 디지털 유로 지연이 겹치면 ECB는 사실상 재정지원 압박에 다시 노출되고 신뢰도가 훼손된다
 
 ## 연결 문서
-- [fed_annual.md]
-- [../fiscal_policy/industrial_policy_wave.md]
-- [../../06_geopolitics/04_eu/annual.md]
-- [../../10_international_organizations/wto_digital_trade.md]
+- [fed_annual.md](fed_annual.md)
+- [../fiscal_policy/industrial_policy_wave.md](../fiscal_policy/industrial_policy_wave.md)
+- [../../06_geopolitics/04_eu/annual.md](../../06_geopolitics/04_eu/annual.md)
+- [../../10_international_organizations/wto_digital_trade.md](../../10_international_organizations/wto_digital_trade.md)
 
 ## 정보 출처
 - ECB monetary policy decision 5 February 2026 https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260205~001d26959b.en.html 2026-04 확인

@@ -9,7 +9,7 @@
 ## Core question
 - 어떤 우주 인프라가 2035년까지 사실상 이중용도 전략자산이 되며, 국가들이 그 서비스에 의존하기 시작하면 어떤 억지·규제·충돌 경로가 생기는가?
 
-## 2026 baseline
+## 2026년 4월 현재 상태
 - EU는 이미 space를 전략 도메인으로 정의했다. `EU Space Strategy for Security and Defence`는 `space domain awareness`, 보안·방위용 지구관측 서비스, 정부통신, 장기적 `autonomous access to space`를 명시했다.
 - Consilium은 space가 `€1.5 trillion+`의 EU GDP를 뒷받침하며, `30`개의 EU-owned satellites가 내비게이션과 지구관측 등 핵심 서비스를 제공한다고 적시했다. 이는 우주 인프라가 이미 민간경제와 안보기능을 동시에 떠받치고 있음을 뜻한다.
 - ESA는 `2025` 각료이사회에서 `€22.3 billion` 예산을 승인받았고, `2026년 2월` Ariane 6의 4-booster 비행 성공을 유럽의 `autonomous heavy-lift capability` 재확인으로 규정했다. 독자발사 능력은 상업 발사체를 넘어 전략자율성 자산으로 다뤄지고 있다.
@@ -34,13 +34,13 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | EU와 NATO권에서 space의 dual-use 성격이 전략자율성과 방위문서에 더 선명히 반영된다 | 규범과 조달이 동시에 정렬된다 | 문서만 앞서가고 보호·책임체계는 느리다 | 75% |
-| 2027 | broadband, EO, PNT 서비스의 군사적 의존성이 더 명시화된다 | 민군 협력 계약이 예측 가능해진다 | 상업사업자 리스크 프리미엄이 급등한다 | 65% |
+| 2026 | EU와 NATO권에서 space의 dual-use 성격이 전략자율성과 방위문서에 더 선명히 반영된다 | 규범과 조달이 동시에 정렬된다 | 문서만 앞서가고 보호·책임체계는 느리다 | 80% |
+| 2027 | broadband, EO, PNT 서비스의 군사적 의존성이 더 명시화된다 | 민군 협력 계약이 예측 가능해진다 | 상업사업자 리스크 프리미엄이 급등한다 | 78% |
 | 2028 | 재보충 발사와 resilient constellations가 국가안보 요구사항으로 굳어진다 | 다중발사체·다중사업자 체제가 강화된다 | 특정 기업·국가 의존이 심화된다 | 65% |
-| 2029 | 우주자산 보호와 지상국 보호가 방위계획의 일부가 된다 | 공공보험·규제체계가 정비된다 | 회색지대 공격과 법적 모호성이 커진다 | 60% |
+| 2029 | 우주자산 보호와 지상국 보호가 방위계획의 일부가 된다 | 공공보험·규제체계가 정비된다 | 회색지대 공격과 법적 모호성이 커진다 | 35% |
 | 2030 | EU식 space security governance와 상업우주 생태계가 더 강하게 결합된다 | 유럽의 자율접근과 SST/SSA가 성숙한다 | 전략자율성 구호 대비 실제 능력은 부족하다 | 60% |
 | 2031 | 민군 겸용 서비스는 통신·내비게이션·ISR의 기본 인프라로 고착된다 | 서비스 안정성과 책임분담이 제도화된다 | 분쟁 시 민간 인프라 표적화 논쟁이 격화된다 | 65% |
-| 2032 | 위성망 재보충과 분산 설계가 전시 대비 표준이 된다 | 복수권역 간 상호운용 규칙이 생긴다 | 공급망 블록화로 상호운용성이 후퇴한다 | 55% |
+| 2032 | 위성망 재보충과 분산 설계가 전시 대비 표준이 된다 | 복수권역 간 상호운용 규칙이 생긴다 | 공급망 블록화로 상호운용성이 후퇴한다 | 30% |
 | 2033 | dual-use는 개별 프로그램 속성이 아니라 우주산업 전반의 구조가 된다 | 규범적 억지가 작동한다 | counterspace 경쟁이 상업 서비스까지 흔든다 | 60% |
 | 2034 | 우주경제 성장과 안보 종속성이 함께 확대된다 | 유럽과 동맹권의 회복력 있는 우주망이 구축된다 | 경제인프라와 전장 인프라의 경계가 무너진다 | 55% |
 | 2035 | space dual-use는 예외가 아니라 정상상태가 되고, 억지·규제·보험·조달이 모두 이를 전제로 재편된다 | 규범과 기술이 균형을 이룬다 | 상업 우주 인프라가 만성적 지정학 긴장의 일부가 된다 | 60% |
@@ -56,11 +56,11 @@
 - Downside: 상업 위성망과 발사 인프라가 사실상 군사표적 체계의 일부로 읽히면서 회색지대 충돌 위험이 상시화된다.
 
 ## 연결 문서
-- [artemis_vs_china.md]
-- [../spacex/starlink.md]
-- [../spacex/starship_roadmap.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
-- [../../13_scenarios/bifurcated.md]
+- [artemis_vs_china.md](artemis_vs_china.md)
+- [../spacex/starlink.md](../spacex/starlink.md)
+- [../spacex/starship_roadmap.md](../spacex/starship_roadmap.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
+- [../../13_scenarios/bifurcated.md](../../13_scenarios/bifurcated.md)
 
 ## 정보 출처
 - EU Space Strategy for Security and Defence https://defence-industry-space.ec.europa.eu/eu-space/eu-space-strategy-security-and-defence_en 2026-04 확인

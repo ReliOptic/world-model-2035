@@ -17,14 +17,14 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Cortex 100,000 GPU 목표 달성, Dojo 재시작은 탐색 단계, AI5 추론 칩 양산 준비 | Dojo AI7 칩 설계 확정 및 TSMC 테이프아웃 | Dojo 재시작 발표가 실행으로 이어지지 않고 폐기 | 70% Cortex 목표 달성 |
-| 2027 | Cortex가 AI 훈련의 핵심 인프라로 고정, Dojo는 틈새 실험 역할 | Dojo AI7이 추론·로보틱스 특화 칩으로 재포지셔닝 성공 | NVIDIA 공급 병목으로 Cortex 확장이 지연 | 65% |
-| 2028 | Tesla가 자체 훈련용 칩 전략을 재검토하거나 차세대 Dojo로 재투자 결정 | Tesla 자체 AI 훈련 칩이 소량 양산 진입 | NVIDIA H200/B200 대비 성능 격차를 좁히지 못해 Dojo 재투자 취소 | 40% Dojo 재투자 |
+| 2026 | Cortex 100,000 GPU 목표 달성, Dojo 재시작은 탐색 단계, AI5 추론 칩 양산 준비 | Dojo AI7 칩 설계 확정 및 TSMC 테이프아웃 | Dojo 재시작 발표가 실행으로 이어지지 않고 폐기 | 80% Cortex 목표 달성 |
+| 2027 | Cortex가 AI 훈련의 핵심 인프라로 고정, Dojo는 틈새 실험 역할 | Dojo AI7이 추론·로보틱스 특화 칩으로 재포지셔닝 성공 | NVIDIA 공급 병목으로 Cortex 확장이 지연 | 78% |
+| 2028 | Tesla가 자체 훈련용 칩 전략을 재검토하거나 차세대 Dojo로 재투자 결정 | Tesla 자체 AI 훈련 칩이 소량 양산 진입 | NVIDIA H200/B200 대비 성능 격차를 좁히지 못해 Dojo 재투자 취소 | 35% Dojo 재투자 |
 | 2029 | 추론 전용 칩(AI5·AI6)과 훈련 인프라(Cortex/외부 클라우드)의 이원 구조 고착 | Tesla가 추론·훈련 통합 칩 전략 발표 | AI 훈련 비용 급등으로 Tesla FSD·Optimus 개발 속도 제약 | 55% |
 | 2030 | 차세대 AI 인프라 전략이 확정되며 Tesla의 자체 실리콘 포트폴리오가 명확해짐 | Dojo 후속 칩이 NVIDIA 경쟁 영역에 진입 | NVIDIA/AMD/맞춤형 AI 칩 시장이 성숙해 Tesla 자체 훈련 칩의 ROI가 낮아짐 | 50% |
 | 2031 | Tesla AI 인프라는 FSD·Optimus·에너지 최적화를 통합 지원하는 구조 | 자체 훈련+추론 통합으로 AI 개발 비용 대폭 절감 | 지정학 규제로 TSMC 의존 칩 공급에 차질 | 50% |
 | 2032 | AI 추론 성능과 전력 효율이 Tesla 제품 경쟁력의 핵심 지표 | 온디바이스 모델이 클라우드 의존 없이 고도 자율성 구현 | 전력 밀도 제약으로 차량용 칩 성능 향상이 정체 | 55% |
-| 2033 | Tesla 차량·로봇·에너지 제품 전반에 통합 AI 칩 아키텍처 적용 | AI 칩 내재화 완성으로 NVIDIA 의존 완전 탈피 | 경쟁사(NVIDIA, Google, Amazon)의 추론 칩이 외부 배포로 비용 역전 | 45% |
+| 2033 | Tesla 차량·로봇·에너지 제품 전반에 통합 AI 칩 아키텍처 적용 | AI 칩 내재화 완성으로 NVIDIA 의존 완전 탈피 | 경쟁사(NVIDIA, Google, Amazon)의 추론 칩이 외부 배포로 비용 역전 | 30% |
 | 2034 | Tesla AI 칩이 자사 제품에 최적화된 도메인 특화 프로세서로 자리잡음 | 제3자 라이선스 또는 공급 계약으로 수익화 | 반도체 지정학 위기로 공급망 불안정 | 45% |
 | 2035 | Tesla는 FSD·Optimus·에너지 AI를 자체 실리콘으로 구동하는 수직 통합 AI 기업 구조 완성 | Tesla 칩이 산업 표준 추론 플랫폼 중 하나로 부상 | 미세화 한계·패키징 비용으로 자체 칩 ROI 의문 지속 | 55% |
 
@@ -46,7 +46,7 @@
 ## 연결 문서
 - [chip_factcheck.md](chip_factcheck.md)
 - [optimus_roadmap.md](optimus_roadmap.md)
-- [../../../02_technology/semiconductors/roadmap_annual.md](../../../02_technology/semiconductors/roadmap_annual.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
 
 ## 확률 근거 요약
 - `≥75%`: Cortex 100,000 GPU 목표 2026년 달성 (기존 81,000 확인, 증설 계획 발표)

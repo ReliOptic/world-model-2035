@@ -61,6 +61,15 @@ jobs:
             gh issue create --title "$TITLE" --body-file "$BODY_FILE" --label freshness
           fi
 
+      - name: Internal link audit
+        run: python .github/scripts/internal_link_audit.py
+
+      - name: Structure audit
+        run: python .github/scripts/structure_audit.py
+
+      - name: Source section audit
+        run: python .github/scripts/source_audit.py --high-risk-only
+
       - name: Prediction deadline audit
         id: predictions
         run: python .github/scripts/prediction_audit.py

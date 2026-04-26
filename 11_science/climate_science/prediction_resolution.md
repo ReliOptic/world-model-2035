@@ -25,14 +25,14 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | AIFS가 IFS 대비 일부 매개변수에서 기본 참조로 격상 | 국가기상기관(NWS, UKMO, KMA 등)이 자체 AI 모델 운영 | 초기장·데이터 병목으로 AI 모델 일반화 정체 | 80% |
-| 2027 | km-scale downscaling이 지역 예보 표준으로 확산 | CorrDiff·Aurora 파인튜닝이 국가 예보 생산에 편입 | 검증 부족으로 AI 예보 공식 채택 제한 | 75% |
+| 2027 | km-scale downscaling이 지역 예보 표준으로 확산 | CorrDiff·Aurora 파인튜닝이 국가 예보 생산에 편입 | 검증 부족으로 AI 예보 공식 채택 제한 | 78% |
 | 2028 | 허리케인·극단기상 예보에서 AI 모델이 baseline이 됨 | 조기경보 리드타임 1-2일 추가 확대 | 드문 사건 성능 저하로 물리모델 병행 유지 | 60% |
 | 2029 | AIFS 등의 장기 seasonal 모델이 operational 진입 | S2S 예보 skill 유의미 향상 | 계절·10년 스케일은 여전히 물리모델 우위 | 55% |
 | 2030 | 기상기관 대다수가 AI를 주력, 물리를 보조로 전환 | Earth-2·Aurora 유사 플랫폼이 기상기관 API 표준 | 기관별 AI 역량 격차가 서비스 불균형 초래 | 65% |
 | 2031 | 기후 예측(수년~10년)에도 AI·하이브리드 모델 진입 | CMIP 후속 실험에 AI 모델 일부 편입 | 기후 예측은 물리기반 우위 유지 | 50% |
 | 2032 | 1-5km 지역 downscaling이 CorrDiff류로 표준화 | 지역 적응계획에 고해상도 AI 예보 직접 사용 | 데이터·컴퓨트 비대칭이 글로벌 불평등을 만듦 | 55% |
-| 2033 | AI 재분석(ERA 후속) 등장, 학습용 고품질 데이터 확대 | 다중센서 통합 AI 재분석이 공식 기준 | 관측 공백 지역에서 재분석 편향이 드러남 | 45% |
-| 2034 | 기상·기후·지구시스템 통합 AI foundation model 성숙 | One model, many tasks 접근이 주류 | 모델 해석성·신뢰성 이슈로 규제 제약 | 35% |
+| 2033 | AI 재분석(ERA 후속) 등장, 학습용 고품질 데이터 확대 | 다중센서 통합 AI 재분석이 공식 기준 | 관측 공백 지역에서 재분석 편향이 드러남 | 38% |
+| 2034 | 기상·기후·지구시스템 통합 AI foundation model 성숙 | One model, many tasks 접근이 주류 | 모델 해석성·신뢰성 이슈로 규제 제약 | 30% |
 | 2035 | 기상예보는 AI가 주력, 기후예측은 AI·물리 하이브리드가 표준 | 조기경보·적응계획에서 고해상도 AI 예보가 공공재화 | AI 예보는 선진국 중심, 저소득국 접근 지연 | 55% |
 
 ## 물리적/구조적 한계
@@ -51,9 +51,9 @@
 - Downside: 데이터·컴퓨트 불균형이 AI 예보 혜택을 선진국에 집중시킴
 
 ## 연결 문서
-- [tipping_detection_ai.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/11_science/climate_science/tipping_detection_ai.md)
-- [../physics/unreadable_answer.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/11_science/physics/unreadable_answer.md)
-- [../../13_scenarios/climate_emergency.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/13_scenarios/climate_emergency.md)
+- [tipping_detection_ai.md](tipping_detection_ai.md)
+- [../physics/unreadable_answer.md](../physics/unreadable_answer.md)
+- [../../13_scenarios/climate_emergency.md](../../13_scenarios/climate_emergency.md)
 
 ## 정보 출처
 - [ECMWF AIFS operational (2025-02)] [https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational] [2026-04 확인]

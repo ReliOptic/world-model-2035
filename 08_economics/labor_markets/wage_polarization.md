@@ -48,9 +48,9 @@
 - Downside: 생산성 이득이 자본에 집중되고 재훈련 접근이 불균등하면, AI 시대의 불평등이 기존 불평등 구조보다 더 견고하고 세습적으로 고착된다.
 
 ## 연결 문서
-- [./displacement_by_sector.md]
-- [../fiscal_policy/ai_productivity_gdp.md]
-- [../../13_scenarios/base_case.md]
+- [./displacement_by_sector.md](./displacement_by_sector.md)
+- [../fiscal_policy/ai_productivity_gdp.md](../fiscal_policy/ai_productivity_gdp.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - NBER w33509 AI and labor market Eloundou et al https://www.nber.org/system/files/working_papers/w33509/revisions/w33509.rev0.pdf 2026-04 확인

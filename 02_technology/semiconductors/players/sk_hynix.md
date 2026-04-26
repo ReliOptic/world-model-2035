@@ -22,14 +22,14 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | HBM4 M16 풀 스케일 생산, M15X 파일럿 가동, HBM3E 전체 HBM 출하 2/3 유지 | HBM4 수요가 예상보다 빨리 확대, ASP 유지 | M15X 건설 지연 또는 수율 낮아 캐파 증설 차질 | 80% |
-| 2027 | M15X 본격 양산 진입, P&T7 착공 진행, HBM4가 HBM 주력으로 부상 | HBM4 NVIDIA Rubin+ 세대 독점 공급 유지 | 삼성·Micron HBM4 캐파 확대로 ASP 하락 시작 | 70% |
+| 2027 | M15X 본격 양산 진입, P&T7 착공 진행, HBM4가 HBM 주력으로 부상 | HBM4 NVIDIA Rubin+ 세대 독점 공급 유지 | 삼성·Micron HBM4 캐파 확대로 ASP 하락 시작 | 76% |
 | 2028 | HBM4E 양산 진입, P&T7 완공(2027년 말→2028 초), 인디애나 패키징 시설 가동 | HBM4E에서도 시장점유율 50%+ 유지 | HBM 수요 성장이 공급 증가 속도를 따라가지 못해 마진 하락 | 65% |
 | 2029 | HBM5 양산 진입 목표, NAND 400레이어+ 전환, 1b DRAM 개발 | HBM5 최초 양산으로 리더십 재확인 | HBM5 기술 난도로 양산 지연, 삼성에 선두 자리 일시 내줌 | 55% |
 | 2030 | HBM 시장이 AI 가속기 시장과 직결되어 성장 지속, SK하이닉스 점유율 40~50% 유지 | AI 수요 폭증으로 HBM 공급 부족 재발, 가격 반등 | AI 인프라 투자 사이클 하강으로 HBM 수요 감소 | 60% |
 | 2031 | CXL 기반 메모리 확장 시장 진입, 데이터센터용 스토리지급 메모리 제품 라인 확장 | CXL 표준화 속도가 빨라 SK하이닉스가 선점 | CXL 채택 지연으로 기존 HBM 중심 경쟁 지속 | 50% |
-| 2032 | 메모리-로직 통합(PIM) 제품군 상업화 가속 | PIM이 AI 추론 시장에서 주력 솔루션으로 자리잡음 | NVIDIA 등 고객이 PIM 내재화하여 외부 구매 축소 | 45% |
+| 2032 | 메모리-로직 통합(PIM) 제품군 상업화 가속 | PIM이 AI 추론 시장에서 주력 솔루션으로 자리잡음 | NVIDIA 등 고객이 PIM 내재화하여 외부 구매 축소 | 35% |
 | 2033 | 첨단 패키징(P&T7 등) 내재화로 HBM+패키징 일체 공급 경쟁력 강화 | 패키징 통합으로 고객 잠금 효과 극대화 | 경쟁사가 유사한 패키징 역량을 갖추어 차별화 약화 | 60% |
-| 2034 | HBM6 또는 차세대 메모리 아키텍처 개발 진입 | 신규 메모리 아키텍처(3D DRAM 등)에서 선제 특허·기술 확보 | 메모리 시장 구조 변화로 기존 HBM 비즈니스 모델 위협 | 50% |
+| 2034 | HBM6 또는 차세대 메모리 아키텍처 개발 진입 | 신규 메모리 아키텍처(3D DRAM 등)에서 선제 특허·기술 확보 | 메모리 시장 구조 변화로 기존 HBM 비즈니스 모델 위협 | 35% |
 | 2035 | AI 메모리 시장의 핵심 공급자 위치 유지, HBM 세대별 리더십이 전략적 경쟁 우위의 핵심 | HBM 기술 리더십이 2035년까지 구조적으로 유지 | 삼성·Micron·신규 경쟁자의 추격으로 점유율 40% 미만으로 하락 | 65% |
 
 ## 물리적/구조적 한계
@@ -49,10 +49,10 @@
 - Downside: 삼성·Micron의 HBM 캐파 확대와 AI 수요 사이클 하강이 겹치면 가격 하락과 점유율 하락이 동반된다.
 
 ## 연결 문서
-- [../roadmap_annual.md]
-- [./samsung.md]
-- [./tsmc.md]
-- [../../09_corporate_roadmaps/semiconductors/nvidia.md]
+- [../roadmap_annual.md](../roadmap_annual.md)
+- [./samsung.md](./samsung.md)
+- [./tsmc.md](./tsmc.md)
+- [../../../09_corporate_roadmaps/semiconductors/nvidia.md](../../../09_corporate_roadmaps/semiconductors/nvidia.md)
 
 ## 정보 출처
 - SK hynix HBM4 development completion https://news.skhynix.com/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/ 2026-04 확인

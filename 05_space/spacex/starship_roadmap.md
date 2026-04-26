@@ -66,9 +66,9 @@
 - Downside: 규제·안전·운영비 병목으로 기술적 가능성은 입증해도 경제성은 제한된다
 
 ## 연결 문서
-- [starlink.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/starlink.md)
-- [mars_timeline.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/mars_timeline.md)
-- [../competitors/blue_origin.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/competitors/blue_origin.md)
+- [starlink.md](starlink.md)
+- [mars_timeline.md](mars_timeline.md)
+- [../competitors/blue_origin.md](../competitors/blue_origin.md)
 
 ## 정보 출처
 - [SpaceX Starship] [https://www.spacex.com/vehicles/starship/] [2026-04-21]

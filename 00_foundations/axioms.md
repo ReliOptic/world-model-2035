@@ -22,9 +22,9 @@ This file records the base assumptions that anchor the rest of the repository.
 - At what point does machine-derived explanation become operationally useful but cognitively unreadable?
 
 ## 연결 문서
-- [METHODOLOGY.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/METHODOLOGY.md)
-- [biases.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/biases.md)
-- [tech_realism_framework.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/tech_realism_framework.md)
+- [METHODOLOGY.md](../METHODOLOGY.md)
+- [biases.md](biases.md)
+- [tech_realism_framework.md](tech_realism_framework.md)
 
 ## 정보 출처
 - This is a repository framing file derived from the project brief in `The world in 2035.md` on 2026-04-20.

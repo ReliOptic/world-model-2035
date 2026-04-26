@@ -46,10 +46,10 @@
 - Downside: Dunkelflaute 빈도 증가와 수소 가격 고착이 겹치면 독일은 고비용 전환의 대표 사례가 된다.
 
 ## 연결 문서
-- [./industrial_decline.md]
-- [../04_eu/annual.md]
-- [../../03_energy/grid/ai_optimization.md]
-- [../../13_scenarios/climate_emergency.md]
+- [./industrial_decline.md](./industrial_decline.md)
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../13_scenarios/climate_emergency.md](../../13_scenarios/climate_emergency.md)
 
 ## 정보 출처
 - Clean Energy Wire `Germany's nuclear exit: One year after` https://www.cleanenergywire.org/factsheets/qa-germanys-nuclear-exit-one-year-after 2026-04 확인

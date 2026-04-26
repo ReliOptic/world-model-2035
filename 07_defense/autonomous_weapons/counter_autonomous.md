@@ -47,11 +47,11 @@
 - Downside: 드론 가격·자율성이 더 빨리 발전해 C-UAS는 영구적 추격 게임에 머문다.
 
 ## 연결 문서
-- [./drone_swarms.md]
-- [./ai_targeting.md]
-- [../players/anduril.md]
-- [../cyber/critical_infra.md]
-- [../../13_scenarios/base_case.md]
+- [./drone_swarms.md](./drone_swarms.md)
+- [./ai_targeting.md](./ai_targeting.md)
+- [../players/anduril.md](../players/anduril.md)
+- [../cyber/critical_infra.md](../cyber/critical_infra.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Epirus directed-energy fiber-optic drone demo https://thedefensepost.com/2026/01/15/epirus-directed-energy-counter-drone/ 2026-04 확인

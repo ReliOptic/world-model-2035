@@ -48,10 +48,10 @@
 - Downside: 대체 속도가 재교육·전환 능력을 초과하여 구조적 실업이 누적되고, 기존 사회안전망 체계가 이를 흡수하지 못한다.
 
 ## 연결 문서
-- [./wage_polarization.md]
-- [../fiscal_policy/ai_productivity_gdp.md]
-- [../../02_technology/robotics/industrial_automation.md]
-- [../../13_scenarios/base_case.md]
+- [./wage_polarization.md](./wage_polarization.md)
+- [../fiscal_policy/ai_productivity_gdp.md](../fiscal_policy/ai_productivity_gdp.md)
+- [../../02_technology/robotics/industrial_automation.md](../../02_technology/robotics/industrial_automation.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - BLS MLR 2025 AI impacts in employment projections https://www.bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm 2026-04 확인

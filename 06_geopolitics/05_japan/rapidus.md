@@ -47,7 +47,7 @@
 - Downside: 수율 미달·고객 부족·원가 과다가 장기화되면 Rapidus는 영구적 국가 보조금 의존 프로젝트로 고착되거나 축소 재조정된다.
 
 ## 연결 문서
-- [../annual.md](../annual.md)
+- [annual.md](annual.md)
 - [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
 - [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 

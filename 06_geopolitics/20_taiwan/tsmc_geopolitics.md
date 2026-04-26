@@ -48,11 +48,11 @@
 - Downside: 양안 군사 충돌이나 봉쇄가 발생할 경우, 해외 팹 완전 전환이 기술적·용량적으로 불가능하여 글로벌 공급망이 수년간 마비된다.
 
 ## 연결 문서
-- [./annual.md]
-- [../../02_technology/semiconductors/players/tsmc.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../06_geopolitics/03_usa/annual.md]
-- [../../13_scenarios/base_case.md]
+- [./annual.md](./annual.md)
+- [../../02_technology/semiconductors/players/tsmc.md](../../02_technology/semiconductors/players/tsmc.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../01_usa/annual.md](../01_usa/annual.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - TSMC North America Technology Symposium April 2026 https://ir.tsmc.com/english/events/2026/TSMC-North-America-Technology-Symposium 2026-04 확인

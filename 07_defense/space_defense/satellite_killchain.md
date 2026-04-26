@@ -48,10 +48,10 @@
 - Downside: 우주 군사화 경쟁이 통제 불능으로 진행되면 분쟁 시 파괴적 ASAT 사용으로 저궤도 전체가 불안정화되고, 글로벌 통신·항법·금융 인프라가 구조적 충격을 받는다.
 
 ## 연결 문서
-- [../../05_space/geopolitics_space/dual_use.md]
-- [../../05_space/infrastructure/debris_problem.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
-- [../../13_scenarios/base_case.md]
+- [../../05_space/geopolitics_space/dual_use.md](../../05_space/geopolitics_space/dual_use.md)
+- [../../05_space/infrastructure/debris_problem.md](../../05_space/infrastructure/debris_problem.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - SDA official site PWSA architecture https://www.sda.mil/ 2026-04 확인

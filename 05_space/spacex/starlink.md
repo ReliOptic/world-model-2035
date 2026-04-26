@@ -65,9 +65,9 @@
 - Downside: replacement 비용, 규제, debris 관리 부담이 장기 수익성을 압박한다
 
 ## 연결 문서
-- [starship_roadmap.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/starship_roadmap.md)
-- [../geopolitics_space/dual_use.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/dual_use.md)
-- [../infrastructure/debris_problem.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/infrastructure/debris_problem.md)
+- [starship_roadmap.md](starship_roadmap.md)
+- [../geopolitics_space/dual_use.md](../geopolitics_space/dual_use.md)
+- [../infrastructure/debris_problem.md](../infrastructure/debris_problem.md)
 
 ## 정보 출처
 - [Starlink network update] [https://starlink.com/as/updates/network-update] [2026-04-21]

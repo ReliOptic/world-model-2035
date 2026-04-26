@@ -24,12 +24,12 @@ The project tracks how that convergence changes climate science, energy systems,
 - Every file should end with `## 정보 출처`.
 
 ## Starting points
-- [METHODOLOGY.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/METHODOLOGY.md)
-- [progress.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/progress.md)
-- [00_foundations/axioms.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/axioms.md)
-- [00_foundations/biases.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/biases.md)
-- [00_foundations/tech_realism_framework.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/tech_realism_framework.md)
-- [14_predictions_log/template.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/14_predictions_log/template.md)
+- [METHODOLOGY.md](METHODOLOGY.md)
+- [progress.md](progress.md)
+- [00_foundations/axioms.md](00_foundations/axioms.md)
+- [00_foundations/biases.md](00_foundations/biases.md)
+- [00_foundations/tech_realism_framework.md](00_foundations/tech_realism_framework.md)
+- [14_predictions_log/template.md](14_predictions_log/template.md)
 
 ## Priority build sequence
 1. Foundations and methodology
@@ -44,5 +44,11 @@ The project tracks how that convergence changes climate science, energy systems,
 - `🔴` Older than 6 months and should be refreshed before reuse
 
 ## Status
-The scaffold exists. Most topic files remain to be written and sourced.
+The repository is now in a **v0.8 full-draft corpus** state. The blueprint-level scaffold is complete and the main topic files have source-backed first-pass drafts. Current work is no longer basic file creation; the remaining work is quality assurance:
+
+- keep official/primary sources fresh as the 2026 baseline changes
+- repair and preserve internal navigation links
+- normalize any files that still deviate from the annual-forecast template
+- resolve prediction-log entries when their evaluation windows close
+- promote the highest-risk domains from first-pass draft to reviewed synthesis
 

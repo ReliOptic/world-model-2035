@@ -51,15 +51,15 @@
 - Downside: 대만·남중국해·우크라이나 인접지 중 한 곳에서 무력 충돌. 반도체·에너지·식량 공급망 동시 충격. 세계 GDP `-5~-10%` 누적 손실과 이주·금융 위기가 결합.
 
 ## 연결 문서
-- [base_case.md]
-- [accelerated.md]
-- [bifurcated.md]
-- [climate_emergency.md]
-- [../12_wildcards/interaction_effects.md]
-- [../12_wildcards/black_swans.md]
-- [../06_geopolitics/01_usa/annual.md]
-- [../06_geopolitics/02_china/annual.md]
-- [../10_international_organizations/wto_digital_trade.md]
+- [base_case.md](base_case.md)
+- [accelerated.md](accelerated.md)
+- [bifurcated.md](bifurcated.md)
+- [climate_emergency.md](climate_emergency.md)
+- [../12_wildcards/interaction_effects.md](../12_wildcards/interaction_effects.md)
+- [../12_wildcards/black_swans.md](../12_wildcards/black_swans.md)
+- [../06_geopolitics/01_usa/annual.md](../06_geopolitics/01_usa/annual.md)
+- [../06_geopolitics/02_china/annual.md](../06_geopolitics/02_china/annual.md)
+- [../10_international_organizations/wto_digital_trade.md](../10_international_organizations/wto_digital_trade.md)
 
 ## 정보 출처
 - CSIS Lights Out? Wargaming a Chinese Blockade of Taiwan 2025-07 https://www.csis.org/analysis/lights-out-wargaming-chinese-blockade-taiwan 2026-04 확인

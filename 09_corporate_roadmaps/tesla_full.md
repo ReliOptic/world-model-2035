@@ -21,13 +21,13 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Robotaxi 오스틴 안정화, Optimus Gen 3 생산 시작, AI5 양산 준비, Megapack 매출 $40억 달러+ | Robotaxi가 오스틴에서 수익 흑자 달성, Optimus 첫 외부 판매 계약 체결 | NHTSA가 Robotaxi 확장 불허, Optimus 생산 병목으로 수백 대 수준 미달 | 65% |
-| 2027 | Robotaxi 2~3개 도시 추가 확장, Optimus 수만 대 생산 목표, AI6 테이프아웃 완료 | Robotaxi가 흑자 사업으로 전환, Optimus 외부 기업 납품 개시 | Robotaxi 사고 사례로 규제 강화, Optimus 공급망 부족으로 목표의 30% 미달 | 55% |
+| 2026 | Robotaxi 오스틴 안정화, Optimus Gen 3 생산 시작, AI5 양산 준비, Megapack 매출 $40억 달러+ | Robotaxi가 오스틴에서 수익 흑자 달성, Optimus 첫 외부 판매 계약 체결 | NHTSA가 Robotaxi 확장 불허, Optimus 생산 병목으로 수백 대 수준 미달 | 78% |
+| 2027 | Robotaxi 2~3개 도시 추가 확장, Optimus 수만 대 생산 목표, AI6 테이프아웃 완료 | Robotaxi가 흑자 사업으로 전환, Optimus 외부 기업 납품 개시 | Robotaxi 사고 사례로 규제 강화, Optimus 공급망 부족으로 목표의 30% 미달 | 76% |
 | 2028 | Robotaxi 미국 주요 도시권 확산, Optimus 10만 대+ 누적 생산, AI6 양산 | 글로벌 Robotaxi 시장에서 Waymo와 함께 양강 구도 형성 | 자율주행 관련 대형 사고로 전국 규제 재검토, Optimus ROI 증명 실패 | 50% |
 | 2029 | FSD 기술 타사 라이센싱 수익화 시도, Optimus가 제3자 산업 고객에 의미 있는 규모 공급 | FSD 라이센싱이 소프트웨어 수익 모델로 확립, Toyota·BMW 등과 협상 개시 | FSD 라이센싱 협상 실패, 법률 책임 문제로 타사 채택 어려움 | 45% |
 | 2030 | Optimus 100만 대 누적 생산 목표 가시권, Energy 사업 Tesla 전체 매출 20%+ | Optimus 누적 100만 대 달성, 로봇 사업이 차량 사업과 대등한 매출 기여 | 로봇 공급망 한계로 100만 대는 2033+, 차량 사업 부진 지속 | 35% |
 | 2031 | AI7 칩 개발 가시화, Robotaxi 글로벌(유럽·아시아) 진출, 에너지 저장 글로벌 점유율 확대 | Robotaxi 유럽·아시아 규제 획득 및 진출 성공 | 유럽·아시아 자율주행 규제 벽으로 해외 Robotaxi 2033+ 지연 | 45% |
-| 2032 | Optimus 가격이 $20,000 수준으로 하락하며 대중 시장 진입, Robotaxi 연간 흑자 달성 확인 | Optimus 가격 경쟁력으로 제조업 전반 대규모 수요 창출 | 중국 경쟁사(BYD·샤오미·화웨이 로봇) 가격 경쟁으로 Optimus 수익성 압박 | 40% |
+| 2032 | Optimus 가격이 $20,000 수준으로 하락하며 대중 시장 진입, Robotaxi 연간 흑자 달성 확인 | Optimus 가격 경쟁력으로 제조업 전반 대규모 수요 창출 | 중국 경쟁사(BYD·샤오미·화웨이 로봇) 가격 경쟁으로 Optimus 수익성 압박 | 30% |
 | 2033 | Tesla AI/에너지/로봇 3축 사업이 전통 차량 사업과 매출 대등 수준 | 로봇·에너지·FSD 라이센싱이 차량 매출 초과하며 Tesla가 AI 기업으로 재평가 | 자동차 사업 마진 압박 지속, 새 사업 수익화 지연으로 복합 실망 | 45% |
 | 2034 | Optimus 누적 수백만 대 생산, Tesla Energy 글로벌 배터리 저장 1위 확립 | Optimus가 글로벌 제조·물류·서비스 로봇의 표준 플랫폼으로 자리잡음 | 자율주행·로봇 규제 글로벌 조화 실패로 시장 분절 지속 | 50% |
 | 2035 | Tesla는 전기차·자율주행·에너지·로봇의 통합 플랫폼 기업으로 전환 완료. 차량 사업은 프리미엄 플랫폼, Robotaxi·Optimus·Energy가 수익 주축 | Tesla가 시가총액 기준 세계 1~2위 기업으로 재평가되며 SpaceX와 함께 미국 민간 기술 기둥 | 핵심 사업(Robotaxi·Optimus) 중 하나가 실패하며 Tesla가 자동차 회사로 재포지셔닝, 혁신 프리미엄 박탈 | 55% |
@@ -50,11 +50,11 @@
 - Downside: 핵심 신사업(Robotaxi·Optimus) 중 하나가 규제·기술·사업 모델 실패로 수익화에 실패하면 Tesla는 고비용 자동차 회사로 재포지셔닝되어 혁신 프리미엄을 잃는다.
 
 ## 연결 문서
-- [./space/spacex.md]
-- [../02_technology/robotics/humanoid_roadmap.md]
-- [../02_technology/foundation_models/players/xai.md]
-- [../08_economics/labor_markets/displacement_by_sector.md]
-- [../13_scenarios/base_case.md]
+- [./space/spacex.md](./space/spacex.md)
+- [../02_technology/robotics/humanoid_roadmap.md](../02_technology/robotics/humanoid_roadmap.md)
+- [../02_technology/foundation_models/players/xai.md](../02_technology/foundation_models/players/xai.md)
+- [../08_economics/labor_markets/displacement_by_sector.md](../08_economics/labor_markets/displacement_by_sector.md)
+- [../13_scenarios/base_case.md](../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Electrek Tesla robotaxi Austin launch January 2026 https://electrek.co/2026/01/22/tesla-launches-robotaxi-service-austin-texas/ 2026-04 확인

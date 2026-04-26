@@ -24,8 +24,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | New Glenn 5~8회 발사, Blue Moon Mk1 lunar cargo | 8회 이상 cadence 달성 | cadence 3회 이하 | 70% |
-| 2027 | Amazon Kuiper 주요 launches 본격화, Mk2 HLS 개발 집중 | New Glenn 연 12회 이상 | Kuiper 마감 임박에 의한 launch 부담 | 55% |
+| 2026 | New Glenn 5~8회 발사, Blue Moon Mk1 lunar cargo | 8회 이상 cadence 달성 | cadence 3회 이하 | 78% |
+| 2027 | Amazon Kuiper 주요 launches 본격화, Mk2 HLS 개발 집중 | New Glenn 연 12회 이상 | Kuiper 마감 임박에 의한 launch 부담 | 76% |
 | 2028 | Amazon Kuiper FCC 마감(2029-07) 임박, cadence 15~20회 필요 | Mk2 HLS 지상시험 단계 진입 | Kuiper launch 일정 미달성 | 40% |
 | 2029 | Blue Moon Mk2 crewed landing 준비 | NASA Artemis 5 등 후속 HLS 대체자로 격상 | HLS 연기 | 35% |
 | 2030 | New Glenn 연 20회+ 안정 | 상업 정부 정기 수요 확보 | SpaceX 대비 점유 정체 | 40% |
@@ -62,9 +62,9 @@
 - Downside: Kuiper 의존도와 cadence 병목으로 niche 공급자에 머문다
 
 ## 연결 문서
-- [../spacex/starship_roadmap.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/starship_roadmap.md)
-- [../../09_corporate_roadmaps/space/blue_origin.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/09_corporate_roadmaps/space/blue_origin.md)
-- [../geopolitics_space/artemis_vs_china.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/artemis_vs_china.md)
+- [../spacex/starship_roadmap.md](../spacex/starship_roadmap.md)
+- [../../09_corporate_roadmaps/space/blue_origin.md](../../09_corporate_roadmaps/space/blue_origin.md)
+- [../geopolitics_space/artemis_vs_china.md](../geopolitics_space/artemis_vs_china.md)
 
 ## 정보 출처
 - [New Glenn - Wikipedia] [https://en.wikipedia.org/wiki/New_Glenn] [2026-04-23]

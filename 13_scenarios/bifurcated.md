@@ -51,15 +51,15 @@
 - Downside: 기술·경제 분기가 무력 충돌·사이버전으로 전이. 민간 인프라 공격, 반도체·에너지 공급 장기 중단, 세계 GDP 누적 `-7-10%` 충격.
 
 ## 연결 문서
-- [base_case.md]
-- [delayed.md]
-- [climate_emergency.md]
-- [../06_geopolitics/01_usa/annual.md]
-- [../06_geopolitics/02_china/annual.md]
-- [../06_geopolitics/04_eu/annual.md]
-- [../10_international_organizations/wto_digital_trade.md]
-- [../10_international_organizations/nato_ai_strategy.md]
-- [../12_wildcards/interaction_effects.md]
+- [base_case.md](base_case.md)
+- [delayed.md](delayed.md)
+- [climate_emergency.md](climate_emergency.md)
+- [../06_geopolitics/01_usa/annual.md](../06_geopolitics/01_usa/annual.md)
+- [../06_geopolitics/02_china/annual.md](../06_geopolitics/02_china/annual.md)
+- [../06_geopolitics/04_eu/annual.md](../06_geopolitics/04_eu/annual.md)
+- [../10_international_organizations/wto_digital_trade.md](../10_international_organizations/wto_digital_trade.md)
+- [../10_international_organizations/nato_ai_strategy.md](../10_international_organizations/nato_ai_strategy.md)
+- [../12_wildcards/interaction_effects.md](../12_wildcards/interaction_effects.md)
 
 ## 정보 출처
 - America's AI Action Plan July 2025 https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf 2026-04 확인

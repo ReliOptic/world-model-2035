@@ -21,14 +21,14 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | FAA 비행 정지 해제, New Glenn 4번째 비행 성공, Kuiper 위성 초기 배포 시작 | FAA 정지 신속 해제, 연내 2회 추가 성공 비행으로 신뢰성 확립 시작 | FAA 조사 장기화로 2026년 추가 비행 없음, Kuiper 일정 지연 | 50% |
-| 2027 | New Glenn 연간 4~6회 정기 비행 달성, Blue Moon Mark 1 무인 달 착륙 시도 | New Glenn 6회+ 비행, 1단 재사용 정례화, Kuiper 배포 가속 | Blue Moon Mark 1 발사 또 지연, New Glenn 추가 실패 발생 | 45% |
-| 2028 | 제2 발사대 완공, New Glenn 연간 8~12회 목표, 상업 발사 시장 진입 가속 | New Glenn이 Falcon 9 대안으로 상업 고객 수주 시작 | 발사체 신뢰성 문제가 지속되어 상업 고객 확보 어려움 | 45% |
-| 2029 | Kuiper 위성 배포 주력 구간, New Glenn 연간 12~18회 목표, Artemis V 준비 가속 | New Glenn이 Falcon 9 수준의 신뢰성 달성(성공률 95%+) | Starship이 Artemis V에서도 주역을 가져가며 Blue Moon 역할 축소 | 40% |
+| 2026 | FAA 비행 정지 해제, New Glenn 4번째 비행 성공, Kuiper 위성 초기 배포 시작 | FAA 정지 신속 해제, 연내 2회 추가 성공 비행으로 신뢰성 확립 시작 | FAA 조사 장기화로 2026년 추가 비행 없음, Kuiper 일정 지연 | 78% |
+| 2027 | New Glenn 연간 4~6회 정기 비행 달성, Blue Moon Mark 1 무인 달 착륙 시도 | New Glenn 6회+ 비행, 1단 재사용 정례화, Kuiper 배포 가속 | Blue Moon Mark 1 발사 또 지연, New Glenn 추가 실패 발생 | 76% |
+| 2028 | 제2 발사대 완공, New Glenn 연간 8~12회 목표, 상업 발사 시장 진입 가속 | New Glenn이 Falcon 9 대안으로 상업 고객 수주 시작 | 발사체 신뢰성 문제가 지속되어 상업 고객 확보 어려움 | 52% |
+| 2029 | Kuiper 위성 배포 주력 구간, New Glenn 연간 12~18회 목표, Artemis V 준비 가속 | New Glenn이 Falcon 9 수준의 신뢰성 달성(성공률 95%+) | Starship이 Artemis V에서도 주역을 가져가며 Blue Moon 역할 축소 | 45% |
 | 2030 | Artemis V 목표 연도, Blue Moon Mark 2 달 착륙 시도 | Blue Moon Mark 2가 성공적으로 2인 우주인 달 착륙 | Artemis V 지연으로 Blue Moon 첫 유인 달 착륙 2032+로 이동 | 35% |
 | 2031 | New Glenn 후속 버전(New Glenn 2 또는 업그레이드) 개발 가시화 | New Glenn 업그레이드로 중형 발사체 시장에서 Falcon 9과 직접 경쟁 | New Glenn 기술이 노후화되어 차세대 발사체 개발 지연 시 경쟁력 하락 | 40% |
 | 2032 | Kuiper 위성 인터넷 서비스 본격 상업화, New Glenn이 Kuiper 유지 보수 발사 주력 | Kuiper가 Starlink에 이어 글로벌 위성 인터넷 2위로 자리잡음 | Kuiper 서비스 품질·가격 경쟁력이 Starlink 대비 열위로 시장 점유 실패 | 45% |
-| 2033 | Blue Origin의 달 물류 역량이 Artemis 이후 상업 달 경제에서 의미 있는 역할 시작 | 상업 달 물류 시장에서 Blue Moon 기반 서비스 확립 | 달 경제 성장이 예상보다 느려 Blue Moon의 상업 수요 미발생 | 35% |
+| 2033 | Blue Origin의 달 물류 역량이 Artemis 이후 상업 달 경제에서 의미 있는 역할 시작 | 상업 달 물류 시장에서 Blue Moon 기반 서비스 확립 | 달 경제 성장이 예상보다 느려 Blue Moon의 상업 수요 미발생 | 28% |
 | 2034 | New Glenn 차세대 발사체·달 착륙선·우주정거장 모듈 등 다변화 포트폴리오 | 발사체·달·LEO 정거장 3축 포트폴리오로 SpaceX 대항마로서의 지위 확립 | 여전히 SpaceX와 큰 격차, 틈새 공급자로의 포지셔닝 | 40% |
 | 2035 | Blue Origin은 Amazon Kuiper 운용·달 탐사·LEO 관련 사업에서 SpaceX 다음의 대형 민간 우주 기업 위치를 유지하나, SpaceX 대비 발사 빈도·시장 점유에서 구조적 차이 존재 | New Glenn의 신뢰성·빈도가 SpaceX Falcon 9에 근접하여 경쟁적 시장 형성 | New Glenn이 틈새 대형 위성 발사로 제한되고 SpaceX 독과점 구조 유지 | 45% |
 
@@ -49,10 +49,10 @@
 - Downside: New Glenn 신뢰성 확립이 계속 지연되면 Kuiper 사업 타격과 상업 고객 확보 실패가 누적되어 SpaceX에 더욱 종속되는 틈새 공급자로 남는다.
 
 ## 연결 문서
-- [../defense_tech/palantir.md]
-- [../../05_space/geopolitics_space/dual_use.md]
-- [../../09_corporate_roadmaps/space/spacex.md]
-- [../../13_scenarios/base_case.md]
+- [../defense_tech/palantir.md](../defense_tech/palantir.md)
+- [../../05_space/geopolitics_space/dual_use.md](../../05_space/geopolitics_space/dual_use.md)
+- [../../09_corporate_roadmaps/space/spacex.md](../../09_corporate_roadmaps/space/spacex.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Blue Origin New Glenn NG-1 mission https://www.blueorigin.com/news/new-glenn-ng-1-mission 2026-04 확인

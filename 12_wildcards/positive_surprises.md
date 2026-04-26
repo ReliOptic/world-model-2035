@@ -53,14 +53,14 @@
 - Downside: 돌파들이 개별 기대에 못 미쳐 Hype Cycle `trough of disillusionment`를 거친다. 다만 기반 기술 성숙도가 이미 높으므로, 이 경우에도 2035년 Base 이하로 떨어지기는 어렵다.
 
 ## 연결 문서
-- [black_swans.md]
-- [unknown_unknowns.md]
-- [interaction_effects.md]
-- [../13_scenarios/accelerated.md]
-- [../13_scenarios/base_case.md]
-- [../11_science/biosecurity/]
-- [../02_technology/semiconductors/roadmap_annual.md]
-- [../03_energy/grid/ai_optimization.md]
+- [black_swans.md](black_swans.md)
+- [unknown_unknowns.md](unknown_unknowns.md)
+- [interaction_effects.md](interaction_effects.md)
+- [../13_scenarios/accelerated.md](../13_scenarios/accelerated.md)
+- [../13_scenarios/base_case.md](../13_scenarios/base_case.md)
+- [../11_science/biosecurity/pandemic_early_warning.md](../11_science/biosecurity/pandemic_early_warning.md)
+- [../02_technology/semiconductors/roadmap_annual.md](../02_technology/semiconductors/roadmap_annual.md)
+- [../03_energy/grid/ai_optimization.md](../03_energy/grid/ai_optimization.md)
 
 ## 정보 출처
 - DeepMind GNoME materials discovery blog https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/ 2026-04 확인

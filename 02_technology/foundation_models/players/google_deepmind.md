@@ -25,13 +25,13 @@
 ## 1년 단위 전망 (2026→2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Gemini 4 세대 출시, Project Astra 기반 스마트글라스 제한 배포, AlphaFold-IsoDDE 파이프라인 Phase I 진입 | 수학·과학 추론에서 AlphaProof 계열이 화학·재료로 확장 | 조직 복잡성(Google + DeepMind 통합) 또는 규제(EU AI Act) 지연 | 80% |
-| 2027 | Gemini 4 Pro가 컨텍스트 `10M+`, 음성·비디오 실시간 에이전트 API 표준화 | Project Astra 기반 안경이 소비자 출시 → 피지컬 AI 플랫폼 | 멀티모달 에이전트 안전 사고 시 제품 배포 속도 제한 | 72% |
+| 2026 | Gemini 4 세대 출시, Project Astra 기반 스마트글라스 제한 배포, AlphaFold-IsoDDE 파이프라인 Phase I 진입 | 수학·과학 추론에서 AlphaProof 계열이 화학·재료로 확장 | 조직 복잡성(Google + DeepMind 통합) 또는 규제(EU AI Act) 지연 | 82% |
+| 2027 | Gemini 4 Pro가 컨텍스트 `10M+`, 음성·비디오 실시간 에이전트 API 표준화 | Project Astra 기반 안경이 소비자 출시 → 피지컬 AI 플랫폼 | 멀티모달 에이전트 안전 사고 시 제품 배포 속도 제한 | 76% |
 | 2028 | AI for Science(구조생물학·재료·기후) 파이프라인에서 최소 1개 임상 Phase II 진입 | AlphaFold 계열이 제약사 전체 타깃 발굴 파이프라인을 대체 | AI 약물 설계의 임상 성공률이 기대에 미달 | 55% |
 | 2029 | TPU 자체 학습 인프라 + Gemini 생태계로 외부 API 의존 최소화 | 구글 Search + Cloud + Workspace 통합이 엔터프라이즈 잠금 효과 | 반독점 규제가 Search-AI 번들링 해제 요구 | 60% |
-| 2030 | 수학·과학 자동화 에이전트가 학계 연구 생산성을 가속하는 실증 사례 축적 | IMO 금메달 수준 + 새 수학 정리 발견 사례 | 수학 자동화가 연구 과정이 아닌 도구 수준에 머무름 | 45% |
+| 2030 | 수학·과학 자동화 에이전트가 학계 연구 생산성을 가속하는 실증 사례 축적 | IMO 금메달 수준 + 새 수학 정리 발견 사례 | 수학 자동화가 연구 과정이 아닌 도구 수준에 머무름 | 38% |
 | 2031 | Gemini 플랫폼이 소비자(Android/Search) + 기업(Workspace/Cloud) 동시 지배 | 두 채널 시너지로 MAU 기준 단일 최대 AI 플랫폼 | OpenAI ChatGPT 소비자 점유율 유지로 소비자 채널 반분 | 65% |
-| 2032 | AI for Science 파이프라인에서 DeepMind 기원 약물/재료 첫 시장 승인 | 과학 AI 리더십이 Google 주가와 연결되는 새 서사 | 경쟁자(Anthropic·OpenAI·전문 바이오 AI)가 동급 성과 | 35% |
+| 2032 | AI for Science 파이프라인에서 DeepMind 기원 약물/재료 첫 시장 승인 | 과학 AI 리더십이 Google 주가와 연결되는 새 서사 | 경쟁자(Anthropic·OpenAI·전문 바이오 AI)가 동급 성과 | 30% |
 | 2033 | Project Astra 계열이 안경·차량·가전 등 멀티 폼팩터로 확산 | 피지컬 AI 플랫폼의 글로벌 표준 선점 | 애플·Meta의 XR 디바이스 생태계가 경쟁 차단 | 50% |
 | 2034 | Gemini 계열이 AGI 인접 역량 논쟁에서 AlphaProof 계보를 증거로 제시 | 과학적 추론 AI의 대표 브랜드 확립 | 조직 분열·인재 이탈로 연구 일관성 저하 | 55% |
 | 2035 | Google DeepMind는 AI for Science + 멀티모달 소비자 AI + 클라우드 인프라 3축의 단일 최대 수직 통합 플레이어 | 수직 통합 우위가 경쟁사가 따라갈 수 없는 해자 형성 | 반독점 분리 명령 또는 대형 안전 사고로 구조 재편 | 60% |

@@ -24,14 +24,14 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | MGX 집행 연 `$10bn+`, 5GW 클러스터 착공 | OpenAI·Anthropic 공동 인프라 확대 | 미 수출통제 강화로 GPU 수급 제약 | 80% |
-| 2027 | Falcon 후속 모델·MENA 기업 고객 확대 | UAE 중심 아랍권 AI 스택 부상 | 사우디 HUMAIN과 경쟁 심화 | 55% |
+| 2027 | Falcon 후속 모델·MENA 기업 고객 확대 | UAE 중심 아랍권 AI 스택 부상 | 사우디 HUMAIN과 경쟁 심화 | 77% |
 | 2028 | MGX 글로벌 포트폴리오 완성, IPO 파이프라인 | 초기 투자의 리턴 가시화 | AI 버블 조정시 평가손실 | 50% |
 | 2029 | Dubai 금융·관광과 Abu Dhabi AI·자본이 결합된 모델 | EXPO 2030 준비, 외국인직접투자 기록 | 지역 안보 악화로 허브 브랜드 타격 | 55% |
-| 2030 | UAE AI 2031 목표 중간 평가 | AI GDP 기여 10%+ 달성 | 기여도 7% 이하 정체 | 55% |
-| 2031 | post-2031 AI 전략, 반도체·로봇으로 확장 | 아랍권 표준 설정자 | 대미 의존 심화로 자율성 제한 | 50% |
-| 2032 | MGX 운용자산 `$300bn+` 규모 가능 | 글로벌 top-tier 국부펀드 위상 | 규제·투명성 이슈 재부상 | 45% |
+| 2030 | UAE AI 2031 목표 중간 평가 | AI GDP 기여 10%+ 달성 | 기여도 7% 이하 정체 | 50% |
+| 2031 | post-2031 AI 전략, 반도체·로봇으로 확장 | 아랍권 표준 설정자 | 대미 의존 심화로 자율성 제한 | 45% |
+| 2032 | MGX 운용자산 `$300bn+` 규모 가능 | 글로벌 top-tier 국부펀드 위상 | 규제·투명성 이슈 재부상 | 38% |
 | 2033 | 탈석유 경제 구조 정착 | 에너지·관광·금융·AI 균형 | 에너지 수익 변동성 재부각 | 50% |
-| 2034 | 중동 `중립 AI·자본 허브`로 확립 | 미-중 양쪽 자본의 교량 | 지정학 분절 심화로 중립 포지션 압박 | 50% |
+| 2034 | 중동 `중립 AI·자본 허브`로 확립 | 미-중 양쪽 자본의 교량 | 지정학 분절 심화로 중립 포지션 압박 | 35% |
 | 2035 | Base: 인구 소국 + 글로벌 AI·자본 허브의 하이브리드 | G42·MGX·TII가 세계급 플레이어 | 인재·안보·규제 병목으로 성장 둔화 | 55% |
 
 ## 물리적/구조적 한계
@@ -51,11 +51,11 @@
 - Downside: 미-중 기술 전쟁·중동 안보 악화·인재 유출이 겹치면 `화려한 플랫폼` 전략의 한계 노출.
 
 ## 연결 문서
-- [../11_saudi_arabia/annual.md]
-- [../17_israel/annual.md]
-- [../07_russia/annual.md]
-- [../../09_corporate_roadmaps/ai_labs/openai.md]
-- [../../13_scenarios/base_case.md]
+- [../11_saudi_arabia/annual.md](../11_saudi_arabia/annual.md)
+- [../17_israel/annual.md](../17_israel/annual.md)
+- [../07_russia/annual.md](../07_russia/annual.md)
+- [../../09_corporate_roadmaps/ai_labs/openai.md](../../09_corporate_roadmaps/ai_labs/openai.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - G42: Abu Dhabi Launches Comprehensive Global Investment Strategy on AI https://www.g42.ai/resources/news/abu-dhabi-launches-comprehensive-global-investment-strategy-artificial-intelligence 2026-04 확인

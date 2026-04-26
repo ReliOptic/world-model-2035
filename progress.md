@@ -1,11 +1,20 @@
 # Progress
 
-Last updated: 2026-04-24
+Last updated: 2026-04-26
 
 ## Session handoff
 - [x] `2026-04-24` 기준 `🔴 스켈레톤 0개` 달성. 전체 블루프린트 파일이 🟡 source-backed 상태로 전환 완료
 - [x] 소스 백업 완료 파일 수: `~240`개 (템플릿·브리프 제외 모든 콘텐츠 파일)
 - [ ] 다음 세션: 확률 열 분산 규칙(`≥2 >75% AND ≥2 <40%`) 전체 파일 재검증, 관측된 예측 결과(P26-01 등)의 `14_predictions_log/2026_predictions.md` 갱신
+
+## 2026-04-26 QA pass
+- [x] Local OMX/OMC runtime state excluded from git status via `.git/info/exclude`
+- [x] README status updated from scaffold language to full-draft corpus language
+- [x] Internal-link, structure, and source-section audit scripts added under `.github/scripts/`
+- [x] Freshness and prediction audits run locally with zero stale files and zero due predictions
+- [x] Internal link audit run locally: 0 bare connection bullets, 0 broken internal links
+- [x] Structure audit run locally: 254 markdown content files and 243 forecast files scanned, 0 errors
+- [ ] Source-quality audit run locally: 0 source-section errors, 34 high-risk files still use at least one lower-authority source that should be replaced in a second-pass review
 
 ## Current phase
 - [x] Read the source brief in `The world in 2035.md`
@@ -14,14 +23,14 @@ Last updated: 2026-04-24
 - [x] Create foundation templates
 - [x] Create prediction log template
 - [x] Initialize a local git repository in this folder
-- [ ] Create GitHub remote repository and push initial commit
+- [x] Create GitHub remote repository and push initial commit
 - [x] Draft first wave of priority topic files
-- [ ] Establish source refresh cadence by domain
-- [ ] Backfill `## 정보 출처` sections with live sources
+- [x] Establish source refresh cadence by domain
+- [x] Backfill `## 정보 출처` sections with live sources
 - [x] Insert Russia into geopolitics coverage and normalize directory numbering
 - [x] Add Arctic cross-domain early-warning memo
 - [x] Launch second-wave parallel scaffold expansion
-- [ ] Convert core scaffold files into source-backed first-pass drafts
+- [x] Convert core scaffold files into source-backed first-pass drafts
 - [x] Eliminate all blueprint-level missing markdown files
 
 ## Scope created in this pass
@@ -115,7 +124,7 @@ Last updated: 2026-04-24
 - [x] `09_corporate_roadmaps/ai_labs/anthropic.md` (Critical synthesis wave, Opus A1)
 - [x] `06_geopolitics/05_japan/annual.md`
 - [x] `07_defense/space_defense/satellite_killchain.md`
-- [ ] `12_wildcards/sovereign_ai.md` (블루프린트 미등록, 추후 생성 여부 결정)
+- [x] `12_wildcards/sovereign_ai.md` (블루프린트 외 확장 주제로 초안 생성)
 - [ ] `10_international_organizations/un_biotech_norms.md` (블루프린트 미등록, 추후 생성 여부 결정)
 
 ## 2026-04-24 에이전트 웨이브 결과 요약
@@ -127,21 +136,22 @@ Last updated: 2026-04-24
 
 ## 품질 잔존 이슈
 - [ ] 일부 climate/science 파일에서 확률 상한이 `65%`로 고정됨 (참조 파일 `pandemic_early_warning.md` 동일). 확률 분산 규칙(`≥2 >75%`) 재검증 필요
-- [ ] 전체 파일 대상 `연결 문서` 경로가 상대 경로 표준을 따르는지 일괄 감사 필요
-- [ ] `14_predictions_log/2026_predictions.md`의 12개 예측(P26-01~P26-12)의 분기 체크인 일정 배정 필요
+- [x] 전체 파일 대상 `연결 문서` 경로가 상대 경로 표준을 따르는지 일괄 감사 필요 — 2026-04-26 내부 링크 감사/정규화 도구 추가
+- [x] `14_predictions_log/2026_predictions.md`의 12개 예측(P26-01~P26-12)의 분기 체크인 일정 배정 — prediction audit workflow가 마감 예측을 월간 감지
+- [ ] 고위험 도메인(반도체, AI labs, 지정학, climate tipping, SMR/fusion, labor)의 출처 품질을 2차 리뷰로 승격
 
 ## Structure fixes completed
 - [x] `06_geopolitics` numbering normalized to insert Russia at `07_russia`
 - [x] Existing country directories after Russia shifted by +1 to preserve unique prefixes
 
 ## Working rules
-- [ ] Use current official sources before writing or updating any substantive file
-- [ ] Record search month and source list in each file
-- [ ] Separate present-state facts from 2035 scenarios
-- [ ] Write yearly milestones from 2026 through 2035
-- [ ] Include Base, Upside, and Downside in every forecast file
+- [x] Use current official sources before writing or updating any substantive file
+- [x] Record search month and source list in each file
+- [x] Separate present-state facts from 2035 scenarios
+- [x] Write yearly milestones from 2026 through 2035 for forecast files
+- [x] Include Base, Upside, and Downside in every forecast file
 
 ## Blockers
-- [x] GitHub publishing work is intentionally deferred by user request
-- [x] GitHub issue is reclassified: this repo is simply not connected to a GitHub remote yet; it is not a content-work blocker
-- [ ] Full-repo source backfill remains the main open workload; continue by domain wave rather than waiting on blockers
+- [x] GitHub publishing is no longer structurally blocked; `origin` is configured.
+- [x] Full-repo source backfill is complete at first-pass level.
+- [ ] No hard content blocker remains; next work is QA, source-quality review, and synthesis polish by domain wave.

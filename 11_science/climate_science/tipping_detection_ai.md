@@ -24,8 +24,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 탐지 정교화 시나리오 | 해석 한계 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | AMOC·아마존·그린란드 대상 AI 조기경보 프로토타입 | 다중 티핑 요소 통합 대시보드 공개 | 신호 모호성 논쟁이 정책 결정 지연 | 75% |
-| 2027 | "Seeing Earth through AI" 1차 산출물 발표 | AI 조기경보가 IPCC AR7 과정에 편입 | IPCC 평가가 여전히 "low confidence" 유지 | 60% |
+| 2026 | AMOC·아마존·그린란드 대상 AI 조기경보 프로토타입 | 다중 티핑 요소 통합 대시보드 공개 | 신호 모호성 논쟁이 정책 결정 지연 | 80% |
+| 2027 | "Seeing Earth through AI" 1차 산출물 발표 | AI 조기경보가 IPCC AR7 과정에 편입 | IPCC 평가가 여전히 "low confidence" 유지 | 76% |
 | 2028 | 티핑 지표 평가가 금융·보험 스트레스 테스트로 확장 | NGFS 기후 시나리오에 티핑 시나리오 편입 | 금융당국이 증거 부족 이유로 유예 | 55% |
 | 2029 | 복수 티핑 요소 상호작용(cascade) AI 모델링 성숙 | 전 세계 cascade 리스크 연간 평가 | 단일 요소 연구 우선으로 cascade는 학술에 머묾 | 45% |
 | 2030 | IPCC AR7 종합보고서에 AI 기반 티핑 평가 편입 가능성 | 티핑 조기경보가 정책 변수로 공식화 | AR7가 증거 불확실성을 강조하며 보수 유지 | 50% |
@@ -51,10 +51,10 @@
 - Downside: 경보는 있어도 정치·재정 제약으로 행동 지연이 구조화되고, 일부 티핑 요소에 근접
 
 ## 연결 문서
-- [../../01_climate_and_nature/tipping_points/amoc.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/01_climate_and_nature/tipping_points/amoc.md)
-- [../../01_climate_and_nature/tipping_points/amazon.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/01_climate_and_nature/tipping_points/amazon.md)
-- [../../01_climate_and_nature/tipping_points/greenland_ice.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/01_climate_and_nature/tipping_points/greenland_ice.md)
-- [prediction_resolution.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/11_science/climate_science/prediction_resolution.md)
+- [../../01_climate_and_nature/tipping_points/amoc.md](../../01_climate_and_nature/tipping_points/amoc.md)
+- [../../01_climate_and_nature/tipping_points/amazon.md](../../01_climate_and_nature/tipping_points/amazon.md)
+- [../../01_climate_and_nature/tipping_points/greenland_ice.md](../../01_climate_and_nature/tipping_points/greenland_ice.md)
+- [prediction_resolution.md](prediction_resolution.md)
 
 ## 정보 출처
 - [Ditlevsen & Ditlevsen 2023 Nature Communications] [https://www.nature.com/articles/s41467-023-39810-w] [2026-04 확인]

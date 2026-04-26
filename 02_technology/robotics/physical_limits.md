@@ -20,8 +20,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | 배터리 운용 시간 5시간+ 모델 등장, 액추에이터 BOM 비중 소폭 하락 | 차세대 셀 채택으로 7시간+ 달성 | 배터리 에너지 밀도 개선 속도가 EV 수요에 잠식돼 로봇용 우선순위 낮음 | 60% |
-| 2027 | 힘 제어·촉각 센서 통합 손이 20mm 이하 공차 작업 안정화, 열 관리 개선 | 소프트 액추에이터 상용화로 파지 신뢰도 급상승 | 촉각 센서 내구성 문제로 산업 환경 배치 어려움 | 50% |
+| 2026 | 배터리 운용 시간 5시간+ 모델 등장, 액추에이터 BOM 비중 소폭 하락 | 차세대 셀 채택으로 7시간+ 달성 | 배터리 에너지 밀도 개선 속도가 EV 수요에 잠식돼 로봇용 우선순위 낮음 | 80% |
+| 2027 | 힘 제어·촉각 센서 통합 손이 20mm 이하 공차 작업 안정화, 열 관리 개선 | 소프트 액추에이터 상용화로 파지 신뢰도 급상승 | 촉각 센서 내구성 문제로 산업 환경 배치 어려움 | 77% |
 | 2028 | 고에너지 밀도 파우치 셀 채택으로 운용 시간 8시간+ 목표 가능 | 배터리 돌파 실현 시 이족 보행 OPEX 40%+ 절감 | 고체 전지 양산 수율 문제로 로봇 채택 2030+로 지연 | 35% |
 | 2029 | AI 제어의 out-of-distribution 강건성 개선, 실패 자동 복구 로직 성숙 | 신경-상징 하이브리드 제어가 산업 환경 일반화 달성 | 훈련 데이터 부족과 edge case 처리 실패로 안전 규제 강화 | 45% |
 | 2030 | 액추에이터 에너지 효율 30%+ 개선, 열 발산 구조 개선(마이크로 채널 냉각 등) | 인간 수준 토크 밀도 달성, 무게 대폭 감소 | 열 문제가 해결 안 되어 고강도 작업 환경 배치 제한 | 40% |
@@ -49,10 +49,10 @@
 - Downside: 물리적 한계 해소가 예상보다 느리면 특화 비인간형 로봇(드론·AMR·협동로봇)이 시장 대부분을 가져가고, 휴머노이드는 고비용 틈새로 남는다.
 
 ## 연결 문서
-- [./humanoid_roadmap.md]
-- [./industrial_automation.md]
-- [../foundation_models/roadmap_annual.md]
-- [../../13_scenarios/base_case.md]
+- [./humanoid_roadmap.md](./humanoid_roadmap.md)
+- [./industrial_automation.md](./industrial_automation.md)
+- [../foundation_models/agentic_os.md](../foundation_models/agentic_os.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - GlobalSpec humanoid robot energy demands https://insights.globalspec.com/article/24246/humanoid-robots-are-tripping-over-their-high-energy-demands 2026-04 확인

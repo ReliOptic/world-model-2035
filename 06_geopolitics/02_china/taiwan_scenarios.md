@@ -47,11 +47,11 @@
 - Downside: 시진핑 내부 정치압박 + 미국 정치 불확실성 + 2027 역량 임계점이 겹치는 좁은 창에서 군사적 도발이 실질 발생.
 
 ## 연결 문서
-- [./demographics_gdp.md]
-- [./semiconductor_self_reliance.md]
-- [../20_taiwan/annual.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../13_scenarios/china_taiwan_crisis.md]
+- [./demographics_gdp.md](./demographics_gdp.md)
+- [./semiconductor_self_reliance.md](./semiconductor_self_reliance.md)
+- [../20_taiwan/annual.md](../20_taiwan/annual.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../20_taiwan/annual.md](../20_taiwan/annual.md)
 
 ## 정보 출처
 - Pentagon 2025 Annual Report to Congress PRC https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF 2026-04 확인

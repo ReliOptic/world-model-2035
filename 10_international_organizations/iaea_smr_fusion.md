@@ -24,7 +24,7 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | NHSI Phase II 주요 산출물(Toolkit, Blueprint) 발간 | 주요 설계에 대한 다국 간 규제 검토 프로세스 정착 | 규제 합의는 원칙 수준에 머물고 상호인정 유보 | 80% |
-| 2027 | 미·캐나다·영국·한국 SMR 인허가 진척이 ARIS 업데이트와 정합화 | 복수 FOAK가 2027-2028 건설 단계 진입 | 공급망·연료(HALEU) 병목으로 일정 이탈 | 70% |
+| 2027 | 미·캐나다·영국·한국 SMR 인허가 진척이 ARIS 업데이트와 정합화 | 복수 FOAK가 2027-2028 건설 단계 진입 | 공급망·연료(HALEU) 병목으로 일정 이탈 | 78% |
 | 2028 | 첫 서방 SMR FOAK 가동 가능성 가시화 | 중국·러시아 외 첫 상용 SMR 계통연결 | 일정 지연과 비용 초과가 반복되며 PPA 재협상 압력 | 60% |
 | 2029 | NHSI Phase III 논의 개시, 국가 간 설계인증 교차승인 시범 | 복수 설계의 다국 허가 병렬처리 확립 | 각국 별도 심사가 계속되며 harmonization이 정체 | 55% |
 | 2030 | SMR 상용 선단이 10기 미만 수준으로 실가동 진입 | AI·데이터센터·산업열 공급 용도 확산 | 규제는 있으나 시장 수요가 LNG·재생에 흡수 | 50% |
@@ -50,9 +50,9 @@
 - Downside: FOAK 지연·비용 초과가 반복되며 SMR 내러티브가 약화되고, 융합 상업화 기대도 재조정된다
 
 ## 연결 문서
-- [iea_weo.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/10_international_organizations/iea_weo.md)
-- [../09_corporate_roadmaps/energy_tech/commonwealth_fusion.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/09_corporate_roadmaps/energy_tech/commonwealth_fusion.md)
-- [../13_scenarios/climate_emergency.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/13_scenarios/climate_emergency.md)
+- [iea_weo.md](iea_weo.md)
+- [../09_corporate_roadmaps/energy_tech/commonwealth_fusion.md](../09_corporate_roadmaps/energy_tech/commonwealth_fusion.md)
+- [../13_scenarios/climate_emergency.md](../13_scenarios/climate_emergency.md)
 
 ## 정보 출처
 - [IAEA ARIS SMR Catalogue 2024] [https://aris.iaea.org/Publications/SMR_catalogue_2024.pdf] [2026-04 확인]

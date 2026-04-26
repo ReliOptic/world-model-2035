@@ -26,7 +26,7 @@
 | 2029 | `HBM5` 세대 전환 개시, `3D stacked logic+memory` 시도 | 대역폭 4TB/s+/stack 달성 | 적층/열/수율 한계로 HBM4E 장기 체류 | 55% |
 | 2030 | `HBM5`가 AI 가속기의 새 기준, `optical I/O` 실험 시작 | 광 인터커넥트 결합으로 랙 단위 대역폭 폭증 | HBM5 개발 지연으로 HBM4E 연장 | 50% |
 | 2031 | 메모리 대역폭이 로직 성능보다 AI 인프라 경쟁력의 중심 | 3D 메모리-로직 통합이 표준 진입 | 패키징 CAPEX 부담으로 대형 고객만 접근 | 55% |
-| 2032 | `HBM5E` 또는 차세대 규격 논의, `24-Hi` 적층 시도 | 극적층·HCB·열 설계 돌파로 랙당 메모리 50TB+ | 열밀도 한계로 HBM5 세대 연장 | 45% |
+| 2032 | `HBM5E` 또는 차세대 규격 논의, `24-Hi` 적층 시도 | 극적층·HCB·열 설계 돌파로 랙당 메모리 50TB+ | 열밀도 한계로 HBM5 세대 연장 | 35% |
 | 2033 | `HBM6` 표준 초안, `optical HBM` 파일럿 | 광연결 HBM이 초대형 AI 클러스터에서 실증 | 광전환 지연으로 전기 I/O 체제 장기화 | 35% |
 | 2034 | `HBM6` 양산 진입, custom HBM이 표준화 | 고객별 맞춤 memory subsystem이 새 해자 | 비용과 수율로 `custom HBM`은 극소수에 한정 | 40% |
 | 2035 | 메모리-로직 통합 패키지가 AI 가속기의 실질 경쟁 단위 | HBM/MEM-compute 통합 솔루션이 보편화 | 메모리 중심 경쟁이 공급 3사 과점을 더 강화 | 55% |
@@ -48,12 +48,12 @@
 - Downside: 적층 수율, 열 설계, CoWoS 캐파 중 하나라도 막히면 HBM은 2030년대 중반까지 병목 자산이 되고, AI 인프라 확장 속도가 공급 의존으로 제한된다.
 
 ## 연결 문서
-- [../roadmap_annual.md]
-- [./pim.md]
-- [../players/sk_hynix.md]
-- [../players/samsung.md]
-- [../players/tsmc.md]
-- [../../../09_corporate_roadmaps/semiconductors/nvidia.md]
+- [../roadmap_annual.md](../roadmap_annual.md)
+- [./pim.md](./pim.md)
+- [../players/sk_hynix.md](../players/sk_hynix.md)
+- [../players/samsung.md](../players/samsung.md)
+- [../players/tsmc.md](../players/tsmc.md)
+- [../../../09_corporate_roadmaps/semiconductors/nvidia.md](../../../09_corporate_roadmaps/semiconductors/nvidia.md)
 
 ## 정보 출처
 - SK hynix `HBM4 development complete` https://news.skhynix.com/sk-hynix-completes-worlds-first-hbm4-development-and-readies-mass-production/ 2026-04 확인

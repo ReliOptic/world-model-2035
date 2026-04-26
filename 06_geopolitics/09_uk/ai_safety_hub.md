@@ -46,10 +46,10 @@
 - Downside: 미·중 프런티어 경쟁 격화와 EU AI Act의 확장으로 영국의 실질 표준영향력이 축소된다.
 
 ## 연결 문서
-- [../10_france/nuclear_ai_sovereignty.md]
-- [../04_eu/annual.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
-- [../../13_scenarios/base_case.md]
+- [../10_france/nuclear_ai_sovereignty.md](../10_france/nuclear_ai_sovereignty.md)
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - AISI `About The AI Security Institute` https://www.aisi.gov.uk/about 2026-04 확인

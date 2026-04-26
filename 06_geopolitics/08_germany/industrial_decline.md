@@ -46,9 +46,9 @@
 - Downside: 에너지·관세·중국 경쟁의 삼중 충격이 지속되며 산업 공동화가 가속된다.
 
 ## 연결 문서
-- [./energy_transition.md]
-- [../04_eu/annual.md]
-- [../../13_scenarios/base_case.md]
+- [./energy_transition.md](./energy_transition.md)
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Bloomberg `Germany's Industry Crisis Deepens as Bosch Cuts 13,000 Workers` https://www.bloomberg.com/news/articles/2025-09-25/germany-s-industry-crisis-deepens-as-bosch-cuts-13-000-workers 2026-04 확인

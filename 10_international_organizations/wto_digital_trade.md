@@ -23,7 +23,7 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | 모라토리엄 만료 후 일부국 관세 실험, JSI ECA 편입 경로 논쟁 | 60개국+ ECA 가입 확대, 플러리ла터럴 편입 승인 | 브라질·인도·인니·남아공 등 반대국 블록 확대 | 80% |
-| 2027 | JSI ECA Annex 4 편입 표결 도전, 지역 FTA가 빠르게 보완 | Annex 4 편입 성사 혹은 대안 `JSI 내부 이행` 모델 구축 | 컨센서스 실패로 플러리ла터럴 본문만 존재 | 50% |
+| 2027 | JSI ECA Annex 4 편입 표결 도전, 지역 FTA가 빠르게 보완 | Annex 4 편입 성사 혹은 대안 `JSI 내부 이행` 모델 구축 | 컨센서스 실패로 플러리ла터럴 본문만 존재 | 76% |
 | 2028 | 데이터 이동·국경 간 전송 규범이 FTA 중심으로 통합 | DEPA 확장과 WTO ECA가 상호인정 구조 형성 | 미·중 디지털 분리가 심화되며 규범 통일 포기 | 55% |
 | 2029 | 전자적 전송 관세 실험 결과 평가, 재도입 논의 | 대다수 국가가 관세 재유예로 복귀 | 몇몇 대형 신흥국이 관세 부과 상설화 | 45% |
 | 2030 | AI 생성 콘텐츠·데이터 이동이 새 규범 분쟁 축으로 부상 | AI·디지털 서비스 특화 본문 추가 합의 | AI 주권·데이터 현지화가 규범 통합을 차단 | 40% |
@@ -49,9 +49,9 @@
 - Downside: 데이터 주권·디지털세·AI 서비스 차별이 확산되며 디지털 무역이 지역권으로 분절화된다
 
 ## 연결 문서
-- [un_sdg_ai.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/10_international_organizations/un_sdg_ai.md)
-- [../08_economics/stablecoin_cbdc/cbdc_geopolitics.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/08_economics/stablecoin_cbdc/cbdc_geopolitics.md)
-- [../13_scenarios/bifurcated.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/13_scenarios/bifurcated.md)
+- [un_sdg_ai.md](un_sdg_ai.md)
+- [../08_economics/stablecoin_cbdc/cbdc_geopolitics.md](../08_economics/stablecoin_cbdc/cbdc_geopolitics.md)
+- [../13_scenarios/bifurcated.md](../13_scenarios/bifurcated.md)
 
 ## 정보 출처
 - [WTO Joint Statement Initiative on E-commerce] [https://www.wto.org/english/tratop_e/ecom_e/joint_statement_e.htm] [2026-04 확인]

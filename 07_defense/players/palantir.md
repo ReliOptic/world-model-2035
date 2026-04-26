@@ -48,11 +48,11 @@
 - Downside: 경쟁 심화와 규제·정치 리스크로 상용 성장이 둔화되고 정부 의존이 장기 고착.
 
 ## 연결 문서
-- [./anduril.md]
-- [./us_darpa_diu.md]
-- [../autonomous_weapons/ai_targeting.md]
-- [../cyber/ai_offense_defense.md]
-- [../../13_scenarios/base_case.md]
+- [./anduril.md](./anduril.md)
+- [./us_darpa_diu.md](./us_darpa_diu.md)
+- [../autonomous_weapons/ai_targeting.md](../autonomous_weapons/ai_targeting.md)
+- [../cyber/ai_offense_defense.md](../cyber/ai_offense_defense.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Palantir Wikipedia https://en.wikipedia.org/wiki/Palantir 2026-04 확인

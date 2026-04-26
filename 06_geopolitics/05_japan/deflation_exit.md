@@ -46,9 +46,9 @@
 - Downside: 재정·엔화 충격이 반복되면 명목 인플레는 유지돼도 실질임금은 정체하고 정책금리 정상화가 정체된다.
 
 ## 연결 문서
-- [./manufacturing_renaissance.md]
-- [../04_eu/annual.md]
-- [../../13_scenarios/base_case.md]
+- [./manufacturing_renaissance.md](./manufacturing_renaissance.md)
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - BoJ `December 19, 2025 MPM statement` https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2025/k251219a.pdf 2026-04 확인

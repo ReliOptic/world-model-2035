@@ -27,8 +27,8 @@
 |---|---|---|---|---|
 | 2026 | Robotaxi safety monitor 제거, Optimus Gen3 데모, Starship V3 시험 | 복수 공약이 1~2년 내 실현 | 연기와 범위 축소 반복 | 80% |
 | 2027 | Artemis III와 연계된 Starship HLS 데모가 공약 신뢰도의 핵심 관문 | HLS 데모 부분 성공 | HLS 지연이 Mars 공약 신뢰도 추가 훼손 | 60% |
-| 2028 | Tesla Robotaxi 규모 확대, Optimus 초기 양산, Starship Mars cargo 시도 | 복수 공약 실질 진전 | Mars cargo 실패 시 공약 누적 피로감 증폭 | 55% |
-| 2029 | Neuralink 초기 상업 적응증 FDA 승인 시도 | Blindsight 초기 상용 | 안전 이슈로 대규모 확산 지연 | 45% |
+| 2028 | Tesla Robotaxi 규모 확대, Optimus 초기 양산, Starship Mars cargo 시도 | 복수 공약 실질 진전 | Mars cargo 실패 시 공약 누적 피로감 증폭 | 35% |
+| 2029 | Neuralink 초기 상업 적응증 FDA 승인 시도 | Blindsight 초기 상용 | 안전 이슈로 대규모 확산 지연 | 35% |
 | 2030 | Mars 윈도, Robotaxi 대형 도시 확산, Optimus 일반시장 시도 | 핵심 공약 30~50% 실제 달성 | 핵심 공약 10~20% 달성에 그침 | 55% |
 | 2031 | Musk의 2030년대 중반 "100만명 Mars" 공약은 비현실 확정 | 제한적 Mars expedition 수행 | 2030년대 중반 유인 Mars 비실현 | 85% |
 | 2032 | Tesla Optimus 가격·성능 공약의 시장 검증기 | 저가 대량공급 성사 | 가격은 높고 유용성은 제한 | 45% |
@@ -64,9 +64,9 @@
 - Downside: Mars, AGI 등 극단 공약은 2035까지 미실현, 공약 피로감 누적
 
 ## 연결 문서
-- [multiplanetary.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/elon_worldview/multiplanetary.md)
-- [neuralink.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/elon_worldview/neuralink.md)
-- [../../09_corporate_roadmaps/tesla_full.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/09_corporate_roadmaps/tesla_full.md)
+- [multiplanetary.md](multiplanetary.md)
+- [neuralink.md](neuralink.md)
+- [../../09_corporate_roadmaps/tesla_full.md](../../09_corporate_roadmaps/tesla_full.md)
 
 ## 정보 출처
 - [Elon Musk's Promises and Goals - Bloomberg] [https://www.bloomberg.com/features/elon-musk-goals/] [2026-04-23]

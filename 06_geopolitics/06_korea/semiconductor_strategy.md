@@ -47,9 +47,9 @@
 - Downside: 파운드리 경쟁력 미복구 + 중국 HBM 추격 + 전력 인프라 제약이 겹치면 한국은 메모리 1강 체제로 수렴되며 파운드리 비중이 축소된다.
 
 ## 연결 문서
-- [../annual.md](../annual.md)
+- [annual.md](annual.md)
 - [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
-- [../../09_corporate_roadmaps/semiconductors/samsung.md](../../09_corporate_roadmaps/semiconductors/samsung.md)
+- [../../02_technology/semiconductors/players/samsung.md](../../02_technology/semiconductors/players/samsung.md)
 - [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처

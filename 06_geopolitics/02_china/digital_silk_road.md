@@ -47,10 +47,10 @@
 - Downside: 이차제재·부채 위기·현지 규제 역풍이 겹치면 DSR은 지역 블록에 한정되는 축소균형으로 후퇴.
 
 ## 연결 문서
-- [./demographics_gdp.md]
-- [../01_usa/dollar_trajectory.md]
-- [../../10_international_organizations/iea_weo.md]
-- [../../13_scenarios/base_case.md]
+- [./demographics_gdp.md](./demographics_gdp.md)
+- [../01_usa/dollar_trajectory.md](../01_usa/dollar_trajectory.md)
+- [../../10_international_organizations/iea_weo.md](../../10_international_organizations/iea_weo.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - CFR China's Digital Silk Road https://www.cfr.org/china-digital-silk-road/ 2026-04 확인

@@ -22,15 +22,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | M5 Mac 전 라인업 교체, Siri 2.0 GA, Vision Air 출시 | Apple Intelligence 활용도가 iPhone 18 업그레이드 수요를 자극 | Siri 2.0 지연이 또 발생하면 AI 리더십 서사가 약화 | 75% |
-| 2027 | iPhone 19 Pro 일부 지역 AI-only 기능, M6 Mac 출시 | 접이식 iPhone과 Vision Air가 서비스 매출 견인 | Apple Intelligence가 Gemini/GPT 대비 명확히 뒤처짐 | 60% |
+| 2026 | M5 Mac 전 라인업 교체, Siri 2.0 GA, Vision Air 출시 | Apple Intelligence 활용도가 iPhone 18 업그레이드 수요를 자극 | Siri 2.0 지연이 또 발생하면 AI 리더십 서사가 약화 | 82% |
+| 2027 | iPhone 19 Pro 일부 지역 AI-only 기능, M6 Mac 출시 | 접이식 iPhone과 Vision Air가 서비스 매출 견인 | Apple Intelligence가 Gemini/GPT 대비 명확히 뒤처짐 | 78% |
 | 2028 | Services 매출 `150B 달러+`, AI 스마트 안경 대중화 | 기기-서비스-AI 번들이 Apple One 확장의 축 | 규제(App Store 수수료)로 Services 성장 둔화 | 65% |
 | 2029 | Apple Silicon이 서버·클라우드 영역 확장 시작(Private Cloud Compute 확장) | 자체 모델이 Gemini/GPT 기능 동등 수준 도달 | 외부 파트너(OpenAI/Anthropic) 의존도 지속 | 55% |
 | 2030 | iPhone 매출 비중이 40% 이하로 하락, Services·웨어러블이 다변화 견인 | 다변화 성공으로 밸류에이션 재평가 | iPhone 수요 플래토로 매출 정체 | 50% |
 | 2031 | Apple Intelligence 에이전트가 iOS·macOS·visionOS 전반 기본 UX | 개인 데이터·프라이버시 프리미엄 모델 확립 | EU DMA·미국 반독점으로 기기-서비스 결합 규제 | 55% |
-| 2032 | AI 안경이 iPhone 옆 두 번째 메인 기기 | 하드웨어 포트폴리오 재정렬 완료 | 안경 시장 크기가 기대에 미달 | 40% |
+| 2032 | AI 안경이 iPhone 옆 두 번째 메인 기기 | 하드웨어 포트폴리오 재정렬 완료 | 안경 시장 크기가 기대에 미달 | 35% |
 | 2033 | 서비스/구독 매출이 순이익의 절반 이상 | Apple이 'AI 시대의 Disney'식 IP·서비스 기업으로 재분류 | 플랫폼 수수료 삭감 규제 확산 | 50% |
-| 2034 | 자율주행·로봇·헬스 분야 진입 확대 | 제조·의료 칩이 새로운 카테고리 | 신사업 실패로 하드웨어 의존 유지 | 35% |
+| 2034 | 자율주행·로봇·헬스 분야 진입 확대 | 제조·의료 칩이 새로운 카테고리 | 신사업 실패로 하드웨어 의존 유지 | 30% |
 | 2035 | Apple은 "기기 + 프라이버시 AI"의 기본 표준, Services 200B+ 달러 | 에이전트 경제에서 개인 데이터 허브로 고정 | AI 경쟁 격차로 프리미엄 시장 점유율 침식 | 60% |
 
 ## 물리적/구조적 한계

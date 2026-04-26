@@ -26,12 +26,12 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | BdF 성장 `~0.9%`, EPR2 FID 성사, AI Campus 착공 | 재정법 통과·투자 조기 집행 | 연정 불안, FID 지연 | 80% |
-| 2027 | 원전 수명연장·AI 데이터센터 전력 계약 확대 | Mistral·Kyutai 글로벌 점유 확대 | 연정 파열·조기선거 | 55% |
+| 2027 | 원전 수명연장·AI 데이터센터 전력 계약 확대 | Mistral·Kyutai 글로벌 점유 확대 | 연정 파열·조기선거 | 77% |
 | 2028 | 대선 (Macron 임기말·후임 경쟁) | 친원전·친AI 노선 연속 | 정권 교체로 에너지 노선 변경 | 50% |
-| 2029 | EPR2 본격 공사, SMR 1호기 규제 승인 | 원전 수출 부활 | 공사 지연·비용 초과 | 45% |
-| 2030 | France 2030·PPE3 중간 평가 | 산업투자 성과 가시화 | 재정 긴축이 속도 저하 | 55% |
+| 2029 | EPR2 본격 공사, SMR 1호기 규제 승인 | 원전 수출 부활 | 공사 지연·비용 초과 | 38% |
+| 2030 | France 2030·PPE3 중간 평가 | 산업투자 성과 가시화 | 재정 긴축이 속도 저하 | 50% |
 | 2031 | EU 방위·AI 리더십에서 프랑스 역할 증대 | EU 공동조달·SCAF에서 주도권 | 독일과의 조정 실패 | 50% |
-| 2032 | 원전 신규 가동 준비 단계 | 전력가격 안정·AI 경쟁력 상승 | 공사 지연으로 전력 공급 부족 | 45% |
+| 2032 | 원전 신규 가동 준비 단계 | 전력가격 안정·AI 경쟁력 상승 | 공사 지연으로 전력 공급 부족 | 35% |
 | 2033 | AI·방산·원전의 수출 확대 | 지중해·아프리카 전력·방산 축 | 수출경쟁·정치 불안정 | 50% |
 | 2034 | 프랑스는 EU 내 `AI·원자력·방위` 축으로 재확립 | 생산성 반등 | 재정·사회 비용 누적 | 50% |
 | 2035 | Base: 원전 기반 AI·방위 중견강국 | EPR2 가동·AI 주권 확보 | FID 실패·수출 부진 | 55% |
@@ -53,11 +53,11 @@
 - Downside: 재정·정치 불안이 장기화되면 전략문서는 남지만 실행이 지연.
 
 ## 연결 문서
-- [../04_eu/annual.md]
-- [../08_germany/annual.md]
-- [../09_uk/annual.md]
-- [../../03_energy/grid/ai_optimization.md]
-- [../../13_scenarios/base_case.md]
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../08_germany/annual.md](../08_germany/annual.md)
+- [../09_uk/annual.md](../09_uk/annual.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Banque de France Macroeconomic interim projections September 2025 https://www.banque-france.fr/en/publications-and-statistics/publications/macroeconomic-interim-projections-september-2025 2026-04 확인

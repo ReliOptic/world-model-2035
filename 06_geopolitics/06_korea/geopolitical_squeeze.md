@@ -47,10 +47,10 @@
 - Downside: 정치 사이클과 인구·재정 제약이 복합돼 방산·안보 확장의 피로가 누적된다.
 
 ## 연결 문서
-- [./nps_scenarios.md]
-- [./semiconductor_strategy.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../13_scenarios/base_case.md]
+- [./nps_scenarios.md](./nps_scenarios.md)
+- [./semiconductor_strategy.md](./semiconductor_strategy.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Carnegie `Yoon's Impeachment and South Korea's Future` https://carnegieendowment.org/research/2025/04/yoons-impeachment-and-south-koreas-future?lang=en 2026-04 확인

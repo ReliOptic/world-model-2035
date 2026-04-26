@@ -47,11 +47,11 @@
 - Downside: 인력·전력·엔화 리스크가 겹치면 보조금 의존형 구조로 고착되고 수익성 회복은 지연된다.
 
 ## 연결 문서
-- [./deflation_exit.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../20_taiwan/tsmc_geopolitics.md]
-- [../../03_energy/grid/ai_optimization.md]
-- [../../13_scenarios/base_case.md]
+- [./deflation_exit.md](./deflation_exit.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../20_taiwan/tsmc_geopolitics.md](../20_taiwan/tsmc_geopolitics.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - METI `GX Policy / GX2040 Vision` https://www.enecho.meti.go.jp/en/category/special/article/detail_214.html 2026-04 확인

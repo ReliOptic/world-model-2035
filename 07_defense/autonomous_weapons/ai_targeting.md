@@ -47,11 +47,11 @@
 - Downside: 반복 오인 피해와 책임 공백이 AI 기반 군사력 신뢰를 체계적으로 훼손한다.
 
 ## 연결 문서
-- [./drone_swarms.md]
-- [../players/palantir.md]
-- [../players/us_darpa_diu.md]
-- [../cyber/ai_offense_defense.md]
-- [../../13_scenarios/base_case.md]
+- [./drone_swarms.md](./drone_swarms.md)
+- [../players/palantir.md](../players/palantir.md)
+- [../players/us_darpa_diu.md](../players/us_darpa_diu.md)
+- [../cyber/ai_offense_defense.md](../cyber/ai_offense_defense.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Feinberg Maven directive DefenseScoop https://defensescoop.com/2026/04/03/palantir-maven-feinberg-directive/ 2026-04 확인

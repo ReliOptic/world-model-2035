@@ -21,14 +21,14 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | Iran 접근 제한 지속, New START 후속 부재 | 임시 투명성 합의(제한적 사찰) | Iran 외교 완전 붕괴 | 85% |
-| 2027 | 사우디 농축 협상 결정 구간 | 미·사우디 비확산 표준 패키지 | 사우디 자체 개발 착수 신호 | 55% |
+| 2027 | 사우디 농축 협상 결정 구간 | 미·사우디 비확산 표준 패키지 | 사우디 자체 개발 착수 신호 | 80% |
 | 2028 | DPRK `SLBM/고체 ICBM` 추가 시험 | 한·미 억제 신뢰성 복원 | DPRK 핵 실험 추가 가능성 | 60% |
 | 2029 | China 탄두 `800기+` 구간 접근 | 제한적 P5 대화 복원 | 삼각 군축 교착 고착 | 60% |
 | 2030 | China 탄두 `1,000기+` 도달, 사우디 결정 확정 | 미·사우디·이스라엘 합의 체계 안착 | 사우디 자체 능력 확대 | 65% |
 | 2031 | Iran 미해결 상태의 핵 능력 확장 보고 | 새 합의 초안 출현 | 역내 확산 연쇄(터키·이집트) | 55% |
-| 2032 | 재확산 국가(`2차 wave`) 의심 신호 | 역내 안전보장 프레임 | 동시 다국 개발 신호 | 50% |
+| 2032 | 재확산 국가(`2차 wave`) 의심 신호 | 역내 안전보장 프레임 | 동시 다국 개발 신호 | 30% |
 | 2033 | 비국가·AI 기반 확산 위협 부각 | AI 감시 프레임으로 제한 | AI가 확산 문턱 낮추는 실증 등장 | 55% |
-| 2034 | NPT 체제 재평가 실질화 | NPT 보완 합의 출현 | NPT 실질 기능 축소 | 50% |
+| 2034 | NPT 체제 재평가 실질화 | NPT 보완 합의 출현 | NPT 실질 기능 축소 | 30% |
 | 2035 | 전 세계 탄두 수 `2010` 이후 최고 구간 진입 | 신형 관리체제 부분 정착 | 다극 핵 경쟁 고착, 지역 위기 반복 | 65% |
 
 ## 물리적/구조적 한계
@@ -47,11 +47,11 @@
 - Downside: Iran 재시동 + 사우디 확보 + DPRK 확장이 동시 발생해 역내 연쇄 확산 시나리오 실현.
 
 ## 연결 문서
-- [./modernization.md]
-- [../../06_geopolitics/01_us_china/annual.md]
-- [../../06_geopolitics/02_middle_east/annual.md]
-- [../../10_international_organizations/iaea.md]
-- [../../13_scenarios/wmd_shock.md]
+- [./modernization.md](./modernization.md)
+- [../../06_geopolitics/01_usa/annual.md](../../06_geopolitics/01_usa/annual.md)
+- [../../06_geopolitics/11_saudi_arabia/annual.md](../../06_geopolitics/11_saudi_arabia/annual.md)
+- [../../10_international_organizations/iaea_smr_fusion.md](../../10_international_organizations/iaea_smr_fusion.md)
+- [../../12_wildcards/geopolitical_shocks.md](../../12_wildcards/geopolitical_shocks.md)
 
 ## 정보 출처
 - IAEA Board of Governors GOV/2026/8 https://www.iaea.org/sites/default/files/gov2026-8.pdf 2026-04 확인

@@ -46,9 +46,9 @@
 - Downside: 인구 가정 추가 악화와 구조개혁 실패가 겹치면 재고갈 시점이 `2055-2060`으로 복귀한다.
 
 ## 연결 문서
-- [./geopolitical_squeeze.md]
-- [./semiconductor_strategy.md]
-- [../../13_scenarios/base_case.md]
+- [./geopolitical_squeeze.md](./geopolitical_squeeze.md)
+- [./semiconductor_strategy.md](./semiconductor_strategy.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - KDI `Korea's National Pension: Structural Reform Measures` https://www.kdi.re.kr/eng/research/reportView?pub_no=18361 2026-04 확인

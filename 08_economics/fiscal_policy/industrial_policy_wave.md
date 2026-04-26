@@ -47,10 +47,10 @@
 - Downside: 과잉 보조금 경쟁 + 재정 압박 + WTO 붕괴 + 중국 보복이 겹치면 산업정책 효과는 비용 대비 실망스러운 결과로 귀결된다
 
 ## 연결 문서
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../09_corporate_roadmaps/semiconductors/tsmc.md]
-- [../../06_geopolitics/04_eu/annual.md]
-- [../../10_international_organizations/wto_digital_trade.md]
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../09_corporate_roadmaps/semiconductors/tsmc.md](../../09_corporate_roadmaps/semiconductors/tsmc.md)
+- [../../06_geopolitics/04_eu/annual.md](../../06_geopolitics/04_eu/annual.md)
+- [../../10_international_organizations/wto_digital_trade.md](../../10_international_organizations/wto_digital_trade.md)
 
 ## 정보 출처
 - CHIPS and Science Act Wikipedia overview https://en.wikipedia.org/wiki/CHIPS_and_Science_Act 2026-04 확인

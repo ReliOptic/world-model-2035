@@ -24,13 +24,13 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | GDP `+3-4%`, AI 거버넌스 표준 확장, 데이터센터 FDI 증가 | ASEAN DEFA 서명, 반도체 신규투자 연쇄 | 미-중 기술 분리 격화로 허브 압박 | 80% |
-| 2027 | DEFA 발효, ASEAN 디지털 단일시장 본격 | 싱가포르 AI 플랫폼·법제가 역내 표준 | 지역 정치 변동성으로 표준 지연 | 55% |
+| 2027 | DEFA 발효, ASEAN 디지털 단일시장 본격 | 싱가포르 AI 플랫폼·법제가 역내 표준 | 지역 정치 변동성으로 표준 지연 | 78% |
 | 2028 | 반도체·데이터센터 15GW+ 허브 | Jurong·Woodlands 신규 파운드리·패키징 | 전력·부지 제약 | 50% |
-| 2029 | AI Verify 글로벌 확산, 다국적 인증 허브 | G20·OECD 합의 표준의 축 | EU·미 자체 표준이 배제 | 55% |
+| 2029 | AI Verify 글로벌 확산, 다국적 인증 허브 | G20·OECD 합의 표준의 축 | EU·미 자체 표준이 배제 | 50% |
 | 2030 | 2030 Green Plan 중간 평가 | 탄소 수출세·탄소가격 정착 | 글로벌 탄소가격 분절 | 55% |
-| 2031 | AI·반도체·바이오의 고부가 재배치 | 지역 본사·금융·물류 3중 허브 | 홍콩·두바이 경쟁 심화 | 55% |
-| 2032 | 인구 고령화가 노동 공급 구조 이슈 | 생산성 중심 이민·자동화 재편 | 사회적 합의 난관 | 50% |
-| 2033 | ASEAN 경제력 전체가 G3 수준 진입 | 싱가포르는 그 핵심 조정자 | 지역 불균등 성장 지속 | 55% |
+| 2031 | AI·반도체·바이오의 고부가 재배치 | 지역 본사·금융·물류 3중 허브 | 홍콩·두바이 경쟁 심화 | 50% |
+| 2032 | 인구 고령화가 노동 공급 구조 이슈 | 생산성 중심 이민·자동화 재편 | 사회적 합의 난관 | 38% |
+| 2033 | ASEAN 경제력 전체가 G3 수준 진입 | 싱가포르는 그 핵심 조정자 | 지역 불균등 성장 지속 | 35% |
 | 2034 | 글로벌 AI·금융·무역의 교차점 유지 | 미·중·EU·UAE·인도 모두 신뢰하는 허브 | 중립 포지션 비용 증가 | 55% |
 | 2035 | Base: 소국이지만 글로벌 허브의 교과서 사례 유지 | AI·반도체·금융·바이오의 복합 성장 | 규모 한계·비용 압박이 점진 누적 | 60% |
 
@@ -51,11 +51,11 @@
 - Downside: 미·중 분리·비용 상승·경쟁 허브 부상(두바이·홍콩·방콕)이 허브 매력 약화.
 
 ## 연결 문서
-- [../02_china/annual.md]
-- [../14_indonesia/annual.md]
-- [../12_uae/annual.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../13_scenarios/base_case.md]
+- [../02_china/annual.md](../02_china/annual.md)
+- [../14_indonesia/annual.md](../14_indonesia/annual.md)
+- [../12_uae/annual.md](../12_uae/annual.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - MAS Monetary Policy Statement April 2026 https://www.mas.gov.sg/news/monetary-policy-statements/2026/mas-monetary-policy-statement-14apr26 2026-04 확인

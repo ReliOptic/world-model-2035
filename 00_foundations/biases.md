@@ -28,9 +28,9 @@ This file lists the explicit forecast biases that should be corrected during dra
 - Does the file include Base, Upside, and Downside?
 
 ## 연결 문서
-- [axioms.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/axioms.md)
-- [tech_realism_framework.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/tech_realism_framework.md)
-- [METHODOLOGY.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/METHODOLOGY.md)
+- [axioms.md](axioms.md)
+- [tech_realism_framework.md](tech_realism_framework.md)
+- [METHODOLOGY.md](../METHODOLOGY.md)
 
 ## 정보 출처
 - This is a repository framing file derived from the project brief in `The world in 2035.md` on 2026-04-20.

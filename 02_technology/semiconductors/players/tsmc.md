@@ -25,8 +25,8 @@
 | 2027 | CoWoS 9.5x 인터포저 출하(HBM 12개+AI 가속기 4개 통합), N2P 주력화 | 패키징 혁신으로 AI 성능·전력 효율 비약적 향상 | CoWoS 9.5x 수율 문제로 대형 AI 패키지 공급 차질 | 70% |
 | 2028 | A14 양산 진입, ESMC 드레스덴 첫 가동, Arizona Phase 2 진행 | A14 수율 조기 안정화, 첨단 AI 칩 공급 다변화 | A14 수율 지연, ESMC 건설 지연으로 유럽 목표 2029+로 이동 | 65% |
 | 2029 | A13 개발 완료·양산 준비, JASM 2팹 3nm 양산 진입 | A13 양산으로 TSMC 리더십 2030년대까지 연장 확인 | 경쟁사(Intel·Samsung)가 예상보다 빠르게 추격 | 75% |
-| 2030 | A12 개발 진입, 글로벌 팹(미국·일본·독일·대만) 네트워크 완성 단계 | 다극 TSMC 팹 체계가 지정학 리스크를 의미 있게 분산 | 대만 해협 긴장 고조로 공급망 불확실성 증대 | 65% |
-| 2031 | 광연결(CPO) 통합 패키징이 CoWoS 다음 세대로 부상, TSMC가 선점 가속 | TSMC의 패키징 리더십이 로직 공정 리더십과 동등한 가치를 창출 | CPO 표준화 지연으로 로직+패키징 통합 효과 제한적 | 65% |
+| 2030 | A12 개발 진입, 글로벌 팹(미국·일본·독일·대만) 네트워크 완성 단계 | 다극 TSMC 팹 체계가 지정학 리스크를 의미 있게 분산 | 대만 해협 긴장 고조로 공급망 불확실성 증대 | 35% |
+| 2031 | 광연결(CPO) 통합 패키징이 CoWoS 다음 세대로 부상, TSMC가 선점 가속 | TSMC의 패키징 리더십이 로직 공정 리더십과 동등한 가치를 창출 | CPO 표준화 지연으로 로직+패키징 통합 효과 제한적 | 35% |
 | 2032 | 서브-2nm 시대에서도 TSMC가 리더십 유지 여부 가시화 | 경쟁사 추격 지연으로 TSMC 점유율 60%+ 유지 | 수율 한계와 원가 상승으로 일부 고객이 저세대 노드 선택 | 70% |
 | 2033 | 패키징·메모리 통합·로직의 복합 경쟁력이 TSMC 차별화 핵심으로 고착 | 이기종 통합(chiplet+HBM+패키징)에서 TSMC가 원스톱 솔루션 제공 | 경쟁사의 패키징 역량 강화로 TSMC 독점성 약화 | 65% |
 | 2034 | TSMC의 첨단 노드 점유율 60%+, 패키징 점유율 70%+ 예상 | 기술·생태계·고객 잠금이 삼중으로 결합된 구조적 독점 확립 | 지정학 충격(대만 해협 위기)이 공급망 전체를 교란 | 60% |
@@ -50,11 +50,11 @@
 - Downside: 대만 해협 충격이 현실화되거나 수율·원가 문제로 고객이 분산되면 AI 공급망 전체가 구조적 충격을 받는다.
 
 ## 연결 문서
-- [../roadmap_annual.md]
-- [./samsung.md]
-- [./sk_hynix.md]
-- [../../06_geopolitics/20_taiwan/tsmc_geopolitics.md]
-- [../../13_scenarios/base_case.md]
+- [../roadmap_annual.md](../roadmap_annual.md)
+- [./samsung.md](./samsung.md)
+- [./sk_hynix.md](./sk_hynix.md)
+- [../../../06_geopolitics/20_taiwan/tsmc_geopolitics.md](../../../06_geopolitics/20_taiwan/tsmc_geopolitics.md)
+- [../../../13_scenarios/base_case.md](../../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - TSMC 2025 Technology Symposium Semiwiki briefing https://semiwiki.com/semiconductor-manufacturers/tsmc/355121-tsmc-2025-technical-symposium-briefing/ 2026-04 확인

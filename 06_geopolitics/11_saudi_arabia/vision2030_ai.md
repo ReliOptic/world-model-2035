@@ -47,10 +47,10 @@
 - Downside: 지정학·재정·인재 변수로 인프라 과잉과 구조조정 리스크 확대.
 
 ## 연결 문서
-- [../12_uae/neutral_ai_hub.md]
-- [../../13_scenarios/base_case.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../03_energy/grid/ai_optimization.md]
+- [../12_uae/neutral_ai_hub.md](../12_uae/neutral_ai_hub.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
 
 ## 정보 출처
 - NVIDIA `HUMAIN and NVIDIA Announce Strategic Partnership` https://nvidianews.nvidia.com/news/humain-and-nvidia-announce-strategic-partnership-to-build-ai-factories-of-the-future-in-saudi-arabia 2026-04 확인

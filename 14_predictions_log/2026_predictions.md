@@ -32,3 +32,7 @@ This file records testable predictions anchored in 2026 that can be scored again
 ## 연결 문서
 - [template.md](./template.md)
 - [../00_foundations/scoring.md](../00_foundations/scoring.md)
+
+## 정보 출처
+- 이 파일은 각 예측 행의 `Source File` 열에 연결된 repository source-backed 문서들을 집계한 scoring log다.
+- 예측 해소 시점에는 해당 행의 source file과 공개 관측자료를 함께 확인해 `Hit` / `Miss` / `Mixed` / `Unscorable` 중 하나로 판정한다.

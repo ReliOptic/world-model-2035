@@ -27,16 +27,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | GPW14와 programme budget이 우선순위 재조정 체제로 작동 | 자금구조가 안정화되며 핵심 기능 방어 | funding gap으로 활동 축소 | 중 |
-| 2027 | Pandemic Agreement 후속 annex와 비준 진전이 핵심 | PABS 체계가 구체화 | 정치적 분열로 합의 이행 지연 | 중 |
-| 2028 | WHO는 보건규범과 위기대응을 더 명확히 분리해 운영할 가능성 | emergency coordination 기능 강화 | 회원국 신뢰 약화 | 중 |
-| 2029 | climate-health, AMR, outbreak preparedness가 예산 우선순위로 더 고정 | 다중위기 대응 능력 향상 | 만성 재정압박 지속 | 중 |
-| 2030 | WHO의 가치가 기술기관보다 crisis coordinator로 더 평가됨 | 조기경보·데이터 통합 기능 강화 | 지역블록화로 보건 거버넌스 분절 | 중 |
-| 2031 | 팬데믹 이후 세대의 준비태세 평가가 본격화 | member state compliance 개선 | 규범은 있으나 실행은 약함 | 중 |
-| 2032 | WHO는 저소득국 health security 지원에서 여전히 중심축 | financing reform 성공 | donor 의존 심화 | 중 |
-| 2033 | emerging diseases와 climate-linked health shocks가 역할을 더 키움 | data-driven global coordination 정착 | 경쟁기관 난립 | 중 |
-| 2034 | WHO의 legitimacy는 실제 성과와 현장조정능력으로 재평가 | 보건위기 대응 표준기관 지위 강화 | 정치화 심화 | 중 |
-| 2035 | WHO는 여전히 없어서는 안 될 국제기구일 가능성이 높지만, 영향력의 진짜 분기점은 규범문서 수가 아니라 안정재원과 현장조정능력이다 | financing reform과 조기경보 체계가 정착 | 구조적 재원부족으로 상징성만 남음 | 중 |
+| 2026 | GPW14와 programme budget이 우선순위 재조정 체제로 작동 | 자금구조가 안정화되며 핵심 기능 방어 | funding gap으로 활동 축소 | 80% |
+| 2027 | Pandemic Agreement 후속 annex와 비준 진전이 핵심 | PABS 체계가 구체화 | 정치적 분열로 합의 이행 지연 | 78% |
+| 2028 | WHO는 보건규범과 위기대응을 더 명확히 분리해 운영할 가능성 | emergency coordination 기능 강화 | 회원국 신뢰 약화 | 65% |
+| 2029 | climate-health, AMR, outbreak preparedness가 예산 우선순위로 더 고정 | 다중위기 대응 능력 향상 | 만성 재정압박 지속 | 60% |
+| 2030 | WHO의 가치가 기술기관보다 crisis coordinator로 더 평가됨 | 조기경보·데이터 통합 기능 강화 | 지역블록화로 보건 거버넌스 분절 | 55% |
+| 2031 | 팬데믹 이후 세대의 준비태세 평가가 본격화 | member state compliance 개선 | 규범은 있으나 실행은 약함 | 50% |
+| 2032 | WHO는 저소득국 health security 지원에서 여전히 중심축 | financing reform 성공 | donor 의존 심화 | 45% |
+| 2033 | emerging diseases와 climate-linked health shocks가 역할을 더 키움 | data-driven global coordination 정착 | 경쟁기관 난립 | 35% |
+| 2034 | WHO의 legitimacy는 실제 성과와 현장조정능력으로 재평가 | 보건위기 대응 표준기관 지위 강화 | 정치화 심화 | 30% |
+| 2035 | WHO는 여전히 없어서는 안 될 국제기구일 가능성이 높지만, 영향력의 진짜 분기점은 규범문서 수가 아니라 안정재원과 현장조정능력이다 | financing reform과 조기경보 체계가 정착 | 구조적 재원부족으로 상징성만 남음 | 55% |
 
 ## 물리적/구조적 한계
 - 극복된 것:
@@ -67,10 +67,10 @@
 - Downside: 만성 자금난과 정치화로 규범기관 이상의 영향력을 잃는다
 
 ## 연결 문서
-- [imf_weo.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/10_international_organizations/imf_weo.md)
-- [ipcc_ar7.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/10_international_organizations/ipcc_ar7.md)
-- [../01_climate_and_nature/ai_climate_tools/early_warning.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/01_climate_and_nature/ai_climate_tools/early_warning.md)
-- [../13_scenarios/climate_emergency.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/13_scenarios/climate_emergency.md)
+- [imf_weo.md](imf_weo.md)
+- [ipcc_ar7.md](ipcc_ar7.md)
+- [../01_climate_and_nature/ai_climate_tools/early_warning.md](../01_climate_and_nature/ai_climate_tools/early_warning.md)
+- [../13_scenarios/climate_emergency.md](../13_scenarios/climate_emergency.md)
 
 ## 정보 출처
 - [WHO Programme Budget Digital Platform 2026-2027] [https://www.who.int/about/accountability/budget/programme-budget-digital-platform-2026-2027] [2026-04-21]

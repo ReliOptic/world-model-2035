@@ -49,7 +49,7 @@
 ## 연결 문서
 - [./annual.md](./annual.md)
 - [../18_singapore/asean_ai_hub.md](../18_singapore/asean_ai_hub.md)
-- [../../04_eu/eu_ai_act.md](../../04_eu/eu_ai_act.md)
+- [../04_eu/eu_ai_act.md](../04_eu/eu_ai_act.md)
 - [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처

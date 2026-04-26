@@ -45,9 +45,9 @@
 - Downside: 고부채 + 저성장 재귀 + JGB 시장 기능 이상이 겹치면 BoJ는 사실상 재정 지원자로 역할이 고착되고 엔화 신뢰도가 훼손된다
 
 ## 연결 문서
-- [ecb.md]
-- [fed_annual.md]
-- [../fiscal_policy/us_debt.md]
+- [ecb.md](ecb.md)
+- [fed_annual.md](fed_annual.md)
+- [../fiscal_policy/us_debt.md](../fiscal_policy/us_debt.md)
 
 ## 정보 출처
 - CNBC BoJ rate hike December 2025 highest in 30 years https://www.cnbc.com/2025/12/19/bank-of-japan-boj-rate-cpi-inflation-takaichi-ueda.html 2026-04 확인

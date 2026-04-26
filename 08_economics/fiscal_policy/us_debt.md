@@ -44,9 +44,9 @@
 - Downside: 개혁 실패 + 금리 재상승 + 달러 신뢰 약화가 겹치면 미국 재정 리스크가 글로벌 금융시장 최대 꼬리 리스크로 부상
 
 ## 연결 문서
-- [../monetary_policy/fed_annual.md]
-- [../stablecoin_cbdc/tbill_demand_model.md]
-- [../../10_international_organizations/imf_weo.md]
+- [../monetary_policy/fed_annual.md](../monetary_policy/fed_annual.md)
+- [../stablecoin_cbdc/tbill_demand_model.md](../stablecoin_cbdc/tbill_demand_model.md)
+- [../../10_international_organizations/imf_weo.md](../../10_international_organizations/imf_weo.md)
 
 ## 정보 출처
 - CBO Budget and Economic Outlook 2026–2036 February 2026 https://www.cbo.gov/publication/61882 2026-04 확인

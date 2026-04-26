@@ -24,8 +24,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | SPARC 첫 플라즈마, ST80-HTS 완공, Polaris 운전 데이터 공개 | SPARC에서 Q>1 조기 달성 | SPARC 플라즈마 지연, Helion 첫 전력 공급 2029로 밀림 | 65% |
-| 2027 | CFS SPARC Q>1 시연, BEST 첫 플라즈마, TAE Da Vinci 설계동결 | SPARC·BEST 동시 Q>1 달성 | SPARC Q>1이 `2028-2029`로 밀림 | 55% |
+| 2026 | SPARC 첫 플라즈마, ST80-HTS 완공, Polaris 운전 데이터 공개 | SPARC에서 Q>1 조기 달성 | SPARC 플라즈마 지연, Helion 첫 전력 공급 2029로 밀림 | 80% |
+| 2027 | CFS SPARC Q>1 시연, BEST 첫 플라즈마, TAE Da Vinci 설계동결 | SPARC·BEST 동시 Q>1 달성 | SPARC Q>1이 `2028-2029`로 밀림 | 78% |
 | 2028 | Helion Orion 가동 시도, ARC 부지 공사 본격화 | Helion이 예정대로 전력 공급 개시 | Helion 가동 지연, Orion 재설계 | 40% |
 | 2029 | CFS ARC 주요 부품 제작, ST-E1 설계동결 | 복수 파일럿 플랜트 착공 | 주요 프로젝트 자금조달 난항 | 50% |
 | 2030 | BEST 성능 확장 운전, CFS ARC 건설 중반 | BEST에서 Q=5 달성 | BEST Q 증명 지연 | 45% |
@@ -33,7 +33,7 @@
 | 2032 | TAE Da Vinci 첫 플라즈마, ARC 주요 자석 설치 | Da Vinci 초기 운전 성공 | Da Vinci 시연 지연, ARC 시운전 지연 | 40% |
 | 2033 | CFS ARC 첫 플라즈마·그리드 연계 시도 | ARC가 `400MWe` 급전 시연 | ARC 시운전 `2035+`로 밀림 | 35% |
 | 2034 | ITER 첫 플라즈마, 민간 파일럿 1-2기 상업 발전 근접 | 민간·공공 동시 플라즈마 성공 | ITER 또 지연, 민간 상업화 증명 실패 | 50% |
-| 2035 | 전 세계 `1-2기` 민간 파일럿이 그리드 전력 공급, 누적 투자 `$25-35B` | 민간 파일럿 `3-4기` 상업 발전, 정책 지원 제도화 | 어떤 민간 파일럿도 상업 발전 증명 실패 | 35% |
+| 2035 | 전 세계 `1-2기` 민간 파일럿이 그리드 전력 공급, 누적 투자 `$25-35B` | 민간 파일럿 `3-4기` 상업 발전, 정책 지원 제도화 | 어떤 민간 파일럿도 상업 발전 증명 실패 | 15% |
 
 ## 물리적/구조적 한계
 - 토카막은 대형 HTS 자석의 장시간 안정 운전과 냉각 시스템이 최대 병목이다. Demo4급 자장은 확보했지만 `분 단위 이상` 펄스 지속 증명이 남는다.
@@ -51,10 +51,10 @@
 - Downside: 핵심 파일럿 중 1기 이상이 자금조달 실패·기술 난관으로 지연되고, 2035년까지 그리드 연계 상업 핵융합 발전은 미실현에 그친다.
 
 ## 연결 문서
-- [./physical_limits.md]
-- [../fission_smr/roadmap_annual.md]
-- [../../10_international_organizations/iea_weo.md]
-- [../../13_scenarios/base_case.md]
+- [./physical_limits.md](./physical_limits.md)
+- [../fission_smr/roadmap_annual.md](../fission_smr/roadmap_annual.md)
+- [../../10_international_organizations/iea_weo.md](../../10_international_organizations/iea_weo.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - CFS `Technology SPARC` https://cfs.energy/technology/sparc/ 2026-04 확인

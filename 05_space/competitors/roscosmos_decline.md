@@ -32,8 +32,8 @@
 | 2031 | CNSA ILRS 기여 본격화 | 합동 mission에서 러시아 역할 확대 | 예산 부족으로 참여 축소 | 55% |
 | 2032 | Angara A5 상업 발사 본격화 시도 | 연 5회 이상 cadence | 연 2회 이하 | 40% |
 | 2033 | ROS 구성 2~3 모듈 배치 | 독립 우주정거장 초기 운용 | ROS 계획 축소 | 35% |
-| 2034 | 러시아 민간 발사 시장 점유 2% 이하 | 국가 임무 중심 유지 | 발사 인프라 추가 축소 | 65% |
-| 2035 | Roscosmos는 CNSA·ILRS 하위 파트너로 자리, 독자 달·화성 프로그램은 제한적 | ROS 기본 운용 + ILRS 기여 | Roscosmos 체제 재편 또는 축소 | 70% |
+| 2034 | 러시아 민간 발사 시장 점유 2% 이하 | 국가 임무 중심 유지 | 발사 인프라 추가 축소 | 78% |
+| 2035 | Roscosmos는 CNSA·ILRS 하위 파트너로 자리, 독자 달·화성 프로그램은 제한적 | ROS 기본 운용 + ILRS 기여 | Roscosmos 체제 재편 또는 축소 | 76% |
 
 ## 물리적/구조적 한계
 - 극복된 것:
@@ -65,9 +65,9 @@
 - Downside: ROS 축소/취소, CNSA 파트너십 비대칭 심화, 상업 시장 사실상 퇴출
 
 ## 연결 문서
-- [china_cnsa.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/competitors/china_cnsa.md)
-- [esa_roadmap.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/competitors/esa_roadmap.md)
-- [../../06_geopolitics/03_russia/annual.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/06_geopolitics/03_russia/annual.md)
+- [china_cnsa.md](china_cnsa.md)
+- [esa_roadmap.md](esa_roadmap.md)
+- [../../06_geopolitics/07_russia/annual.md](../../06_geopolitics/07_russia/annual.md)
 
 ## 정보 출처
 - [Roscosmos - Wikipedia] [https://en.wikipedia.org/wiki/Roscosmos] [2026-04-23]

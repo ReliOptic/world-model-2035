@@ -23,15 +23,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Dogger Bank A/B/C 전면 가동, CVOW 재가동, Dogger Bank D DCO 신청 | 미국 연방 정책 안정화 | CVOW 추가 중단, 미국 신규 프로젝트 대규모 취소 | 75% |
-| 2027 | 영국·독일·네덜란드 신규 `6-8GW` 가동, Vestas V236 대량 설치 | 터빈 공급망 안정 | V236 품질 이슈 재발 | 65% |
+| 2026 | Dogger Bank A/B/C 전면 가동, CVOW 재가동, Dogger Bank D DCO 신청 | 미국 연방 정책 안정화 | CVOW 추가 중단, 미국 신규 프로젝트 대규모 취소 | 85% |
+| 2027 | 영국·독일·네덜란드 신규 `6-8GW` 가동, Vestas V236 대량 설치 | 터빈 공급망 안정 | V236 품질 이슈 재발 | 80% |
 | 2028 | 중국 신규 `15GW+`, 아시아(대만·한국·일본) 프로젝트 본격화 | 중국이 연 `18GW+` 가속 | 아시아 프로젝트 허가 지연 | 70% |
-| 2029 | Green Volt 부유식 `560MW` 가동, 유럽 부유식 누적 `2-3GW` | 부유식 상업화 본격화 | 부유식 공급망 병목 | 60% |
+| 2029 | Green Volt 부유식 `560MW` 가동, 유럽 부유식 누적 `2-3GW` | 부유식 상업화 본격화 | 부유식 공급망 병목 | 35% |
 | 2030 | 글로벌 누적 `180-220GW`, 연 설치 `25-30GW` | IEA 목표 `220GW+` 달성 | 누적 `150GW` 이하 | 65% |
 | 2031 | 부유식이 신규의 `10%`, 고정식 터빈 `20MW+` 표준 | 터빈 `25MW+` 상용화 | 터빈 대형화 성능 이슈 | 55% |
 | 2032 | 북해·아시아에서 재생·그린수소 연계 대형 프로젝트 가동 | 수소 연계 PPA 표준화 | 수소 수요 정체 | 55% |
 | 2033 | 글로벌 누적 `300GW+`, Dogger Bank D 가동 | `350GW+`, 더 큰 파이프라인 유입 | 영국 신규 경매 실패 | 60% |
-| 2034 | 부유식 누적 `10GW+` | 부유식이 신규의 `20%+` | 부유식 가격 경쟁력 미달 | 55% |
+| 2034 | 부유식 누적 `10GW+` | 부유식이 신규의 `20%+` | 부유식 가격 경쟁력 미달 | 35% |
 | 2035 | 글로벌 누적 `400-500GW`, 해상풍력 LCOE `-20%` 누적 | 누적 `550GW+`, 고정식·부유식 전 세계 표준화 | `300GW` 이하, LCOE 개선 정체 | 60% |
 
 ## 물리적/구조적 한계
@@ -50,10 +50,10 @@
 - Downside: 미국 해상풍력 실질 정체, 공급망 병목 지속으로 누적 `300GW` 미만, 부유식 틈새 기술에 머묾.
 
 ## 연결 문서
-- [./solar_cost_curve.md]
-- [./storage.md]
-- [../hydrogen/green_hydrogen.md]
-- [../grid/ai_optimization.md]
+- [./solar_cost_curve.md](./solar_cost_curve.md)
+- [./storage.md](./storage.md)
+- [../hydrogen/green_hydrogen.md](../hydrogen/green_hydrogen.md)
+- [../grid/ai_optimization.md](../grid/ai_optimization.md)
 
 ## 정보 출처
 - Offshore Wind `SSE Equinor Dogger Bank D` https://www.offshorewind.biz/2025/06/09/sse-equinor-expected-to-submit-dogger-bank-d-dco-application-in-summer-2026/ 2026-04 확인

@@ -27,16 +27,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | FY26에 예고한 `AI capacity 80%+` 확대를 실제 Azure 공급으로 전환 | Rubin 전환과 Foundry 채택이 빠르게 확대 | 전력·건설·칩 조달 병목으로 capacity 부족 지속 | 중상 |
-| 2027 | enterprise AI agents가 Azure consumption과 Microsoft 365 워크플로우를 더 강하게 결합 | Azure가 agent 운영 표준 레이어로 굳어짐 | 고객이 멀티클라우드·오픈소스로 분산 | 중 |
-| 2028 | Foundry, Fabric, security, data stack 통합이 Azure 차별점이 됨 | Copilot-Foundry-Azure가 폐쇄적이지만 강한 엔터프라이즈 OS로 작동 | 고객 ROI 압박으로 사용량 성장 둔화 | 중 |
-| 2029 | 자체칩과 외부 GPU 혼합 전략이 margin 방어의 핵심 수단이 됨 | Maia 계열이 inference economics 개선에 실질 기여 | 자체칩 성과가 제한적이고 외부 GPU 의존 지속 | 중 |
-| 2030 | Azure Local·Sovereign 라인이 규제산업과 정부시장에서 더 중요해짐 | sovereign AI 운영의 기본 플랫폼이 됨 | 데이터주권 규제 파편화로 운영 복잡성 증가 | 중 |
-| 2031 | Azure는 퍼블릭 클라우드보다 "엔터프라이즈 AI 런타임" 이미지가 강해짐 | 산업별 agent stack으로 확장 | agent 수요 과대평가가 드러남 | 중 |
-| 2032 | 전력확보와 데이터센터 재설계가 성장률보다 더 중요한 경영변수 | 에너지 계약과 liquid cooling 우위 확보 | 전력비 상승이 수익성 압박 | 중 |
-| 2033 | Azure 경쟁은 AWS/GCP와의 단순 IaaS 점유율이 아니라 AI workflow lock-in 경쟁으로 이동 | 업무용 AI 표준계층 장악 | 기업이 모델·클라우드 추상화 레이어를 채택 | 중 |
-| 2034 | 보안·규제·데이터 거버넌스가 AI 플랫폼 선택의 핵심이 됨 | Microsoft 스택이 규제산업 표준이 됨 | sovereign/local 분산으로 중앙 클라우드 성장 둔화 | 중 |
-| 2035 | Azure는 여전히 상위 hyperscaler지만, 본질은 "AI를 운영하는 기업용 시스템층"에 더 가깝다 | 인프라, 데이터, 생산성, 보안까지 묶어 가장 강한 엔터프라이즈 AI 플랫폼이 됨 | CAPEX 부담과 멀티클라우드 추상화가 lock-in을 약화 | 중 |
+| 2026 | FY26에 예고한 `AI capacity 80%+` 확대를 실제 Azure 공급으로 전환 | Rubin 전환과 Foundry 채택이 빠르게 확대 | 전력·건설·칩 조달 병목으로 capacity 부족 지속 | 88% |
+| 2027 | enterprise AI agents가 Azure consumption과 Microsoft 365 워크플로우를 더 강하게 결합 | Azure가 agent 운영 표준 레이어로 굳어짐 | 고객이 멀티클라우드·오픈소스로 분산 | 80% |
+| 2028 | Foundry, Fabric, security, data stack 통합이 Azure 차별점이 됨 | Copilot-Foundry-Azure가 폐쇄적이지만 강한 엔터프라이즈 OS로 작동 | 고객 ROI 압박으로 사용량 성장 둔화 | 68% |
+| 2029 | 자체칩과 외부 GPU 혼합 전략이 margin 방어의 핵심 수단이 됨 | Maia 계열이 inference economics 개선에 실질 기여 | 자체칩 성과가 제한적이고 외부 GPU 의존 지속 | 55% |
+| 2030 | Azure Local·Sovereign 라인이 규제산업과 정부시장에서 더 중요해짐 | sovereign AI 운영의 기본 플랫폼이 됨 | 데이터주권 규제 파편화로 운영 복잡성 증가 | 48% |
+| 2031 | Azure는 퍼블릭 클라우드보다 "엔터프라이즈 AI 런타임" 이미지가 강해짐 | 산업별 agent stack으로 확장 | agent 수요 과대평가가 드러남 | 42% |
+| 2032 | 전력확보와 데이터센터 재설계가 성장률보다 더 중요한 경영변수 | 에너지 계약과 liquid cooling 우위 확보 | 전력비 상승이 수익성 압박 | 35% |
+| 2033 | Azure 경쟁은 AWS/GCP와의 단순 IaaS 점유율이 아니라 AI workflow lock-in 경쟁으로 이동 | 업무용 AI 표준계층 장악 | 기업이 모델·클라우드 추상화 레이어를 채택 | 28% |
+| 2034 | 보안·규제·데이터 거버넌스가 AI 플랫폼 선택의 핵심이 됨 | Microsoft 스택이 규제산업 표준이 됨 | sovereign/local 분산으로 중앙 클라우드 성장 둔화 | 50% |
+| 2035 | Azure는 여전히 상위 hyperscaler지만, 본질은 "AI를 운영하는 기업용 시스템층"에 더 가깝다 | 인프라, 데이터, 생산성, 보안까지 묶어 가장 강한 엔터프라이즈 AI 플랫폼이 됨 | CAPEX 부담과 멀티클라우드 추상화가 lock-in을 약화 | 62% |
 
 ## 물리적/구조적 한계
 - 극복된 것:
@@ -67,10 +67,10 @@
 - Downside: CAPEX 부담, 멀티클라우드, 자체모델·오픈모델 확산이 Azure의 구조적 초과수익을 낮춘다
 
 ## 연결 문서
-- [../semiconductors/nvidia.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/09_corporate_roadmaps/semiconductors/nvidia.md)
-- [../../02_technology/foundation_models/openai.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/02_technology/foundation_models/openai.md)
-- [../../03_energy/grid/ai_optimization.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/03_energy/grid/ai_optimization.md)
-- [../../08_economics/fiscal_policy/ai_productivity_gdp.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/08_economics/fiscal_policy/ai_productivity_gdp.md)
+- [../semiconductors/nvidia.md](../semiconductors/nvidia.md)
+- [../ai_labs/openai.md](../ai_labs/openai.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../08_economics/fiscal_policy/ai_productivity_gdp.md](../../08_economics/fiscal_policy/ai_productivity_gdp.md)
 
 ## 정보 출처
 - [Microsoft FY26 Q2 Performance] [https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/performance] [2026-04-21]

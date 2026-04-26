@@ -48,10 +48,10 @@
 - Downside: 고품질 텍스트 고갈과 전력 제약이 실효 컴퓨트 성장률을 구조적으로 제한하고, 합성데이터 오염이 성능 상한을 낮춘다.
 
 ## 연결 문서
-- [./slm_roadmap.md]
-- [./agentic_os.md]
-- [../semiconductors/roadmap_annual.md]
-- [../../09_corporate_roadmaps/ai_labs/openai.md]
+- [./slm_roadmap.md](./slm_roadmap.md)
+- [./agentic_os.md](./agentic_os.md)
+- [../semiconductors/roadmap_annual.md](../semiconductors/roadmap_annual.md)
+- [../../09_corporate_roadmaps/ai_labs/openai.md](../../09_corporate_roadmaps/ai_labs/openai.md)
 
 ## 정보 출처
 - Hoffmann et al. `Training Compute-Optimal Large Language Models (Chinchilla)` https://arxiv.org/abs/2203.15556 2026-04 확인

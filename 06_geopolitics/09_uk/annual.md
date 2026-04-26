@@ -24,13 +24,13 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | 성장 1%대 저성장, BoE 단계적 인하, AI Action Plan 집행 개시 | 물가 안정화·AI Growth Zone 착공 가속 | 인플레 재상승·재정여력 제약 | 80% |
-| 2027 | Great British Energy·SMR 계획 구체화, 국방 2.5% 접근 | AI 생산성 초기 효과, 컴퓨트 투자 확대 | 전력·허가 병목으로 AI 데이터센터 지연 | 55% |
+| 2027 | Great British Energy·SMR 계획 구체화, 국방 2.5% 접근 | AI 생산성 초기 효과, 컴퓨트 투자 확대 | 전력·허가 병목으로 AI 데이터센터 지연 | 78% |
 | 2028 | 차기 총선 시험대, 재정준칙 재검토 | 노동당 재집권·정책 연속성 | 정권 교체·산업정책 축소 | 50% |
-| 2029 | AI 생산성 본격 반영 (`+1-1.5%/yr` 시나리오) | 재정·복지 여력 회복 | AI 확산 지연·생산성 `0.5%` 고착 | 45% |
+| 2029 | AI 생산성 본격 반영 (`+1-1.5%/yr` 시나리오) | 재정·복지 여력 회복 | AI 확산 지연·생산성 `0.5%` 고착 | 38% |
 | 2030 | Net Zero·AI·방위 중간 점검 | SMR 첫 가동, 전력가격 하락 시작 | 원전·그리드 지연으로 비용 과잉 | 50% |
 | 2031 | 런던의 금융·AI 스택 재정의 | 유럽 AI 허브 지위 강화 | 세제·인재 경쟁에서 EU·미국에 밀림 | 55% |
-| 2032 | 인구·복지 재설계 논쟁 본격 | 이민·자동화가 노동 공급 완충 | NHS·연금 부담 확대 | 55% |
-| 2033 | 원전·풍력·AI 투자의 성과 가시화 | 전력·컴퓨트의 저탄소 선순환 | 비용·공급 병목 고착 | 45% |
+| 2032 | 인구·복지 재설계 논쟁 본격 | 이민·자동화가 노동 공급 완충 | NHS·연금 부담 확대 | 50% |
+| 2033 | 원전·풍력·AI 투자의 성과 가시화 | 전력·컴퓨트의 저탄소 선순환 | 비용·공급 병목 고착 | 35% |
 | 2034 | 영국은 `G7 내 중견 AI·방위 국가`로 재정의 | 재정·복지·성장 균형 일부 복원 | 저성장·생산성 정체 지속 | 50% |
 | 2035 | Base: 금융·AI·방위의 트리플 축으로 재구성 | 생산성 반등·AI 허브화 | 재정·인구 제약이 우위 상쇄 | 55% |
 
@@ -51,11 +51,11 @@
 - Downside: 생산성 `0.5%` 고착시 저성장·고부채·복지부담의 삼중고 장기화.
 
 ## 연결 문서
-- [../04_eu/annual.md]
-- [../08_germany/annual.md]
-- [../10_france/annual.md]
-- [../../09_corporate_roadmaps/ai_labs/openai.md]
-- [../../13_scenarios/base_case.md]
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../08_germany/annual.md](../08_germany/annual.md)
+- [../10_france/annual.md](../10_france/annual.md)
+- [../../09_corporate_roadmaps/ai_labs/openai.md](../../09_corporate_roadmaps/ai_labs/openai.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - OBR Economic and Fiscal Outlook March 2026 https://obr.uk/efo/economic-and-fiscal-outlook-march-2026/ 2026-04 확인

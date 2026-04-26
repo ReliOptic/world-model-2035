@@ -19,16 +19,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | OpenAI는 모델 성능 경쟁과 안전 거버넌스를 동시에 밀어붙임 | 국가·교육·엔터프라이즈 축이 동시에 확장 | 안전 검증, 규제, 컴퓨트 비용이 배포 속도를 제약 | 중 |
-| 2027 | 국가 단위 파트너십과 현지화 프로젝트가 실체를 갖기 시작 | 민주주의권 표준 AI 인프라 파트너로 자리잡음 | 정치적 반발과 데이터 거버넌스 이슈로 일부 좌초 | 중 |
-| 2028 | OpenAI의 경쟁력은 모델 자체보다 제품군·배포망·에이전트 운영체계로 이동 | 연구-제품-정부 파트너십의 결합 우위가 커짐 | 비용 구조와 규제 부담이 성장성을 갉아먹음 | 중 |
-| 2029 | 고성능 모델과 국가 인프라 프로젝트가 결합된 형태가 일반화 | OpenAI가 다수 국가의 교육·행정·개발 도구층에 깊이 진입 | 지역 규제·주권 요구로 다중 분기 제품 전략이 필요해짐 | 중 |
-| 2030 | OpenAI는 글로벌 공통 모델층과 지역별 정책 맞춤층을 병행할 가능성 | 사실상 AI 운영체제형 기업으로 진화 | 경쟁사와 오픈 생태계 압박으로 마진 압축 | 중 |
-| 2031 | 안전·감사·배포관리 능력이 모델 성능만큼 중요해짐 | 신뢰 인프라에서 선도적 위치 확보 | 고비용 안전 운영이 성장을 둔화 | 중 |
-| 2032 | 기업과 정부 고객은 “최강 모델”보다 “운영 가능한 시스템”을 더 중시 | OpenAI의 배포 표준이 광범위하게 채택 | 폐쇄형 구조에 대한 반발과 대체 모델 확산 | 중 |
-| 2033 | OpenAI의 실제 지위는 모델 랩, 플랫폼, 정책 파트너의 혼합체에 가까워짐 | 거대 생태계 잠금효과 형성 | 각국 규제로 지역별 파편화 심화 | 중하 |
-| 2034 | OpenAI는 다층 시장에서 규제 적응력 자체가 경쟁력이 됨 | 글로벌 정책 적합성과 배포 안전성에서 우위 | 규제 준수 비용과 경쟁 심화로 성장 둔화 | 중하 |
-| 2035 | OpenAI는 소수 초대형 AI 운영 기업 중 하나로 남을 가능성이 높음 | 모델·플랫폼·국가 인프라를 함께 장악 | 성능 격차 축소와 개방형 대안 확대가 지배력 제한 | 중 |
+| 2026 | OpenAI는 모델 성능 경쟁과 안전 거버넌스를 동시에 밀어붙임 | 국가·교육·엔터프라이즈 축이 동시에 확장 | 안전 검증, 규제, 컴퓨트 비용이 배포 속도를 제약 | 85% |
+| 2027 | 국가 단위 파트너십과 현지화 프로젝트가 실체를 갖기 시작 | 민주주의권 표준 AI 인프라 파트너로 자리잡음 | 정치적 반발과 데이터 거버넌스 이슈로 일부 좌초 | 80% |
+| 2028 | OpenAI의 경쟁력은 모델 자체보다 제품군·배포망·에이전트 운영체계로 이동 | 연구-제품-정부 파트너십의 결합 우위가 커짐 | 비용 구조와 규제 부담이 성장성을 갉아먹음 | 72% |
+| 2029 | 고성능 모델과 국가 인프라 프로젝트가 결합된 형태가 일반화 | OpenAI가 다수 국가의 교육·행정·개발 도구층에 깊이 진입 | 지역 규제·주권 요구로 다중 분기 제품 전략이 필요해짐 | 58% |
+| 2030 | OpenAI는 글로벌 공통 모델층과 지역별 정책 맞춤층을 병행할 가능성 | 사실상 AI 운영체제형 기업으로 진화 | 경쟁사와 오픈 생태계 압박으로 마진 압축 | 50% |
+| 2031 | 안전·감사·배포관리 능력이 모델 성능만큼 중요해짐 | 신뢰 인프라에서 선도적 위치 확보 | 고비용 안전 운영이 성장을 둔화 | 45% |
+| 2032 | 기업과 정부 고객은 “최강 모델”보다 “운영 가능한 시스템”을 더 중시 | OpenAI의 배포 표준이 광범위하게 채택 | 폐쇄형 구조에 대한 반발과 대체 모델 확산 | 35% |
+| 2033 | OpenAI의 실제 지위는 모델 랩, 플랫폼, 정책 파트너의 혼합체에 가까워짐 | 거대 생태계 잠금효과 형성 | 각국 규제로 지역별 파편화 심화 | 28% |
+| 2034 | OpenAI는 다층 시장에서 규제 적응력 자체가 경쟁력이 됨 | 글로벌 정책 적합성과 배포 안전성에서 우위 | 규제 준수 비용과 경쟁 심화로 성장 둔화 | 45% |
+| 2035 | OpenAI는 소수 초대형 AI 운영 기업 중 하나로 남을 가능성이 높음 | 모델·플랫폼·국가 인프라를 함께 장악 | 성능 격차 축소와 개방형 대안 확대가 지배력 제한 | 55% |
 
 ## 물리적/구조적 한계
 - 극복된 것:
@@ -59,10 +59,10 @@
 - Downside: 비용, 규제, 경쟁 심화로 영향력은 크지만 지배력은 제한된다
 
 ## 연결 문서
-- [../../02_technology/foundation_models/players/openai.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/02_technology/foundation_models/players/openai.md)
-- [../../08_economics/fiscal_policy/ai_productivity_gdp.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/08_economics/fiscal_policy/ai_productivity_gdp.md)
-- [../cloud_hyperscalers/microsoft_azure.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/09_corporate_roadmaps/cloud_hyperscalers/microsoft_azure.md)
-- [../../06_geopolitics/01_usa/annual.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/06_geopolitics/01_usa/annual.md)
+- [../../02_technology/foundation_models/players/openai.md](../../02_technology/foundation_models/players/openai.md)
+- [../../08_economics/fiscal_policy/ai_productivity_gdp.md](../../08_economics/fiscal_policy/ai_productivity_gdp.md)
+- [../cloud_hyperscalers/microsoft_azure.md](../cloud_hyperscalers/microsoft_azure.md)
+- [../../06_geopolitics/01_usa/annual.md](../../06_geopolitics/01_usa/annual.md)
 
 ## 정보 출처
 - [OpenAI Our structure] [https://openai.com/our-structure] [2026-04-21]

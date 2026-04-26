@@ -8,7 +8,7 @@
 - End substantive files with `## 정보 출처`.
 
 ## File hygiene
-- Start from [00_foundations/file_template.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/00_foundations/file_template.md) unless the topic needs a specialized format.
+- Start from [00_foundations/file_template.md](00_foundations/file_template.md) unless the topic needs a specialized format.
 - Keep `정보 신선도`, `최종 갱신`, and `다음 갱신` current.
 - Label unsupported reasoning as inference, not fact.
 
@@ -18,4 +18,4 @@
 - If a forecast changes, note why it changed.
 
 ## Operational rule
-- Update [progress.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/progress.md) when a new workstream is materially completed or blocked.
+- Update [progress.md](progress.md) when a new workstream is materially completed or blocked.

@@ -47,10 +47,10 @@
 - Downside: 지방재정 위기, 부동산 디플레, 인구절벽이 복합 충격을 만들면 성장은 2%대로 조기 후퇴.
 
 ## 연결 문서
-- [./semiconductor_self_reliance.md]
-- [./taiwan_scenarios.md]
-- [../../13_scenarios/base_case.md]
-- [../../13_scenarios/economic_shock.md]
+- [./semiconductor_self_reliance.md](./semiconductor_self_reliance.md)
+- [./taiwan_scenarios.md](./taiwan_scenarios.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
+- [../../13_scenarios/delayed.md](../../13_scenarios/delayed.md)
 
 ## 정보 출처
 - NBS press release 2025 GDP https://www.stats.gov.cn/english/PressRelease/202601/t20260119_1962328.html 2026-04 확인

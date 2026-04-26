@@ -22,13 +22,13 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | NPU가 "벡터+매트릭스+스칼라" 하이브리드 구조로 수렴, 유니파이드 메모리 `300-600 GB/s`가 프리미엄 표준 | MoE가 모바일·PC 플래그십에서 기본 실행 | 메모리 대역폭 증가가 NPU TOPS 증가율을 따라잡지 못해 병목 심화 | 80% |
-| 2027 | GPU 코어 내장 NA(Apple식) 또는 타일형 NPU(Intel식) 중 하나가 업계 표준 방향으로 우세해짐 | 런타임 표준(MLX, DirectML, LiteRT)이 크로스 플랫폼 호환성 확보 | 벤더별 독자 런타임으로 개발자 파편화 심화 | 70% |
+| 2026 | NPU가 "벡터+매트릭스+스칼라" 하이브리드 구조로 수렴, 유니파이드 메모리 `300-600 GB/s`가 프리미엄 표준 | MoE가 모바일·PC 플래그십에서 기본 실행 | 메모리 대역폭 증가가 NPU TOPS 증가율을 따라잡지 못해 병목 심화 | 85% |
+| 2027 | GPU 코어 내장 NA(Apple식) 또는 타일형 NPU(Intel식) 중 하나가 업계 표준 방향으로 우세해짐 | 런타임 표준(MLX, DirectML, LiteRT)이 크로스 플랫폼 호환성 확보 | 벤더별 독자 런타임으로 개발자 파편화 심화 | 78% |
 | 2028 | 희소 MoE + 라우터가 모바일 표준 아키텍처, 활성 파라미터 `1-4B`로 14B-32B 총량 모델 실행 | 온디바이스 MoE 라우팅이 배터리·지연시간 문제를 해결 | 메모리 I/O 병목으로 MoE의 실효 이득이 제한 | 60% |
 | 2029 | FP4/INT2 저정밀 포맷이 엣지 표준, 대부분의 모델이 혼합정밀 배포 | 저정밀 학습-배포 파이프라인이 성숙 | 저정밀 정확도 손실 관리가 태스크별로 난이도 상이 | 65% |
 | 2030 | 칩 내 메모리(SRAM/대용량 L3/HBM-on-package)가 LLM 추론 지연의 주된 결정 변수 | 모바일용 HBM 등장으로 대역폭 레벨업 | 메모리 가격·열·공간 제약으로 탑재 모델 체급 상한 유지 | 55% |
 | 2031 | 온디바이스 추론 스택이 모델 가중치-런타임-커널을 분리한 "App Store 모델" 구조로 일반화 | 모델 마켓플레이스 활성화, 업데이트 OTA 표준 | 보안·서명·무결성 이슈로 업데이트 검증 비용 증가 | 55% |
-| 2032 | 웨어러블·자동차 SoC도 `20-40 TOPS` NPU 표준 탑재 | 차량·글래스에서 3B SLM 실시간 실행 | 열·공간 제약으로 1B 이하에서 정체 | 55% |
+| 2032 | 웨어러블·자동차 SoC도 `20-40 TOPS` NPU 표준 탑재 | 차량·글래스에서 3B SLM 실시간 실행 | 열·공간 제약으로 1B 이하에서 정체 | 35% |
 | 2033 | 로컬-클라우드 하이브리드 오케스트레이션(speculative execution, 캐시 일관성)이 OS 기본 API | 스택 단일화로 개발자 비용 감소 | 플랫폼 독점 오케스트레이션으로 종속성 강화 | 50% |
 | 2034 | 메모리와 NPU의 물리 경계가 흐려지는 (PIM, CXL 확장 등) 실험이 양산 단계 진입 | PIM이 엣지 LLM 전력·대역폭 제약을 구조적으로 완화 | 양산 수율·비용 문제로 틈새 제품에 머무름 | 30% |
 | 2035 | 온디바이스 AI 아키텍처는 칩-메모리-런타임-모델이 공동 최적화되는 "AI 우선 SoC"로 완성 | AI-우선 SoC가 일반 SoC를 대체 | 기존 아키텍처 관성으로 변화가 점진적 | 65% |
@@ -49,11 +49,11 @@
 - Downside: 런타임 파편화와 메모리 병목이 지속돼 소프트웨어 성숙도가 하드웨어보다 뒤처진다.
 
 ## 연결 문서
-- [./roadmap_annual.md]
-- [./power_limits.md]
-- [./form_factor.md]
-- [../foundation_models/agentic_os.md]
-- [../semiconductors/roadmap_annual.md]
+- [./roadmap_annual.md](./roadmap_annual.md)
+- [./power_limits.md](./power_limits.md)
+- [./form_factor.md](./form_factor.md)
+- [../foundation_models/agentic_os.md](../foundation_models/agentic_os.md)
+- [../semiconductors/roadmap_annual.md](../semiconductors/roadmap_annual.md)
 
 ## 정보 출처
 - Apple `Apple unleashes M5` https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/ 2026-04 확인

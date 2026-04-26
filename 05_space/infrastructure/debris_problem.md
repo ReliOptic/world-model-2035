@@ -24,13 +24,13 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Astroscale ELSA-M 발사, FCC 5-year rule 집행 본격화 | 상업 debris 서비스 첫 데모 | ELSA-M 지연 | 65% |
-| 2027 | ELSA-M 실제 debris 제거 시연 | OneWeb 위성 성공 제거 | 실제 제거 미성사 | 55% |
+| 2026 | Astroscale ELSA-M 발사, FCC 5-year rule 집행 본격화 | 상업 debris 서비스 첫 데모 | ELSA-M 지연 | 78% |
+| 2027 | ELSA-M 실제 debris 제거 시연 | OneWeb 위성 성공 제거 | 실제 제거 미성사 | 76% |
 | 2028 | ClearSpace-1 발사 | PROBA-1 제거 성공 | 발사 또는 rendezvous 실패 | 50% |
 | 2029 | 상업 debris removal 복수 operator 등장 | 상업 모델 확립 | 경제성 미확인 | 50% |
 | 2030 | LEO active 위성 25,000+ 예상 | 표준화된 conjunction 회피 운영 | major collision event 발생 | 60% |
 | 2031 | 우주교통 관리(STM) 국제 합의 시도 | FCC·ITU 차원 합의 진전 | 주요국 비동참 | 45% |
-| 2032 | legacy 대형 파편 집중 제거 프로젝트 확대 | ESA·JAXA·민간 협력 | 자금 부족 | 40% |
+| 2032 | legacy 대형 파편 집중 제거 프로젝트 확대 | ESA·JAXA·민간 협력 | 자금 부족 | 35% |
 | 2033 | Kessler risk 구체 event 발생 가능성 증가 | 양대 cluster 회피 자동화 | chain collision 1회 발생 | 35% |
 | 2034 | 궤도 보험·공동 책임 체계 제도화 논의 | 보험+규제 결합 | 보험비용 폭증 | 55% |
 | 2035 | LEO는 사실상 "managed traffic zone"으로 전환, 관리비용이 모든 operator에 구조적 부담 | debris 증가율 안정화 | debris 사고 누적으로 일부 궤도 제한 운용 | 70% |
@@ -63,9 +63,9 @@
 - Downside: major collision event로 일부 궤도 운용 제한, Kessler 리스크 부분 현실화
 
 ## 연결 문서
-- [../spacex/starlink.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/starlink.md)
-- [space_datacenter.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/infrastructure/space_datacenter.md)
-- [../geopolitics_space/dual_use.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/dual_use.md)
+- [../spacex/starlink.md](../spacex/starlink.md)
+- [space_datacenter.md](space_datacenter.md)
+- [../geopolitics_space/dual_use.md](../geopolitics_space/dual_use.md)
 
 ## 정보 출처
 - [NASA ARES Orbital Debris Program Office] [https://orbitaldebris.jsc.nasa.gov/] [2026-04-23]

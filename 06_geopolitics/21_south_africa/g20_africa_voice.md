@@ -48,10 +48,10 @@
 - Downside: G20 다자 질서 자체가 미중 갈등으로 약화되고, 기후 금융 약속이 이행되지 않으면 남아공의 G20 투자는 외교적 상징에 머물고 국내 자원 투입의 기회비용만 남는다.
 
 ## 연결 문서
-- [./annual.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
-- [../../13_scenarios/base_case.md]
-- [../../13_scenarios/bifurcated.md]
+- [./annual.md](./annual.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
+- [../../13_scenarios/bifurcated.md](../../13_scenarios/bifurcated.md)
 
 ## 정보 출처
 - G20 South Africa 2025 official website https://www.g20.org/en/g20-south-africa-2025 2026-04 확인

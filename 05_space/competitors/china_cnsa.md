@@ -26,13 +26,13 @@
 |---|---|---|---|---|
 | 2026 | Chang'e 7 발사와 남극 water ice 탐사 | 남극 자원 확인 | 발사 6~12개월 지연 | 80% |
 | 2027 | Mengzhou crew-rated 초도 비행, CZ-10A 첫 발사 | crew-rated 데모 성공 | CZ-10A 지연 | 65% |
-| 2028 | Tianwen-3 Mars sample return 발사 | 정상 trans-Mars injection | 발사 또는 Mars 진입 실패 | 70% |
+| 2028 | Tianwen-3 Mars sample return 발사 | 정상 trans-Mars injection | 발사 또는 Mars 진입 실패 | 77% |
 | 2029 | Chang'e 8 ILRS 기초 건설, 3D 프린팅 실증 | 남극 인프라 요소 검증 | lander 실패 | 65% |
-| 2030 | 중국 최초 crewed lunar landing 시도 가능 구간 | crewed lunar landing 성공 | 유인 달 착륙 2031+로 밀림 | 45% |
+| 2030 | 중국 최초 crewed lunar landing 시도 가능 구간 | crewed lunar landing 성공 | 유인 달 착륙 2031+로 밀림 | 35% |
 | 2031 | Tianwen-3 샘플 귀환 목표 | 500g+ Mars 샘플 Earth return | 귀환 캡슐 실패 | 55% |
 | 2032 | ILRS 1단계 인프라 복수 요소 배치 | 전력·통신 basic unit 가동 | ILRS 예산 조정 | 55% |
 | 2033 | 유인 달 탐사 반복 수행 | 연 1회 crewed mission | 유인 cadence 제한 | 50% |
-| 2034 | CZ-9 reusable super-heavy 초도 발사 시도 | Starship급 대안 검증 | CZ-9 추가 연기 | 40% |
+| 2034 | CZ-9 reusable super-heavy 초도 발사 시도 | Starship급 대안 검증 | CZ-9 추가 연기 | 35% |
 | 2035 | ILRS 1단계 기본 완공 목표 | 남극 기지 기능 작동 | 기지는 부분 구성, 완공은 2036+ | 70% |
 
 ## 물리적/구조적 한계
@@ -64,9 +64,9 @@
 - Downside: CZ-9 지연과 유인 달 cadence 제한으로 ILRS가 느린 진척
 
 ## 연결 문서
-- [../geopolitics_space/artemis_vs_china.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/artemis_vs_china.md)
-- [../geopolitics_space/dual_use.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/dual_use.md)
-- [../../06_geopolitics/02_china/annual.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/06_geopolitics/02_china/annual.md)
+- [../geopolitics_space/artemis_vs_china.md](../geopolitics_space/artemis_vs_china.md)
+- [../geopolitics_space/dual_use.md](../geopolitics_space/dual_use.md)
+- [../../06_geopolitics/02_china/annual.md](../../06_geopolitics/02_china/annual.md)
 
 ## 정보 출처
 - [Tianwen-3 - Wikipedia] [https://en.wikipedia.org/wiki/Tianwen-3] [2026-04-23]

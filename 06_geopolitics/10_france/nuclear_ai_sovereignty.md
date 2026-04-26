@@ -47,10 +47,10 @@
 - Downside: EPR2 추가 지연과 AI 챔피언 분산/인수로 주권 서사가 약화된다.
 
 ## 연결 문서
-- [../09_uk/ai_safety_hub.md]
-- [../04_eu/annual.md]
-- [../../03_energy/grid/ai_optimization.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
+- [../09_uk/ai_safety_hub.md](../09_uk/ai_safety_hub.md)
+- [../04_eu/annual.md](../04_eu/annual.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
 
 ## 정보 출처
 - World Nuclear News `EDF estimates EPR2 programme cost at EUR72.8 billion` https://www.world-nuclear-news.org/articles/edf-estimates-epr2-programme-costs-at-eur728-billion 2026-04 확인

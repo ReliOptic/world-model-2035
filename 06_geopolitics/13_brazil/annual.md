@@ -24,14 +24,14 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | GDP 1.5-2%, BCB 완화 개시, 대선 실시 | Lula 또는 친환경 후계 당선, 탄소 크레딧 시장 개장 | Bolsonaro 진영 복귀로 기후정책 후퇴 | 80% |
-| 2027 | 선거 결과에 따른 정책 분기 | Forest Facility 본격 운영 | 벌채 재증가·농업 확장 가속 | 55% |
+| 2026 | GDP 1.5-2%, BCB 완화 개시, 대선 실시 | Lula 또는 친환경 후계 당선, 탄소 크레딧 시장 개장 | Bolsonaro 진영 복귀로 기후정책 후퇴 | 82% |
+| 2027 | 선거 결과에 따른 정책 분기 | Forest Facility 본격 운영 | 벌채 재증가·농업 확장 가속 | 77% |
 | 2028 | 내수 회복·재정준칙 재정비 | 브라질 레알 안정, 투자등급 유지 | 재정적자·부채 확대 | 55% |
 | 2029 | BRICS·남미 리더십 재확립 | 아르헨티나·남미 통합 진전 | 지역 분열·무역 둔화 | 50% |
-| 2030 | 2030 무벌채·NDC 목표 평가 | 벌채 지속 감소, 재생에너지 비중 85%+ | 목표 미달로 외교 영향력 축소 | 50% |
+| 2030 | 2030 무벌채·NDC 목표 평가 | 벌채 지속 감소, 재생에너지 비중 85%+ | 목표 미달로 외교 영향력 축소 | 38% |
 | 2031 | Petrobras 심해·Pre-sal 생산 피크 | 에너지 수출 확대·재정 완충 | 유가 약세로 투자 회수 지연 | 55% |
 | 2032 | 농업·바이오연료·수소 수출 확대 | 남미 그린수소 허브 부상 | 인프라·항만 병목 지속 | 50% |
-| 2033 | 탄소시장·크레딧 수출 상용화 | 열대림 탄소 거래 선도국 | 크레딧 품질 논란·외국인 매입 둔화 | 45% |
+| 2033 | 탄소시장·크레딧 수출 상용화 | 열대림 탄소 거래 선도국 | 크레딧 품질 논란·외국인 매입 둔화 | 35% |
 | 2034 | 브라질은 글로벌 농업·자원·기후 강국 재정의 | BRICS+ 내 실질 리더 | 내정 불안·재정위기 재발 | 50% |
 | 2035 | Base: 농업·자원·기후 외교의 3축 중견강국 | 산업 업그레이드·기후 금융 성공 | 정치 변동성이 성과 훼손 | 55% |
 
@@ -52,11 +52,11 @@
 - Downside: 정치 변동성·재정위기·기후 재난이 겹치면 잠재력 대비 저성과 고착.
 
 ## 연결 문서
-- [../01_usa/annual.md]
-- [../03_india/annual.md]
-- [../14_indonesia/annual.md]
-- [../21_south_africa/annual.md]
-- [../../13_scenarios/climate_emergency.md]
+- [../01_usa/annual.md](../01_usa/annual.md)
+- [../03_india/annual.md](../03_india/annual.md)
+- [../14_indonesia/annual.md](../14_indonesia/annual.md)
+- [../21_south_africa/annual.md](../21_south_africa/annual.md)
+- [../../13_scenarios/climate_emergency.md](../../13_scenarios/climate_emergency.md)
 
 ## 정보 출처
 - Mongabay: The Amazon in 2026 challenging year https://news.mongabay.com/2025/12/the-amazon-in-2026-a-challenging-year-ahead-now-off-the-center-stage/ 2026-04 확인

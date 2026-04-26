@@ -20,15 +20,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Google Cloud 연매출 `$80B+`, Gemini Enterprise Agent Platform 기업 채택 본격화 | TPU 8 성능 우위가 AI 학습·추론 워크로드에서 NVIDIA 대안으로 가시화 | CAPEX 집행 전력 부지 제약으로 둔화, 에이전트 플랫폼 채택 지연 | 80% |
-| 2027 | Broadcom/Google `3.5GW` TPU 2027 초기 온라인, Cloud AI 매출이 전체 Cloud의 `30%+` | Gemini가 멀티모달·음성·에이전트에서 동시 1위 확립 | OpenAI·Azure 연합과의 엔터프라이즈 격차 축소 실패 | 70% |
+| 2026 | Google Cloud 연매출 `$80B+`, Gemini Enterprise Agent Platform 기업 채택 본격화 | TPU 8 성능 우위가 AI 학습·추론 워크로드에서 NVIDIA 대안으로 가시화 | CAPEX 집행 전력 부지 제약으로 둔화, 에이전트 플랫폼 채택 지연 | 85% |
+| 2027 | Broadcom/Google `3.5GW` TPU 2027 초기 온라인, Cloud AI 매출이 전체 Cloud의 `30%+` | Gemini가 멀티모달·음성·에이전트에서 동시 1위 확립 | OpenAI·Azure 연합과의 엔터프라이즈 격차 축소 실패 | 78% |
 | 2028 | Google Cloud 연매출 `$120B+` 진입, DeepMind 연구가 Cloud AI 서비스로 직접 상품화 | AlphaFold·Gemini 연계 과학용 AI 서비스가 신성장축으로 부상 | AI for Science 상업화 속도가 예상보다 느릴 경우 | 60% |
 | 2029 | 자체 TPU 생태계가 Arm 기반 Axion CPU와 통합되어 풀스택 AI 인프라 자급 달성 | 타사 AI 워크로드의 Google Cloud 이전이 가속화되어 점유율 역전 시도 | NVIDIA 종속성 탈피 경쟁사(AWS, Azure)가 먼저 생태계 잠금 확보 | 52% |
 | 2030 | Google Cloud는 글로벌 AI 클라우드 2위 지위 공고화, 일부 세그먼트에서 1위 | TPU+Gemini+DeepMind 삼각 결합이 경쟁사 불가 복제 해자 형성 | 반독점 규제와 검색 광고 침식이 Alphabet 전체 CAPEX 여력을 제한 | 55% |
 | 2031 | 양자 컴퓨팅·해석가능성 연구가 Cloud AI 서비스의 차별화 요소로 등장 | Google의 과학 AI(단백질·기후·재료)가 클라우드 기반 연구 표준 | DeepMind 역량의 Cloud 상품화가 기대보다 느리게 진행 | 48% |
-| 2032 | Gemini 후속 세대가 멀티모달 추론에서 업계 최고 수준 유지 | Cloud AI가 Google의 수익 구조에서 광고를 추월 | 검색 광고 매출 급락이 AI 투자 여력을 감소시키는 구조적 위험 | 38% |
+| 2032 | Gemini 후속 세대가 멀티모달 추론에서 업계 최고 수준 유지 | Cloud AI가 Google의 수익 구조에서 광고를 추월 | 검색 광고 매출 급락이 AI 투자 여력을 감소시키는 구조적 위험 | 30% |
 | 2033 | Google Cloud가 정부·의료·교육 등 규제 산업에서 Gemini 기반 수직 솔루션 출시 | 수직 AI 솔루션이 수평 클라우드 컴퓨팅보다 높은 마진 실현 | 수직 시장의 느린 조달 사이클과 규제 인증 부담이 진입 장벽 | 52% |
-| 2034 | Google Cloud 연매출 `$300B+` 시나리오 진입 | AI·클라우드·검색·디바이스 전체가 Gemini 엔진으로 통합 | 연방 반독점 소송·EU AI Act 강화로 구조적 분리 압력 | 42% |
+| 2034 | Google Cloud 연매출 `$300B+` 시나리오 진입 | AI·클라우드·검색·디바이스 전체가 Gemini 엔진으로 통합 | 연방 반독점 소송·EU AI Act 강화로 구조적 분리 압력 | 35% |
 | 2035 | Google Cloud는 AWS·Azure와 함께 글로벌 AI 클라우드 3강 유지 | DeepMind 기반 AGI 근접 역량이 Cloud AI의 기술적 우위를 장기 지속 | OpenAI-Azure 연합 또는 특화 AI 클라우드 부상으로 점유율 정체 | 60% |
 
 ## 물리적/구조적 한계

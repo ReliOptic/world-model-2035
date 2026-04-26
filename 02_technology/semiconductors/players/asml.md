@@ -24,7 +24,7 @@
 | 2027 | High-NA가 `A14`·`SF1.4`·`N2P+` 세대에서 정식 채택 | Intel 14A가 High-NA로 빠르게 수율 도달 | 고객들이 Low-NA 다중노광으로 대체 선택 | 75% |
 | 2028 | High-NA 누적 출하 10대+, 연간 매출 기여 본격화 | TSMC `A16/A14` 전면 High-NA 도입 | High-NA 채택이 Intel 단독에 머무름 | 70% |
 | 2029 | High-NA가 로직 첨단 노드의 표준이 되기 시작 | TSMC·Samsung·Intel 모두 High-NA 라인 구축 | 한두 개 노드에만 채택되고 비용 부담 지속 | 65% |
-| 2030 | Hyper-NA 초기 알파 시스템 시연 | 초기 Hyper-NA를 Intel 또는 TSMC가 도입 | Hyper-NA 지연, High-NA 장수 체제 | 40% |
+| 2030 | Hyper-NA 초기 알파 시스템 시연 | 초기 Hyper-NA를 Intel 또는 TSMC가 도입 | Hyper-NA 지연, High-NA 장수 체제 | 35% |
 | 2031 | High-NA가 표준 로직 장비가 됨, Low-NA는 전·후공정 주력으로 역할 변화 | 첨단 장비 매출이 전체 매출의 60%+ | 중국 수출통제 확대로 DUV 매출 감소 가속 | 60% |
 | 2032 | Hyper-NA 첫 고객 출하(상용) | 2나노 이하 노드에서 Hyper-NA 실 생산 적용 | Hyper-NA 지연으로 High-NA + multi-patterning 장기 체류 | 35% |
 | 2033 | Hyper-NA 복수 고객 확보, 첨단 장비 시장 재편 | 제품 포트폴리오 전환으로 매출 구조 2차 도약 | 전력·비용·수율 제약으로 Hyper-NA 고부가 고객만 접근 | 45% |
@@ -48,11 +48,11 @@
 - Downside: 중국 수출통제 확대, 고객 CAPEX 사이클 침체, Hyper-NA 지연이 겹치면 성장률 둔화와 매출 변동성 확대.
 
 ## 연결 문서
-- [../roadmap_annual.md]
-- [./tsmc.md]
-- [./intel_foundry.md]
-- [./samsung.md]
-- [./smic_huawei.md]
+- [../roadmap_annual.md](../roadmap_annual.md)
+- [./tsmc.md](./tsmc.md)
+- [./intel_foundry.md](./intel_foundry.md)
+- [./samsung.md](./samsung.md)
+- [./smic_huawei.md](./smic_huawei.md)
 
 ## 정보 출처
 - ASML `TWINSCAN EXE:5200B` https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b 2026-04 확인

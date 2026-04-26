@@ -21,14 +21,14 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | Panther Lake 출하, Clearwater Forest 1H, 18A 수율 안정화 | IFS 외부 대형 고객 1-2곳 확정 | 18A 수율 회복 지연, Clearwater Forest 2H 슬립 | 80% |
-| 2027 | 14A 양산 준비 단계 진입, Nova Lake 출하 | 14A가 18A보다 빠르게 수율 도달 | 14A 지연, 18A 장수 전략으로 선회 | 65% |
+| 2027 | 14A 양산 준비 단계 진입, Nova Lake 출하 | 14A가 18A보다 빠르게 수율 도달 | 14A 지연, 18A 장수 전략으로 선회 | 76% |
 | 2028 | 14A 양산 본격화, Diamond Rapids 데이터센터 출하 | IFS 외부 매출 의미 있는 규모로 확대 | IFS 외부 수주 저조로 분사·매각 논의 | 55% |
 | 2029 | 10A 기술 개발 완료, 차세대 고객 확보 | Intel이 사실상 TSMC의 2위 대안으로 복귀 | 10A 일정 슬립, 기술 격차 재확대 | 45% |
 | 2030 | 10A 양산 개시, 첨단 패키징(Foveros·EMIB-T) 강화 | 첨단 패키징이 IFS 차별화 축으로 자리 | 팹 가동률 부족으로 CAPEX 부담 누적 | 45% |
 | 2031 | Intel은 로직 + 패키징 통합 공급자로 포지셔닝 | AI 가속기 고객(대형 고객 1곳) 확보 | 여전히 자사 CPU/GPU 중심, 외부 매출 제한 | 50% |
 | 2032 | 미국 내 첨단 팹 캐파가 안정화, 국가 전략 자산화 | 중국 리스크 헷지 수요가 Intel로 유입 | 지정학 변수 약화 시 고객 다시 TSMC로 회귀 | 55% |
 | 2033 | 차세대 노드(10A 이후) 개발 실행 | Intel이 2나노 이하에서 TSMC와 병행 경쟁 | 고객 다변화 실패, IFS 축소 | 35% |
-| 2034 | 로직·패키징·HBM 연계 생태계 구축 | 미국 중심 AI 공급망의 핵심축 | 미국 지원 축소 시 구조적 취약 | 40% |
+| 2034 | 로직·패키징·HBM 연계 생태계 구축 | 미국 중심 AI 공급망의 핵심축 | 미국 지원 축소 시 구조적 취약 | 30% |
 | 2035 | Intel은 TSMC의 주요 대안 공급자로 안정적 2위 지위 | 양사 체제 복원, 시장 이원화 | 자체 제품+IFS 혼합 모델이 장기 구조적 부담 | 45% |
 
 ## 물리적/구조적 한계
@@ -48,11 +48,11 @@
 - Downside: 수율 반복 지연, IFS 외부 고객 확보 실패, 지정학 수혜 약화가 겹치면 파운드리 분사·축소가 불가피하고 자체 제품 경쟁력도 동반 약화된다.
 
 ## 연결 문서
-- [../roadmap_annual.md]
-- [./tsmc.md]
-- [./samsung.md]
-- [./asml.md]
-- [../../../09_corporate_roadmaps/semiconductors/nvidia.md]
+- [../roadmap_annual.md](../roadmap_annual.md)
+- [./tsmc.md](./tsmc.md)
+- [./samsung.md](./samsung.md)
+- [./asml.md](./asml.md)
+- [../../../09_corporate_roadmaps/semiconductors/nvidia.md](../../../09_corporate_roadmaps/semiconductors/nvidia.md)
 
 ## 정보 출처
 - Intel `Panther Lake launch` https://newsroom.intel.com/client-computing/intel-unveils-panther-lake-architecture-first-ai-pc-platform-built-on-18a 2026-04 확인

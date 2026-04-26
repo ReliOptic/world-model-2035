@@ -47,11 +47,11 @@
 - Downside: 의회 저항·재정 압박·조달 관료주의 지속으로 프로토타입 성과에 비해 전력화 속도 느림.
 
 ## 연결 문서
-- [./anduril.md]
-- [./palantir.md]
-- [../autonomous_weapons/drone_swarms.md]
-- [../cyber/ai_offense_defense.md]
-- [../../13_scenarios/base_case.md]
+- [./anduril.md](./anduril.md)
+- [./palantir.md](./palantir.md)
+- [../autonomous_weapons/drone_swarms.md](../autonomous_weapons/drone_swarms.md)
+- [../cyber/ai_offense_defense.md](../cyber/ai_offense_defense.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - DIU Replicator https://www.diu.mil/replicator 2026-04 확인

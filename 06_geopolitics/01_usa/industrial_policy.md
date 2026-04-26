@@ -20,15 +20,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | TSMC Arizona Fab2 장비 설치, Intel Fab 52 HVM, OBBBA 시행 | TSMC N2/Samsung 2nm 조기 안정화 | Ohio Intel fab 추가 지연 | 80% |
-| 2027 | TSMC AZ N2 양산, Samsung Taylor 2nm GAA | 미국 내 2nm 클러스터 본격 가동 | 장비·인력 병목 | 70% |
-| 2028 | CHIPS Act 2차 패키지 논의, 대선 결과에 따라 관세 재조정 | 정책 연속성 유지 | 보조금 축소·철회 | 50% |
+| 2026 | TSMC Arizona Fab2 장비 설치, Intel Fab 52 HVM, OBBBA 시행 | TSMC N2/Samsung 2nm 조기 안정화 | Ohio Intel fab 추가 지연 | 85% |
+| 2027 | TSMC AZ N2 양산, Samsung Taylor 2nm GAA | 미국 내 2nm 클러스터 본격 가동 | 장비·인력 병목 | 78% |
+| 2028 | CHIPS Act 2차 패키지 논의, 대선 결과에 따라 관세 재조정 | 정책 연속성 유지 | 보조금 축소·철회 | 55% |
 | 2029 | 제조업 CAPEX 누적이 장비산업 기반 확대 | 미국 반도체 장비·소재 일부 자립 | CAPEX 피크아웃 | 60% |
 | 2030 | 미국 첨단 로직 세계 점유율 20-25% 목표 | TSMC·Intel 병존 체제 안착 | 수익성 악화·수율 정체 | 55% |
 | 2031 | IRA 축소 후 친환경 산업 구조조정 | 경쟁력 있는 기업만 잔존 | 투자 회수 실패 | 55% |
 | 2032 | 관세+산업정책 결합 체제가 경기순환 왜곡 | 수출통제·관세로 첨단산업 우위 | 비용 상승이 인플레 재점화 | 35% |
 | 2033 | 첨단 반도체·AI·배터리에서 미국 제조 지분 유지 | 공급망 복원력 강화 | 일부 분야 동아시아 의존 지속 | 55% |
-| 2034 | 산업정책이 안보정책과 구조적으로 통합 | 전략산업 지도화 정착 | 시장 왜곡 부작용 누적 | 50% |
+| 2034 | 산업정책이 안보정책과 구조적으로 통합 | 전략산업 지도화 정착 | 시장 왜곡 부작용 누적 | 30% |
 | 2035 | 미국 산업정책은 `보조금 + 관세 + 조달 + 수출통제` 4축 복합 체제로 정착 | 생산성 회복과 제조업 고용 동반 증가 | 비용·정치부담으로 부분 후퇴 | 55% |
 
 ## 물리적/구조적 한계
@@ -47,11 +47,11 @@
 - Downside: 재정 부담과 관세 인플레가 누적되면 산업정책 체계는 부분 후퇴하고 특정 전략산업에만 집중하는 축소균형으로 이동.
 
 ## 연결 문서
-- [./ai_hegemony.md]
-- [./dollar_trajectory.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../03_energy/grid/ai_optimization.md]
-- [../../13_scenarios/base_case.md]
+- [./ai_hegemony.md](./ai_hegemony.md)
+- [./dollar_trajectory.md](./dollar_trajectory.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../03_energy/grid/ai_optimization.md](../../03_energy/grid/ai_optimization.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Manufacturing Dive CHIPS awards tracker https://www.manufacturingdive.com/news/chips-and-science-act-tracker-semiconductor-manufacturing/734039/ 2026-04 확인

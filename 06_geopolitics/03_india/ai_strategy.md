@@ -47,10 +47,10 @@
 - Downside: 전력·컴퓨트·인재 병목이 해소되지 않으면 AI 산업은 응용 계층에 국한되며 프런티어는 미국·중국 독점 유지.
 
 ## 연결 문서
-- [./demographic_dividend.md]
-- [./manufacturing_rise.md]
-- [../01_usa/ai_hegemony.md]
-- [../../13_scenarios/base_case.md]
+- [./demographic_dividend.md](./demographic_dividend.md)
+- [./manufacturing_rise.md](./manufacturing_rise.md)
+- [../01_usa/ai_hegemony.md](../01_usa/ai_hegemony.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - IndiaAI Cabinet approval 10372 crore https://indiaai.gov.in/news/cabinet-approves-india-ai-mission-at-an-outlay-of-rs-10-372-crore 2026-04 확인

@@ -24,16 +24,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Chang'e 7 발사, Starship HLS ground·orbital test 누적 | HLS 통합 진전 | HLS refilling 데모 실패 | 75% |
+| 2026 | Chang'e 7 발사, Starship HLS ground·orbital test 누적 | HLS 통합 진전 | HLS refilling 데모 실패 | 80% |
 | 2027 | Artemis III LEO crewed test | 신규 EVA suit·lander 인테그레이션 검증 | Artemis III 재연기 | 60% |
-| 2028 | Artemis IV 시도, Tianwen-3 발사, Chang'e 8 준비 | Artemis IV 유인 달 착륙 성공 | Artemis IV 2029+로 연기 | 45% |
+| 2028 | Artemis IV 시도, Tianwen-3 발사, Chang'e 8 준비 | Artemis IV 유인 달 착륙 성공 | Artemis IV 2029+로 연기 | 35% |
 | 2029 | Chang'e 8 발사, 중국 crewed landing 최종 준비 | Chang'e 8 성공 | 중국 유인 계획 지연 | 60% |
 | 2030 | 중국 첫 crewed lunar landing 시도 | 중국 유인 달 착륙 성공 | 중국 시도 2031로 연기 | 45% |
-| 2031 | Artemis 연 1회 cadence vs ILRS 1단계 인프라 초기 | Artemis cadence 달성 | Artemis 1~2년 공백 | 40% |
+| 2031 | Artemis 연 1회 cadence vs ILRS 1단계 인프라 초기 | Artemis cadence 달성 | Artemis 1~2년 공백 | 35% |
 | 2032 | ILRS 1단계 남극 전력·통신 모듈 배치 | 운용 가능 수준 도달 | 배치 지연 | 55% |
 | 2033 | 미국·중국 모두 유인 달 체류 시도 | long-duration surface stay | 체류 미성사 | 50% |
 | 2034 | 2035 ILRS 1단계 완공 직전 점검 | ILRS 확정 운용 | 완공 2036+ | 55% |
-| 2035 | Artemis와 ILRS 양 블록이 달 표면 인프라 경쟁 상태, 표준·연료·통신 주도권 다툼 가시화 | 상호운용성 일부 구축 | 블록 분리 고착, 상호운용 없음 | 70% |
+| 2035 | Artemis와 ILRS 양 블록이 달 표면 인프라 경쟁 상태, 표준·연료·통신 주도권 다툼 가시화 | 상호운용성 일부 구축 | 블록 분리 고착, 상호운용 없음 | 78% |
 
 ## 물리적/구조적 한계
 - 극복된 것:
@@ -63,9 +63,9 @@
 - Downside: 블록 분리 고착, 상호운용 부재, 달 우주교통 관리 갈등
 
 ## 연결 문서
-- [dual_use.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/dual_use.md)
-- [../competitors/china_cnsa.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/competitors/china_cnsa.md)
-- [../spacex/starship_roadmap.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/starship_roadmap.md)
+- [dual_use.md](dual_use.md)
+- [../competitors/china_cnsa.md](../competitors/china_cnsa.md)
+- [../spacex/starship_roadmap.md](../spacex/starship_roadmap.md)
 
 ## 정보 출처
 - [Artemis III - Wikipedia] [https://en.wikipedia.org/wiki/Artemis_III] [2026-04-23]

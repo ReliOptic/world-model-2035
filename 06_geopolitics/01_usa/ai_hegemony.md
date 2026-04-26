@@ -20,15 +20,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Stargate 1차 사이트 가동률 상승, Nvidia Rubin 출하, CAISI agent 표준 1차안 | Rubin + HBM4 조합이 조기 양산, 전력 제약 완화 | 전력·송전 지연과 부지 인허가 반려 | 80% |
-| 2027 | 연방 AI 도입 가속, 국방·정보·의료 agency AI pilot 대규모 확산 | allied export 스킴이 UAE/사우디/인도로 확장 | 공급망·GPU 할당 경쟁 심화 | 70% |
-| 2028 | 대선 이후 정책 연속성 여부 결정, CAISI 표준이 세이프하버 역할 시작 | 정권 변화와 무관하게 AI CAPEX 궤도 유지 | 규제 정합성 불확실성으로 민간투자 일부 관망 | 60% |
+| 2026 | Stargate 1차 사이트 가동률 상승, Nvidia Rubin 출하, CAISI agent 표준 1차안 | Rubin + HBM4 조합이 조기 양산, 전력 제약 완화 | 전력·송전 지연과 부지 인허가 반려 | 85% |
+| 2027 | 연방 AI 도입 가속, 국방·정보·의료 agency AI pilot 대규모 확산 | allied export 스킴이 UAE/사우디/인도로 확장 | 공급망·GPU 할당 경쟁 심화 | 80% |
+| 2028 | 대선 이후 정책 연속성 여부 결정, CAISI 표준이 세이프하버 역할 시작 | 정권 변화와 무관하게 AI CAPEX 궤도 유지 | 규제 정합성 불확실성으로 민간투자 일부 관망 | 65% |
 | 2029 | 미국 AI 스택(칩·클라우드·모델)의 세계 점유율이 `60-70%` 구간 유지 | 전력·송전 신규 캐파가 가시화 | 중국 독자 스택과의 비대칭 갈등이 경제비용화 | 70% |
 | 2030 | Stargate 전체 $500B 중 상당 부분 시설화 | frontier model capability gap이 재확대 | 공급망 분절·보조금 축소 가능성 | 60% |
 | 2031 | AI 기반 생산성 통계가 거시경제 지표에 의미있게 반영 | AI TFP 기여가 측정 가능한 수준으로 상승 | 실질 채택이 대기업·연방에 편중 | 55% |
-| 2032 | 동맹국 compute grid(UK, 일본, 한국, 이스라엘, GCC) 연결 심화 | 서방 AI 블록이 사실상 제도화 | 동맹 내부 규제 차이로 블록화 지연 | 50% |
-| 2033 | CAISI 및 후속 기관이 글로벌 안전 평가 허브로 자리 | 미국 주도 안전·표준이 사실상 표준 | EU/중국 표준과 분절 | 45% |
-| 2034 | 재선 행정부의 AI 정책 축이 다시 재조정될 가능성 | 정책 안정성 confirmed | 법원·의회·행정부 갈등으로 집행 약화 | 35% |
+| 2032 | 동맹국 compute grid(UK, 일본, 한국, 이스라엘, GCC) 연결 심화 | 서방 AI 블록이 사실상 제도화 | 동맹 내부 규제 차이로 블록화 지연 | 45% |
+| 2033 | CAISI 및 후속 기관이 글로벌 안전 평가 허브로 자리 | 미국 주도 안전·표준이 사실상 표준 | EU/중국 표준과 분절 | 35% |
+| 2034 | 재선 행정부의 AI 정책 축이 다시 재조정될 가능성 | 정책 안정성 confirmed | 법원·의회·행정부 갈등으로 집행 약화 | 30% |
 | 2035 | 미국 AI 패권은 `칩+모델+자본+동맹 네트워크`의 복합 우위로 유지될 가능성 | 경쟁자 추격 여전히 부족 | 중국 독자 스택과 공존형 bipolar로 이동 | 55% |
 
 ## 물리적/구조적 한계
@@ -47,11 +47,11 @@
 - Downside: 전력 제약, 정권 정책 반전, 수출통제 재설계 혼선이 겹치면 패권이 `다극 분절` 방향으로 약화된다.
 
 ## 연결 문서
-- [./ai_regulation.md]
-- [./industrial_policy.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../09_corporate_roadmaps/semiconductors/nvidia.md]
-- [../../13_scenarios/base_case.md]
+- [./ai_regulation.md](./ai_regulation.md)
+- [./industrial_policy.md](./industrial_policy.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../09_corporate_roadmaps/semiconductors/nvidia.md](../../09_corporate_roadmaps/semiconductors/nvidia.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - White House AI Action Plan https://www.whitehouse.gov/briefings-statements/2025/07/white-house-unveils-americas-ai-action-plan/ 2026-04 확인

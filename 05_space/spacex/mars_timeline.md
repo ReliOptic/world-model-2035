@@ -65,9 +65,9 @@
 - Downside: 기술·자금 병목으로 Mars는 2035까지 달 프로그램 부수 과제로 남는다
 
 ## 연결 문서
-- [starship_roadmap.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/starship_roadmap.md)
-- [../elon_worldview/multiplanetary.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/elon_worldview/multiplanetary.md)
-- [../geopolitics_space/artemis_vs_china.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/artemis_vs_china.md)
+- [starship_roadmap.md](starship_roadmap.md)
+- [../elon_worldview/multiplanetary.md](../elon_worldview/multiplanetary.md)
+- [../geopolitics_space/artemis_vs_china.md](../geopolitics_space/artemis_vs_china.md)
 
 ## 정보 출처
 - [SpaceX Mars] [https://www.spacex.com/humanspaceflight/mars/] [2026-04-23]

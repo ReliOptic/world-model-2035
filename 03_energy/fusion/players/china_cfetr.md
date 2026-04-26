@@ -50,7 +50,7 @@
 - [../roadmap_annual.md](../roadmap_annual.md)
 - [../physical_limits.md](../physical_limits.md)
 - [iter.md](iter.md)
-- [../../../../06_geopolitics/04_eu/annual.md](../../../../06_geopolitics/04_eu/annual.md)
+- [../../../06_geopolitics/02_china/annual.md](../../../06_geopolitics/02_china/annual.md)
 
 ## 정보 출처
 - [EUROfusion: BEST research plan release] [https://euro-fusion.org/eurofusion-news/eurofusion-asipp-best-research-plan/] [2026-04-23]

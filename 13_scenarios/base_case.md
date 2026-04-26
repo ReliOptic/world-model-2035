@@ -52,17 +52,17 @@
 - Downside: 대만·남중국해·러시아 인접지에서 충격이 겹치고, AI·전력 병목이 터져 기술 확산이 `3-5년` 느려진다. 이 경우 [delayed.md]가 Base를 대체한다.
 
 ## 연결 문서
-- [accelerated.md]
-- [delayed.md]
-- [bifurcated.md]
-- [climate_emergency.md]
-- [../02_technology/semiconductors/roadmap_annual.md]
-- [../02_technology/on_device_ai/roadmap_annual.md]
-- [../03_energy/grid/ai_optimization.md]
-- [../06_geopolitics/01_usa/annual.md]
-- [../06_geopolitics/02_china/annual.md]
-- [../06_geopolitics/04_eu/annual.md]
-- [../10_international_organizations/iea_weo.md]
+- [accelerated.md](accelerated.md)
+- [delayed.md](delayed.md)
+- [bifurcated.md](bifurcated.md)
+- [climate_emergency.md](climate_emergency.md)
+- [../02_technology/semiconductors/roadmap_annual.md](../02_technology/semiconductors/roadmap_annual.md)
+- [../02_technology/on_device_ai/roadmap_annual.md](../02_technology/on_device_ai/roadmap_annual.md)
+- [../03_energy/grid/ai_optimization.md](../03_energy/grid/ai_optimization.md)
+- [../06_geopolitics/01_usa/annual.md](../06_geopolitics/01_usa/annual.md)
+- [../06_geopolitics/02_china/annual.md](../06_geopolitics/02_china/annual.md)
+- [../06_geopolitics/04_eu/annual.md](../06_geopolitics/04_eu/annual.md)
+- [../10_international_organizations/iea_weo.md](../10_international_organizations/iea_weo.md)
 
 ## 정보 출처
 - IMF World Economic Outlook October 2025 https://www.imf.org/en/publications/weo/issues/2025/10/14/world-economic-outlook-october-2025 2026-04 확인

@@ -24,12 +24,12 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Darlington 본공사 홀드포인트 추가 해제, Clinch River NRC 심사 종결, Palisades Pioneer 부분 CP Part 1 완료 | NRC가 복수 건설허가를 동시에 발급 | Darlington 기초공사 지연과 NRC 일정 미달 | 80% |
-| 2027 | NuScale Doicesti pre-EPC 완료, Natrium 원자로 건물 기초, Xe-100 TRISO-X 연료공장 가동 | HALEU 공급이 미국 내 본격 램프 | HALEU 부족으로 Natrium·Xe-100 병렬 지연 | 55% |
-| 2028 | Darlington 주요 기기 설치, TVA Clinch River 본공사 착수, Rolls-Royce GDA Step 3 마무리 | 복수 부지에서 SMR 건설 병행 | 첫 호기 일정 6-12개월 밀림 | 65% |
+| 2026 | Darlington 본공사 홀드포인트 추가 해제, Clinch River NRC 심사 종결, Palisades Pioneer 부분 CP Part 1 완료 | NRC가 복수 건설허가를 동시에 발급 | Darlington 기초공사 지연과 NRC 일정 미달 | 82% |
+| 2027 | NuScale Doicesti pre-EPC 완료, Natrium 원자로 건물 기초, Xe-100 TRISO-X 연료공장 가동 | HALEU 공급이 미국 내 본격 램프 | HALEU 부족으로 Natrium·Xe-100 병렬 지연 | 30% |
+| 2028 | Darlington 주요 기기 설치, TVA Clinch River 본공사 착수, Rolls-Royce GDA Step 3 마무리 | 복수 부지에서 SMR 건설 병행 | 첫 호기 일정 6-12개월 밀림 | 78% |
 | 2029 | Darlington BWRX-300 Unit 1 시운전·연료장전 | Darlington이 예정대로 가동 개시 | Darlington 가동 `2030` 이후로 연기 | 60% |
 | 2030 | Natrium 발전 개시, Darlington 상업운전, Doicesti 첫 모듈 | Darlington·Natrium 연속 가동 성공 | 한 건 이상 주요 프로젝트 1년 이상 지연 | 55% |
-| 2031 | Holtec Pioneer 1·2 가동, Xe-100 Seadrift 가동 | 다수 FOAK이 2031년 집중 가동 | 공급망·숙련인력 부족으로 분산 지연 | 45% |
+| 2031 | Holtec Pioneer 1·2 가동, Xe-100 Seadrift 가동 | 다수 FOAK이 2031년 집중 가동 | 공급망·숙련인력 부족으로 분산 지연 | 35% |
 | 2032 | TVA Clinch River BWRX-300 Unit 1 가동, Darlington Unit 2 착공 | 미국 내 2개 사이트 가동 진입 | Pioneer·Clinch River 중 하나 이상 2033+로 밀림 | 55% |
 | 2033 | Amazon 4x Xe-100 첫 호기, 유럽 내 2번째 SMR 부지 착공 | 데이터센터 전용 SMR 함대 규모화 시작 | 상업성 악화로 일부 부지 보류 | 50% |
 | 2034 | Rolls-Royce Wylfa 첫 호기 가동, 10x SMR이 전 세계 운전 중 | FOAK 학습곡선이 NOAK 비용 `20-30%` 인하로 이어짐 | 원가 상승과 금리 부담이 추가 프로젝트 제한 | 55% |
@@ -51,10 +51,10 @@
 - Downside: HALEU 부족, 공급망 이슈, 원가 초과 반복으로 실제 운전 용량은 `10GW` 미만에 머물고 SMR은 전통 대형원전 대비 경쟁력을 입증하지 못한다.
 
 ## 연결 문서
-- [./regulatory.md]
-- [./datacenter_power.md]
-- [../fusion/roadmap_annual.md]
-- [../../09_corporate_roadmaps/energy/constellation.md]
+- [./regulatory.md](./regulatory.md)
+- [./datacenter_power.md](./datacenter_power.md)
+- [../fusion/roadmap_annual.md](../fusion/roadmap_annual.md)
+- [../../09_corporate_roadmaps/energy_tech/nextera.md](../../09_corporate_roadmaps/energy_tech/nextera.md)
 
 ## 정보 출처
 - OPG `Darlington New Nuclear Project` https://www.cnsc-ccsn.gc.ca/eng/resources/status-of-new-nuclear-projects/darlington/ 2026-04 확인

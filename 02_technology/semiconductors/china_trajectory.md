@@ -20,11 +20,11 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | SMIC N+2 양산 유지, Ascend 910D 개발, CXMT DDR5 생산 확대, YMTC 국내 점유율 방어 | CXMT HBM3 파일럿 성공, SMEE 장비 양산 진입 | 추가 BIS 제재로 장비·소재 공급망 차단 심화 | 70% |
+| 2026 | SMIC N+2 양산 유지, Ascend 910D 개발, CXMT DDR5 생산 확대, YMTC 국내 점유율 방어 | CXMT HBM3 파일럿 성공, SMEE 장비 양산 진입 | 추가 BIS 제재로 장비·소재 공급망 차단 심화 | 80% |
 | 2027 | SMIC 5nm급 공정 파일럿, CXMT HBM3 제한적 양산, 국산 DUV 장비 28nm 제조 공정 인증 | 국산 장비 첫 자급 공정 라인 가동 | 미국-동맹국 장비 수출통제 강화로 기존 팹 확장 차질 | 45% |
 | 2028 | 중국 내 성숙 노드(28-14nm) 자급률 50%+ 목표, YMTC 고도 NAND 글로벌 가격 압박 | YMTC가 비제재 시장에서 대규모 점유율 확보 | 첨단 노드 자급 실패로 AI 가속기 칩렛 공급 병목 지속 | 55% |
-| 2029 | 중국 AI 학습용 Ascend 계열 성능이 NVIDIA H100급에 도달(내수 기준) | 소프트웨어 생태계(MindSpore, CANN) 성숙으로 화웨이 생태계 자급 | 첨단 EUV 부재로 AI 추론 에지 칩의 에너지 효율 열위 지속 | 40% |
-| 2030 | 국산 성숙 노드 자급 완성, 첨단 노드(3nm이하)는 여전히 TSMC/삼성 대비 2-3세대 격차 | 중국-러시아-중동 수요만으로도 SMIC의 성숙 노드 수익성 확보 | 지정학 충격(대만 해협 등)으로 글로벌 공급망 재편 가속 | 60% |
+| 2029 | 중국 AI 학습용 Ascend 계열 성능이 NVIDIA H100급에 도달(내수 기준) | 소프트웨어 생태계(MindSpore, CANN) 성숙으로 화웨이 생태계 자급 | 첨단 EUV 부재로 AI 추론 에지 칩의 에너지 효율 열위 지속 | 35% |
+| 2030 | 국산 성숙 노드 자급 완성, 첨단 노드(3nm이하)는 여전히 TSMC/삼성 대비 2-3세대 격차 | 중국-러시아-중동 수요만으로도 SMIC의 성숙 노드 수익성 확보 | 지정학 충격(대만 해협 등)으로 글로벌 공급망 재편 가속 | 80% |
 | 2031 | 중국 내 AI 인프라는 독자 공급망 기반으로 운영 가능, 첨단 노드 격차는 여전 | 모놀리식 3D와 첨단 패키징 우회 전략으로 성능 격차 일부 상쇄 | 제재 확대로 소재·가스 공급마저 차단 시 생산 차질 | 35% |
 | 2032 | 중국 반도체 생태계는 사실상 `병렬 세계`로 분리. 글로벌 벤치마크와 독립된 성능 기준 운영 | 내수 AI·전기차·통신 수요가 중국 반도체 산업의 안정적 기반 | 내수 수요 부진이나 과잉 투자로 수익성 악화, 구조조정 불가피 | 55% |
 | 2033 | 중국 7nm 이하 공정 자급률이 제한적으로 향상, 일부 선도 팹이 TSMC N5급에 근접 | SMEE 차세대 장비 + 국산 레지스트 조합으로 5nm 수율 개선 | 2세대 이상 격차를 좁히지 못하고 소프트웨어 최적화로 버티는 전략 강화 | 30% |
@@ -51,7 +51,7 @@
 ## 연결 문서
 - [./roadmap_annual.md](./roadmap_annual.md)
 - [./players/smic_huawei.md](./players/smic_huawei.md)
-- [../../foundation_models/players/china_models.md](../../foundation_models/players/china_models.md)
+- [../foundation_models/players/china_models.md](../foundation_models/players/china_models.md)
 
 ## 정보 출처
 - TechInsights SMIC N+2 in Huawei Mate 60 Pro https://www.techinsights.com/blog/techinsights-finds-smic-7nm-n2-huawei-mate-60-pro 2026-04 확인

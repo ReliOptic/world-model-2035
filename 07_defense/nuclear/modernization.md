@@ -22,11 +22,11 @@
 |---|---|---|---|---|
 | 2026 | Sentinel 재구조화 비용 산정 종료, B-21/Columbia 공정 진행 | Sentinel 재구조가 안정적 경로 확정 | Sentinel 추가 1-2년 지연 | 80% |
 | 2027 | Minuteman III SLEP 투자 확대 결정 | B-21 생산이 목표 대수 달성 | B-21 가용률 문제 부각 | 60% |
-| 2028 | Sentinel 초도 비행 시험 | 시험 통과로 IOC 목표 준수 | 시험 실패 시 프로그램 재검토 | 55% |
+| 2028 | Sentinel 초도 비행 시험 | 시험 통과로 IOC 목표 준수 | 시험 실패 시 프로그램 재검토 | 35% |
 | 2029 | Columbia 1번함 진수·시험 | 첫 초계 일정 준수 | SSBN 교대 공백 리스크 심화 | 60% |
-| 2030 | China 탄두 `1,000기+` 도달 평가 | 삼각 군축 대화 초기 진입 | 군축 체제 붕괴 확인 | 65% |
+| 2030 | China 탄두 `1,000기+` 도달 평가 | 삼각 군축 대화 초기 진입 | 군축 체제 붕괴 확인 | 80% |
 | 2031 | 미국 triad 현대화의 중간 마일스톤 | Sentinel·B-21·Columbia 모두 작전 중 | Sentinel 재슬립으로 Minuteman III `2050`까지 운용 | 55% |
-| 2032 | 러시아 Burevestnik·Poseidon 소규모 작전 배치 주장 | 실 운용 안정성 검증 | 양산 실패 및 유지비 부담 | 50% |
+| 2032 | 러시아 Burevestnik·Poseidon 소규모 작전 배치 주장 | 실 운용 안정성 검증 | 양산 실패 및 유지비 부담 | 35% |
 | 2033 | 핵 현대화 비용 누적이 연방 국방예산 압박 | 효율화·통합 관리 효과 | 수수료·유지비 추가 비용 증가 | 60% |
 | 2034 | 3국 핵전력 간 비대칭이 더 선명 | 제한적 수직 비확산 합의 | 확산 압박 가중 | 55% |
 | 2035 | 미국·러시아·중국의 전략 triad가 모두 21세기 플랫폼으로 교체 완료 경로 | 전략 안정 대화의 부분적 복원 | 트리플 미러 경쟁 고착 | 60% |
@@ -47,10 +47,10 @@
 - Downside: Sentinel 추가 슬립과 중·러 증강 동시 진행으로 미 triad 신뢰도에 장기 압박.
 
 ## 연결 문서
-- [./proliferation_risk.md]
-- [../space_defense/satellite_killchain.md]
-- [../cyber/critical_infra.md]
-- [../../13_scenarios/base_case.md]
+- [./proliferation_risk.md](./proliferation_risk.md)
+- [../space_defense/satellite_killchain.md](../space_defense/satellite_killchain.md)
+- [../cyber/critical_infra.md](../cyber/critical_infra.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - GAO Sentinel 2026 cost estimate Defense One https://www.defenseone.com/defense-systems/2026/02/cost-estimate-new-sentinel-icbm-plan-wont-arrive-until-years-end/411720/ 2026-04 확인

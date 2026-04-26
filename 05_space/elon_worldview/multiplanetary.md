@@ -64,9 +64,9 @@
 - Downside: Mars 프로그램이 2035까지 의미 있는 실행을 보여주지 못하고, 달 경제만 구조적 전환
 
 ## 연결 문서
-- [../spacex/mars_timeline.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/spacex/mars_timeline.md)
-- [realization_scorecard.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/elon_worldview/realization_scorecard.md)
-- [../geopolitics_space/artemis_vs_china.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/geopolitics_space/artemis_vs_china.md)
+- [../spacex/mars_timeline.md](../spacex/mars_timeline.md)
+- [realization_scorecard.md](realization_scorecard.md)
+- [../geopolitics_space/artemis_vs_china.md](../geopolitics_space/artemis_vs_china.md)
 
 ## 정보 출처
 - [SpaceX Mars] [https://www.spacex.com/humanspaceflight/mars/] [2026-04-23]

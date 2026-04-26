@@ -20,15 +20,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | CAISI 표준 1차안, 주별 고용·보험 AI 규제 누적 | 연방 preemption 합의 일부 진전 | 주·연방 갈등 심화 | 80% |
-| 2027 | 대선 전 의회가 섹터별 AI 법안(의료, 교육, 공공조달) 일부 통과 | 연방 포괄 AI 프레임워크 초안 등장 | 입법 공백 지속 | 55% |
-| 2028 | 대선 결과에 따라 규제 축 재조정 | 연방 일반 규범 진전 | 주 규제가 사실상 연방 규제 대체 | 45% |
+| 2026 | CAISI 표준 1차안, 주별 고용·보험 AI 규제 누적 | 연방 preemption 합의 일부 진전 | 주·연방 갈등 심화 | 85% |
+| 2027 | 대선 전 의회가 섹터별 AI 법안(의료, 교육, 공공조달) 일부 통과 | 연방 포괄 AI 프레임워크 초안 등장 | 입법 공백 지속 | 78% |
+| 2028 | 대선 결과에 따라 규제 축 재조정 | 연방 일반 규범 진전 | 주 규제가 사실상 연방 규제 대체 | 55% |
 | 2029 | federal procurement·의료·금융에서 AI 감사·문서화 의무 정착 | CAISI 표준이 de facto 표준 | 섹터별 갈라파고스 가속 | 60% |
 | 2030 | 주 AI 법제의 상호 정합성 조정 시도 | 주 간 모델법(Model Act) 합의 | 연방·주·국제 3중 분절 | 50% |
 | 2031 | AI 감사·투명성 업계 실무 정착 | 자발 표준이 준강제로 작동 | 규제 비용 상승이 혁신 지연 유발 | 55% |
 | 2032 | 대선 이후 연방 AI 법 제정 재시도 | 포괄 법안 통과 | 재계·시민사회 갈등 지속 | 35% |
 | 2033 | AI 책임·보험·손해배상 체계 성숙 | 보험시장 기반 규제가 제도화 | 보험·소송 폭증으로 역효과 | 50% |
-| 2034 | 국제 AI 규범(UN/G7/OECD) 통합 압박 | 미국 국내법에 국제표준 반영 | 국제 표준과 미국 표준 분리 | 45% |
+| 2034 | 국제 AI 규범(UN/G7/OECD) 통합 압박 | 미국 국내법에 국제표준 반영 | 국제 표준과 미국 표준 분리 | 30% |
 | 2035 | 미국 AI 규제는 `연방 최소 + 주별 상세 + 섹터별 관리` 하이브리드로 안정화 | 일관성 있는 다층 체계 완성 | 단편화 심화 | 55% |
 
 ## 물리적/구조적 한계
@@ -47,10 +47,10 @@
 - Downside: 연방-주 갈등과 섹터별 규제 분절이 지속되면 미국 AI 규제는 혁신 촉진과 권리 보호 양면에서 모두 중간에 걸친 어정쩡한 체계로 남는다.
 
 ## 연결 문서
-- [./ai_hegemony.md]
-- [../04_eu/eu_ai_act.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
-- [../../13_scenarios/base_case.md]
+- [./ai_hegemony.md](./ai_hegemony.md)
+- [../04_eu/eu_ai_act.md](../04_eu/eu_ai_act.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Federal Register EO 14179 https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence 2026-04 확인

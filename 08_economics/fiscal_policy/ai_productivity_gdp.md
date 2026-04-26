@@ -60,9 +60,9 @@
 - Downside: 도입은 빨라도 보완투자와 제도 적응 부족으로 GDP 효과는 낮고 분배 충격은 크다
 
 ## 연결 문서
-- [../labor_markets/automation_vs_augmentation.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/08_economics/labor_markets/automation_vs_augmentation.md)
-- [../../10_international_organizations/imf_weo.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/10_international_organizations/imf_weo.md)
-- [../../09_corporate_roadmaps/ai_labs/openai.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/09_corporate_roadmaps/ai_labs/openai.md)
+- [../labor_markets/automation_vs_augmentation.md](../labor_markets/automation_vs_augmentation.md)
+- [../../10_international_organizations/imf_weo.md](../../10_international_organizations/imf_weo.md)
+- [../../09_corporate_roadmaps/ai_labs/openai.md](../../09_corporate_roadmaps/ai_labs/openai.md)
 
 ## 정보 출처
 - [OECD Artificial intelligence policy issue page] [https://www.oecd.org/en/topics/policy-issues/artificial-intelligence.html] [2026-04-20]

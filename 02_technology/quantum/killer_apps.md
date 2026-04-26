@@ -20,8 +20,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | 화학·재료 시뮬레이션 하이브리드 시연 증가, 금융 파일럿 확대, 과학적 우위 발표 다수 | 특정 화학 분자 시뮬레이션에서 고전 대비 실질 속도 우위 최초 검증 | 노이즈 문제로 하이브리드 우위 재현 실패, 투자자 기대 조정 | 65% |
-| 2027 | 초기 내결함성 양자 시스템 공개, 오류 보정 논리 큐비트 100+ 달성 | 논리 큐비트 1,000+ 조기 달성으로 화학 시뮬레이션 경로 가속 | 오류 보정 오버헤드가 예상보다 커 실용 시스템 규모화 지연 | 50% |
+| 2026 | 화학·재료 시뮬레이션 하이브리드 시연 증가, 금융 파일럿 확대, 과학적 우위 발표 다수 | 특정 화학 분자 시뮬레이션에서 고전 대비 실질 속도 우위 최초 검증 | 노이즈 문제로 하이브리드 우위 재현 실패, 투자자 기대 조정 | 80% |
+| 2027 | 초기 내결함성 양자 시스템 공개, 오류 보정 논리 큐비트 100+ 달성 | 논리 큐비트 1,000+ 조기 달성으로 화학 시뮬레이션 경로 가속 | 오류 보정 오버헤드가 예상보다 커 실용 시스템 규모화 지연 | 76% |
 | 2028 | 배터리 소재 후보 물질 발견에서 양자+AI 하이브리드 가속 첫 상업 사례 | 신규 배터리 화학 발견으로 EV 산업 수혜, 양자 컴퓨팅 투자 급증 | 양자 시뮬레이션 결과가 기존 DFT 방법보다 명확히 우수하지 못함 | 35% |
 | 2029 | 포트폴리오 최적화·리스크 모델링에서 금융사의 본격 상업 배포 | 최소 3개 글로벌 투자은행이 양자 최적화를 정규 운영 도구로 채택 | 양자 최적화 ROI가 고전 알고리즘 개선보다 우월하지 않다는 결론 | 40% |
 | 2030 | 화학·재료 분야에서 최초의 확실한 양자 우위(quantum advantage) 주장 검증 | 신약 후보 발견 시간이 양자 시뮬레이션으로 30%+ 단축 | 양자 컴퓨팅의 한계가 AI+고전 HPC 조합에 의해 지속 극복 | 30% |
@@ -48,10 +48,10 @@
 - Downside: 오류 보정 한계와 고전 AI의 지속 발전으로 2035년에도 양자 컴퓨팅이 틈새 실험 단계에 머물며 기대에 크게 미치지 못한다.
 
 ## 연결 문서
-- [./roadmap_annual.md]
-- [./post_quantum_crypto.md]
-- [../biotech/alphafold_downstream.md]
-- [../../13_scenarios/base_case.md]
+- [./roadmap_annual.md](./roadmap_annual.md)
+- [./post_quantum_crypto.md](./post_quantum_crypto.md)
+- [../biotech/alphafold_downstream.md](../biotech/alphafold_downstream.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - IDTechEx quantum killer application first article https://www.idtechex.com/en/research-article/what-will-be-the-first-killer-application-for-quantum-computing/33928 2026-04 확인

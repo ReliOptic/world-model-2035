@@ -39,8 +39,8 @@ Each scored prediction should have:
 - Write retrospectives into `14_predictions_log/retrospective/`.
 
 ## 연결 문서
-- [template.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/14_predictions_log/template.md)
-- [METHODOLOGY.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/METHODOLOGY.md)
+- [template.md](../14_predictions_log/template.md)
+- [METHODOLOGY.md](../METHODOLOGY.md)
 
 ## 정보 출처
 - This is a repository framing file derived from the project brief in `The world in 2035.md` on 2026-04-20.

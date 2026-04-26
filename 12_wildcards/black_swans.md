@@ -57,7 +57,7 @@
 - [../13_scenarios/climate_emergency.md](../13_scenarios/climate_emergency.md)
 - [../13_scenarios/bifurcated.md](../13_scenarios/bifurcated.md)
 - [../10_international_organizations/who.md](../10_international_organizations/who.md)
-- [../06_geopolitics/02_china/taiwan_risk.md](../06_geopolitics/02_china/taiwan_risk.md)
+- [../06_geopolitics/02_china/taiwan_scenarios.md](../06_geopolitics/02_china/taiwan_scenarios.md)
 
 ## 정보 출처
 - WEF Global Risks Report 2026 https://www.weforum.org/publications/global-risks-report-2026/ 2026-04 확인

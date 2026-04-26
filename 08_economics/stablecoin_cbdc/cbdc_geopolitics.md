@@ -21,8 +21,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | e-CNY 거래량 계속 확대, mBridge 참여국 추가 가능성, 디지털 유로 핵심 설계 확정 | mBridge가 중동·아프리카 추가 참여국 확보하여 서방 제재 우회 경로 강화 | 디지털 유로 설계 논쟁으로 ECB 준비 단계 1년+ 추가 지연 | 65% |
-| 2027 | Project Agorá 파일럿 결과 발표, 디지털 유로 출시 준비 단계 완료 목표 | 서방 주도 도매 CBDC가 신속히 작동하며 mBridge 대안 역할 확립 | 서방 도매 CBDC 파일럿이 기술적 난관으로 지연 | 55% |
+| 2026 | e-CNY 거래량 계속 확대, mBridge 참여국 추가 가능성, 디지털 유로 핵심 설계 확정 | mBridge가 중동·아프리카 추가 참여국 확보하여 서방 제재 우회 경로 강화 | 디지털 유로 설계 논쟁으로 ECB 준비 단계 1년+ 추가 지연 | 85% |
+| 2027 | Project Agorá 파일럿 결과 발표, 디지털 유로 출시 준비 단계 완료 목표 | 서방 주도 도매 CBDC가 신속히 작동하며 mBridge 대안 역할 확립 | 서방 도매 CBDC 파일럿이 기술적 난관으로 지연 | 80% |
 | 2028 | 디지털 유로 첫 출시(소매 한정·제한적 수량) 목표 | 디지털 유로 출시 성공으로 유럽 주권 통화 디지털화 완성 | 유럽 의회·회원국 간 이견으로 출시 2030+로 지연 | 40% |
 | 2029 | mBridge와 Project Agorá 간 상호운용성 협상 가능성 또는 완전 분리 확정 | 상호운용성 프레임워크가 타결되어 글로벌 CBDC 분절 완화 | CBDC 생태계가 서방·중국 주도로 완전 분열 고착 | 30% |
 | 2030 | 글로벌 CBDC 지형이 서방(Project Agorá 중심)·중국(mBridge 중심)·비동맹(자체 시스템)의 3극 구도로 고착 | 표준화 노력으로 3극이 최소한 기술 레이어에서 상호운용 | 3극 분열이 국제 결제 비용을 높이고 무역 마찰을 심화 | 50% |
@@ -49,10 +49,10 @@
 - Downside: 서방-중국 CBDC 분열이 심화되어 국제 무역·금융의 비용과 복잡성이 증가하고, 달러 패권이 디지털 시대에 부분적으로 약화된다.
 
 ## 연결 문서
-- [./tbill_demand_model.md]
-- [../../06_geopolitics/02_china/annual.md]
-- [../../10_international_organizations/wto_digital_trade.md]
-- [../../13_scenarios/bifurcated.md]
+- [./tbill_demand_model.md](./tbill_demand_model.md)
+- [../../06_geopolitics/02_china/annual.md](../../06_geopolitics/02_china/annual.md)
+- [../../10_international_organizations/wto_digital_trade.md](../../10_international_organizations/wto_digital_trade.md)
+- [../../13_scenarios/bifurcated.md](../../13_scenarios/bifurcated.md)
 
 ## 정보 출처
 - Atlantic Council CBDC Tracker https://www.atlanticcouncil.org/cbdctracker/ 2026-04 확인

@@ -22,14 +22,14 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | 광고 매출 `240B+ 달러`, Ray-Ban 누적 판매 `15M+`, Prometheus DC 가동 | Llama 5 오픈 웨이트 + Advantage+ AI로 ROAS 우위 유지 | EU·미국 광고 규제 강화와 Apple/Google 정책 변화로 타겟팅 약화 | 75% |
-| 2027 | Hypernova 2(듀얼 디스플레이) 대중화 초기, Reality Labs 손실 감소 시작 | Ray-Ban 누적 `30M+`, AR 안경이 iPhone 옆 두 번째 기기 후보 | Orion 상용화가 2028 이후로 추가 지연 | 60% |
+| 2026 | 광고 매출 `240B+ 달러`, Ray-Ban 누적 판매 `15M+`, Prometheus DC 가동 | Llama 5 오픈 웨이트 + Advantage+ AI로 ROAS 우위 유지 | EU·미국 광고 규제 강화와 Apple/Google 정책 변화로 타겟팅 약화 | 82% |
+| 2027 | Hypernova 2(듀얼 디스플레이) 대중화 초기, Reality Labs 손실 감소 시작 | Ray-Ban 누적 `30M+`, AR 안경이 iPhone 옆 두 번째 기기 후보 | Orion 상용화가 2028 이후로 추가 지연 | 78% |
 | 2028 | Orion 세대 초기 출시, AR 광고가 신 수익원으로 등장 | Llama·MTIA 기반 비용 구조가 GPU 의존을 크게 낮춤 | AR 안경 채택이 기대치 하회, Reality Labs 손실 유지 | 50% |
 | 2029 | 광고 매출 `300B+ 달러`, 메타버스·에이전트 플랫폼 중첩 | Meta AI 에이전트가 WhatsApp·Instagram·Messenger 전반 통합 | 광고 성장률 한 자릿수로 둔화 | 55% |
-| 2030 | Reality Labs 흑자 전환 초기 조건 형성 | Ray-Ban + Hypernova + Orion 3단 제품군 성장 | 디바이스 사업 손실 구조가 지속 | 45% |
+| 2030 | Reality Labs 흑자 전환 초기 조건 형성 | Ray-Ban + Hypernova + Orion 3단 제품군 성장 | 디바이스 사업 손실 구조가 지속 | 38% |
 | 2031 | Meta가 콘텐츠 창작·커뮤니티 AI 에이전트 표준 | 창작자 경제에서 AI 기반 도구 지배적 | 크리에이터 이탈·대안 플랫폼 부상 | 50% |
 | 2032 | Llama 계열이 오픈 프런티어의 구조적 축 | 엔터프라이즈 오픈 소스 AI의 기본 | OpenAI/Anthropic 클로즈드 모델에 점유율 잠식 | 55% |
-| 2033 | Reality Labs 매출 `20B+ 달러` | AR 안경이 스마트폰 다음 주요 폼팩터로 확정 | AR 안경 대중화가 2035 이후로 밀림 | 40% |
+| 2033 | Reality Labs 매출 `20B+ 달러` | AR 안경이 스마트폰 다음 주요 폼팩터로 확정 | AR 안경 대중화가 2035 이후로 밀림 | 35% |
 | 2034 | 광고 플랫폼에서 에이전트 상거래가 새 성장축 | Commerce + AI Agent가 retail 광고 재편 | 반독점·광고 규제가 commerce 광고 성장 제약 | 45% |
 | 2035 | Meta는 "광고 + AI + AR 기기"의 삼두 구조 | iPhone 이후 플랫폼에서 선두 | 디바이스 베팅 실패 시 광고 단일 의존 회귀 | 55% |
 
@@ -51,7 +51,7 @@
 
 ## 연결 문서
 - [../on_device_ai/roadmap_annual.md](../on_device_ai/roadmap_annual.md)
-- [../foundation_models/open_source.md](../foundation_models/open_source.md)
+- [../foundation_models/players/meta_ai.md](../foundation_models/players/meta_ai.md)
 - [./competitive_map.md](./competitive_map.md)
 
 ## 정보 출처

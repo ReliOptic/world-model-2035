@@ -24,8 +24,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Ariane 64 첫 비행, Vega-C Sentinel-3C, Space Rider drop test | 8회 cadence 달성 | Ariane 6 6회 이하 | 60% |
-| 2027 | Kuiper 대량 발사 본격화, ExoMars 발사 준비 | 연 10회+ cadence | Ariane 6 7회 이하 | 55% |
+| 2026 | Ariane 64 첫 비행, Vega-C Sentinel-3C, Space Rider drop test | 8회 cadence 달성 | Ariane 6 6회 이하 | 78% |
+| 2027 | Kuiper 대량 발사 본격화, ExoMars 발사 준비 | 연 10회+ cadence | Ariane 6 7회 이하 | 76% |
 | 2028 | ClearSpace-1 발사, ExoMars Rosalind Franklin 발사 | 양쪽 성공 | 임무 연기 | 50% |
 | 2029 | ESA·Member States 차세대 발사체(Ariane Next) 정책 확정 | reusable 후속기 본격 개발 | 정책 지연 | 55% |
 | 2030 | Space Rider 운용 시작 | 소형 궤도 실험 플랫폼 운영 | 프로그램 재조정 | 50% |
@@ -64,9 +64,9 @@
 - Downside: Ariane Next 지연, Kuiper·상업 수요 이후 후속 수요 부족
 
 ## 연결 문서
-- [china_cnsa.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/competitors/china_cnsa.md)
-- [blue_origin.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/competitors/blue_origin.md)
-- [../../06_geopolitics/04_eu/annual.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/06_geopolitics/04_eu/annual.md)
+- [china_cnsa.md](china_cnsa.md)
+- [blue_origin.md](blue_origin.md)
+- [../../06_geopolitics/04_eu/annual.md](../../06_geopolitics/04_eu/annual.md)
 
 ## 정보 출처
 - [ESA Ariane 6 overview] [https://www.esa.int/Enabling_Support/Space_Transportation/Launch_vehicles/Ariane_6_overview] [2026-04-23]

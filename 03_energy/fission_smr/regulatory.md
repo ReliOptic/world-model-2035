@@ -22,11 +22,11 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Part 53 발효, GDA Step 3 완료, FERC co-location 1차 규칙 | 복수 국가에서 허가 간소화 동시 발효 | Part 53 최종 규정의 해석 갈등, FERC 반복 거부 | 80% |
-| 2027 | Rolls-Royce DAC 발급, Clinch River CP 최종, Pioneer Part 1 CP 심사 종결 | 미국 내 3개 SMR CP 동시 확보 | 1개 이상 프로젝트 CP 심사 `2028+` 지연 | 65% |
-| 2028 | Part 53 첫 신청 사례 등장, EU 회원국별 SMR 부지 선정 가속 | Part 53 기반 설계심사 18개월 이내 완료 | 초기 신청자 부재로 Part 53 활용 저조 | 55% |
+| 2026 | Part 53 발효, GDA Step 3 완료, FERC co-location 1차 규칙 | 복수 국가에서 허가 간소화 동시 발효 | Part 53 최종 규정의 해석 갈등, FERC 반복 거부 | 85% |
+| 2027 | Rolls-Royce DAC 발급, Clinch River CP 최종, Pioneer Part 1 CP 심사 종결 | 미국 내 3개 SMR CP 동시 확보 | 1개 이상 프로젝트 CP 심사 `2028+` 지연 | 78% |
+| 2028 | Part 53 첫 신청 사례 등장, EU 회원국별 SMR 부지 선정 가속 | Part 53 기반 설계심사 18개월 이내 완료 | 초기 신청자 부재로 Part 53 활용 저조 | 35% |
 | 2029 | CNSC 후속 SMR 허가, 영국 첫 site licence 발급 | 영국이 Wylfa 외에 Hartlepool 등 추가 부지 확정 | 영국 부지 선정 지연 | 60% |
-| 2030 | 국제 SDR 상호인정 파일럿(미-영-캐나다) 개시 | BWRX-300의 영-캐 동일 설계 승인 완료 | 국가별 요건 차이로 상호인정 지연 | 45% |
+| 2030 | 국제 SDR 상호인정 파일럿(미-영-캐나다) 개시 | BWRX-300의 영-캐 동일 설계 승인 완료 | 국가별 요건 차이로 상호인정 지연 | 35% |
 | 2031 | FERC 대형부하 상시 규칙 확정, 데이터센터 전용 PPA 표준화 | 데이터센터 co-location 전국 표준 확립 | 주별·ISO별 규칙 분화 지속 | 55% |
 | 2032 | NRC 후속 advanced reactor 설계 인증 3건 이상 누적 | 복수 설계가 동시에 인증 확보 | Part 53 신청자 실적 여전히 제한적 | 60% |
 | 2033 | EU Taxonomy 내 SMR 별도 조문 추가, 국가별 보조금 가이드 공개 | EU 금융시장에서 SMR 프리미엄 해소 | 독일·오스트리아 등 지속 반대로 불균일 적용 | 50% |
@@ -49,10 +49,10 @@
 - Downside: 각국 규제 차이와 FERC 결정의 반복 번복이 지속되면 SMR 상업성은 `2035`까지도 대형원전 대비 명확한 우위를 확보하지 못한다.
 
 ## 연결 문서
-- [./roadmap_annual.md]
-- [./datacenter_power.md]
-- [../../10_international_organizations/iea_weo.md]
-- [../../06_geopolitics/04_eu/annual.md]
+- [./roadmap_annual.md](./roadmap_annual.md)
+- [./datacenter_power.md](./datacenter_power.md)
+- [../../10_international_organizations/iea_weo.md](../../10_international_organizations/iea_weo.md)
+- [../../06_geopolitics/04_eu/annual.md](../../06_geopolitics/04_eu/annual.md)
 
 ## 정보 출처
 - NRC `Part 53 rulemaking` https://www.nrc.gov/reactors/new-reactors/advanced/modernizing/rulemaking/part-53 2026-04 확인

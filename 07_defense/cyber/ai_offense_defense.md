@@ -47,11 +47,11 @@
 - Downside: AI 공격의 속도·다양성이 방어를 구조적으로 추월하고 시스템 단일 실패점 리스크가 현실화.
 
 ## 연결 문서
-- [./critical_infra.md]
-- [../autonomous_weapons/ai_targeting.md]
-- [../players/palantir.md]
-- [../../02_technology/model_capability/agentic_systems.md]
-- [../../13_scenarios/base_case.md]
+- [./critical_infra.md](./critical_infra.md)
+- [../autonomous_weapons/ai_targeting.md](../autonomous_weapons/ai_targeting.md)
+- [../players/palantir.md](../players/palantir.md)
+- [../../02_technology/foundation_models/agentic_os.md](../../02_technology/foundation_models/agentic_os.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - DARPA AIxCC final results page https://aicyberchallenge.com/finals-winners-announcement/ 2026-04 확인

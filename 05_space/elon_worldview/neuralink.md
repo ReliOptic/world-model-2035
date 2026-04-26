@@ -22,8 +22,8 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | 최초 Blindsight 환자 이식, PRIME 누적 10명+ | Blindsight 환자 실시각 데이터 공개 | 임상 안전 이슈로 중단 | 70% |
-| 2027 | PRIME 데이터로 FDA 정식 pivotal 시험 설계 | pivotal 시험 IDE 승인 | 추가 안전 이슈로 재설계 | 55% |
+| 2026 | 최초 Blindsight 환자 이식, PRIME 누적 10명+ | Blindsight 환자 실시각 데이터 공개 | 임상 안전 이슈로 중단 | 78% |
+| 2027 | PRIME 데이터로 FDA 정식 pivotal 시험 설계 | pivotal 시험 IDE 승인 | 추가 안전 이슈로 재설계 | 76% |
 | 2028 | 중증 마비·ALS 대상 Link 상업 승인 첫 시도 | 소수 적응증에서 초기 상업 승인 | FDA 승인 추가 지연 | 35% |
 | 2029 | CONVOY 기반 보조장치 통합 상업화 경로 | 다수 병원 도입 | 수익성 검증 실패 | 35% |
 | 2030 | Blindsight 초기 상업 승인 가능성 구간 | 시각 복원 상용 진입 | 해상도·안전성 한계로 지연 | 30% |
@@ -62,9 +62,9 @@
 - Downside: 임상·규제 지연으로 의료 BCI 시장에서 한계 기업으로 남고 대중 BCI는 미실현
 
 ## 연결 문서
-- [realization_scorecard.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/elon_worldview/realization_scorecard.md)
-- [multiplanetary.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/05_space/elon_worldview/multiplanetary.md)
-- [../../11_science/bci_human_enhancement.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/11_science/bci_human_enhancement.md)
+- [realization_scorecard.md](realization_scorecard.md)
+- [multiplanetary.md](multiplanetary.md)
+- [../../02_technology/sensors/biosensors.md](../../02_technology/sensors/biosensors.md)
 
 ## 정보 출처
 - [Neuralink Clinical Trials] [https://neuralink.com/trials/] [2026-04-23]

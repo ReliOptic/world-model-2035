@@ -48,11 +48,11 @@
 - Downside: 경쟁 심화, 수직통합 비용, 조달 정치가 중첩되어 고성장 이후 안정기 마진 압박.
 
 ## 연결 문서
-- [./palantir.md]
-- [./us_darpa_diu.md]
-- [../autonomous_weapons/drone_swarms.md]
-- [../autonomous_weapons/counter_autonomous.md]
-- [../../13_scenarios/base_case.md]
+- [./palantir.md](./palantir.md)
+- [./us_darpa_diu.md](./us_darpa_diu.md)
+- [../autonomous_weapons/drone_swarms.md](../autonomous_weapons/drone_swarms.md)
+- [../autonomous_weapons/counter_autonomous.md](../autonomous_weapons/counter_autonomous.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - Anduril Bolt-M USMC OPF-L https://www.anduril.com/news/anduril-awarded-usd23-9-million-contract-for-u-s-marine-corps-organic-precision-fires-light-program 2026-04 확인

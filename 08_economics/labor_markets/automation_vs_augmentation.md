@@ -57,8 +57,8 @@
 - Downside: 전환 비용과 분배 충격이 생산성 이익보다 먼저 드러난다
 
 ## 연결 문서
-- [../fiscal_policy/ai_productivity_gdp.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/08_economics/fiscal_policy/ai_productivity_gdp.md)
-- [../../10_international_organizations/imf_weo.md](/Users/reliqbit_mac/projects/The%20World%20in%202035/10_international_organizations/imf_weo.md)
+- [../fiscal_policy/ai_productivity_gdp.md](../fiscal_policy/ai_productivity_gdp.md)
+- [../../10_international_organizations/imf_weo.md](../../10_international_organizations/imf_weo.md)
 
 ## 정보 출처
 - [OECD Employment Outlook 2025] [https://www.oecd.org/en/publications/oecd-employment-outlook-2025_194a947b-en.html] [2026-04-20]

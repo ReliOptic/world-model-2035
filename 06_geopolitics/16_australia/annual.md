@@ -25,12 +25,12 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | RBA 추가 긴축 또는 장기 유지, AUKUS 인프라 착공 | 핵심광물 수출 가격 반등 | 중국 수요 급랭·수출 둔화 | 80% |
-| 2027 | 리튬·희토류 정제시설 가동 확대 | 미·일 보조금 공급망에 통합 | EV 수요 정체 지속 | 55% |
+| 2027 | 리튬·희토류 정제시설 가동 확대 | 미·일 보조금 공급망에 통합 | EV 수요 정체 지속 | 78% |
 | 2028 | SSN-AUKUS 조선 부지(Osborne) 주요 건설 | 영·미 인력·기술 이전 가속 | 조선·용접 인력 부족 심화 | 50% |
 | 2029 | 연방선거, AUKUS·기후·이민 3대 이슈 | Albanese 3선 또는 친AUKUS 후계 | 자유당·녹색당 간 균열로 정책 혼선 | 55% |
-| 2030 | 재생에너지 비중 82% 목표 평가 | 수소 수출·재생 인프라 성과 | 가격·공급 병목 지속 | 55% |
-| 2031 | Virginia-class 첫 인수 대비 훈련 확대 | 미·영 핵잠수함 운용 노하우 축적 | 조선 예산 초과 | 45% |
-| 2032 | Virginia-class 첫 인수 | 호주 핵잠수함 자산 본격 | 인수 지연·비용 급증 | 45% |
+| 2030 | 재생에너지 비중 82% 목표 평가 | 수소 수출·재생 인프라 성과 | 가격·공급 병목 지속 | 50% |
+| 2031 | Virginia-class 첫 인수 대비 훈련 확대 | 미·영 핵잠수함 운용 노하우 축적 | 조선 예산 초과 | 38% |
+| 2032 | Virginia-class 첫 인수 | 호주 핵잠수함 자산 본격 | 인수 지연·비용 급증 | 35% |
 | 2033 | 핵심광물·AI·방산의 결합 수출 모델 | 인도-태평양 중견 강국 지위 | 대중 무역 재악화 | 50% |
 | 2034 | 호주는 `광물+AUKUS+에너지` 삼각 강국 | 일본·한국·인도와 다자 협력 심화 | 동맹 피로·비용 과잉 | 50% |
 | 2035 | Base: G20 내 자원·안보 중견국, AUKUS 운용 진입 | SSN·수소·재생·광물 복합 성공 | 정책 분열로 성과 제한 | 55% |
@@ -52,11 +52,11 @@
 - Downside: 조선 지연·대중 디커플링 비용·이민 혼선이 동시에 작동하면 성과 제한.
 
 ## 연결 문서
-- [../01_usa/annual.md]
-- [../02_china/annual.md]
-- [../15_canada/annual.md]
-- [../../05_space/geopolitics_space/dual_use.md]
-- [../../10_international_organizations/nato_ai_strategy.md]
+- [../01_usa/annual.md](../01_usa/annual.md)
+- [../02_china/annual.md](../02_china/annual.md)
+- [../15_canada/annual.md](../15_canada/annual.md)
+- [../../05_space/geopolitics_space/dual_use.md](../../05_space/geopolitics_space/dual_use.md)
+- [../../10_international_organizations/nato_ai_strategy.md](../../10_international_organizations/nato_ai_strategy.md)
 
 ## 정보 출처
 - RBA Statement on Monetary Policy February 2026 https://www.rba.gov.au/publications/smp/2026/feb/contents.html 2026-04 확인

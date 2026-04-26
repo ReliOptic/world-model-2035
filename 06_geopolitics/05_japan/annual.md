@@ -25,15 +25,15 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | BoJ 점진 인상, Rapidus 파일럿, 방위 2% 유지 | 임금-물가 선순환 확립, 엔화 안정 | 중동·대외수요 충격으로 성장 0.5% 이하 | 80% |
-| 2027 | Rapidus 2nm 양산 시작, METI ¥10조 집행 본격화 | 양산 수율 확보·해외 고객 유치 성공 | 양산 지연·수율 저하로 재정 부담 가중 | 55% |
+| 2026 | BoJ 점진 인상, Rapidus 파일럿, 방위 2% 유지 | 임금-물가 선순환 확립, 엔화 안정 | 중동·대외수요 충격으로 성장 0.5% 이하 | 82% |
+| 2027 | Rapidus 2nm 양산 시작, METI ¥10조 집행 본격화 | 양산 수율 확보·해외 고객 유치 성공 | 양산 지연·수율 저하로 재정 부담 가중 | 78% |
 | 2028 | 방위·반도체·AI의 산업 스필오버가 지방에 확산 | JASM2·Rapidus·TSMC 클러스터 효과 | 인력 부족·엔지니어링 격차 지속 | 60% |
 | 2029 | BoJ 중립금리 근접, 임금상승 정착 | 가계 실질소득 회복, 소비 반등 | 고령화 재정압박이 통화정상화 발목 | 55% |
 | 2030 | METI `¥50조 민관투자` 중간 평가, 방위 GDP 2.5% 시험 | 반도체 수출 글로벌 2위권 회복 | Rapidus 수익성 미달로 구조조정 | 50% |
 | 2031 | 일본은 미국 중심 AI·방산 블록의 핵심 공급국 위치 | 인도·ASEAN향 공급망 허브화 | 대중국 마찰 심화로 수출 축소 | 55% |
 | 2032 | 인구·재정 구조 재설계 논쟁이 재점화 | 자동화·로봇·산업AI가 노동 공백 완충 | 연금·의료 부담으로 재정적자 확대 | 60% |
-| 2033 | 1.4nm 세대 전환과 후공정 국산화 진척 | 글로벌 메모리·소재·장비 복합 우위 | 수율·자본비용 문제로 선단 투자 둔화 | 45% |
-| 2034 | 일본은 `노화되는 첨단 산업국가`로 재정의 | 방위·반도체·소재가 장기 성장 견인 | 인구·재정 제약이 성장률 0% 근접 | 50% |
+| 2033 | 1.4nm 세대 전환과 후공정 국산화 진척 | 글로벌 메모리·소재·장비 복합 우위 | 수율·자본비용 문제로 선단 투자 둔화 | 38% |
+| 2034 | 일본은 `노화되는 첨단 산업국가`로 재정의 | 방위·반도체·소재가 장기 성장 견인 | 인구·재정 제약이 성장률 0% 근접 | 35% |
 | 2035 | Base: 고령 제조강국, 저성장·고품질, 미일 안보블록 핵심 | 임금-물가-투자 선순환 완성 | 구조개혁 지연으로 영향력 감쇠 | 55% |
 
 ## 물리적/구조적 한계
@@ -53,12 +53,12 @@
 - Downside: 양산 실패·재정악화·대외충격이 겹치면 영향력은 유지되지만 실질 성장은 0%에 근접한다.
 
 ## 연결 문서
-- [../01_usa/annual.md]
-- [../02_china/annual.md]
-- [../06_korea/annual.md]
-- [../20_taiwan/annual.md]
-- [../../02_technology/semiconductors/roadmap_annual.md]
-- [../../13_scenarios/base_case.md]
+- [../01_usa/annual.md](../01_usa/annual.md)
+- [../02_china/annual.md](../02_china/annual.md)
+- [../06_korea/annual.md](../06_korea/annual.md)
+- [../20_taiwan/annual.md](../20_taiwan/annual.md)
+- [../../02_technology/semiconductors/roadmap_annual.md](../../02_technology/semiconductors/roadmap_annual.md)
+- [../../13_scenarios/base_case.md](../../13_scenarios/base_case.md)
 
 ## 정보 출처
 - IMF Executive Board Concludes 2026 Article IV Consultation with Japan https://www.imf.org/en/news/articles/2026/04/02/pr-26105-japan-imf-executive-board-concludes-2026-article-iv-consult 2026-04 확인

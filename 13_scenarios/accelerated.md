@@ -51,13 +51,13 @@
 - Downside: 두 기술 S-curve가 한 번에 감속하거나, 대만·러시아 충돌이 자본·공급망을 중단시키면 Base로 회귀한다. 장기적으로는 [delayed.md] 쪽으로 수렴.
 
 ## 연결 문서
-- [base_case.md]
-- [delayed.md]
-- [bifurcated.md]
-- [../12_wildcards/positive_surprises.md]
-- [../02_technology/semiconductors/roadmap_annual.md]
-- [../03_energy/grid/ai_optimization.md]
-- [../11_science/biosecurity/]
+- [base_case.md](base_case.md)
+- [delayed.md](delayed.md)
+- [bifurcated.md](bifurcated.md)
+- [../12_wildcards/positive_surprises.md](../12_wildcards/positive_surprises.md)
+- [../02_technology/semiconductors/roadmap_annual.md](../02_technology/semiconductors/roadmap_annual.md)
+- [../03_energy/grid/ai_optimization.md](../03_energy/grid/ai_optimization.md)
+- [../11_science/biosecurity/pandemic_early_warning.md](../11_science/biosecurity/pandemic_early_warning.md)
 
 ## 정보 출처
 - Commonwealth Fusion Systems SPARC https://cfs.energy/technology/sparc/ 2026-04 확인

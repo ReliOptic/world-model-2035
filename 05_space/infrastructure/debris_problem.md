@@ -27,13 +27,13 @@
 | 2026 | Astroscale ELSA-M 발사, FCC 5-year rule 집행 본격화 | 상업 debris 서비스 첫 데모 | ELSA-M 지연 | 78% |
 | 2027 | ELSA-M 실제 debris 제거 시연 | OneWeb 위성 성공 제거 | 실제 제거 미성사 | 76% |
 | 2028 | ClearSpace-1 발사 | PROBA-1 제거 성공 | 발사 또는 rendezvous 실패 | 50% |
-| 2029 | 상업 debris removal 복수 operator 등장 | 상업 모델 확립 | 경제성 미확인 | 50% |
-| 2030 | LEO active 위성 25,000+ 예상 | 표준화된 conjunction 회피 운영 | major collision event 발생 | 60% |
-| 2031 | 우주교통 관리(STM) 국제 합의 시도 | FCC·ITU 차원 합의 진전 | 주요국 비동참 | 45% |
-| 2032 | legacy 대형 파편 집중 제거 프로젝트 확대 | ESA·JAXA·민간 협력 | 자금 부족 | 35% |
-| 2033 | Kessler risk 구체 event 발생 가능성 증가 | 양대 cluster 회피 자동화 | chain collision 1회 발생 | 35% |
-| 2034 | 궤도 보험·공동 책임 체계 제도화 논의 | 보험+규제 결합 | 보험비용 폭증 | 55% |
-| 2035 | LEO는 사실상 "managed traffic zone"으로 전환, 관리비용이 모든 operator에 구조적 부담 | debris 증가율 안정화 | debris 사고 누적으로 일부 궤도 제한 운용 | 70% |
+| 2029 | 상업 debris removal 복수 operator 등장 | 상업 모델 확립 | 경제성 미확인 | 45% |
+| 2030 | LEO active 위성 25,000+ 예상; Kessler Syndrome 2035 이전 발생 확률 <5%(방향성 리스크이나 느린 진전) | 표준화된 conjunction 회피 운영 | major collision event 발생 | 58% |
+| 2031 | 우주교통 관리(STM) 국제 합의 시도 | FCC·ITU 차원 합의 진전 | 주요국 비동참 | 40% |
+| 2032 | legacy 대형 파편 집중 제거 프로젝트 확대 | ESA·JAXA·민간 협력 | 자금 부족 | 30% |
+| 2033 | Kessler risk 구체 event 발생 가능성 증가; Kessler 시나리오 2035 이전 <5%(canonical) — 누적 리스크이나 단기 임계점 미달 | 양대 cluster 회피 자동화 | chain collision 1회 발생 | 32% |
+| 2034 | 궤도 보험·공동 책임 체계 제도화 논의 | 보험+규제 결합 | 보험비용 폭증 | 52% |
+| 2035 | LEO는 사실상 "managed traffic zone"으로 전환, 관리비용이 모든 operator에 구조적 부담; 글로벌 우주 경제 ~$1T 중 STM·debris 관리 비용이 구조적 상수 | debris 증가율 안정화 | debris 사고 누적으로 일부 궤도 제한 운용 | 70% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

@@ -25,15 +25,15 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | Chang'e 7 발사, Starship HLS ground·orbital test 누적 | HLS 통합 진전 | HLS refilling 데모 실패 | 80% |
-| 2027 | Artemis III LEO crewed test | 신규 EVA suit·lander 인테그레이션 검증 | Artemis III 재연기 | 60% |
-| 2028 | Artemis IV 시도, Tianwen-3 발사, Chang'e 8 준비 | Artemis IV 유인 달 착륙 성공 | Artemis IV 2029+로 연기 | 35% |
-| 2029 | Chang'e 8 발사, 중국 crewed landing 최종 준비 | Chang'e 8 성공 | 중국 유인 계획 지연 | 60% |
-| 2030 | 중국 첫 crewed lunar landing 시도 | 중국 유인 달 착륙 성공 | 중국 시도 2031로 연기 | 45% |
-| 2031 | Artemis 연 1회 cadence vs ILRS 1단계 인프라 초기 | Artemis cadence 달성 | Artemis 1~2년 공백 | 35% |
-| 2032 | ILRS 1단계 남극 전력·통신 모듈 배치 | 운용 가능 수준 도달 | 배치 지연 | 55% |
-| 2033 | 미국·중국 모두 유인 달 체류 시도 | long-duration surface stay | 체류 미성사 | 50% |
-| 2034 | 2035 ILRS 1단계 완공 직전 점검 | ILRS 확정 운용 | 완공 2036+ | 55% |
-| 2035 | Artemis와 ILRS 양 블록이 달 표면 인프라 경쟁 상태, 표준·연료·통신 주도권 다툼 가시화 | 상호운용성 일부 구축 | 블록 분리 고착, 상호운용 없음 | 78% |
+| 2027 | Artemis III LEO crewed test; Artemis 유인 달 착륙 2027 달성 확률 30~40%(반복 지연 이력) | 신규 EVA suit·lander 인테그레이션 검증 | Artemis III 재연기 | 55% |
+| 2028 | Artemis IV 시도, Tianwen-3 발사, Chang'e 8 준비 | Artemis IV 유인 달 착륙 성공 | Artemis IV 2029+로 연기 | 32% |
+| 2029 | Chang'e 8 발사, 중국 crewed landing 최종 준비 | Chang'e 8 성공 | 중국 유인 계획 지연 | 58% |
+| 2030 | 중국 첫 crewed lunar landing 시도; 달성 확률 40~50%(반복 지연 포함) | 중국 유인 달 착륙 성공 | 중국 시도 2031로 연기 | 43% |
+| 2031 | Artemis 연 1회 cadence vs ILRS 1단계 인프라 초기; 상업 우주정거장 1~2개(Axiom, Starlab) 운영 시작 | Artemis cadence 달성 | Artemis 1~2년 공백 | 32% |
+| 2032 | ILRS 1단계 남극 전력·통신 모듈 배치 | 운용 가능 수준 도달 | 배치 지연 | 52% |
+| 2033 | 미국·중국 모두 유인 달 체류 시도 | long-duration surface stay | 체류 미성사 | 48% |
+| 2034 | 2035 ILRS 1단계 완공 직전 점검 | ILRS 확정 운용 | 완공 2036+ | 52% |
+| 2035 | Artemis와 ILRS 양 블록이 달 표면 인프라 경쟁 상태, 표준·연료·통신 주도권 다툼 가시화; 글로벌 우주 경제 ~$1T, Starlink 수익 $15~25B이 달 경제 투자 토대 | 상호운용성 일부 구축 | 블록 분리 고착, 상호운용 없음 | 80% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

@@ -22,16 +22,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Gemini 3.x가 Search/Workspace 전반에 통합, Cloud `run rate 90-100B 달러` 돌파 | AI Mode가 전통 search query를 빠르게 대체하며 ad revenue가 더 빨리 회복 | AI Overviews가 publisher traffic을 삭감해 반독점 압력이 커짐 | 80% |
-| 2027 | Waymo 주간 `1M+` rides, TPU v8/Ironwood Ultra로 NVIDIA 대안 강화 | DeepMind 연구 성과(AlphaFold 후속, AlphaProof 등)가 상용화로 이어짐 | 자율주행 책임/규제, EU DMA 집행이 Cloud/Search 마진을 압박 | 78% |
+| 2026 | Gemini 3.x가 Search/Workspace 전반에 통합, Cloud `run rate 90-100B 달러` 돌파; Google 검색 지배력 유지(82%+ 확률) | AI Mode가 전통 search query를 빠르게 대체하며 ad revenue가 더 빨리 회복 | AI Overviews가 publisher traffic을 삭감해 반독점 압력이 커짐 | 82% |
+| 2027 | Waymo 주간 `1M+` rides, TPU v8/Ironwood Ultra로 NVIDIA 대안 강화; Google 검색 지배력 유지(82%+ 확률); Alphabet 연매출 `~$470B` | DeepMind 연구 성과(AlphaFold 후속, AlphaProof 등)가 상용화로 이어짐 | 자율주행 책임/규제, EU DMA 집행이 Cloud/Search 마진을 압박 | 80% |
 | 2028 | Gemini 4 세대와 agentic capabilities가 Search를 '질문응답+실행' 플랫폼으로 전환 | Agent SDK가 enterprise에서 표준화 | OpenAI/Anthropic이 consumer agent 시장에서 선점 | 65% |
 | 2029 | Waymo가 미국 상위 20개 도시에서 상용 운영 | 자율주행 단위 경제성이 Uber/Lyft를 압도 | 사고·규제 이벤트로 확장 속도 둔화 | 60% |
-| 2030 | Alphabet 매출 구성에서 Cloud 비중이 Search에 근접 | Multi-modal AI에서 구조적 선도 유지 | 검색 광고 수익 구조 해체가 예상보다 빠름 | 55% |
+| 2030 | Alphabet 매출 구성에서 Cloud 비중이 Search에 근접; Google AI에 의한 검색 디스럽션(45~55% 확률); Alphabet 연매출 `~$550B` | Multi-modal AI에서 구조적 선도 유지 | 검색 광고 수익 구조 해체가 예상보다 빠름 | 50% |
 | 2031 | DeepMind 기반 과학 연구 상용화(신약, 재료, 수학)가 유의미한 매출원 | Isomorphic Labs 임상 성공으로 신약 수익 발생 | 연구→매출 전환이 10년+ 더 걸림 | 35% |
 | 2032 | Waymo/TPU/DeepMind가 각각 분사 또는 대형 사업부로 독립 운영 | Alphabet 구조 재편으로 주주가치 극대화 | 조직 관성으로 통합 상태 유지 | 38% |
-| 2033 | AI 에이전트가 Search trust layer로 고착 | Gemini가 iOS/Android 모두에서 기본 | Apple/Anthropic/OpenAI가 기기 레이어 장악 | 50% |
+| 2033 | AI 에이전트가 Search trust layer로 고착; Alphabet 연매출 `~$650B` | Gemini가 iOS/Android 모두에서 기본 | Apple/Anthropic/OpenAI가 기기 레이어 장악 | 50% |
 | 2034 | TPU가 글로벌 AI 인프라의 30%+ 점유 | 외부 고객(Anthropic, Meta 외) 확대 | NVIDIA Rubin/Feynman 세대 격차로 TPU 경쟁력 약화 | 40% |
-| 2035 | Google은 AI·자율주행·양자컴퓨팅을 아우르는 '기초 과학 플랫폼'으로 재포지셔닝 | AGI 후보 레이어에서 선두 | 분할 명령/구조조정으로 응집력 상실 | 45% |
+| 2035 | Google은 AI·자율주행·양자컴퓨팅을 아우르는 '기초 과학 플랫폼'으로 재포지셔닝; Alphabet 연매출 `~$600-800B` | AGI 후보 레이어에서 선두 | 분할 명령/구조조정으로 응집력 상실 | 22% |
 
 ## 물리적/구조적 한계
 - Search 광고 매출 의존도가 여전히 높고, AI Overviews/AI Mode가 CTR·publisher 생태계를 동시에 변형시켜 매출 구조 자체를 위협한다.

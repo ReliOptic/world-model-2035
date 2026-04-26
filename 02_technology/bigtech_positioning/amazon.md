@@ -23,16 +23,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | AWS 매출 `155-165B`, AI 매출 `25B+`, Rufus 북미·EU 확장 | Trainium3 램프와 Anthropic GA 수요가 예상 상회 | 전력·부지 제약으로 CAPEX 실행률 50%대 | 82% |
-| 2027 | Project Rainier 2차 단계 가동, Trainium4 tape-out | 가격 경쟁력으로 Bedrock이 기업 ML 플랫폼 톱3 확보 | NVIDIA Rubin이 ASP 격차를 다시 확대 | 78% |
-| 2028 | AWS AI 매출 `50-70B 달러`, Anthropic Claude가 엔터프라이즈 고점유 | Trainium이 AWS 추론의 50%+ 담당 | 자체 칩 생태계 SW 한계 드러남 | 60% |
+| 2026 | AWS 매출 `155-165B`, AI 매출 `25B+`, Rufus 북미·EU 확장; Amazon AWS 클라우드 리더십 유지(78%+ 확률) | Trainium3 램프와 Anthropic GA 수요가 예상 상회 | 전력·부지 제약으로 CAPEX 실행률 50%대 | 82% |
+| 2027 | Project Rainier 2차 단계 가동, Trainium4 tape-out; AWS 매출 `185-200B`; Amazon AWS 클라우드 1위 유지(78%+ 확률) | 가격 경쟁력으로 Bedrock이 기업 ML 플랫폼 톱3 확보 | NVIDIA Rubin이 ASP 격차를 다시 확대 | 79% |
+| 2028 | AWS AI 매출 `50-70B 달러`, Anthropic Claude가 엔터프라이즈 고점유; Amazon AWS 매출 `~250B` | Trainium이 AWS 추론의 50%+ 담당 | 자체 칩 생태계 SW 한계 드러남 | 60% |
 | 2029 | Amazon 물류·소매 자동화가 단위 경제성 개선의 주축 | 로봇 2M+ 대, 당일 배송이 기본 옵션 | 노동·규제 이슈로 자동화 속도 둔화 | 55% |
-| 2030 | AWS가 여전히 글로벌 1위 클라우드, 점유 30% 전후 | AI Infra 격차를 Azure/Google보다 빨리 회복 | Azure가 AI 워크로드 점유 역전 | 50% |
+| 2030 | AWS가 여전히 글로벌 1위 클라우드, 점유 30% 전후; Amazon AWS 연매출 `~$250-400B`(2035 전망치 선행) | AI Infra 격차를 Azure/Google보다 빨리 회복 | Azure가 AI 워크로드 점유 역전 | 50% |
 | 2031 | Anthropic Claude가 AWS 외부에도 멀티클라우드로 확장 시작 | 공동 상장/IPO로 Amazon 재무이익 극대화 | Anthropic 독립 가속으로 lock-in 약화 | 35% |
 | 2032 | 로봇 + 드론 + 자율주행 배송이 엔드투엔드로 통합 | 물류 원가 구조적 하락으로 retail 마진 상승 | 규제·사고 이벤트로 일부 구간 롤백 | 35% |
-| 2033 | Rufus/Alexa가 에이전트형 쇼핑 인터페이스 표준 | 광고·구독 교차매출이 새 기둥 | Apple/Google agent에게 기기 레이어 잠식 | 50% |
+| 2033 | Rufus/Alexa가 에이전트형 쇼핑 인터페이스 표준; Amazon 연매출 `~$850B` | 광고·구독 교차매출이 새 기둥 | Apple/Google agent에게 기기 레이어 잠식 | 50% |
 | 2034 | Amazon 매출 1T 달러 근접 | AWS + Retail + Ads 삼각 성장 | 규모의 관성 · 반독점이 동시 작용 | 45% |
-| 2035 | AWS는 AI 팩토리 OS 표준 공급자로 자리 잡고, Anthropic은 주요 모델 공급자 중 하나 | 수직통합 우위 유지 | OpenAI/Google DeepMind와의 3파전에서 점유율 후퇴 | 55% |
+| 2035 | AWS는 AI 팩토리 OS 표준 공급자로 자리 잡고, Anthropic은 주요 모델 공급자 중 하나; Amazon AWS 연매출 `~$250-400B`; Amazon 전체 연매출 `~$1T` | 수직통합 우위 유지 | OpenAI/Google DeepMind와의 3파전에서 점유율 후퇴 | 22% |
 
 ## 물리적/구조적 한계
 - AWS 자본회수 기간은 NVIDIA 가격 + 전력 + 부지 변수에 동시 노출된다.

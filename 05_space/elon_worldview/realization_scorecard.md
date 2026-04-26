@@ -27,14 +27,14 @@
 |---|---|---|---|---|
 | 2026 | Robotaxi safety monitor 제거, Optimus Gen3 데모, Starship V3 시험 | 복수 공약이 1~2년 내 실현 | 연기와 범위 축소 반복 | 80% |
 | 2027 | Artemis III와 연계된 Starship HLS 데모가 공약 신뢰도의 핵심 관문 | HLS 데모 부분 성공 | HLS 지연이 Mars 공약 신뢰도 추가 훼손 | 60% |
-| 2028 | Tesla Robotaxi 규모 확대, Optimus 초기 양산, Starship Mars cargo 시도 | 복수 공약 실질 진전 | Mars cargo 실패 시 공약 누적 피로감 증폭 | 35% |
-| 2029 | Neuralink 초기 상업 적응증 FDA 승인 시도 | Blindsight 초기 상용 | 안전 이슈로 대규모 확산 지연 | 35% |
-| 2030 | Mars 윈도, Robotaxi 대형 도시 확산, Optimus 일반시장 시도 | 핵심 공약 30~50% 실제 달성 | 핵심 공약 10~20% 달성에 그침 | 55% |
-| 2031 | Musk의 2030년대 중반 "100만명 Mars" 공약은 비현실 확정 | 제한적 Mars expedition 수행 | 2030년대 중반 유인 Mars 비실현 | 85% |
-| 2032 | Tesla Optimus 가격·성능 공약의 시장 검증기 | 저가 대량공급 성사 | 가격은 높고 유용성은 제한 | 45% |
-| 2033 | Neuralink 다수 적응증 상용, Robotaxi 흑자화 | 핵심 수익원 3개 확보 | 핵심 수익원 1개 이하 | 50% |
-| 2034 | 공약 포트폴리오의 총합 결과물이 명확해짐 | Musk 기업군이 복수 구조적 플랫폼 장악 | 공약 피로감과 규제가 성장 제한 | 55% |
-| 2035 | 전체적으로 Musk 공약은 "시점은 빗나갔지만 방향은 달성된" 패턴이 유지될 가능성 | Mars, Robotaxi, Optimus, Neuralink 중 2~3개 구조적 성공 | 방향도 일부 실패, 평가 양극화 | 55% |
+| 2028 | Tesla Robotaxi 규모 확대, Optimus 초기 양산, Starship Mars cargo 시도; Starlink 가입자 약 5~10M(2027년 ~4M에서 성장) | 복수 공약 실질 진전 | Mars cargo 실패 시 공약 누적 피로감 증폭 | 32% |
+| 2029 | Neuralink 초기 상업 적응증 FDA 승인 시도 | Blindsight 초기 상용 | 안전 이슈로 대규모 확산 지연 | 30% |
+| 2030 | Mars 윈도, Robotaxi 대형 도시 확산, Optimus 일반시장 시도; Starlink 수익 $15~25B 목표 구간 | 핵심 공약 30~50% 실제 달성 | 핵심 공약 10~20% 달성에 그침 | 52% |
+| 2031 | Musk의 2030년대 중반 "100만명 Mars" 공약은 비현실 확정; 유인 Mars 2035 확률 <10%(canonical) | 제한적 Mars expedition 수행 | 2030년대 중반 유인 Mars 비실현 | 87% |
+| 2032 | Tesla Optimus 가격·성능 공약의 시장 검증기 | 저가 대량공급 성사 | 가격은 높고 유용성은 제한 | 42% |
+| 2033 | Neuralink 다수 적응증 상용, Robotaxi 흑자화 | 핵심 수익원 3개 확보 | 핵심 수익원 1개 이하 | 48% |
+| 2034 | 공약 포트폴리오의 총합 결과물이 명확해짐 | Musk 기업군이 복수 구조적 플랫폼 장악 | 공약 피로감과 규제가 성장 제한 | 52% |
+| 2035 | 전체적으로 Musk 공약은 "시점은 빗나갔지만 방향은 달성된" 패턴이 유지될 가능성; Tesla 매출 $250~400B, Starlink $15~25B, 우주 경제 ~$1T이 배경 | Mars, Robotaxi, Optimus, Neuralink 중 2~3개 구조적 성공 | 방향도 일부 실패, 평가 양극화 | 55% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

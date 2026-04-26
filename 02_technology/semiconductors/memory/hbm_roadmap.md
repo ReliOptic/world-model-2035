@@ -20,16 +20,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | `HBM4 12-Hi`가 주류 양산, 3사 모두 NVIDIA Rubin 공급, 16-Hi 샘플 | 16-Hi 조기 양산, AMD/Google TPU까지 다변화 | TCB 수율 지연과 HCB 전환 병목으로 공급부족 지속 | 85% |
-| 2027 | `HBM4E` 개발 완료, `16-Hi` 양산 본격화, bandwidth `2.5TB/s+` | HBM4E가 예상보다 빠르게 출하, 전력효율 50%+ | Samsung HCB 수율 지연으로 2강 구도 고착 | 75% |
-| 2028 | `HBM4E` 주류, `hybrid bonding` 16-Hi 표준, custom HBM logic die 확산 | NVIDIA/AMD별 custom base die 경쟁 본격화 | 적층 높이·패키징 수율이 비용 곡선 압박 | 70% |
-| 2029 | `HBM5` 세대 전환 개시, `3D stacked logic+memory` 시도 | 대역폭 4TB/s+/stack 달성 | 적층/열/수율 한계로 HBM4E 장기 체류 | 55% |
+| 2026 | `HBM4 12-Hi`가 주류 양산(SK hynix 10Gbps+, Samsung 11.7-13Gbps, Micron 36GB 12H 11Gb/s+ 모두 양산 진입), 3사 모두 NVIDIA Vera Rubin 공급, 16-Hi 샘플; 2026년 HBM 공급분 사실상 완판 | 16-Hi 조기 양산, AMD/Google TPU까지 다변화 | TCB 수율 지연과 HCB 전환 병목으로 공급부족 지속 | 92% |
+| 2027 | `HBM4E` 개발 완료, `16-Hi` 양산 본격화, bandwidth `2.5TB/s+`; Hybrid Copper Bonding이 16-Hi 이상 필수 공정으로 정착 | HBM4E가 예상보다 빠르게 출하, 전력효율 50%+ | Samsung HCB 수율 지연으로 2강 구도 고착 | 76% |
+| 2028 | `HBM4E` 주류, `hybrid bonding` 16-Hi 표준, custom HBM logic die 확산; 3D 패키징이 첨단 AI 가속기 표준(advanced packaging becoming standard → 75%+ 근거) | NVIDIA/AMD별 custom base die 경쟁 본격화 | 적층 높이·패키징 수율이 비용 곡선 압박 | 78% |
+| 2029 | `HBM5` 세대 전환 개시(SK hynix 2029 로드맵 목표), `3D stacked logic+memory` 시도 | 대역폭 4TB/s+/stack 달성 | 적층/열/수율 한계로 HBM4E 장기 체류 | 55% |
 | 2030 | `HBM5`가 AI 가속기의 새 기준, `optical I/O` 실험 시작 | 광 인터커넥트 결합으로 랙 단위 대역폭 폭증 | HBM5 개발 지연으로 HBM4E 연장 | 50% |
 | 2031 | 메모리 대역폭이 로직 성능보다 AI 인프라 경쟁력의 중심 | 3D 메모리-로직 통합이 표준 진입 | 패키징 CAPEX 부담으로 대형 고객만 접근 | 55% |
 | 2032 | `HBM5E` 또는 차세대 규격 논의, `24-Hi` 적층 시도 | 극적층·HCB·열 설계 돌파로 랙당 메모리 50TB+ | 열밀도 한계로 HBM5 세대 연장 | 35% |
 | 2033 | `HBM6` 표준 초안, `optical HBM` 파일럿 | 광연결 HBM이 초대형 AI 클러스터에서 실증 | 광전환 지연으로 전기 I/O 체제 장기화 | 35% |
 | 2034 | `HBM6` 양산 진입, custom HBM이 표준화 | 고객별 맞춤 memory subsystem이 새 해자 | 비용과 수율로 `custom HBM`은 극소수에 한정 | 40% |
-| 2035 | 메모리-로직 통합 패키지가 AI 가속기의 실질 경쟁 단위 | HBM/MEM-compute 통합 솔루션이 보편화 | 메모리 중심 경쟁이 공급 3사 과점을 더 강화 | 55% |
+| 2035 | 메모리-로직 통합 패키지가 AI 가속기의 실질 경쟁 단위; SK hynix/Samsung/Micron 3사 과점 구조 유지, 글로벌 반도체 시장 ~$1.0-1.5T 중 HBM이 AI 인프라 BOM 최대 단일 원가 항목 지위 유지 | HBM/MEM-compute 통합 솔루션이 보편화 | 메모리 중심 경쟁이 공급 3사 과점을 더 강화 | 55% |
 
 ## 물리적/구조적 한계
 - 적층 높이 증가에 따른 `TSV` 수율 저하, 열저항 증가, 검사 시간 폭증이 16-Hi 이상에서 동시 발생한다. 하이브리드 본딩은 해결책이지만 장비 공급과 클린룸 요구조건이 높다.

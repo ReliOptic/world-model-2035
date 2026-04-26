@@ -22,16 +22,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Copilot 시트 `25-30M`, Azure AI 매출 `40B+` | GPT-5.x + MAI 이중 스택으로 비용·품질 최적화 | 데이터센터 전력 제약으로 Azure 캐파 배분 지연 | 82% |
-| 2027 | MAI-2 세대가 Copilot consumer에서 GPT 교체 점유 | 모델 가격·지연·개인정보 관점에서 MAI 우위 확보 | MAI 성능이 frontier 모델에 구조적 격차 | 78% |
+| 2026 | Copilot 시트 `25-30M`, Azure AI 매출 `40B+`; Microsoft Copilot/에이전트 통합 심화(82%+ 확률) | GPT-5.x + MAI 이중 스택으로 비용·품질 최적화 | 데이터센터 전력 제약으로 Azure 캐파 배분 지연 | 82% |
+| 2027 | MAI-2 세대가 Copilot consumer에서 GPT 교체 점유; Microsoft 연매출 `~$300B`; Copilot 통합 심화(82%+ 확률) | 모델 가격·지연·개인정보 관점에서 MAI 우위 확보 | MAI 성능이 frontier 모델에 구조적 격차 | 80% |
 | 2028 | Azure AI 매출 `80-100B 달러`, Microsoft 매출 `350B 달러` 근처 | OpenAI backlog + Copilot 기반 매출 복리성장 | AI 수요 cyclical downturn으로 CAPEX 회수 지연 | 60% |
 | 2029 | Microsoft가 enterprise AI 인프라 표준 사업자로 굳어짐 | Security·Fabric·M365 번들이 경쟁우위의 축 | 자체 데이터센터 자본투자 리스크 현실화 | 65% |
-| 2030 | MAI 계열이 OpenAI 의존도를 50% 이하로 내림 | 자체 모델 독립성 확보 | 대체 모델 전략이 경쟁사에 밀려 의존도 유지 | 50% |
+| 2030 | MAI 계열이 OpenAI 의존도를 50% 이하로 내림; Microsoft 연매출 `~$430B` | 자체 모델 독립성 확보 | 대체 모델 전략이 경쟁사에 밀려 의존도 유지 | 50% |
 | 2031 | Windows + Copilot이 agentic OS로 재설계 완료 | PC/모바일 AI 경험 재정의 | Apple Intelligence/Google agent에 소비자 시장 잠식 | 35% |
 | 2032 | Microsoft가 AGI 후보 스택의 한 축 | OpenAI IPO·독립 후에도 재무적 이득 확대 | OpenAI 분리가 장기 매출 리스크로 작용 | 50% |
-| 2033 | GitHub/Copilot이 개발 인력 대체/증강의 기본 인프라 | 소프트웨어 생산성의 구조적 상승 | 오픈소스·경쟁사가 dev 툴 시장 탈환 | 38% |
+| 2033 | GitHub/Copilot이 개발 인력 대체/증강의 기본 인프라; Microsoft 연매출 `~$500B` | 소프트웨어 생산성의 구조적 상승 | 오픈소스·경쟁사가 dev 툴 시장 탈환 | 38% |
 | 2034 | Security 사업이 AI 에이전트 통제 표준 | Zero-trust + AI governance 선점 | 규제 분산으로 표준 확립 실패 | 50% |
-| 2035 | Microsoft는 AI 전환 이후에도 기업용 소프트웨어 1위 유지 | Cloud·AI·생산성 통합으로 매출 `500B+ 달러` | OpenAI 분리·독과점 이슈·EU 규제로 성장 둔화 | 60% |
+| 2035 | Microsoft는 AI 전환 이후에도 기업용 소프트웨어 1위 유지; 연매출 `~$500-700B 달러` | Cloud·AI·생산성 통합으로 매출 `500B+ 달러` | OpenAI 분리·독과점 이슈·EU 규제로 성장 둔화 | 22% |
 
 ## 물리적/구조적 한계
 - OpenAI 의존성: GPT-5.x가 Copilot/Azure OpenAI 품질의 본체인 상태로, OpenAI의 전략·지배구조 변화가 직접 Microsoft 재무에 반영된다.

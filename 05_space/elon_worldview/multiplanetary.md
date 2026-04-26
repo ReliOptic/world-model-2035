@@ -26,14 +26,14 @@
 |---|---|---|---|---|
 | 2026 | Mars 윈도 포기, orbital refilling 데모 집중 | refilling 성공으로 2028 시점 신뢰도 유지 | refilling 실패로 2030 이후로 밀림 | 80% |
 | 2027 | 달 HLS 데모가 Mars 기술 축적의 대리지표 | HLS 성공 시 Mars cargo 자신감 상승 | HLS 지연으로 Mars 자금 재배분 | 70% |
-| 2028 | 첫 Mars cargo Starship 시도 가능 | 최소 1기 cargo 도달 | 실패 시 2030 윈도까지 재정비 | 45% |
-| 2029 | Mars surface power·ISRU 설계 초기 prototype | 핵심 서브시스템 지상 검증 | 자금·기술 양쪽 병목 | 40% |
-| 2030 | 2030/31 윈도에서 대규모 cargo 시도 | 복수 cargo 도달, ISRU 초기 실증 | cargo 도달률 낮음 | 40% |
-| 2031 | Mars cargo 운영 데이터로 crewed mission 판단 | 2033 crew 시도 가능성 확보 | crewed 타임라인 무기 연기 | 35% |
-| 2032 | 2032/33 윈도에서 human-rated Starship 최초 시도 가능성 검토 | uncrewed 신뢰성 누적 | Mars 프로그램 속도 정체 | 25% |
-| 2033 | 달·cislunar 경제가 Mars보다 훨씬 성숙 | 다수 국가·기업 달 활동 표준화 | Mars 서사가 상업 투자 부담으로 전환 | 80% |
-| 2034 | 최초 유인 Mars expedition 시도 가능 구간 | expedition 실행 | 유인 Mars 재연기 | 20% |
-| 2035 | 2035년까지 multiplanetary civilization은 상징 단계 | 최초 유인 Mars landing 도달 가능성 존재 | 2035년까지 유인 Mars 미실현, settlement은 2040년대 과제 | 70% |
+| 2028 | 첫 Mars cargo Starship 시도 가능; Starlink 수익 2030 목표 $15~25B이 Mars 자금 조달원 | 최소 1기 cargo 도달 | 실패 시 2030 윈도까지 재정비 | 42% |
+| 2029 | Mars surface power·ISRU 설계 초기 prototype | 핵심 서브시스템 지상 검증 | 자금·기술 양쪽 병목 | 38% |
+| 2030 | 2030/31 윈도에서 대규모 cargo 시도 | 복수 cargo 도달, ISRU 초기 실증 | cargo 도달률 낮음 | 38% |
+| 2031 | Mars cargo 운영 데이터로 crewed mission 판단 | 2033 crew 시도 가능성 확보 | crewed 타임라인 무기 연기 | 32% |
+| 2032 | 2032/33 윈도에서 human-rated Starship 최초 시도 가능성 검토 | uncrewed 신뢰성 누적 | Mars 프로그램 속도 정체 | 22% |
+| 2033 | 달·cislunar 경제가 Mars보다 훨씬 성숙; 상업 우주정거장 1~2개 운영(Axiom, Starlab) | 다수 국가·기업 달 활동 표준화 | Mars 서사가 상업 투자 부담으로 전환 | 82% |
+| 2034 | 최초 유인 Mars expedition 시도 가능 구간 | expedition 실행 | 유인 Mars 재연기 | 18% |
+| 2035 | 2035년까지 multiplanetary civilization은 상징 단계; 유인 Mars 착륙 확률 <10%(canonical) — Musk 본인 2026-02 5~7년 연기 발표 반영 | 최초 유인 Mars landing 도달 가능성 존재 | 2035년까지 유인 Mars 미실현, settlement은 2040년대 과제 | 80% 달·cislunar 경제만 구조적 단계 진입 |
 
 ## 물리적/구조적 한계
 - 극복된 것:

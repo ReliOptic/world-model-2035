@@ -28,7 +28,7 @@
 | 2030 | Artemis V 목표 연도, Blue Moon Mark 2 달 착륙 시도 | Blue Moon Mark 2가 성공적으로 2인 우주인 달 착륙 | Artemis V 지연으로 Blue Moon 첫 유인 달 착륙 2032+로 이동 | 35% |
 | 2031 | New Glenn 후속 버전(New Glenn 2 또는 업그레이드) 개발 가시화 | New Glenn 업그레이드로 중형 발사체 시장에서 Falcon 9과 직접 경쟁 | New Glenn 기술이 노후화되어 차세대 발사체 개발 지연 시 경쟁력 하락 | 40% |
 | 2032 | Kuiper 위성 인터넷 서비스 본격 상업화, New Glenn이 Kuiper 유지 보수 발사 주력 | Kuiper가 Starlink에 이어 글로벌 위성 인터넷 2위로 자리잡음 | Kuiper 서비스 품질·가격 경쟁력이 Starlink 대비 열위로 시장 점유 실패 | 45% |
-| 2033 | Blue Origin의 달 물류 역량이 Artemis 이후 상업 달 경제에서 의미 있는 역할 시작 | 상업 달 물류 시장에서 Blue Moon 기반 서비스 확립 | 달 경제 성장이 예상보다 느려 Blue Moon의 상업 수요 미발생 | 28% |
+| 2033 | Blue Origin의 달 물류 역량이 Artemis 이후 상업 달 경제에서 의미 있는 역할 시작 | 상업 달 물류 시장에서 Blue Moon 기반 서비스 확립 | 달 경제 성장이 예상보다 느려 Blue Moon의 상업 수요 미발생 | 32% |
 | 2034 | New Glenn 차세대 발사체·달 착륙선·우주정거장 모듈 등 다변화 포트폴리오 | 발사체·달·LEO 정거장 3축 포트폴리오로 SpaceX 대항마로서의 지위 확립 | 여전히 SpaceX와 큰 격차, 틈새 공급자로의 포지셔닝 | 40% |
 | 2035 | Blue Origin은 Amazon Kuiper 운용·달 탐사·LEO 관련 사업에서 SpaceX 다음의 대형 민간 우주 기업 위치를 유지하나, SpaceX 대비 발사 빈도·시장 점유에서 구조적 차이 존재 | New Glenn의 신뢰성·빈도가 SpaceX Falcon 9에 근접하여 경쟁적 시장 형성 | New Glenn이 틈새 대형 위성 발사로 제한되고 SpaceX 독과점 구조 유지 | 45% |
 

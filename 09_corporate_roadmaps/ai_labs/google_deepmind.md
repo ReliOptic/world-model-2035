@@ -29,10 +29,10 @@
 | 2029 | AI for Science 축(의약품·기후·재료)이 DeepMind 상업 매출의 구분 가능한 비중 차지 | Gemini+AlphaProof 계열이 분자설계·수학증명 SaaS로 제약/보험 시장 진입 | AI for Science 상용화가 기대보다 느리고, 과학 연구 SaaS 시장 자체가 소규모에 머무름 | 35% |
 | 2030 | Google DeepMind는 Alphabet 내 핵심 R&D 자산으로 지위 유지, Gemini API가 Google 외부 개발자 생태계의 주요 축 중 하나 | 만약 Gemini가 모바일 OS 수준의 AI 기반 인프라로 진화하면 소비자-기업 동시 잠금효과 | 지정학 분절로 Google의 중국·러시아 외 일부 시장 접근 제한, EU 반독점으로 Gemini 번들 제약 | 55% |
 | 2031 | AI 하드웨어(TPU) + AI 소프트웨어(Gemini) + 클라우드 인프라(GCP) 삼중 수직통합 완성 | Google이 에너지·TPU 자체 설계로 토큰당 비용을 OpenAI/Anthropic 대비 의미 있게 낮춤 | 자체칩 생태계가 NVIDIA CUDA 대비 소프트웨어 호환성 부족으로 외부 고객 채택 저조 | 50% |
-| 2032 | DeepMind 연구 조직이 AGI-근접 연구의 핵심 기관 중 하나로 공인, 안전 프레임워크 구체화 | AI 안전 연구에서 Anthropic과 공동 표준 설정 역할 | Anthropic이 안전 프레임 선점으로 규제 시장 포지션 우선 확보 | 32% |
+| 2032 | DeepMind 연구 조직이 AGI-근접 연구의 핵심 기관 중 하나로 공인, 안전 프레임워크 구체화 | AI 안전 연구에서 Anthropic과 공동 표준 설정 역할 | Anthropic이 안전 프레임 선점으로 규제 시장 포지션 우선 확보 | 35% |
 | 2033 | Gemini 계열이 5개 이상 수직 산업(법률·의료·금융·과학·교육)에서 특화 에이전트로 독립 매출 형성 | AI-first 기업 소프트웨어에서 Salesforce/SAP 수준의 대체 역할 | 중국 AI 기업의 글로벌 진출이 Gemini의 신흥국 시장 점유를 압박 | 48% |
 | 2034 | Google DeepMind는 Alphabet의 2030년대 수익 다각화 핵심 축으로, Search 광고 의존도를 구조적으로 줄이는 역할 | AI 어시스턴트 + 과학 AI + 클라우드가 새로운 3대 수익 축 형성 | 검색 광고의 AI 기반 침식이 예상보다 빠르면 내부 자원 재배분 압박 | 52% |
-| 2035 | Google DeepMind는 OpenAI·Anthropic과 함께 세계 3대 프론티어 AI 기관 중 하나로, 수직통합 인프라와 과학 AI에서 가장 폭넓은 포지션 보유 | Gemini 생태계가 Android 수준의 AI 플랫폼 표준으로 자리잡음 | 조직 내부 우선순위 갈등과 규제 압박이 실행 속도를 OpenAI 대비 지속 지연 | 60% |
+| 2035 | Google DeepMind는 OpenAI·Anthropic과 함께 세계 3대 프론티어 AI 기관 중 하나로, 수직통합 인프라와 과학 AI에서 가장 폭넓은 포지션 보유; Alphabet 총 매출 ~$600-800B(도메인 앵커) | Gemini 생태계가 Android 수준의 AI 플랫폼 표준으로 자리잡음 | 조직 내부 우선순위 갈등과 규제 압박이 실행 속도를 OpenAI 대비 지속 지연 | 60% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

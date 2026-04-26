@@ -28,12 +28,12 @@
 | 2027 | Mengzhou crew-rated 초도 비행, CZ-10A 첫 발사 | crew-rated 데모 성공 | CZ-10A 지연 | 65% |
 | 2028 | Tianwen-3 Mars sample return 발사 | 정상 trans-Mars injection | 발사 또는 Mars 진입 실패 | 77% |
 | 2029 | Chang'e 8 ILRS 기초 건설, 3D 프린팅 실증 | 남극 인프라 요소 검증 | lander 실패 | 65% |
-| 2030 | 중국 최초 crewed lunar landing 시도 가능 구간 | crewed lunar landing 성공 | 유인 달 착륙 2031+로 밀림 | 35% |
-| 2031 | Tianwen-3 샘플 귀환 목표 | 500g+ Mars 샘플 Earth return | 귀환 캡슐 실패 | 55% |
-| 2032 | ILRS 1단계 인프라 복수 요소 배치 | 전력·통신 basic unit 가동 | ILRS 예산 조정 | 55% |
-| 2033 | 유인 달 탐사 반복 수행 | 연 1회 crewed mission | 유인 cadence 제한 | 50% |
-| 2034 | CZ-9 reusable super-heavy 초도 발사 시도 | Starship급 대안 검증 | CZ-9 추가 연기 | 35% |
-| 2035 | ILRS 1단계 기본 완공 목표 | 남극 기지 기능 작동 | 기지는 부분 구성, 완공은 2036+ | 70% |
+| 2030 | 중국 최초 crewed lunar landing 시도 가능 구간; 중국 유인 달 착륙 확률 40~50%(반복 지연 가능성 포함) | crewed lunar landing 성공 | 유인 달 착륙 2031+로 밀림 | 42% |
+| 2031 | Tianwen-3 샘플 귀환 목표; Mars 샘플 귀환 성공 시 세계 최초 — 글로벌 우주 경제 $1T 맥락에서 전략 가치 부각 | 500g+ Mars 샘플 Earth return | 귀환 캡슐 실패 | 52% |
+| 2032 | ILRS 1단계 인프라 복수 요소 배치 | 전력·통신 basic unit 가동 | ILRS 예산 조정 | 52% |
+| 2033 | 유인 달 탐사 반복 수행 | 연 1회 crewed mission | 유인 cadence 제한 | 48% |
+| 2034 | CZ-9 reusable super-heavy 초도 발사 시도 | Starship급 대안 검증 | CZ-9 추가 연기 | 32% |
+| 2035 | ILRS 1단계 기본 완공 목표; 2035 글로벌 우주 경제 ~$1T 중 중국 비중 확대 | 남극 기지 기능 작동 | 기지는 부분 구성, 완공은 2036+ | 70% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

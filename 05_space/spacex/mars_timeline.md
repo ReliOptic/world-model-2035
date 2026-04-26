@@ -25,14 +25,14 @@
 |---|---|---|---|---|
 | 2026 | 2026 Mars 윈도는 공식 연기, 대신 orbital refilling 데모에 자원 집중 | refilling 데모 성공으로 2028 윈도 신뢰성 확보 | refilling 테스트 실패로 2028도 위태로워짐 | 80% |
 | 2027 | Artemis III 수행 부담이 Mars보다 우선, Mars 인프라는 기초연구 단계 | HLS 연계 검증이 Mars-class 시스템 완성도에 기여 | Artemis III 지연으로 Mars cargo 준비도 밀림 | 75% |
-| 2028 | Mars transfer window, uncrewed cargo Starship 1~3기 시도 | 최소 1기 Mars 표면 도달, Optimus 데모 | 발사 실패, re-entry 실패, 또는 windows 연기로 2030로 밀림 | 50% |
-| 2029 | 2028 시도 결과 분석과 2030/31 윈도 준비 | 초기 ISRU 실험 장비 설계 확정 | 2028 실패 여파로 자금 재조정 | 55% |
-| 2030 | Mars 2030/31 윈도에 다수 cargo Starship 배치 시도 | 복수 cargo landing으로 인프라 시드 구축 | cargo는 도착하지만 대부분 실전 가치 제한 | 45% |
-| 2031 | cargo 검증 결과가 crewed 가능성 판단 기준 | human-rated life support 테스트 본격화 | cargo 성공률 낮아 crew 일정 무기 연기 | 40% |
-| 2032 | Mars 2032/33 윈도에 human-rated Starship 최초 시도 가능성 | uncrewed test landing 반복으로 신뢰성 축적 | 2030 sequence 실패로 2034+로 연기 | 30% |
-| 2033 | Mars 프로그램이 달·cislunar 경제에 비해 상업성에서 뒤처짐 | 국가 투자·국제 파트너십으로 자금 조달 다변화 | Mars 서사가 투자자에게 burden으로 전환 | 35% |
-| 2034 | crewed Mars 최초 시도 가능성 구간 | 최초 유인 Mars landing 시도 | 계속된 기술·자금 병목 | 25% |
-| 2035 | 최초 유인 Mars landing은 실행되더라도 settlement이 아닌 expedition 단계 | 소규모 유인 방문 수행 | 2035년까지 유인 Mars는 이루어지지 않음 | 30% |
+| 2028 | Mars transfer window, uncrewed cargo Starship 1~3기 시도; Starlink 수익 목표 $15~25B(2030)이 자금 토대 | 최소 1기 Mars 표면 도달, Optimus 데모 | 발사 실패, re-entry 실패, 또는 windows 연기로 2030로 밀림 | 45% |
+| 2029 | 2028 시도 결과 분석과 2030/31 윈도 준비 | 초기 ISRU 실험 장비 설계 확정 | 2028 실패 여파로 자금 재조정 | 52% |
+| 2030 | Mars 2030/31 윈도에 다수 cargo Starship 배치 시도; Starship 2028 목표 발사 cadence 약 24회/년 달성 여부가 신뢰도 판단 기준 | 복수 cargo landing으로 인프라 시드 구축 | cargo는 도착하지만 대부분 실전 가치 제한 | 40% |
+| 2031 | cargo 검증 결과가 crewed 가능성 판단 기준 | human-rated life support 테스트 본격화 | cargo 성공률 낮아 crew 일정 무기 연기 | 35% |
+| 2032 | Mars 2032/33 윈도에 human-rated Starship 최초 시도 가능성 | uncrewed test landing 반복으로 신뢰성 축적 | 2030 sequence 실패로 2034+로 연기 | 25% |
+| 2033 | Mars 프로그램이 달·cislunar 경제에 비해 상업성에서 뒤처짐 | 국가 투자·국제 파트너십으로 자금 조달 다변화 | Mars 서사가 투자자에게 burden으로 전환 | 32% |
+| 2034 | crewed Mars 최초 시도 가능성 구간 | 최초 유인 Mars landing 시도 | 계속된 기술·자금 병목 | 20% |
+| 2035 | 유인 Mars landing 확률 <10%(canonical); settlement이 아닌 expedition 단계 — Musk 2026-02 발표 5~7년 연기 + Nature Scientific Reports 구조적 제약 반영 | 소규모 유인 방문 수행 | 2035년까지 유인 Mars는 이루어지지 않음 | 82% uncrewed cargo만 진전, 유인은 미실현 |
 
 ## 물리적/구조적 한계
 - 극복된 것:

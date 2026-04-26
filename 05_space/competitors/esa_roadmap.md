@@ -26,14 +26,14 @@
 |---|---|---|---|---|
 | 2026 | Ariane 64 첫 비행, Vega-C Sentinel-3C, Space Rider drop test | 8회 cadence 달성 | Ariane 6 6회 이하 | 78% |
 | 2027 | Kuiper 대량 발사 본격화, ExoMars 발사 준비 | 연 10회+ cadence | Ariane 6 7회 이하 | 76% |
-| 2028 | ClearSpace-1 발사, ExoMars Rosalind Franklin 발사 | 양쪽 성공 | 임무 연기 | 50% |
-| 2029 | ESA·Member States 차세대 발사체(Ariane Next) 정책 확정 | reusable 후속기 본격 개발 | 정책 지연 | 55% |
-| 2030 | Space Rider 운용 시작 | 소형 궤도 실험 플랫폼 운영 | 프로그램 재조정 | 50% |
-| 2031 | 독자 유인우주 능력 논의 가시화 | Member States 승인 후 개발 시작 | 논의 단계 정체 | 35% |
-| 2032 | Ariane Next 시험비행 | reusable 로켓 유럽판 실증 | 2034+로 연기 | 30% |
-| 2033 | 유럽 첫 reusable orbital 상업 운용 가능성 | 경쟁력 확보 | reusable 로켓 미완성 | 30% |
-| 2034 | ExoMars·ClearSpace·Space Rider 모두 operational | 유럽 차별화 축 완비 | 일부 임무 실패 | 50% |
-| 2035 | ESA는 독자 자립성 + 과학임무 축으로 구조적 자리매김 | 상업에서도 3위권 공급자 | 발사 자립성 유지에 집중, 상업은 niche | 70% |
+| 2028 | ClearSpace-1 발사, ExoMars Rosalind Franklin 발사 | 양쪽 성공 | 임무 연기 | 45% |
+| 2029 | ESA·Member States 차세대 발사체(Ariane Next) 정책 확정 | reusable 후속기 본격 개발 | 정책 지연 | 50% |
+| 2030 | Space Rider 운용 시작 | 소형 궤도 실험 플랫폼 운영 | 프로그램 재조정 | 45% |
+| 2031 | 독자 유인우주 능력 논의 가시화 | Member States 승인 후 개발 시작 | 논의 단계 정체 | 30% |
+| 2032 | Ariane Next 시험비행 | reusable 로켓 유럽판 실증 | 2034+로 연기 | 25% |
+| 2033 | 유럽 첫 reusable orbital 상업 운용 가능성 | 경쟁력 확보 | reusable 로켓 미완성 | 25% |
+| 2034 | ExoMars·ClearSpace·Space Rider 모두 operational | 유럽 차별화 축 완비 | 일부 임무 실패 | 45% |
+| 2035 | ESA는 독자 자립성 + 과학임무 축으로 구조적 자리매김; 글로벌 우주 경제 ~$1T 중 유럽 독자 발사 자립성 확보 비중 유지 | 상업에서도 3위권 공급자 | 발사 자립성 유지에 집중, 상업은 niche | 70% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

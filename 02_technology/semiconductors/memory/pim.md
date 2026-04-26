@@ -20,16 +20,16 @@
 ## 1년 단위 전망 (2026->2035)
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
-| 2026 | Samsung HBM3-PIM 샘플, SK hynix AiMX3 서버 확산 초기 | 대형 클라우드가 PIM 서버를 공식 도입 | HBM 캐파가 표준 HBM에 몰려 PIM 라인 축소 | 80% |
-| 2027 | PIM이 LLM 추론·벡터검색·DB 특화 워크로드에서 매출 수억 달러 규모 | NVIDIA/AMD가 HBM4E base die에 PIM 옵션 흡수 | 표준 HBM 가격 하락으로 PIM ROI 약화 | 55% |
-| 2028 | custom base die 안에 PIM 기능 편입이 주류 방향 | HBM+custom logic이 PIM의 실질 계승자 | PIM 독립 모듈은 상용 규모 미달 | 76% |
-| 2029 | HBM5 규격 논의에서 PIM 인터페이스가 선택 사양으로 공식화 | 벤더 중립 PIM API가 표준화 | 벤더별 독자 구현 난립으로 생태계 분열 | 45% |
+| 2026 | Samsung HBM3-PIM 샘플, SK hynix AiMX3(GDDR6-AiM 16Gbps 기반) 서버 확산 초기; 2026 기준 PIM 상용 매출은 전체 HBM 시장 대비 ~1% 미만 수준 | 대형 클라우드가 PIM 서버를 공식 도입 | HBM 캐파가 표준 HBM에 몰려 PIM 라인 축소 | 80% |
+| 2027 | PIM이 LLM 추론·벡터검색·DB 특화 워크로드에서 매출 수억 달러 규모(HBM 전체 대비 여전히 1-2% 수준 추정) | NVIDIA/AMD가 HBM4E base die에 PIM 옵션 흡수 | 표준 HBM 가격 하락으로 PIM ROI 약화 | 55% |
+| 2028 | custom base die 안에 PIM 기능 편입이 주류 방향; HBM4E custom logic die가 PIM 기능의 실질 계승 경로 | HBM+custom logic이 PIM의 실질 계승자 | PIM 독립 모듈은 상용 규모 미달 | 78% |
+| 2029 | HBM5 규격 논의에서 PIM 인터페이스가 선택 사양으로 공식화(SK hynix HBM5 2029 목표와 연동) | 벤더 중립 PIM API가 표준화 | 벤더별 독자 구현 난립으로 생태계 분열 | 42% |
 | 2030 | PIM 매출은 특정 추론·search 시장에서 자리 잡되 범용은 GPU+HBM이 계속 주도 | 에이전트형 추론 확산으로 PIM 카드 수요 폭증 | 전력·냉각 개선으로 GPU가 모든 시장 흡수 | 55% |
 | 2031 | 3D 적층 logic+memory가 PIM의 자연 진화 경로로 수렴 | 3D 메모리-로직 통합이 PIM을 대체하며 성능 비약 | 3D 통합 수율 지연으로 PIM 독립 카드 수명 연장 | 50% |
-| 2032 | 메모리 반도체사의 컴퓨트 레이어 내재화가 일반화 | Samsung/SK hynix가 가속기 시장에서 10%+ 점유 | 컴퓨트 레이어는 여전히 GPU/ASIC 공급자에 집중 | 35% |
-| 2033 | LPDDR-PIM이 on-device AI 추론의 표준 옵션으로 진입 | 모바일/자동차에서 PIM 기반 on-device LLM이 보편화 | 전력·비용 제약으로 on-device PIM은 고가 기기에 한정 | 35% |
+| 2032 | 메모리 반도체사의 컴퓨트 레이어 내재화가 일반화 | Samsung/SK hynix가 가속기 시장에서 10%+ 점유 | 컴퓨트 레이어는 여전히 GPU/ASIC 공급자에 집중 | 33% |
+| 2033 | LPDDR-PIM이 on-device AI 추론의 표준 옵션으로 진입 | 모바일/자동차에서 PIM 기반 on-device LLM이 보편화 | 전력·비용 제약으로 on-device PIM은 고가 기기에 한정 | 33% |
 | 2034 | PIM은 "독립 제품"에서 "스택 내 기능"으로 재정의 | 표준 HBM·LPDDR의 옵션 기능으로 통합, 생태계 확산 | PIM 전용 기업·SDK는 소멸 또는 특수 니치 | 55% |
-| 2035 | 메모리-로직 통합 흐름의 한 축으로 PIM 개념이 편입, 전력 효율 계산 단위의 재정의 | compute-memory 통합이 AI 가속기 표준 | HBM 표준 경로가 모든 경쟁을 흡수, PIM은 각주 | 50% |
+| 2035 | 메모리-로직 통합 흐름의 한 축으로 PIM 개념이 편입, 전력 효율 계산 단위의 재정의; PIM 독립 카테고리 매출은 HBM 전체의 ~2-5% 수준 추정 | compute-memory 통합이 AI 가속기 표준 | HBM 표준 경로가 모든 경쟁을 흡수, PIM은 각주 | 50% |
 
 ## 물리적/구조적 한계
 - DRAM 공정에서 로직을 만드는 비용·수율 제약이 PIM의 기본 한계다. 프로세싱 유닛 정밀도(주로 FP16/INT8)와 실리콘 면적 오버헤드 사이 트레이드오프가 크다.

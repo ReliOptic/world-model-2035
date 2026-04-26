@@ -24,14 +24,14 @@
 |---|---|---|---|---|
 | 2026 | FERC co-location 1차 규칙, TMI Unit 1 재가동 준비, Meta 후속 PPA 체결 | 대형 4사 추가로 `5GW+` 신규 계약 발표 | FERC 규칙 혼란, 일부 PPA 파기 | 85% |
 | 2027 | Kairos Hermes 1 시험로 가동, TMI Unit 1 재가동 직전 단계, Amazon Washington 부지 CP 신청 | 테크사 4사 각자 SMR 특정 부지 확정 | Kairos 첫 시험로 일정 지연 | 78% |
-| 2028 | TMI Unit 1 상업운전 재개, Talen-AWS 확장 ISA 재신청 | TMI가 바로 Microsoft 수요 커버 | TMI 재가동 2029로 밀림 | 65% |
+| 2028 | TMI Unit 1 상업운전 재개(`835MW`, 글로벌 AI 데이터센터 전력 수요 `2030년 ~945TWh` 경로 첫 기여), Talen-AWS 확장 ISA 재신청 | TMI가 바로 Microsoft 수요 커버 | TMI 재가동 2029로 밀림 | 62% |
 | 2029 | Darlington Unit 1 가동과 연계된 온타리오 데이터센터 PPA 체결 | 캐나다가 북미 AI 데이터센터 유치 거점화 | 전력 가격 상승으로 PPA 계약 난항 | 35% |
-| 2030 | Kairos Hermes 2 `50MW` 가동, Natrium 500MW TerraPower Meta 공급 시작 | FOAK 다수가 동일 연도에 성공 가동 | 첫 SMR 가동 1-2년 지연 | 30% |
-| 2031 | Holtec Pioneer, Xe-100 Seadrift 가동으로 SMR 공급 누적 `1GW+` | 대형 테크 co-location 전용 SMR 실제 급전 | 가동 지연으로 대체 천연가스·재생 의존 심화 | 50% |
-| 2032 | Clinch River BWRX-300 가동으로 TVA 그리드 Google 공급 본격화 | TVA 그리드가 SMR 적용 사례 누적 | TVA 프로젝트 1년 이상 지연 | 55% |
-| 2033 | Amazon Washington X-energy 첫 호기 가동 | 대형 테크 4사 각각 자사 데이터센터에 SMR 전용 공급 | 일부 계약 재협상·축소 | 50% |
-| 2034 | 테크 4사 합산 가동 SMR 용량 `3-5GW` | `5GW+` 실제 운전 돌입 | `2GW` 미만에 머묾 | 55% |
-| 2035 | 데이터센터 전용 SMR이 `5-10GW` 수준, 전체 AI 데이터센터 전력의 `10-15%` | `10GW+`로 원전이 AI 전력의 `20%+` 담당 | SMR 지연·취소로 가스·재생이 더 큰 비중 | 60% |
+| 2030 | Kairos Hermes 2 `50MW` 가동, Natrium `500MW` TerraPower Meta 공급 시작; AI 데이터센터 전력 수요 글로벌 `~945TWh` 도달 | FOAK 다수가 동일 연도에 성공 가동 | 첫 SMR 가동 1-2년 지연 | 30% |
+| 2031 | Holtec Pioneer, Xe-100 Seadrift 가동으로 SMR 공급 누적 `1GW+` | 대형 테크 co-location 전용 SMR 실제 급전 | 가동 지연으로 대체 천연가스·재생 의존 심화 | 38% |
+| 2032 | Clinch River BWRX-300 가동으로 TVA 그리드 Google 공급 본격화 | TVA 그리드가 SMR 적용 사례 누적 | TVA 프로젝트 1년 이상 지연 | 45% |
+| 2033 | Amazon Washington X-energy 첫 호기 가동 | 대형 테크 4사 각각 자사 데이터센터에 SMR 전용 공급 | 일부 계약 재협상·축소 | 38% |
+| 2034 | 테크 4사 합산 가동 SMR 용량 `3-5GW` | `5GW+` 실제 운전 돌입 | `2GW` 미만에 머묾 | 32% |
+| 2035 | 데이터센터 전용 SMR `5-10GW`, AI 데이터센터 전력(`~1,300TWh` 글로벌)의 `10-15%` 원자력 직접 커버 | `10GW+`로 원전이 AI 전력의 `20%+` 담당 | SMR 지연·취소로 가스·재생이 더 큰 비중 | 28% |
 
 ## 물리적/구조적 한계
 - 데이터센터는 `24/7` 고정 부하로 원전과 부하 성격이 맞지만, 원전 재가동·신규 건설 리드타임이 AI 수요 증가 속도보다 훨씬 길다.

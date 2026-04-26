@@ -25,15 +25,15 @@
 | 연도 | Base 마일스톤 | 낙관 시나리오 | 지연 시나리오 | 확률 |
 |---|---|---|---|---|
 | 2026 | Darlington 본공사 홀드포인트 추가 해제, Clinch River NRC 심사 종결, Palisades Pioneer 부분 CP Part 1 완료 | NRC가 복수 건설허가를 동시에 발급 | Darlington 기초공사 지연과 NRC 일정 미달 | 82% |
-| 2027 | NuScale Doicesti pre-EPC 완료, Natrium 원자로 건물 기초, Xe-100 TRISO-X 연료공장 가동 | HALEU 공급이 미국 내 본격 램프 | HALEU 부족으로 Natrium·Xe-100 병렬 지연 | 30% |
-| 2028 | Darlington 주요 기기 설치, TVA Clinch River 본공사 착수, Rolls-Royce GDA Step 3 마무리 | 복수 부지에서 SMR 건설 병행 | 첫 호기 일정 6-12개월 밀림 | 78% |
-| 2029 | Darlington BWRX-300 Unit 1 시운전·연료장전 | Darlington이 예정대로 가동 개시 | Darlington 가동 `2030` 이후로 연기 | 60% |
-| 2030 | Natrium 발전 개시, Darlington 상업운전, Doicesti 첫 모듈 | Darlington·Natrium 연속 가동 성공 | 한 건 이상 주요 프로젝트 1년 이상 지연 | 55% |
+| 2027 | NuScale Doicesti pre-EPC 완료, Natrium 원자로 건물 기초, Xe-100 TRISO-X 연료공장 가동; OPG Darlington BWRX-300 연료장전 확률은 이 시점 기준 45% (canonical P26-03) | HALEU 공급이 미국 내 본격 램프 | HALEU 부족으로 Natrium·Xe-100 병렬 지연 | 30% |
+| 2028 | Darlington 주요 기기 설치, TVA Clinch River 본공사 착수, Rolls-Royce GDA Step 3 마무리; 글로벌 원자력 AI 데이터센터 전력 공급 확률 65%(2030 기준) | 복수 부지에서 SMR 건설 병행 | 첫 호기 일정 6-12개월 밀림 | 78% |
+| 2029 | Darlington BWRX-300 Unit 1 시운전·연료장전 | Darlington이 예정대로 가동 개시 | Darlington 가동 `2030` 이후로 연기 | 55% |
+| 2030 | Natrium 발전 개시(`500MWe`), Darlington 상업운전, Doicesti 첫 모듈; 전 세계 SMR 상업운전 확률 60-70% (any unit globally) | Darlington·Natrium 연속 가동 성공 | 한 건 이상 주요 프로젝트 1년 이상 지연 | 52% |
 | 2031 | Holtec Pioneer 1·2 가동, Xe-100 Seadrift 가동 | 다수 FOAK이 2031년 집중 가동 | 공급망·숙련인력 부족으로 분산 지연 | 35% |
-| 2032 | TVA Clinch River BWRX-300 Unit 1 가동, Darlington Unit 2 착공 | 미국 내 2개 사이트 가동 진입 | Pioneer·Clinch River 중 하나 이상 2033+로 밀림 | 55% |
-| 2033 | Amazon 4x Xe-100 첫 호기, 유럽 내 2번째 SMR 부지 착공 | 데이터센터 전용 SMR 함대 규모화 시작 | 상업성 악화로 일부 부지 보류 | 50% |
-| 2034 | Rolls-Royce Wylfa 첫 호기 가동, 10x SMR이 전 세계 운전 중 | FOAK 학습곡선이 NOAK 비용 `20-30%` 인하로 이어짐 | 원가 상승과 금리 부담이 추가 프로젝트 제한 | 55% |
-| 2035 | 전 세계 `15-25GW` SMR 운전, 데이터센터 전용 사이트가 주요 수요원 | `30GW+` 누적 운전, 표준화 모델 확립 | `10GW` 미만, SMR은 틈새 기술에 머묾 | 60% |
+| 2032 | TVA Clinch River BWRX-300 Unit 1 가동, Darlington Unit 2 착공; 3개국 이상 SMR 규제 승인 누적 확률 55% | 미국 내 2개 사이트 가동 진입 | Pioneer·Clinch River 중 하나 이상 2033+로 밀림 | 45% |
+| 2033 | Amazon 4x Xe-100 첫 호기, 유럽 내 2번째 SMR 부지 착공 | 데이터센터 전용 SMR 함대 규모화 시작 | 상업성 악화로 일부 부지 보류 | 38% |
+| 2034 | Rolls-Royce Wylfa 첫 호기 가동, 10x SMR이 전 세계 운전 중 | FOAK 학습곡선이 NOAK 비용 `20-30%` 인하로 이어짐 | 원가 상승과 금리 부담이 추가 프로젝트 제한 | 32% |
+| 2035 | 전 세계 `15-25GW` SMR 운전; 핵르네상스(>50기 신규 수주 2030년까지) 확률 35%, AI 데이터센터 전력 기여 확률 65% | `30GW+` 누적 운전, 표준화 모델 확립; 2035년 기준 글로벌 원자력 용량 `~500GW`(+40% vs 2020) | `10GW` 미만, SMR은 틈새 기술에 머묾 | 28% |
 
 ## 물리적/구조적 한계
 - HALEU(`5-20%` 고농축 저농축우라늄) 공급이 Natrium·Xe-100·TerraPower·X-energy의 병목이다. 미국 내 Centrus Piketon 라인 외에 대체 공급선이 제한적이다.

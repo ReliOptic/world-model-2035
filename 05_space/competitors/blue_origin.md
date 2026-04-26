@@ -26,14 +26,14 @@
 |---|---|---|---|---|
 | 2026 | New Glenn 5~8회 발사, Blue Moon Mk1 lunar cargo | 8회 이상 cadence 달성 | cadence 3회 이하 | 78% |
 | 2027 | Amazon Kuiper 주요 launches 본격화, Mk2 HLS 개발 집중 | New Glenn 연 12회 이상 | Kuiper 마감 임박에 의한 launch 부담 | 76% |
-| 2028 | Amazon Kuiper FCC 마감(2029-07) 임박, cadence 15~20회 필요 | Mk2 HLS 지상시험 단계 진입 | Kuiper launch 일정 미달성 | 40% |
-| 2029 | Blue Moon Mk2 crewed landing 준비 | NASA Artemis 5 등 후속 HLS 대체자로 격상 | HLS 연기 | 35% |
-| 2030 | New Glenn 연 20회+ 안정 | 상업 정부 정기 수요 확보 | SpaceX 대비 점유 정체 | 40% |
-| 2031 | Blue Moon Mk2 초기 crewed 탐사 참여 | 유인 달 다극화 | Mk2 지연 | 35% |
-| 2032 | Orbital Data Center 등 부가 사업 상업화 시도 | 다각화 사업 구조 형성 | 본업 cadence에 집중 재조정 | 45% |
-| 2033 | 대형 발사 수요에서 Starship과 이원화 공급자 | 국가임무 주요 공급자 | Starship 압도 | 40% |
-| 2034 | New Glenn 후속기(Jarvis 등 upper stage 재사용) 개발 | 차세대 발사체 투입 | 후속기 지연 | 45% |
-| 2035 | Blue Origin은 SpaceX의 2위 대형 발사체 공급자이자 달 수송 파트너 | 일부 세그먼트에서 대등 | 프리미엄 군·과학 niche 공급자 | 60% |
+| 2028 | Amazon Kuiper FCC 마감(2029-07) 임박, cadence 15~20회 필요; New Glenn 궤도 신뢰도 55% 목표(2027 달성 기준) | Mk2 HLS 지상시험 단계 진입 | Kuiper launch 일정 미달성 | 38% |
+| 2029 | Blue Moon Mk2 crewed landing 준비 | NASA Artemis 5 등 후속 HLS 대체자로 격상 | HLS 연기 | 32% |
+| 2030 | New Glenn 연 20회+ 안정; 글로벌 우주 경제 규모 ~$1T(Morgan Stanley 추정) 중 발사 시장 점유율 확보 경쟁 | 상업 정부 정기 수요 확보 | SpaceX 대비 점유 정체 | 38% |
+| 2031 | Blue Moon Mk2 초기 crewed 탐사 참여 | 유인 달 다극화 | Mk2 지연 | 32% |
+| 2032 | Orbital Data Center 등 부가 사업 상업화 시도 | 다각화 사업 구조 형성 | 본업 cadence에 집중 재조정 | 42% |
+| 2033 | 대형 발사 수요에서 Starship과 이원화 공급자 | 국가임무 주요 공급자 | Starship 압도 | 38% |
+| 2034 | New Glenn 후속기(Jarvis 등 upper stage 재사용) 개발 | 차세대 발사체 투입 | 후속기 지연 | 42% |
+| 2035 | Blue Origin은 SpaceX의 2위 대형 발사체 공급자이자 달 수송 파트너; 글로벌 우주 경제 ~$1T 시장에서 발사·달 수송 이원화 기여 | 일부 세그먼트에서 대등 | 프리미엄 군·과학 niche 공급자 | 60% |
 
 ## 물리적/구조적 한계
 - 극복된 것:

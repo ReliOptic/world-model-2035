@@ -1,0 +1,1802 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>EARTH/2035 — Source-grounded foresight. Sixteen domains. One decade.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400;9..144,500&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS ── */
+:root,[data-theme="dark"]{
+  --bg:#060707;--bg-1:#0b0c0d;--bg-2:#131416;
+  --line:#1f2124;--line-2:#2a2d31;
+  --ink:#e9ece8;--ink-2:#b6bbb4;--ink-3:#6e7470;--ink-4:#444a47;
+  --hot:#ff5b1f;--warm:#ffb454;--cool:#74d2ff;
+  --green:#79e08c;--pink:#ff7eb6;--violet:#b39bff;
+  --grid:rgba(255,255,255,0.025);
+  --topbar-bg:rgba(6,7,7,0.92);
+  --grain-op:0.035;
+}
+[data-theme="light"]{
+  --bg:#f5f4f0;--bg-1:#eceae5;--bg-2:#e2e0da;
+  --line:#d4d1ca;--line-2:#c0bcb4;
+  --ink:#16181a;--ink-2:#4a4f4a;--ink-3:#7e8480;--ink-4:#a8ada8;
+  --hot:#e04a0c;--warm:#c08800;--cool:#1070a0;
+  --green:#1a8030;--pink:#b04070;--violet:#6050b8;
+  --grid:rgba(0,0,0,0.04);
+  --topbar-bg:rgba(245,244,240,0.94);
+  --grain-op:0.025;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{background:var(--bg);color:var(--ink);}
+body{
+  font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+  font-size:13px;line-height:1.55;-webkit-font-smoothing:antialiased;
+  transition:background-color .35s,color .25s;
+}
+.ko{font-family:"Noto Sans KR","JetBrains Mono",monospace;font-weight:300;}
+.serif{font-family:"Fraunces","Times New Roman",serif;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;padding:0;}
+
+/* lang switch */
+[lang="ko"] .en-only{display:none!important;}
+[lang="en"] .ko-only{display:none!important;}
+
+/* ── TOPBAR ── */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:grid;grid-template-columns:1fr auto 1fr;
+  padding:14px 28px;align-items:center;gap:16px;
+  background:var(--topbar-bg);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+  transition:padding .3s,background .35s;
+}
+.brand{display:flex;align-items:center;gap:11px;}
+.logo-mark{width:32px;height:32px;flex-shrink:0;transition:transform .3s;}
+.brand-text{display:flex;flex-direction:column;line-height:1.15;overflow:hidden;transition:max-width .25s;}
+.brand-text b{font-weight:700;letter-spacing:.06em;font-size:12.5px;}
+.brand-sub{font-size:9px;color:var(--ink-4);letter-spacing:.14em;text-transform:uppercase;margin-top:1px;}
+
+.topbar nav{
+  display:flex;gap:2px;justify-self:center;
+  border:1px solid var(--line);border-radius:999px;padding:3px;
+  background:var(--bg-1);
+}
+.topbar nav button{
+  padding:6px 12px;border-radius:999px;
+  color:var(--ink-3);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  transition:.15s;
+}
+.topbar nav button[aria-current="true"]{background:var(--ink);color:var(--bg);}
+.topbar nav button:hover:not([aria-current="true"]){color:var(--ink);}
+
+.topbar .right{justify-self:end;display:flex;align-items:center;gap:10px;}
+.pulse-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);animation:blink 1.8s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.live-tag{font-size:10px;color:var(--ink-3);letter-spacing:.14em;display:flex;align-items:center;gap:7px;}
+.lang{display:flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;}
+.lang button{padding:4px 9px;font-size:10px;color:var(--ink-3);transition:.15s;}
+.lang button[aria-current="true"]{background:var(--ink);color:var(--bg);}
+.theme-btn{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink-3);transition:.2s;}
+.theme-btn:hover{color:var(--ink);border-color:var(--ink-3);}
+
+/* ── HERO ── */
+.hero{
+  position:relative;height:100vh;min-height:640px;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  overflow:hidden;border-bottom:1px solid var(--line);
+  padding-top:64px;
+}
+
+/* film-grain overlay */
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+  opacity:var(--grain-op);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size:240px 240px;
+}
+
+/* letterbox bars */
+.hero-lb-top,.hero-lb-bot{
+  position:absolute;left:0;right:0;z-index:4;pointer-events:none;
+  background:var(--bg);height:7vh;min-height:44px;
+  transition:background .35s;
+}
+.hero-lb-top{top:64px;}
+.hero-lb-bot{bottom:0;}
+
+/* data-glyph background */
+.hero-glyphs{
+  position:absolute;inset:0;pointer-events:none;z-index:1;
+  overflow:hidden;opacity:0.038;
+  background-image:
+    repeating-linear-gradient(0deg,transparent,transparent 47px,var(--ink) 47px,var(--ink) 48px),
+    repeating-linear-gradient(90deg,transparent,transparent 47px,var(--ink) 47px,var(--ink) 48px);
+  background-size:48px 48px;
+}
+
+/* horizon line */
+.hero-horizon{
+  position:absolute;z-index:2;pointer-events:none;
+  top:40%;left:0;right:0;height:1px;
+  background:var(--hot);
+  transform:scaleX(0);transform-origin:left;
+  animation:drawLine .7s cubic-bezier(.16,1,.3,1) forwards .42s;
+  opacity:.85;
+}
+@keyframes drawLine{to{transform:scaleX(1);}}
+
+/* meta above horizon */
+.hero-meta{
+  position:absolute;top:calc(40% - 28px);left:28px;right:28px;
+  z-index:5;display:flex;justify-content:space-between;align-items:center;
+  font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);
+  opacity:0;animation:fIn .5s ease forwards .88s;
+}
+@keyframes fIn{to{opacity:1;}}
+
+/* main content */
+.hero-body{
+  position:relative;z-index:5;
+  display:flex;flex-direction:column;align-items:flex-start;
+  width:100%;max-width:1240px;padding:0 48px;
+  margin-top:8vh;
+}
+.hero-title{
+  font-family:"Fraunces",serif;font-weight:200;
+  font-size:clamp(48px,7.5vw,104px);line-height:.93;
+  letter-spacing:-.03em;color:var(--ink);
+}
+.hero-title .line{display:block;overflow:hidden;}
+.hero-title .line span{
+  display:block;
+  transform:translateY(108%);
+  animation:riseUp .9s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero-title .line:nth-child(1) span{animation-delay:.95s;}
+.hero-title .line:nth-child(2) span{animation-delay:1.12s;}
+.hero-title .line:nth-child(3) span{animation-delay:1.29s;}
+.hero-title em{font-style:italic;color:var(--hot);}
+@keyframes riseUp{to{transform:translateY(0);}}
+
+.hero-tagline{
+  margin-top:24px;font-size:13px;color:var(--ink-3);
+  max-width:56ch;line-height:1.6;
+  opacity:0;animation:fIn .6s ease forwards 1.65s;
+}
+.hero-tagline .ko-only{font-family:"Noto Sans KR",monospace;font-weight:300;font-size:12px;}
+
+/* bottom-right counters */
+.hero-counters{
+  position:absolute;bottom:calc(7vh + 24px);right:48px;z-index:5;
+  text-align:right;opacity:0;animation:fIn .5s ease forwards 1.9s;
+}
+.hero-counters .c-row{display:flex;gap:32px;justify-content:flex-end;}
+.hero-counters .c-item{display:flex;flex-direction:column;gap:3px;}
+.hero-counters .c-val{font-family:"Fraunces",serif;font-size:32px;font-weight:300;letter-spacing:-.03em;line-height:1;}
+.hero-counters .c-lbl{font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);}
+
+/* scroll cue */
+.hero-scroll-cue{
+  position:absolute;bottom:calc(7vh + 20px);left:50%;transform:translateX(-50%);z-index:5;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  opacity:0;animation:fIn .8s ease forwards 2.2s;cursor:pointer;
+}
+.scroll-bar{width:1px;height:40px;background:linear-gradient(to bottom,var(--hot),transparent);animation:scrollPulse 2s ease-in-out infinite 2.8s;}
+@keyframes scrollPulse{0%,100%{opacity:.9;transform:scaleY(1)}50%{opacity:.2;transform:scaleY(.5);transform-origin:top}}
+
+/* ── SECTION FRAME ── */
+section.s{padding:56px 0;border-bottom:1px solid var(--line);}
+.s-inner{max-width:1480px;margin:0 auto;padding:0 48px;}
+.s-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:32px;}
+.s-head h2{font-family:"Fraunces",serif;font-weight:400;font-size:34px;letter-spacing:-.02em;}
+.s-head .meta{color:var(--ink-3);font-size:10px;letter-spacing:.2em;text-transform:uppercase;}
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1);}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ── THESIS ── */
+.thesis-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;align-items:start;}
+.thesis-pull{
+  border-left:2px solid var(--hot);padding-left:28px;
+  font-family:"Fraunces",serif;font-weight:300;font-size:24px;line-height:1.38;
+  letter-spacing:-.01em;color:var(--ink);max-width:36ch;
+}
+.thesis-pull em{font-style:italic;color:var(--warm);}
+.thesis-detail{
+  font-size:11.5px;color:var(--ink-3);line-height:1.65;margin-top:20px;
+  max-width:48ch;
+}
+.thesis-questions{border:1px solid var(--line);background:var(--bg-1);}
+.thesis-q{padding:18px 20px;border-top:1px solid var(--line);}
+.thesis-q:first-child{border-top:none;}
+.thesis-q q{
+  display:block;font-family:"Fraunces",serif;font-size:16px;
+  font-weight:400;color:var(--ink);margin-bottom:6px;quotes:none;
+}
+.thesis-q cite{font-style:normal;font-size:9.5px;color:var(--ink-4);letter-spacing:.1em;text-transform:uppercase;}
+
+/* ── CONTROLS ── */
+.controls{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;
+  border:1px solid var(--line);background:var(--bg-1);
+  padding:18px;transition:background .35s;
+}
+.ctrl-label{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px;}
+.scen-pills{display:flex;flex-wrap:wrap;gap:6px;}
+.scen-pill{
+  padding:7px 13px;border:1px solid var(--line-2);border-radius:999px;
+  font-size:10.5px;color:var(--ink-2);letter-spacing:.04em;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:border-color .2s,color .2s,box-shadow .2s;
+}
+.scen-pill .sdot{width:7px;height:7px;border-radius:50%;transition:transform .2s;}
+.scen-pill:hover{color:var(--ink);}
+.scen-pill[aria-current="true"]{border-color:var(--c,var(--ink));color:var(--ink);}
+.scen-pill[aria-current="true"]{box-shadow:0 0 0 1px var(--c,var(--ink)),0 0 24px 0 color-mix(in srgb,var(--c,var(--ink)) 22%,transparent);}
+.scen-pill[aria-current="true"] .sdot{transform:scale(1.35);}
+
+.year-block label{display:flex;justify-content:space-between;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px;}
+.year-val-big{font-family:"Fraunces",serif;font-size:32px;line-height:1;color:var(--ink);letter-spacing:-.03em;}
+.year-row{display:flex;align-items:center;gap:12px;margin-top:6px;}
+.year-track{flex:1;position:relative;height:28px;}
+.year-track .ticks{position:absolute;inset:0;display:grid;grid-template-columns:repeat(10,1fr);align-items:center;}
+.year-track .ticks span{width:1px;height:10px;background:var(--line-2);}
+.year-track input[type=range]{position:absolute;inset:0;width:100%;-webkit-appearance:none;background:transparent;margin:0;}
+.year-track input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--hot);border:2px solid var(--bg);box-shadow:0 0 0 1px var(--hot),0 0 14px var(--hot);}
+.year-track input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--hot);border:2px solid var(--bg);}
+
+/* ── TIMELINE VISUAL MATRIX ── */
+.timeline{margin-top:24px;border:1px solid var(--line);background:var(--bg-1);overflow-x:auto;}
+.tlv-wrap{min-width:900px;}
+.tlv-head{display:grid;grid-template-columns:148px repeat(10,1fr);border-bottom:1px solid var(--line);}
+.tlv-head>div{padding:9px 4px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);border-left:1px solid var(--line);text-align:center;}
+.tlv-head>div:first-child{border-left:none;padding-left:14px;text-align:left;}
+.tlv-head .yh.ya{color:var(--hot);}
+.tlv-row{display:grid;grid-template-columns:148px repeat(10,1fr);border-top:1px solid var(--line);transition:opacity .3s;}
+.tlv-label{padding:12px 14px;display:flex;flex-direction:column;justify-content:center;gap:4px;}
+.tlv-label .ll{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--ink);}
+.tlv-label small{color:var(--ink-4);font-size:9px;}
+.tlv-cell{
+  border-left:1px solid var(--line);padding:8px 5px 0;height:68px;
+  display:flex;align-items:flex-end;justify-content:center;
+  position:relative;cursor:default;
+}
+.tlv-cell.ya{background:rgba(255,91,31,.04);}
+.tlv-bar{width:calc(100% - 8px);border-radius:2px 2px 0 0;transition:opacity .2s,filter .2s;}
+.tlv-cell:hover .tlv-bar{filter:brightness(1.7);opacity:1!important;}
+.tlv-tip{
+  display:none;position:absolute;bottom:calc(100% + 6px);
+  left:50%;transform:translateX(-50%);z-index:50;
+  background:var(--bg-2);border:1px solid var(--line-2);
+  padding:8px 11px;font-size:10px;color:var(--ink);
+  width:200px;white-space:normal;line-height:1.45;
+  box-shadow:0 6px 24px rgba(0,0,0,.35);pointer-events:none;
+}
+.tlv-tip::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--line-2);}
+.tlv-cell:hover .tlv-tip{display:block;}
+
+/* ── CHAPTERS GRID ── */
+.chapters{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--line);border-bottom:none;
+  perspective:1400px;
+}
+.chap.ch-upstream{box-shadow:0 0 0 1.5px #ffb454 inset,0 0 18px rgba(255,180,84,.13);z-index:1;}
+.chap.ch-upstream .chap-id{color:#ffb454;}
+.chap.ch-downstream{box-shadow:0 0 0 1.5px #79e08c inset,0 0 18px rgba(121,224,140,.11);z-index:1;}
+.chap.ch-downstream .chap-id{color:#79e08c;}
+.chap.ch-dim{opacity:.28;filter:grayscale(.5);}
+.chap.ch-dim:hover{opacity:.7;filter:none;}
+.chap-preview{
+  position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%) translateY(4px);
+  background:var(--bg);border:1px solid var(--line-2);
+  width:200px;padding:10px 12px;pointer-events:none;
+  opacity:0;transition:opacity 160ms,transform 160ms;
+  z-index:100;font-size:10px;line-height:1.5;
+}
+.chap:hover .chap-preview{opacity:1;transform:translateX(-50%) translateY(0);}
+.chap-preview-sig{color:var(--ink-3);font-size:9.5px;margin-top:4px;border-top:1px solid var(--line);padding-top:4px;}
+.chap-preview-scen{font-size:9px;color:var(--ink-4);margin-top:3px;}
+@media(max-width:1100px){.chapters{grid-template-columns:repeat(2,1fr);}}
+.chap{
+  padding:22px 20px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--bg-1);cursor:pointer;
+  position:relative;min-height:190px;overflow:visible;
+  display:flex;flex-direction:column;justify-content:space-between;
+  transition:background .18s,transform .08s linear;
+  transform-style:preserve-3d;will-change:transform;
+}
+.chap::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,91,31,.08) 0%,transparent 55%);
+  opacity:0;transition:opacity .25s;
+}
+.chap:hover::after{opacity:1;}
+.chap:hover{background:var(--bg-2);}
+.chap.active{background:var(--bg-2);}
+.chap.active::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--hot);z-index:1;}
+.chap.active::after{opacity:1;}
+.chap-meta{display:flex;justify-content:space-between;align-items:flex-start;}
+.chap-id{font-size:9px;letter-spacing:.22em;color:var(--ink-4);text-transform:uppercase;}
+.chap .heat{width:40px;height:5px;display:grid;grid-template-columns:repeat(10,1fr);gap:1px;}
+.chap .heat i{background:var(--line-2);}
+.chap .heat i.on{background:var(--hot);}
+.chap-big-num{
+  font-family:"Fraunces",serif;font-weight:200;font-style:italic;
+  font-size:76px;line-height:.82;letter-spacing:-.05em;
+  color:var(--line-2);transition:color .3s;
+  user-select:none;margin:8px 0 6px;
+}
+.chap:hover .chap-big-num{color:var(--ink-4);}
+.chap.active .chap-big-num{color:var(--hot);opacity:.65;}
+.chap h3{font-family:"Fraunces",serif;font-weight:400;font-size:15px;line-height:1.2;letter-spacing:-.01em;color:var(--ink);}
+.chap .ko-h3{color:var(--ink-4);font-size:9.5px;margin-top:2px;}
+.chap .foot{display:flex;justify-content:space-between;align-items:center;font-size:9px;color:var(--ink-4);letter-spacing:.1em;text-transform:uppercase;}
+.chap .arr{font-size:14px;color:var(--hot);opacity:0;transition:opacity .2s,transform .2s;}
+.chap:hover .arr,.chap.active .arr{opacity:1;transform:translateX(2px);}
+
+/* ── DETAIL PANEL ── */
+.detail{
+  margin-top:-1px;border:1px solid var(--line);
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);grid-auto-rows:auto;
+  background:var(--bg-1);
+  clip-path:inset(0 0 100% 0);
+  transition:clip-path .44s cubic-bezier(.16,1,.3,1),background .35s;
+}
+.detail.open{clip-path:inset(0 0 0% 0);}
+.detail .dl{padding:30px 32px;border-right:1px solid var(--line);}
+.detail .dr{padding:30px 28px;display:flex;flex-direction:column;gap:0;}
+.det-eyebrow{
+  font-size:9px;letter-spacing:.28em;color:var(--hot);text-transform:uppercase;
+  margin-bottom:18px;display:flex;align-items:center;gap:10px;
+}
+.det-eyebrow::after{content:"";flex:1;height:1px;background:var(--hot);opacity:.28;}
+.det-title{
+  font-family:"Fraunces",serif;font-weight:300;
+  font-size:38px;line-height:.95;letter-spacing:-.03em;margin-bottom:18px;
+}
+.det-summary{
+  color:var(--ink-2);font-size:12.5px;line-height:1.65;max-width:52ch;
+  border-left:2px solid var(--line-2);padding-left:16px;
+}
+/* scenario probability bars */
+.prob-section{margin-top:24px;}
+.prob-lbl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);margin-bottom:13px;}
+.prob-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.prob-name{font-size:10px;color:var(--ink-3);width:72px;letter-spacing:.04em;}
+.prob-track{flex:1;height:3px;background:var(--line);border-radius:2px;}
+.prob-fill{height:100%;border-radius:2px;transition:width .7s cubic-bezier(.16,1,.3,1);}
+.prob-pct{font-size:9px;color:var(--ink-4);width:26px;text-align:right;}
+/* active scenario callout */
+.scen-callout{
+  margin-top:14px;padding:12px 14px;
+  background:var(--bg-2);border:1px solid var(--line);
+  font-size:11px;color:var(--ink-2);line-height:1.55;
+}
+.scen-callout strong{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;margin-right:8px;}
+/* vertical signal timeline */
+.sig-section{flex:1;}
+.sig-head{
+  font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);
+  margin-bottom:16px;display:flex;align-items:center;gap:8px;
+}
+.sig-head::after{content:"";flex:1;height:1px;background:var(--line);}
+.sig-vtl{position:relative;padding-left:20px;}
+.sig-vtl::before{content:"";position:absolute;left:4px;top:6px;bottom:6px;width:1px;background:var(--line-2);}
+.sig-item{position:relative;padding:0 0 18px 14px;}
+.sig-item:last-child{padding-bottom:0;}
+.sig-dot{
+  position:absolute;left:-12px;top:4px;
+  width:9px;height:9px;border-radius:50%;
+  border:1px solid var(--line-2);background:var(--bg-1);
+  transition:box-shadow .2s;
+}
+.sig-item.ch .sig-dot{background:var(--green);border-color:var(--green);}
+.sig-item.cm .sig-dot{background:var(--warm);border-color:var(--warm);}
+.sig-item.cl .sig-dot{background:var(--cool);border-color:var(--cool);}
+.sig-item:hover .sig-dot{box-shadow:0 0 0 3px rgba(255,255,255,.06);}
+.sig-yr{font-size:9px;letter-spacing:.14em;color:var(--ink-4);margin-bottom:3px;display:flex;align-items:center;justify-content:space-between;}
+.sig-conf{font-size:8.5px;padding:1px 6px;border-radius:999px;border:1px solid var(--line-2);letter-spacing:.08em;text-transform:uppercase;}
+.sig-conf.h{color:var(--green);border-color:rgba(121,224,140,.3);}
+.sig-conf.m{color:var(--warm);border-color:rgba(255,180,84,.3);}
+.sig-conf.l{color:var(--cool);border-color:rgba(116,210,255,.3);}
+.sig-text{font-size:11.5px;color:var(--ink);line-height:1.4;}
+.sig-src{font-size:9px;color:var(--ink-4);margin-top:3px;}
+/* xrefs + actions */
+.xrefs{padding:13px;border:1px solid var(--line);background:var(--bg-2);margin-top:20px;}
+.xrefs .xlabel{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);margin-bottom:8px;}
+.xref-chips{display:flex;flex-wrap:wrap;gap:5px;}
+.chip{font-size:9.5px;padding:3px 9px;border:1px solid var(--line-2);color:var(--ink-3);letter-spacing:.08em;}
+.det-actions{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;}
+.det-actions a{
+  font-size:9.5px;padding:7px 12px;border:1px solid var(--line-2);
+  color:var(--ink-3);letter-spacing:.12em;text-transform:uppercase;
+  transition:border-color .15s,color .15s;
+}
+.det-actions a:hover{border-color:var(--hot);color:var(--hot);}
+
+/* ── CONVERGENCE THREADS ── */
+.threads{margin-top:20px;border:1px solid var(--line);background:var(--bg-2);}
+.threads-head{padding:11px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);}
+.threads-head::after{content:"";flex:1;height:1px;background:var(--line);}
+.threads-body{display:grid;grid-template-columns:1fr auto 1fr;gap:0;min-height:64px;}
+.threads-col{padding:12px 14px;}
+.threads-col-mid{padding:12px 8px;display:flex;align-items:center;justify-content:center;border-left:1px solid var(--line);border-right:1px solid var(--line);}
+.threads-col-label{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-4);margin-bottom:8px;}
+.thread-chip{
+  display:flex;align-items:center;gap:6px;padding:5px 8px;
+  border:1px solid var(--line-2);background:var(--bg-1);
+  font-size:10px;color:var(--ink-2);cursor:pointer;margin-bottom:5px;
+  transition:border-color .15s,color .15s;
+}
+.thread-chip:hover{border-color:var(--hot);color:var(--ink);}
+.thread-chip .tc-num{font-size:8.5px;color:var(--ink-4);letter-spacing:.1em;}
+.thread-arrow{font-size:16px;color:var(--line-2);}
+.threads-reason{padding:8px 14px;border-top:1px solid var(--line);font-size:10px;color:var(--ink-4);line-height:1.5;font-style:italic;}
+.threads-none{color:var(--ink-4);font-size:10px;font-style:italic;padding:4px 0;}
+.thread-chip.tc-hot{border-color:var(--hot);color:var(--ink);}
+.thread-chip.tc-hot .tc-num{color:var(--hot);}
+.thread-chip.tc-mid{opacity:.75;}
+.tc-count{font-size:7.5px;color:var(--ink-4);margin-left:auto;letter-spacing:.05em;}
+.spark-wrap{margin:10px 0 6px;padding:8px 0 0;}
+.spark-svg{width:100%;height:36px;display:block;}
+.spark-labels{display:flex;justify-content:space-around;font-size:8px;color:var(--ink-4);letter-spacing:.1em;margin-top:2px;font-family:var(--mono);}
+
+/* ── PRACTICE ── */
+.consulting{
+  background:radial-gradient(ellipse 60% 50% at 20% 0%,rgba(255,91,31,.07),transparent 70%);
+}
+[data-theme="light"] .consulting{background:radial-gradient(ellipse 60% 50% at 20% 0%,rgba(224,74,12,.05),transparent 70%);}
+.practice-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:48px;align-items:start;}
+.practice-lead h2{font-family:"Fraunces",serif;font-weight:200;font-size:48px;line-height:1.02;letter-spacing:-.03em;margin-bottom:20px;}
+.practice-lead h2 em{font-style:italic;color:var(--hot);}
+.practice-lead p{color:var(--ink-2);font-size:12.5px;line-height:1.65;max-width:36ch;}
+.practice-lead .ko-p{color:var(--ink-3);font-size:11.5px;margin-top:14px;max-width:38ch;font-family:"Noto Sans KR",monospace;font-weight:300;}
+.practice-lead .stamps{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;}
+.stamp{font-size:9px;padding:4px 9px;border:1px solid var(--line-2);color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase;}
+
+.products{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);}
+.prod{
+  padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  min-height:190px;display:flex;flex-direction:column;gap:10px;
+}
+.prod:nth-child(2n){border-right:none;}
+.prod:nth-last-child(-n+2){border-bottom:none;}
+.prod .tag{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--hot);}
+.prod h4{font-family:"Fraunces",serif;font-size:22px;font-weight:400;letter-spacing:-.02em;}
+.prod p{color:var(--ink-2);font-size:11px;line-height:1.55;flex:1;}
+.prod .cta{
+  margin-top:auto;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-2);display:inline-flex;align-items:center;gap:6px;
+  transition:color .15s;
+}
+.prod .cta:hover{color:var(--ink);}
+.prod .cta::after{content:" →";color:var(--hot);}
+
+.domain-tool{
+  margin-top:36px;border:1px solid var(--line);background:var(--bg-1);
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+}
+.domain-tool>div{padding:28px;}
+.domain-tool>div:first-child{border-right:1px solid var(--line);}
+.domain-tool h3{font-family:"Fraunces",serif;font-size:26px;font-weight:400;letter-spacing:-.02em;margin-bottom:10px;}
+.domain-tool p{color:var(--ink-2);font-size:11.5px;line-height:1.6;margin-bottom:16px;}
+.yd-input{display:flex;border:1px solid var(--line-2);background:var(--bg);transition:border-color .2s,box-shadow .2s;}
+.yd-input:focus-within{border-color:var(--hot);box-shadow:0 0 0 3px rgba(255,91,31,.08);}
+.yd-input input{flex:1;background:transparent;border:none;color:var(--ink);padding:13px 14px;font-family:inherit;font-size:12.5px;outline:none;}
+.yd-input input::placeholder{color:var(--ink-4);}
+.yd-input button{padding:0 18px;background:var(--hot);color:#fff;font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:opacity .15s;}
+.yd-input button:hover{opacity:.85;}
+.yd-out{margin-top:16px;min-height:100px;padding:14px;background:var(--bg);border:1px dashed var(--line-2);font-size:11.5px;color:var(--ink-2);}
+.yd-out .empty{color:var(--ink-4);font-style:italic;}
+.yd-out ul{margin:8px 0 0;padding-left:16px;}
+.yd-out li{margin:4px 0;}
+.domain-right h4{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px;}
+.domain-right ol{padding-left:18px;color:var(--ink-2);font-size:11.5px;}
+.domain-right ol li{margin:8px 0;}
+.domain-right ol li b{color:var(--ink);font-weight:500;}
+.ai-panel{margin-top:18px;border:1px solid var(--line);background:var(--bg-2);}
+.ai-panel-head{padding:10px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);}
+.ai-badge{margin-left:auto;background:var(--hot);color:#000;font-size:7.5px;padding:2px 6px;border-radius:2px;letter-spacing:.12em;}
+.ai-provider-row{display:flex;gap:6px;padding:10px 14px 0;}
+select.ai-select{flex:1;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:10px;padding:6px 8px;outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;}
+select.ai-select:focus{border-color:var(--hot);}
+.ai-key-row{display:flex;gap:6px;padding:8px 14px 0;}
+.ai-key-row input{flex:1;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:10px;padding:6px 8px;outline:none;}
+.ai-key-row input:focus{border-color:var(--hot);}
+#aiKeySave{background:transparent;border:1px solid var(--line);color:var(--ink-3);font-family:var(--mono);font-size:9px;letter-spacing:.12em;padding:6px 10px;cursor:pointer;white-space:nowrap;}
+#aiKeySave:hover{border-color:var(--hot);color:var(--hot);}
+#aiRoadmap{display:block;width:100%;box-sizing:border-box;background:var(--bg);border:none;border-top:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:10.5px;padding:10px 14px;resize:vertical;outline:none;line-height:1.6;margin-top:8px;}
+#aiRoadmap:focus{border-top-color:var(--hot);}
+.ai-analyse-btn{display:block;width:100%;background:var(--hot);border:none;color:#000;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;padding:10px;cursor:pointer;margin-top:0;}
+.ai-analyse-btn:hover{opacity:.88;}
+.ai-analyse-btn:disabled{opacity:.4;cursor:not-allowed;}
+.ai-out{padding:12px 14px;font-family:var(--mono);font-size:10.5px;color:var(--ink-2);line-height:1.7;min-height:60px;max-height:360px;overflow-y:auto;white-space:pre-wrap;word-break:break-word;}
+.ai-out .empty{color:var(--ink-4);font-style:italic;}
+.ai-out .ai-err{color:#ff6b6b;}
+.domain-unified{border:1px solid var(--line);background:var(--bg-2);margin-top:0;}
+.du-head{padding:10px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-4);}
+.du-sub{margin-left:auto;font-size:8px;color:var(--ink-4);letter-spacing:.1em;}
+.du-input-wrap{padding:10px 14px 0;}
+.du-input{width:100%;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:10.5px;padding:8px 10px;outline:none;}
+.du-input:focus{border-color:var(--hot);}
+.du-textarea{display:block;width:100%;box-sizing:border-box;background:var(--bg);border:none;border-top:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:10px;padding:8px 14px;resize:vertical;outline:none;line-height:1.6;margin-top:8px;}
+.du-textarea:focus{border-top-color:var(--hot);}
+.du-actions{display:flex;align-items:center;gap:6px;padding:8px 14px;border-top:1px solid var(--line);flex-wrap:wrap;}
+.du-btn-quick{background:transparent;border:1px solid var(--line);color:var(--ink-2);font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;padding:7px 14px;cursor:pointer;white-space:nowrap;}
+.du-btn-quick:hover{border-color:var(--hot);color:var(--hot);}
+.du-divider{width:1px;height:24px;background:var(--line);margin:0 4px;}
+.du-provider-wrap{display:flex;align-items:center;gap:5px;flex:1;flex-wrap:wrap;}
+.du-select{flex:1;min-width:100px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:9.5px;padding:6px 6px;outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;}
+.du-key-input{flex:1;min-width:80px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);font-size:9.5px;padding:6px 8px;outline:none;}
+.du-key-input:focus{border-color:var(--hot);}
+.du-key-save{background:transparent;border:1px solid var(--line);color:var(--ink-3);font-family:var(--mono);font-size:8.5px;padding:6px 8px;cursor:pointer;white-space:nowrap;}
+.du-key-save:hover{border-color:var(--hot);color:var(--hot);}
+.du-btn-ai{background:var(--hot);border:none;color:#000;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;padding:7px 14px;cursor:pointer;white-space:nowrap;}
+.du-btn-ai:hover{opacity:.88;}
+.du-btn-ai:disabled{opacity:.4;cursor:not-allowed;}
+.du-out{padding:12px 14px;font-family:var(--mono);font-size:10.5px;color:var(--ink-2);line-height:1.7;min-height:60px;max-height:400px;overflow-y:auto;white-space:pre-wrap;word-break:break-word;}
+.du-out .empty{color:var(--ink-4);font-style:italic;}
+.du-out .ai-err{color:#ff6b6b;}
+.ch-link{display:inline-block;border:1px solid var(--line);color:var(--ink-2);font-family:var(--mono);font-size:9px;padding:1px 6px;margin:1px 2px;cursor:pointer;border-radius:2px;vertical-align:middle;}
+.ch-link:hover{border-color:var(--hot);color:var(--hot);}
+.ai-cursor{display:inline-block;width:1ch;background:var(--hot);animation:blink .8s step-end infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+.view-toggle{display:flex;gap:4px;}
+.vt-btn{background:transparent;border:1px solid var(--line);color:var(--ink-4);font-family:var(--mono);font-size:9px;letter-spacing:.14em;padding:5px 12px;cursor:pointer;text-transform:uppercase;}
+.vt-btn.active{border-color:var(--hot);color:var(--hot);}
+.vt-btn:hover:not(.active){border-color:var(--line-2);color:var(--ink-2);}
+#net-view{width:100%;background:var(--bg-1);border:1px solid var(--line);position:relative;overflow:hidden;}
+#net-view svg{display:block;width:100%;height:100%;}
+.net-edge{stroke:var(--line-2);stroke-width:1;opacity:.5;transition:opacity .2s;}
+.net-edge.hot{stroke:var(--hot);opacity:.8;stroke-width:1.5;}
+.net-node-g{cursor:pointer;}
+.net-node-g:hover .net-node-circle{filter:brightness(1.4);}
+.net-node-circle{transition:r .2s,filter .2s;}
+.net-node-label{font-family:var(--mono);font-size:9px;fill:var(--ink-3);pointer-events:none;transition:fill .2s;}
+.net-node-num{font-family:"Fraunces",serif;font-size:11px;fill:var(--ink);pointer-events:none;font-style:italic;}
+.net-node-g.active .net-node-circle{stroke:var(--hot)!important;stroke-width:2;}
+.net-node-g.active .net-node-num{fill:var(--hot);}
+
+/* ── FOOTER ── */
+footer{
+  padding:40px 48px 64px;color:var(--ink-3);font-size:10px;
+  letter-spacing:.18em;text-transform:uppercase;
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px;
+  max-width:1480px;margin:0 auto;
+}
+footer h5{color:var(--ink);margin-bottom:12px;font-size:9.5px;letter-spacing:.22em;}
+footer a{display:block;color:var(--ink-3);padding:4px 0;transition:color .15s;}
+footer a:hover{color:var(--ink);}
+.copy{grid-column:1/-1;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--ink-4);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .thesis-layout,.practice-grid,.domain-tool,.detail,.scen-strip{grid-template-columns:1fr!important;}
+  .chapters{grid-template-columns:repeat(2,1fr);}
+  .detail .dl{border-right:none;border-bottom:1px solid var(--line);}
+  .domain-tool>div:first-child{border-right:none;border-bottom:1px solid var(--line);}
+  .products{grid-template-columns:1fr;}
+  .prod{border-right:none;border-bottom:1px solid var(--line);}
+  .topbar nav{display:none;}
+  .topbar{grid-template-columns:1fr auto;}
+  .hero-body{padding:0 28px;}
+  .hero-counters{right:28px;}
+  footer{grid-template-columns:1fr;}
+}
+/* ── MOBILE ── */
+@media(max-width:768px){
+  :root{--s:14px;}
+  nav{padding:0 16px;gap:12px;}
+  .nav-links{display:none;}
+  .lang-toggle{margin-left:auto;}
+  .s-inner{padding:56px 16px 40px;}
+  .hero{min-height:100svh;}
+  .hero-lb-top,.hero-lb-bot{height:5vh;}
+  .hero-content{padding:0 20px;}
+  .hero-content h1{font-size:clamp(28px,10vw,52px);}
+  .thesis-layout{grid-template-columns:1fr!important;gap:0;}
+  .thesis-card{border-right:none!important;border-bottom:1px solid var(--line);}
+  .explorer-layout{flex-direction:column;gap:12px;}
+  .scen-strip{flex-direction:column;gap:4px;}
+  .scen-pill{width:100%;justify-content:flex-start;}
+  .chapters{grid-template-columns:repeat(2,1fr)!important;}
+  .chap-big-num{font-size:52px!important;}
+  .detail{grid-template-columns:1fr!important;}
+  .dr{border-left:none!important;border-top:1px solid var(--line);}
+  .threads-body{grid-template-columns:1fr!important;}
+  .threads-col-mid{border-left:none!important;border-right:none!important;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .practice-grid{grid-template-columns:1fr!important;gap:0;}
+  .practice-lead{border-right:none!important;border-bottom:1px solid var(--line);}
+  .products{grid-template-columns:1fr!important;}
+  .domain-tool{grid-template-columns:1fr!important;}
+  .domain-tool>div:first-child{border-right:none!important;border-bottom:1px solid var(--line);}
+  .ai-provider-row{flex-direction:column;}
+  select.ai-select{width:100%;}
+  footer>div:first-child{grid-column:1/-1;}
+}
+@media(max-width:480px){
+  .chapters{grid-template-columns:1fr!important;}
+  .hero-content h1{font-size:clamp(24px,12vw,40px);}
+  .chap-big-num{font-size:40px!important;}
+  .s-inner{padding:48px 12px 32px;}
+  .products{grid-template-columns:1fr!important;}
+  .ai-panel-head{flex-wrap:wrap;}
+  .ai-badge{margin-left:0;margin-top:4px;}
+}
+@media(max-width:768px) and (prefers-color-scheme:light){
+  .hero::after{opacity:.04;}
+}
+#ms-toast{
+  position:fixed;bottom:32px;left:50%;transform:translateX(-50%);
+  background:var(--bg);border:1px solid var(--line-2);
+  font-family:var(--mono);font-size:10.5px;color:var(--ink);
+  padding:9px 18px;max-width:520px;width:90%;text-align:center;
+  opacity:0;pointer-events:none;
+  transition:opacity .18s;z-index:999;
+  line-height:1.5;
+}
+#ms-toast.show{opacity:1;}
+#ms-toast .ms-year{color:var(--hot);font-weight:600;margin-right:6px;letter-spacing:.06em;}
+#ms-toast .ms-scen{font-size:8.5px;color:var(--ink-4);margin-left:8px;letter-spacing:.1em;text-transform:uppercase;}
+@keyframes ms-ping{
+  0%{box-shadow:0 0 0 0 var(--hot);}
+  70%{box-shadow:0 0 0 8px transparent;}
+  100%{box-shadow:0 0 0 0 transparent;}
+}
+.tlv-cell.ya .tlv-bar{animation:ms-ping .5s ease-out;}
+</style>
+</head>
+<body>
+
+<!-- ── TOPBAR ── -->
+<header class="topbar" id="topbar">
+  <div class="brand">
+    <!-- Aperture Horizon logo: timeline slit + year ticks + now-marker -->
+    <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+      <rect x="4" y="15.5" width="28" height="1.05" fill="currentColor" opacity=".9"/>
+      <rect x="4" y="19.45" width="28" height="1.05" fill="currentColor" opacity=".9"/>
+      <line x1="18" y1="7" x2="18" y2="29" stroke="currentColor" stroke-width=".65" opacity=".32"/>
+      <line x1="10" y1="13.5" x2="10" y2="22.5" stroke="currentColor" stroke-width=".5" opacity=".2"/>
+      <line x1="14" y1="12.5" x2="14" y2="23.5" stroke="currentColor" stroke-width=".5" opacity=".3"/>
+      <line x1="22" y1="12.5" x2="22" y2="23.5" stroke="currentColor" stroke-width=".5" opacity=".3"/>
+      <line x1="26" y1="13.5" x2="26" y2="22.5" stroke="currentColor" stroke-width=".5" opacity=".2"/>
+      <circle cx="18" cy="17.45" r="2.0" fill="var(--hot)"/>
+      <circle cx="18" cy="17.45" r="2.0" fill="none" stroke="var(--hot)" stroke-width=".55" opacity=".55">
+        <animate attributeName="r" values="2.4;5.2;2.4" dur="2.9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".55;0;.55" dur="2.9s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+    <div class="brand-text">
+      <b>EARTH/2035</b>
+      <span class="brand-sub en-only">World model · v0.8</span>
+      <span class="brand-sub ko-only ko">세계 모델 · v0.8</span>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <button data-target="hero" aria-current="true">
+      <span class="en-only">Thesis</span><span class="ko-only">테제</span>
+    </button>
+    <button data-target="explorer">
+      <span class="en-only">Explorer</span><span class="ko-only">탐색</span>
+    </button>
+    <button data-target="chapters-section">
+      <span class="en-only">Chapters</span><span class="ko-only">챕터</span>
+    </button>
+    <button data-target="signals-section">
+      <span class="en-only">Signals</span><span class="ko-only">시그널</span>
+    </button>
+    <button data-target="practice">
+      <span class="en-only">Practice</span><span class="ko-only">실행</span>
+    </button>
+  </nav>
+
+  <div class="right">
+    <span class="live-tag"><span class="pulse-dot"></span>LIVE · 2026Q2</span>
+    <div class="lang">
+      <button data-lang="en" aria-current="true">EN</button>
+      <button data-lang="ko">한</button>
+    </div>
+    <button class="theme-btn" id="themeToggle" title="Toggle light/dark">
+      <svg id="themeIcon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M12 7.5A5 5 0 0 1 6 2.5 5 5 0 0 0 7 12.5 5 5 0 0 0 12 7.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <div class="hero-lb-top"></div>
+  <div class="hero-lb-bot"></div>
+  <div class="hero-glyphs"></div>
+  <div class="hero-horizon"></div>
+
+  <div class="hero-meta">
+    <span>EARTH/2035 · WORLD MODEL v0.8</span>
+    <span class="en-only">BASELINE 2026Q2 · MIT OPEN CORPUS</span>
+    <span class="ko-only">기준선 2026Q2 · MIT 오픈 코퍼스</span>
+  </div>
+
+  <div class="hero-body">
+    <h1 class="hero-title">
+      <span class="line en-only"><span>Source-grounded</span></span>
+      <span class="line en-only"><span>foresight. Sixteen</span></span>
+      <span class="line en-only"><span>domains. One <em>decade.</em></span></span>
+      <span class="line ko-only"><span>근거 있는 미래.</span></span>
+      <span class="line ko-only"><span>16개 도메인.</span></span>
+      <span class="line ko-only"><span>한 세대의 <em>10년.</em></span></span>
+    </h1>
+    <p class="hero-tagline">
+      <span class="en-only">The only bilingual, open-source, scenario-weighted foresight corpus
+      tracking 16 domains at annual resolution — 2026 to 2035.</span>
+      <span class="ko-only ko">AI는 인류가 처음으로 자연계를 가정 없이 관찰하게 하는 도구다.
+      그러나 그것을 이해하는 인간의 능력은 그대로다.</span>
+    </p>
+  </div>
+
+  <div class="hero-counters">
+    <div class="c-row">
+      <div class="c-item">
+        <span class="c-val">16</span>
+        <span class="c-lbl en-only">Domains</span>
+        <span class="c-lbl ko-only">도메인</span>
+      </div>
+      <div class="c-item">
+        <span class="c-val">5</span>
+        <span class="c-lbl en-only">Scenarios</span>
+        <span class="c-lbl ko-only">시나리오</span>
+      </div>
+      <div class="c-item">
+        <span class="c-val">10</span>
+        <span class="c-lbl en-only">Years</span>
+        <span class="c-lbl ko-only">연도</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue" id="heroScroll">
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ── THESIS ── -->
+<section class="s" id="thesis-section">
+  <div class="s-inner">
+    <div class="s-head reveal">
+      <h2 class="serif en-only">Core thesis</h2>
+      <h2 class="serif ko-only">핵심 테제</h2>
+      <span class="meta">§ 00_FOUNDATIONS</span>
+    </div>
+    <div class="thesis-layout reveal">
+      <div>
+        <div class="thesis-pull">
+          <span class="en-only">By 2035, four converging tools may let humans <em>induce</em> laws directly from raw phenomena. Hypothesis-test gives way to pattern-law derivation.</span>
+          <span class="ko-only ko">2035년까지, 네 가지 기술의 수렴이 인류로 하여금 <em>현상에서 직접</em> 법칙을 도출하게 할지 모른다.</span>
+        </div>
+        <p class="thesis-detail en-only">The same instruments detect climate, financial, epidemic and geopolitical tipping signals before humans recognise them. Knowledge abundance does not imply human understanding. That tension is the first-order theme. — Annual resolution, 2026→2035 · all forecasts ship with base / upside / downside</p>
+        <p class="thesis-detail ko-only ko">동일한 도구가 기후·금융·전염병·지정학적 전환점을 인간이 인식하기 전에 감지한다. 지식의 풍요가 인간의 이해를 의미하지는 않는다. 그 긴장이 1차 주제다.</p>
+      </div>
+      <aside class="thesis-questions">
+        <div class="thesis-q">
+          <q>이해 없는 지식은 지식인가?</q>
+          <cite>Is knowledge without understanding still knowledge?</cite>
+        </div>
+        <div class="thesis-q">
+          <q class="en-only">If a model sees the tipping point first, who is responsible for the choice that follows?</q>
+          <q class="ko-only">모델이 먼저 임계점을 보았다면, 이후 선택의 책임은 누구에게 있는가?</q>
+          <cite>— wildcards / interaction effects</cite>
+        </div>
+        <div class="thesis-q">
+          <q class="en-only">Which institutions are physically capable of acting on a 36-month early signal?</q>
+          <q class="ko-only">36개월 조기 신호에 실제로 대응할 수 있는 기관은 어디인가?</q>
+          <cite>— opportunity intelligence / bottleneck map</cite>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPLORER ── -->
+<section class="s" id="explorer">
+  <div class="s-inner">
+    <div class="s-head reveal">
+      <h2 class="serif en-only">Explorer</h2>
+      <h2 class="serif ko-only">탐색기</h2>
+      <span class="meta">SCENARIO × YEAR × DOMAIN</span>
+    </div>
+    <div class="reveal">
+      <div class="controls">
+        <div>
+          <div class="ctrl-label en-only">Scenario lens</div>
+          <div class="ctrl-label ko-only">시나리오 렌즈</div>
+          <div class="scen-pills" id="scen-pills"></div>
+        </div>
+        <div class="year-block">
+          <label>
+            <span class="en-only">Year focus</span>
+            <span class="ko-only">연도 포커스</span>
+            <span id="yearReadable">2030</span>
+          </label>
+          <div class="year-val-big" id="yearVal">2030</div>
+          <div class="year-row">
+            <div class="year-track">
+              <div class="ticks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <input id="yearSlider" type="range" min="2026" max="2035" step="1" value="2030"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+      <div id="ms-toast" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CHAPTERS ── -->
+<section class="s" id="chapters-section">
+  <div class="s-inner">
+    <div class="s-head reveal" style="align-items:center;">
+      <h2 class="serif en-only">Chapters</h2>
+      <h2 class="serif ko-only">챕터</h2>
+      <span class="meta en-only">16 domains · click any → detail ↓</span>
+      <span class="meta ko-only">16개 도메인 · 클릭 → 상세 ↓</span>
+      <div class="view-toggle" style="margin-left:auto;">
+        <button class="vt-btn active" id="vtGrid" data-view="grid">
+          <span class="en-only">Grid</span><span class="ko-only">그리드</span>
+        </button>
+        <button class="vt-btn" id="vtNet" data-view="net">
+          <span class="en-only">Network</span><span class="ko-only">네트워크</span>
+        </button>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="chapters" id="chapters"></div>
+      <div id="net-view" style="display:none;"></div>
+      <div class="detail" id="detail"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SIGNALS (anchor) ── -->
+<div id="signals-section" style="height:0;overflow:hidden;"></div>
+
+<!-- ── PRACTICE ── -->
+<section class="s consulting" id="practice">
+  <div class="s-inner">
+    <div class="s-head reveal">
+      <h2 class="serif en-only">Practice</h2>
+      <h2 class="serif ko-only">실행</h2>
+      <span class="meta en-only">CONSULTING + OPEN-SOURCE</span>
+      <span class="meta ko-only">컨설팅 + 오픈소스</span>
+    </div>
+    <div class="practice-grid reveal">
+      <div class="practice-lead">
+        <h2 class="serif">
+          <span class="en-only">Bring your<br/>domain.<br/><em>Leave</em> with a<br/>2035 roadmap.</span>
+          <span class="ko-only ko">당신의 도메인을<br/>가져오라.<br/><em>2035 로드맵</em>과<br/>함께 떠나라.</span>
+        </h2>
+        <p class="en-only">An open corpus anyone can fork, and a consulting practice that walks an institution through the same work: locate your domain on the convergence map, surface the 2026→2035 milestones that move you, ground the next 18 months in primary sources.</p>
+        <p class="ko-p ko-only ko">2035를 조망하는 브랜드. 컨설팅과 오픈소스가 한 몸이다. 본인의 도메인 로드맵에 맞춘 예상·도전·해결의 근거를 같은 공간 안에서 만든다.</p>
+        <div class="stamps">
+          <span class="stamp">Open · MIT</span>
+          <span class="stamp en-only">Source-grounded</span>
+          <span class="stamp ko-only">근거 기반</span>
+          <span class="stamp">EN / KO</span>
+          <span class="stamp en-only">90-day refresh</span>
+          <span class="stamp ko-only">90일 갱신</span>
+        </div>
+      </div>
+      <div>
+        <div class="products">
+          <div class="prod">
+            <span class="tag">01 · Scan</span>
+            <h4 class="serif en-only">Domain<br/>convergence scan</h4>
+            <h4 class="serif ko-only">도메인<br/>수렴 스캔</h4>
+            <p class="en-only">4-week intake. Map your domain against the four converging streams. Output: a one-page convergence print with ten dated milestones.</p>
+            <p class="ko-only ko">4주 인테이크. 도메인을 4개 수렴 흐름에 매핑. 산출물: 10개 날짜 이정표가 담긴 1페이지 수렴 프린트.</p>
+            <a class="cta" href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20Scan%20inquiry">Contact for brief</a>
+          </div>
+          <div class="prod">
+            <span class="tag">02 · Stress</span>
+            <h4 class="serif en-only">Five-scenario<br/>stress test</h4>
+            <h4 class="serif ko-only">5가지 시나리오<br/>스트레스 테스트</h4>
+            <p class="en-only">Run your strategy across base / accelerated / delayed / bifurcated / climate-emergency. Identify the single decision most sensitive to scenario.</p>
+            <p class="ko-only ko">5개 시나리오 전반에 전략을 실행. 시나리오에 가장 민감한 단일 결정 식별.</p>
+            <a class="cta" href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20Stress%20inquiry">Request sample</a>
+          </div>
+          <div class="prod">
+            <span class="tag">03 · Signal</span>
+            <h4 class="serif en-only">Early-signal<br/>monitor</h4>
+            <h4 class="serif ko-only">조기 신호<br/>모니터</h4>
+            <p class="en-only">Subscribe to the dashboard. Re-tagged every 90 days. When a tipping signal crosses threshold, the relevant decision-maker is notified.</p>
+            <p class="ko-only ko">대시보드 구독. 90일마다 재태깅. 전환 신호가 임계값을 넘으면 관련 의사결정자에게 통보.</p>
+            <a class="cta" href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20Signal%20subscription">Get on waitlist</a>
+          </div>
+          <div class="prod">
+            <span class="tag">04 · Fork</span>
+            <h4 class="serif en-only">Fork the<br/>open repo</h4>
+            <h4 class="serif ko-only">오픈 저장소<br/>포크</h4>
+            <p class="en-only">Everything above the consulting layer is open-source. Clone the corpus, append your sub-domain, follow the source policy. PRs welcome.</p>
+            <p class="ko-only ko">컨설팅 레이어 위의 모든 것은 오픈소스. 코퍼스 클론, 서브도메인 추가, 소스 정책 준수. PR 환영.</p>
+            <a class="cta" href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">github / world-model-2035</a>
+          </div>
+        </div>
+        <div class="domain-unified">
+  <div class="du-head">
+    <span class="en-only">Analyse your domain</span>
+    <span class="ko-only">도메인 분석</span>
+    <span class="du-sub en-only">quick map · or · AI deep-read</span>
+    <span class="du-sub ko-only">빠른 매핑 · 또는 · AI 심층 분석</span>
+  </div>
+  <div class="du-input-wrap">
+    <input id="ydInput" placeholder="e.g. korean shipbuilding · EU pharma · grid operator · 반도체" class="du-input"/>
+  </div>
+  <textarea id="aiRoadmap" rows="4" class="du-textarea" placeholder="(Optional) Paste your roadmap for AI deep-read — bullet points, strategy excerpts, milestones.&#10;&#10;e.g.&#10;• 2026: launch autonomous loading arm pilots&#10;• 2027: partner with Tier-1 EV platform"></textarea>
+  <div class="du-actions">
+    <button id="ydBtn" class="du-btn-quick">
+      <span class="en-only">Quick Map →</span>
+      <span class="ko-only">빠른 매핑 →</span>
+    </button>
+    <div class="du-divider"></div>
+    <div class="du-provider-wrap">
+      <select id="aiProvider" class="ai-select du-select">
+        <option value="anthropic">Anthropic</option>
+        <option value="openrouter">OpenRouter</option>
+        <option value="google">Google AI Studio</option>
+        <option value="openai">OpenAI</option>
+      </select>
+      <select id="aiModel" class="ai-select du-select"></select>
+      <input id="aiKey" type="password" placeholder="API key" autocomplete="off" class="du-key-input"/>
+      <button id="aiKeySave" class="du-key-save">Save</button>
+      <button id="aiAnalyse" class="du-btn-ai">
+        <span id="aiBadge" class="en-only">AI Analyse →</span>
+        <span class="ko-only">AI 분석 →</span>
+      </button>
+    </div>
+  </div>
+  <div class="du-out" id="ydOut" id2="aiOut">
+    <span class="empty en-only">Enter your domain above — Quick Map for instant results, AI Analyse for deep cross-corpus synthesis.</span>
+    <span class="empty ko-only">도메인 입력 → 빠른 매핑 또는 AI 심층 분석.</span>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <h5>EARTH/2035</h5>
+    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">About the corpus</a>
+    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/00_foundations/methodology.md" target="_blank" rel="noopener">Methodology</a>
+    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">Information freshness</a>
+    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/00_foundations/source_policy.md" target="_blank" rel="noopener">Source policy</a>
+  </div>
+  <div>
+    <h5><span class="en-only">Read</span><span class="ko-only">읽기</span></h5>
+    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">16 chapters · index</a>
+    <a href="#explorer">5 scenarios</a>
+    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/14_predictions_log/" target="_blank" rel="noopener">Predictions log</a>
+    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/12_wildcards/" target="_blank" rel="noopener">Wildcards</a>
+  </div>
+  <div>
+    <h5><span class="en-only">Practice</span><span class="ko-only">실행</span></h5>
+    <a href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20consulting">Consulting brief</a>
+    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">Open repo · github</a>
+    <a href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20newsletter">Newsletter</a>
+    <a href="mailto:ckiwon7@gmail.com">Contact</a>
+  </div>
+  <div class="copy">
+    <span>v0.8 · Baseline 2026Q2 · Updated 2026-04</span>
+    <span>© Open-source corpus · MIT license · All forecasts are sourced &amp; dated.</span>
+  </div>
+</footer>
+
+<script>
+/* ── THEME ── */
+const html = document.documentElement;
+const MOON = `<path d="M12 7.5A5 5 0 0 1 6 2.5 5 5 0 0 0 7 12.5 5 5 0 0 0 12 7.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>`;
+const SUN  = `<circle cx="7" cy="7" r="2.8" stroke="currentColor" stroke-width="1.2"/>
+<line x1="7" y1="1" x2="7" y2="2.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="7" y1="11.6" x2="7" y2="13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="1" y1="7" x2="2.4" y2="7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="11.6" y1="7" x2="13" y2="7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="2.8" y1="2.8" x2="3.7" y2="3.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="10.3" y1="10.3" x2="11.2" y2="11.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="11.2" y1="2.8" x2="10.3" y2="3.7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="3.7" y1="10.3" x2="2.8" y2="11.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>`;
+let theme = localStorage.getItem("e2035-theme") || "dark";
+applyTheme(theme);
+function applyTheme(t){
+  theme=t; html.setAttribute("data-theme",t);
+  document.getElementById("themeIcon").innerHTML = t==="dark" ? MOON : SUN;
+  localStorage.setItem("e2035-theme",t);
+}
+document.getElementById("themeToggle").addEventListener("click",()=>applyTheme(theme==="dark"?"light":"dark"));
+
+/* ── LANG TOGGLE ── */
+document.querySelectorAll(".lang button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll(".lang button").forEach(x=>x.removeAttribute("aria-current"));
+    b.setAttribute("aria-current","true");
+    html.lang = b.dataset.lang;
+  });
+});
+
+/* ── SCROLL: topbar shrink + reveal ── */
+const topbar = document.getElementById("topbar");
+const logoMark = document.querySelector(".logo-mark");
+window.addEventListener("scroll",()=>{
+  const s = Math.min(window.scrollY/100,1);
+  topbar.style.padding = `${14-5*s}px 28px`;
+  if(logoMark) logoMark.style.transform = `scale(${1-0.1*s})`;
+  // nav active state by section
+  const sections = ["hero","thesis-section","explorer","chapters-section","practice"];
+  let current = "hero";
+  sections.forEach(id=>{
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top < 80) current = id;
+  });
+  document.querySelectorAll("#nav button").forEach(btn=>{
+    const t = btn.dataset.target;
+    const matched = t===current || (t==="thesis-section"&&current==="hero") || (t==="hero"&&current==="hero");
+    btn.setAttribute("aria-current", matched ? "true" : "false");
+  });
+},{passive:true});
+
+/* ── INTERSECTION REVEAL ── */
+const ro = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("in"); });
+},{threshold:0.08});
+document.querySelectorAll(".reveal").forEach(el=>ro.observe(el));
+
+/* ── NAV CLICK ── */
+document.querySelectorAll("#nav button").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const el = document.getElementById(btn.dataset.target);
+    if(el) window.scrollTo({top:el.offsetTop-64,behavior:"smooth"});
+  });
+});
+
+/* ── HERO SCROLL CUE ── */
+document.getElementById("heroScroll").addEventListener("click",()=>{
+  document.getElementById("thesis-section").scrollIntoView({behavior:"smooth"});
+});
+
+/* ── DATA ── */
+const SCENARIOS = [
+  {id:"base",        label:"Base case",        ko:"기준선",   color:"#ffb454",prob:"52%"},
+  {id:"accelerated", label:"Accelerated",       ko:"가속",     color:"#ff5b1f",prob:"20%"},
+  {id:"delayed",     label:"Delayed",           ko:"지연",     color:"#74d2ff",prob:"18%"},
+  {id:"bifurcated",  label:"Bifurcated",        ko:"분기",     color:"#b39bff",prob:"10%"},
+  {id:"emergency",   label:"Climate emergency", ko:"기후 비상",color:"#ff7eb6",prob:"55%"}
+];
+
+const TIMELINE = {
+  base:[
+    {y:2026,t:"IMF 3.3% path holds · SPARC first plasma · H200 China resumes (50% quota)",enables:["ch03_2028"]},
+    {y:2027,t:"SPARC Q>1 · TSMC AZ 2nm tooling · code/science autonomy >50% on benchmarks",enables:["ch02_2029"]},
+    {y:2028,t:"Helion Orion 50MW PPA · TSMC AZ 2nm volume · renewables share ~40%",enables:["ch08_2030","ch04_2030"]},
+    {y:2029,t:"IBM Starling 200 logical qubits · first crypto/material applications",enables:["ch11_2029","ch09_2030"]},
+    {y:2030,t:"CO₂ peaks then falls (~36 Gt) · >1 AI agent per capita in advanced economies",enables:["ch08_2030","ch01_2035"]},
+    {y:2031,t:"ARC grid-connect attempt · on-device AI standard on phone & PC"},
+    {y:2032,t:"Six-fab AZ cluster live · BRICS+ payments cross 5% of trade"},
+    {y:2033,t:"IBM Blue Jay nears 2000 logical qubits · AI co-author papers routine"},
+    {y:2034,t:"2–3 commercial fusion plants under construction · power decarb >55%"},
+    {y:2035,t:"Partial bifurcation locked in · ~+1.8–2.2°C · GDP $145–160T"}
+  ],
+  accelerated:[
+    {y:2026,t:"Claude Mythos · IsoDDE clinical Phase 1 · datacenter permitting accelerates"},
+    {y:2027,t:"AGI-definition crossing on commercial APIs · IBM Cockatoo modular entanglement"},
+    {y:2028,t:"Helion Orion online · agents auto white-collar work 30–40%",enables:["ch08_2030","ch03_2030"]},
+    {y:2029,t:"Quantum drug + materials apps commercialise · AI+QC accelerates chem 5–10×"},
+    {y:2030,t:"ARC grid · world AI capex >$2T · NDC achievers a majority of G20"},
+    {y:2031,t:"AI scientist co-authors Nobel-class research · on-device sub-AGI agents"},
+    {y:2032,t:"2–3 fusion plants under build · LCOE $80–100/MWh in sight"},
+    {y:2033,t:"Blue Jay 2000+ logical qubits · AGI industrial frameworks settle"},
+    {y:2034,t:"Commercial fusion ops · hybrid quantum-classical APIs standardise"},
+    {y:2035,t:"Near-AGI, multi-fusion grid, 5–10 quantum domains · ~+1.5–1.8°C defended"}
+  ],
+  delayed:[
+    {y:2026,t:"Tariffs & export controls deepen · Chinese 3nm nationalisation stalls"},
+    {y:2027,t:"Taiwan blockade or major cyber event · 2–3 month chip supply outage risk"},
+    {y:2028,t:"AZ 2nm volume capped · EDA cut-off scenarios for China designers"},
+    {y:2029,t:"Chip 4+ codified · two AI cloud stacks lock in"},
+    {y:2030,t:"CO₂ peak missed · climate-tariff regimes harden · 2.5°C+ path"},
+    {y:2031,t:"Helion / CFS slip 2–3 years · debt + climate damage in fragile states"},
+    {y:2032,t:"Non-dollar settlement past 10% of trade · secondary-sanction regime forms"},
+    {y:2033,t:"Blue Jay slip 1–2 yrs · China runs an independent quantum roadmap"},
+    {y:2034,t:"Fusion #1 delayed · LCOE rises · climate-adaptation drains budgets"},
+    {y:2035,t:"Wider Yard + dual-stack normal · growth 2–2.5% · ~+2.3–2.6°C"}
+  ],
+  bifurcated:[
+    {y:2026,t:"H200 quotas · EU AI Act fully in force · DeepSeek follow-ups commercial",enables:["ch15_2026","ch10_2026"]},
+    {y:2027,t:"BRICS+ CBDC bridge pilot · Chip 4+ codified · Huawei 5nm scale"},
+    {y:2028,t:"Cross-bloc app-store / cloud fragmentation · dual-build cost real"},
+    {y:2029,t:"Limited multilateral AI safety frame · 'AI iron curtain' in places"},
+    {y:2030,t:"BRICS+ PPP share >45% · standards competition hardens"},
+    {y:2031,t:"Quantum & AI safety regulated per bloc · -3–5pp margin on global firms"},
+    {y:2032,t:"BRICS Pay live · non-dollar trade past 10% · debt restructuring shocks"},
+    {y:2033,t:"Bloc-specific quantum apps · cyber arms race spills civilian"},
+    {y:2034,t:"Cross-bloc capex limits institutionalised · partial thaw on health/climate"},
+    {y:2035,t:"G3 + BRICS+ four-pole order · stacks separate, 2–3 standards reconciled"}
+  ],
+  emergency:[
+    {y:2026,t:"First >1.5°C calendar year priced into insurance & policy",enables:["ch08_2026","ch12_2027"]},
+    {y:2027,t:"Mitigation–adaptation gap visible · NDC strengthening or postponement"},
+    {y:2028,t:"Compound losses press budgets · resilience capex rises"},
+    {y:2029,t:"Cascading food / power / insurance shocks · 2.3–2.8°C path harder to avoid"},
+    {y:2030,t:"43% reduction checkpoint · 1.5°C realistically gone or barely held"},
+    {y:2031,t:"Climate health & migration become budget constants"},
+    {y:2032,t:"Sea-level & ocean-heat changes redraw design codes · private insurance retreats"},
+    {y:2033,t:"Long-horizon ocean & cryosphere shifts dominate policy"},
+    {y:2034,t:"Grid resilience & food security top national-function lists"},
+    {y:2035,t:"35%/55% reductions or chronic emergency? · path is decided here"}
+  ]
+};
+
+const CHAPTERS = [
+  {id:"00",num:"00",t:"Foundations",        ko:"원리와 방법론",  desc:"Axioms, biases, source policy, tech-realism scoring and freshness rules. Every forecast carries base/upside/downside and a probability.",weight:[0,1,1,0,0]},
+  {id:"01",num:"01",t:"Climate & nature",   ko:"기후와 자연",    desc:"2024 confirmed as first ≥1.5°C year (WMO). Tipping points, biodiversity, COP roadmap, AI-climate tooling. 2030 ≥43% cut checkpoint is the decade's inflection.",weight:[1,1,1,1,1]},
+  {id:"02",num:"02",t:"Technology",         ko:"기술",           desc:"Semis ($600B→$1.5T market), AI datacenters (US load >15 GW now), foundation models (pre-train/RL/inference 4:3:3 rebalance), quantum (IBM 200 logical qubits 2029), humanoid robotics.",weight:[1,1,1,1,0]},
+  {id:"03",num:"03",t:"Energy",             ko:"에너지",         desc:"Renewables >50% of generation by 2035 (IEA STEPS, 75%). SMR first commercial unit targets 2027 (45%). SPARC Q>1 at 30%; fusion commercial 1–2 plants by 2034 at 15%.",weight:[1,1,1,1,1]},
+  {id:"04",num:"04",t:"Vehicles",           ko:"모빌리티",       desc:"LFP overtook NMC in 2025. CATL sodium-ion mass production begins 2026. EV pack cost $110/kWh→$50–70/kWh by 2035. Autonomous city-scale unlock precedes inter-city.",weight:[1,1,1,1,0]},
+  {id:"05",num:"05",t:"Space",              ko:"우주",           desc:"Starship flew 5 times in 2025 including first booster reuse. Artemis III crewed lunar 2027 target (30–40%). Launch-cost collapse rewires sensors, comms and earth-observation.",weight:[1,1,1,0,0]},
+  {id:"06",num:"06",t:"Geopolitics",        ko:"지정학",         desc:"21 country files with quantitative GDP anchors. 'Wider Yard' managed bifurcation across AI, semis, payments and standards. Taiwan full conflict 20–25% cumulative 10-year probability.",weight:[1,1,1,1,1]},
+  {id:"07",num:"07",t:"Defense",            ko:"국방",           desc:"Russia deployed 5,000+ Shahed/month (late 2025); Ukraine produces 1,500 interceptor drones/day. Anduril Bolt-M 600+ units to USMC; Arsenal-1 opens July 2026.",weight:[1,1,1,1,0]},
+  {id:"08",num:"08",t:"Economics",          ko:"경제",           desc:"World GDP $110T→$145–160T by 2035 (IMF base). Stablecoin supply >$400B by end-2026 (GENIUS Act). AI GDP contribution $4–7T by 2030. US debt/GDP path 100%→130–145%.",weight:[1,1,1,1,1]},
+  {id:"09",num:"09",t:"Corporate roadmaps", ko:"기업 로드맵",    desc:"OpenAI (ARR ~$20B+), Anthropic, Google DeepMind, Meta AI; hyperscalers; TSMC/Samsung/Intel fabs; Anduril/Palantir defense-tech; SpaceX/Blue Origin space.",weight:[1,1,1,0,0]},
+  {id:"10",num:"10",t:"International orgs", ko:"국제 기구",      desc:"IPCC AR7 (2027–2029 cycle), IEA WEO 2025, IMF WEO (3.1% global growth 2026), IAEA SMR/fusion, NATO AI strategy, UN SDGs, WHO Pandemic Agreement (2025).",weight:[1,1,1,1,1]},
+  {id:"11",num:"11",t:"Science",            ko:"과학",           desc:"Personalised mRNA cancer vaccines in Phase 3 (KEYNOTE-942: 49% recurrence reduction). Biosecurity, climate science, advanced materials, N=1 medicine.",weight:[1,1,1,1,1]},
+  {id:"12",num:"12",t:"Wildcards",          ko:"와일드카드",     desc:"WEF GRR 2026: geoeconomic confrontation #1 near-term risk. Munich Re: $108B insured losses in 2025. Taiwan ADIZ intrusions 3,700+ in 2025. H5N1 tracking 986 human cases.",weight:[0,1,1,1,1]},
+  {id:"13",num:"13",t:"Scenarios",          ko:"시나리오",       desc:"Five sourced scenarios: Base 52%, Accelerated 20%, Delayed 18%, Bifurcated 10%, Climate Emergency. Each carries annual milestones and cross-domain cascade risks.",weight:[1,1,1,1,1]},
+  {id:"14",num:"14",t:"Predictions log",    ko:"예측 로그",      desc:"12 active predictions (P26-01 to P26-12). P26-06 HIT: IMO silver-level AI maths confirmed. P26-08 (no Taiwan kinetic event through 2027, 85%) is the decade's key geopolitical bet.",weight:[1,1,1,1,0]},
+  {id:"15",num:"15",t:"Opportunity intel",  ko:"기회 지능",      desc:"SAI-01 EU AI Act compliance (44/50) and SEMI-03 export controls (44/50) score highest. Top-20 opportunity cards, Korea-specific priority map, investment & startup theses.",weight:[1,1,1,1,1]},
+  {id:"16",num:"16",t:"Practice",           ko:"실행",           desc:"Consulting frame + open-source space to map your own domain to 2035 milestones.",weight:[0,1,0,0,0]},
+];
+
+const SIGNALS = {
+  "01":[{y:2026,t:"WMO confirms 2024 first ≥1.5°C calendar year",sub:"State of the Global Climate",c:"h"},{y:2027,t:"IPCC AR7 cities sub-report shapes adaptation policy",sub:"IPCC AR7 cycle",c:"m"},{y:2030,t:"43% reduction checkpoint vs 2019",sub:"IPCC AR6 / UNEP gap report",c:"m"},{y:2035,t:"35% / 55% cuts decide chronic-emergency status",sub:"UNEP Emissions Gap 2025",c:"m"}],
+  "02":[{y:2026,t:"TSMC N2 ramp + HBM4 stable across 3 vendors",sub:"semis · 85%",c:"h"},{y:2027,t:"US AI datacenter contracted load exceeds 15 GW",sub:"compute infrastructure · 80%",c:"h"},{y:2028,t:"TSMC A14 + chiplet/HBM packaging regime standardised",sub:"semis · 82%",c:"m"},{y:2029,t:"IBM Starling — 200 logical qubits FT",sub:"quantum · 60%",c:"m"},{y:2030,t:"Global semis market reaches $1.0T",sub:"semis · 60%",c:"m"},{y:2035,t:"AGI by technical definition",sub:"foundation models · <10%",c:"l"}],
+  "03":[{y:2027,t:"SPARC Q>1 net energy",sub:"CFS roadmap · 30%",c:"m"},{y:2027,t:"Darlington BWRX-300 fuel load (SMR first commercial unit)",sub:"fission SMR · 45%",c:"m"},{y:2028,t:"Helion Orion 50MW+ PPA online",sub:"Microsoft PPA · 35%",c:"m"},{y:2030,t:"Renewables >50% of generation",sub:"IEA WEO 2025 STEPS · 75%",c:"h"},{y:2034,t:"Commercial fusion plants 1–2 in operation",sub:"base case · 15%",c:"l"}],
+  "04":[{y:2026,t:"CATL sodium-ion GWh-scale mass production begins",sub:"battery roadmap · 80%",c:"h"},{y:2027,t:"Silicon anode adoption spreads to 2–3 OEMs beyond Mercedes",sub:"battery roadmap · 78%",c:"m"},{y:2028,t:"Battery pack cost reaches $70–90/kWh",sub:"EV battery roadmap · 60%",c:"m"},{y:2030,t:"Solid-state batteries enter first commercial vehicles",sub:"solid_state · 35%",c:"l"},{y:2035,t:"EV pack cost below $70/kWh; ICE TCO fully inverted",sub:"battery roadmap · 70%",c:"m"}],
+  "05":[{y:2026,t:"FAA higher-cadence / RTLS approval path locked in for Starship",sub:"starship_roadmap · 82%",c:"h"},{y:2027,t:"Artemis III crewed lunar landing attempt",sub:"NASA HLS · 30–40%",c:"m"},{y:2028,t:"Starship annual launch cadence targets ~24/year",sub:"starship_roadmap · 38%",c:"m"},{y:2030,t:"Global space economy reaches ~$1T",sub:"geopolitics_space · 48%",c:"m"},{y:2035,t:"Starship: dominant cislunar logistics platform",sub:"starship_roadmap · 62%",c:"l"}],
+  "06":[{y:2026,t:"EU AI Act high-risk obligations enforceable from Aug 2026",sub:"eu_ai_act · 65%",c:"h"},{y:2027,t:"Taiwan strait: no kinetic event through 2027 (P26-08)",sub:"taiwan_scenarios · 85%",c:"m"},{y:2028,t:"US–China dual AI stack institutionalised",sub:"bifurcated · 65%",c:"m"},{y:2030,t:"BRICS+ PPP share past 45%",sub:"IMF / BRICS 2024 · 60%",c:"m"},{y:2035,t:"Complex multipolar order: G3 + BRICS+ four-pole structure",sub:"geopolitics synthesis · 52%",c:"m"}],
+  "07":[{y:2026,t:"Anduril Bolt-M 600+ units to USMC; Arsenal-1 factory opens July 2026",sub:"drone_swarms · 82%",c:"h"},{y:2027,t:"NATO members adopt joint drone/counter-drone procurement framework",sub:"drone_swarms · 79%",c:"m"},{y:2028,t:"Brigade-level loitering munitions become organic order of battle",sub:"autonomous_weapons · 60%",c:"m"},{y:2030,t:"US/China/Russia all field thousands-scale swarm doctrines",sub:"drone_swarms · 60%",c:"m"},{y:2035,t:"Counter-drone 30%+ of air-defense budgets",sub:"drone_swarms · 42%",c:"l"}],
+  "08":[{y:2026,t:"GENIUS Act OCC/FDIC rules finalised; stablecoin supply >$400B",sub:"stablecoin_cbdc · 85%",c:"h"},{y:2027,t:"Fed funds rate enters 3.0–3.5% neutral band",sub:"monetary_policy · 70%",c:"m"},{y:2028,t:"Digital euro first limited launch",sub:"cbdc_geopolitics · 40%",c:"m"},{y:2030,t:"AI GDP contribution $4–7T annually",sub:"fiscal_policy · 58%",c:"m"},{y:2035,t:"World GDP $145–160T; US debt/GDP ~130–145%",sub:"SYNTHESIS_ECON · 65%",c:"l"}],
+  "09":[{y:2026,t:"OpenAI ARR ~$20B+; 'for Countries' infrastructure partnerships launch",sub:"openai · 85%",c:"h"},{y:2027,t:"Frontier lab national-infrastructure deals expand to 10+ countries",sub:"openai · 80%",c:"m"},{y:2028,t:"Lab competitive axis shifts to deployment/agent platforms",sub:"ai_labs · 72%",c:"m"},{y:2030,t:"AI software market ~$500B; hyperscaler AI CAPEX ~$1T annually",sub:"SYNTHESIS_TECH · 60%",c:"m"},{y:2035,t:"2–3 dominant AI OS-layer firms",sub:"ai_labs · 55%",c:"l"}],
+  "10":[{y:2026,t:"IMF global growth baseline 3.1%; downside risks dominant (WEO 2025)",sub:"imf_weo · 82%",c:"h"},{y:2027,t:"IEA WEO confirms datacenter power demand doubling by 2030",sub:"iea_weo · 80%",c:"m"},{y:2028,t:"IPCC AR7 working group reports anchor 2030s policy language",sub:"ipcc_ar7 · 62%",c:"m"},{y:2030,t:"WHO Pandemic Agreement (2025) stress-tested by first major outbreak",sub:"who · 52%",c:"m"},{y:2035,t:"IMF retains structural global financial stability role",sub:"imf_weo · 55%",c:"l"}],
+  "11":[{y:2026,t:"KEYNOTE-942 5yr data: mRNA cancer vaccine reduces recurrence/death by 49%",sub:"n1_medicine · 82%",c:"h"},{y:2027,t:"NSCLC Phase 3 interim results for personalised mRNA vaccine",sub:"n1_medicine · 78%",c:"m"},{y:2028,t:"Melanoma Phase 3 final analysis; FDA approval pathway clarified",sub:"n1_medicine · 58%",c:"m"},{y:2029,t:"First mRNA cancer vaccine FDA approval filing (melanoma likely)",sub:"n1_medicine · 48%",c:"m"},{y:2035,t:"Personalised mRNA vaccines standard-of-care for high-risk melanoma",sub:"n1_medicine · 53%",c:"l"}],
+  "12":[{y:2026,t:"WEF GRR: geoeconomic confrontation ranked #1 near-term risk",sub:"black_swans · 80%",c:"h"},{y:2027,t:"H5N1 human transmission monitoring intensifies",sub:"black_swans · 60%",c:"m"},{y:2028,t:"Taiwan strait grey-zone cyber-kinetic hybrid incident probability peaks",sub:"black_swans · 38%",c:"m"},{y:2030,t:"Arctic permafrost abrupt-thaw event enters international news cycle",sub:"black_swans · 52%",c:"m"},{y:2035,t:"2–4 known tail risks materialised 2026–2035",sub:"black_swans · 78%",c:"l"}],
+  "13":[{y:2026,t:"Five scenarios published & version-tagged",sub:"this corpus",c:"h"},{y:2030,t:"Mid-decade re-baseline (2030Q2)",sub:"scheduled",c:"m"},{y:2035,t:"Retrospective: which scenario won?",sub:"prediction-log retro",c:"l"}],
+  "14":[{y:2026,t:"P26-06 HIT: frontier model reaches IMO silver-level maths (AlphaProof)",sub:"2026_predictions",c:"h"},{y:2026,t:"P26-12: stablecoin supply >$400B by end-2026 (62%)",sub:"2026_predictions",c:"m"},{y:2027,t:"P26-08: no Taiwan kinetic event through 2027 (85%)",sub:"2026_predictions",c:"h"},{y:2027,t:"P26-10: humanoid paid deployments >1,000 units (40%)",sub:"2026_predictions",c:"l"},{y:2028,t:"P26-04: SPARC Q>1 (30%) · P26-09: second >1.5°C year (80%)",sub:"2026_predictions",c:"m"}],
+  "15":[{y:2026,t:"Top-20 opportunity cards published; SAI-01 & SEMI-03 score 44/50",sub:"opportunity_radar",c:"h"},{y:2026,t:"EU AI Act enforcement Aug 2026 — SAI-01 compliance product launch window",sub:"opportunity_radar",c:"h"},{y:2028,t:"Bottleneck map — bloc-by-bloc sovereign AI thesis reset",sub:"validation_playbook",c:"m"},{y:2030,t:"Korea opportunity map: SEMI-03 + SAI-01 bundled product at scale",sub:"korea_opportunity_map",c:"m"},{y:2032,t:"Sovereign-AI thesis bracket reset",sub:"thesis log",c:"l"}]
+};
+
+const SUMMARIES = {
+  "00":"Method before claims. Every file states biases, source policy and freshness; every forecast carries base / upside / downside and a probability. The corpus is auditable, not authoritative.",
+  "01":"2024 confirmed as the first ≥1.5°C calendar year (WMO). Climate is now a fiscal, insurance and security file — 2030 ≥43% cut checkpoint is the decade's key inflection.",
+  "02":"Semiconductors set the ceiling (TSMC N2→A14; global semis market $600B→$1.5T). US AI datacenter contracted load already >15 GW, targeting 30 GW+ by 2027. Foundation-model compute rebalancing pre-train/RL/inference 4:3:3.",
+  "03":"Energy is the binding constraint on every chapter. Renewables cross >50% of generation by 2035 (IEA STEPS, 75% confidence). SMR first commercial unit (Darlington BWRX-300) targets fuel load 2027 at 45%.",
+  "04":"EV battery cost curve is real: LFP overtook NMC in 2025; CATL sodium-ion enters mass production 2026; pack cost from ~$110/kWh toward $50–70/kWh by 2035.",
+  "05":"Starship flew 5 times in 2025 including first booster reuse; NASA Artemis III targets crewed lunar 2027 (30–40%). The chapter's real story is launch-cost collapse rewiring sensors, comms and earth-observation economics.",
+  "06":"21 country files anchored to quantitative GDP, population and conflict-probability data. The frame is 'Wider Yard': managed bifurcation across AI, semis, payments and standards. Taiwan full conflict: 20–25% cumulative 10-year probability.",
+  "07":"Drone swarms are entering standard brigade-level doctrine. Anduril Bolt-M 600+ units to USMC; Arsenal-1 opens July 2026. Nuclear deterrence holds but non-kinetic conflict surface expands.",
+  "08":"World GDP $110T→$145–160T by 2035 (IMF base, 65%). Stablecoin supply >$400B by 2026 (62%); AI GDP contribution $4–7T by 2030. Labour disruption is a measurement problem before it is a policy problem.",
+  "09":"Roadmaps from AI labs (OpenAI ARR ~$20B+, Anthropic, Google DeepMind, Meta AI), hyperscalers, fabs, defense-tech, energy-tech and space firms — each discounted by historic delivery rates.",
+  "10":"IPCC, IEA, IMF, IAEA, NATO AI strategy, UN SDGs, WHO Pandemic Agreement (2025) and WTO all describe the same 2035 horizon from different vantage points. IMF baseline: global growth 3.1% in 2026.",
+  "11":"Personalised mRNA cancer vaccines (KEYNOTE-942: 49% reduction in recurrence/death, HR=0.510) entered Phase 3 across 3 cancer types in 2025. Biosecurity, climate science, advanced materials and physics are domains where physical laws are still being inferred.",
+  "12":"Tail-risk register anchored to WEF GRR 2026 and Munich Re NatCat 2025 ($108B insured losses). Taiwan ADIZ intrusions hit 3,700+ in 2025; H5N1 human infections tracked at 986 cases across 25 countries.",
+  "13":"Five scenarios with annual sourcing and probability. Base (52%): complex multipolar order, managed bifurcation. Accelerated (20%): fusion + quantum + near-AGI productivity lift. Switch scenario above to re-shade everything.",
+  "14":"12 active predictions (P26-01 to P26-12). P26-06 CONFIRMED HIT: frontier model reaches IMO silver-level maths (AlphaProof, 2024). P26-08 (no Taiwan kinetic event through 2027, 85%) is the decade's key geopolitical bet.",
+  "15":"Six opportunity domains by score: Sovereign AI / EU AI Act compliance (SAI-01: 44/50), Semiconductor export controls (SEMI-03: 44/50), Climate insurance gap (CLM-01: 41/50). Korea-specific priority: SEMI-03 + SAI-01 bundled Korean-language intelligence product.",
+  "16":"This page. Consulting frame + open-source space to ground your domain in 2035 milestones."
+};
+
+const INTERACTION_MAP = {
+  "02": { upstream: [], downstream: ["03","04","08","09","11"], reason: "Semiconductors & AI set the ceiling for every domain" },
+  "03": { upstream: ["02"], downstream: ["04","08","09"], reason: "Energy availability gates vehicles, economics, and corporate plans" },
+  "01": { upstream: ["03"], downstream: ["08","10","12"], reason: "Climate trajectory reshapes fiscal, institutional, and tail-risk calculus" },
+  "04": { upstream: ["02","03"], downstream: ["08"], reason: "Battery cost curves unlock EV economics" },
+  "05": { upstream: ["02"], downstream: ["07","06"], reason: "Launch cost collapse rewires dual-use and geopolitics" },
+  "06": { upstream: ["02","08"], downstream: ["07","09","10","15"], reason: "Geopolitics frames the operating environment for all institutions" },
+  "07": { upstream: ["02","06"], downstream: ["06"], reason: "Defense-tech feeds back into geopolitical posture" },
+  "08": { upstream: ["02","03","01"], downstream: ["10","06"], reason: "Economic conditions shape institutional mandates and political bandwidth" },
+  "09": { upstream: ["02","03"], downstream: ["02","08"], reason: "Corporate execution either accelerates or delays the S-curves" },
+  "10": { upstream: ["06","08"], downstream: ["01","03","07"], reason: "International org mandates set the policy envelope" },
+  "11": { upstream: ["02","09"], downstream: ["08","04"], reason: "Scientific breakthroughs (mRNA, materials) create new economic opportunities" },
+  "12": { upstream: ["01","06","07"], downstream: ["08","10"], reason: "Tail risks re-price everything — insurance, capital, policy" },
+  "13": { upstream: [], downstream: [], reason: "Synthesis — read all chapters before this" },
+  "14": { upstream: [], downstream: [], reason: "Prediction log — verifies chapter accuracy" },
+  "15": { upstream: ["06","02","08"], downstream: ["09"], reason: "Opportunity intel depends on geopolitics, tech ceilings, and capital" },
+  "00": { upstream: [], downstream: [], reason: "Methodology — foundational" },
+  "16": { upstream: [], downstream: [], reason: "Practice — consulting frame" }
+};
+
+const CROSS={
+  "01":["climate/tipping_points","ipcc_ar7","wmo"],"02":["semiconductors","quantum","compute_infra","foundation_models"],
+  "03":["fusion","grid","fission_smr"],"04":["tesla_ecosystem","autonomous","ev"],
+  "05":["spacex","geopolitics_space"],"06":["01_usa","02_china","04_eu","06_korea"],
+  "07":["autonomous_weapons","cyber","nuclear"],"08":["fiscal_policy","stablecoin_cbdc","labor_markets"],
+  "09":["ai_labs","cloud_hyperscalers","semiconductors"],"10":["ipcc_ar7","iea_weo","imf_weo","nato_ai"],
+  "11":["materials","medicine","biosecurity"],"12":["black_swans","sovereign_ai","interaction_effects"],
+  "13":["base_case","accelerated","delayed","bifurcated","climate_emergency"],
+  "14":["2026_predictions","2027_predictions","retrospective"],
+  "15":["opportunity_radar","investment_theses","kill_list"],"16":["consulting_products"]
+};
+const BASE_L={"01":"Climate becomes a fiscal & insurance question. Adaptation budgets normalised; ~+1.8–2.2°C path.","02":"Four streams converge unevenly: semis & DC scale, models rebalance, quantum reaches first apps.","03":"Renewables >50% of generation; SMR pilots run; fusion 1–2 commercial plants under build by 2034.","06":"Wider Yard locks in; managed bifurcation across AI, semis, payments and standards.","13":"Base remains base · 52% probability across the 2026–2035 window."};
+const UP_L={"01":"43% cut achieved by 2030 in a majority of G20; 1.5–1.8°C kept in reach.","02":"Three S-curves ignite together: fusion + quantum + near-AGI lift productivity into the macro.","03":"Fusion LCOE $80–100/MWh visible; SMR fleets scale; grid keeps up with AI load.","06":"Limited multilateral thaw on health, climate, AI safety; standards partially reconciled.","13":"Accelerated path replaces base · 20% probability."};
+const DN_L={"01":"Mitigation slips, NDC misses; 2.5–2.8°C path; chronic-emergency state structures.","02":"Compute / power bottlenecks bind; AI capex returns get pushed 3–5 years.","03":"Fusion #1 delayed; LCOE rises; adaptation drains capex from build-out.","06":"Bifurcation deepens into cyber & kinetic exchange; secondary-sanctions regime forms.","13":"Delayed or bifurcated path takes over · 18–10% probability."};
+
+/* ── STATE ── */
+const state = {scenario:"base", year:2030, chapter:"13"};
+
+/* ── SCENARIO PILLS ── */
+const pillsEl = document.getElementById("scen-pills");
+SCENARIOS.forEach(s=>{
+  const b = document.createElement("button");
+  b.className="scen-pill"; b.dataset.id=s.id;
+  b.style.setProperty("--c",s.color);
+  b.innerHTML=`<span class="sdot" style="background:${s.color}"></span>${s.label}<span style="color:var(--ink-4);margin-left:6px;font-size:9.5px;">${s.prob}</span>`;
+  if(s.id===state.scenario) b.setAttribute("aria-current","true");
+  b.addEventListener("click",()=>{state.scenario=s.id;render();});
+  pillsEl.appendChild(b);
+});
+
+/* ── YEAR SLIDER ── */
+const ySlider=document.getElementById("yearSlider");
+const yVal=document.getElementById("yearVal");
+const yReadable=document.getElementById("yearReadable");
+let msToastTimer=null;
+const msToast=document.getElementById('ms-toast');
+function showMsToast(year){
+  const scen=TIMELINE[state.scenario]||TIMELINE.base;
+  const entry=scen.find(d=>d.y===year);
+  if(!entry) return;
+  const activeS=SCENARIOS.find(s=>s.id===state.scenario);
+  msToast.innerHTML=`<span class="ms-year">${year}</span>${entry.t}<span class="ms-scen">${activeS.label}</span>`;
+  msToast.classList.add('show');
+  clearTimeout(msToastTimer);
+  msToastTimer=setTimeout(()=>msToast.classList.remove('show'),2500);
+}
+ySlider.addEventListener("input",e=>{
+  state.year=parseInt(e.target.value,10);
+  render();
+  showMsToast(state.year);
+});
+
+/* ── CHAPTER CARD TILT + SPOTLIGHT ── */
+function addTilt(el){
+  el.addEventListener("mousemove",e=>{
+    const r=el.getBoundingClientRect();
+    const mx=(e.clientX-r.left)/r.width;
+    const my=(e.clientY-r.top)/r.height;
+    el.style.setProperty("--mx",`${mx*100}%`);
+    el.style.setProperty("--my",`${my*100}%`);
+    el.style.transform=`perspective(900px) rotateX(${-(my-.5)*4}deg) rotateY(${(mx-.5)*4}deg)`;
+    el.style.transition="transform 80ms linear";
+  });
+  el.addEventListener("mouseleave",()=>{
+    el.style.transform="perspective(900px) rotateX(0deg) rotateY(0deg)";
+    el.style.transition="transform 400ms cubic-bezier(.16,1,.3,1)";
+  });
+}
+
+/* ── HEAT BAR HOVER ── */
+function addHeatHover(heatEl){
+  const items=Array.from(heatEl.querySelectorAll("i"));
+  heatEl.addEventListener("mouseenter",()=>{
+    items.forEach((it,i)=>{
+      setTimeout(()=>{it.style.opacity="1";it.style.background=it.classList.contains("on")?"var(--hot)":"var(--ink-3)";},i*40);
+    });
+  });
+  heatEl.addEventListener("mouseleave",()=>{
+    items.forEach(it=>{it.style.opacity="";it.style.background="";});
+  });
+}
+
+/* ── RENDER CHAPTERS ── */
+function chapHeat(w,si){
+  const seed=(w[si]||0)*10;let c="";
+  for(let i=0;i<10;i++) c+=`<i class="${i<(seed-(Math.sin(i*2.7)+1)*1.2)?'on':''}"></i>`;
+  return c;
+}
+function renderChapters(){
+  const si=SCENARIOS.findIndex(s=>s.id===state.scenario);
+  const im=INTERACTION_MAP[state.chapter]||{upstream:[],downstream:[]};
+  const activeS=SCENARIOS.find(s=>s.id===state.scenario);
+  document.getElementById("chapters").innerHTML=CHAPTERS.map(c=>{
+    const isActive=c.id===state.chapter;
+    const isUp=!isActive&&im.upstream.includes(c.id);
+    const isDn=!isActive&&im.downstream.includes(c.id);
+    const isDim=!isActive&&!isUp&&!isDn;
+    const cls=[isActive?'active':'',isUp?'ch-upstream':'',isDn?'ch-downstream':'',isDim?'ch-dim':''].filter(Boolean).join(' ');
+    const prevSig=(SIGNALS[c.id]||[])[0];
+    const prevScen=BASE_L[c.id]||c.desc||'';
+    const preview=`<div class="chap-preview">
+      <div style="font-size:9px;letter-spacing:.14em;color:var(--ink-4);text-transform:uppercase;margin-bottom:3px;">CH ${c.num}</div>
+      <div style="color:var(--ink);font-weight:500;font-size:10.5px;">${c.t}</div>
+      ${prevSig?`<div class="chap-preview-sig">⊙ ${prevSig.y} — ${prevSig.t.slice(0,60)}${prevSig.t.length>60?'…':''}</div>`:''}
+      <div class="chap-preview-scen" style="color:${activeS.color};">${activeS.label}: ${prevScen.slice(0,55)}${prevScen.length>55?'…':''}</div>
+    </div>`;
+    return `<div class="chap ${cls}" data-id="${c.id}">
+      <div class="chap-meta">
+        <span class="chap-id">CH ${c.num}</span>
+        <span class="heat">${chapHeat(c.weight,si)}</span>
+      </div>
+      <div class="chap-big-num">${c.num}</div>
+      <div>
+        <h3>${c.t}</h3>
+        <div class="ko-h3 ko">${c.ko}</div>
+      </div>
+      <div class="foot"><span>§ ${c.num}</span><span class="arr">↘</span></div>
+      ${preview}
+    </div>`;
+  }).join("");
+  document.querySelectorAll(".chap").forEach(el=>{
+    el.addEventListener("click",()=>{state.chapter=el.dataset.id;renderChapters();renderDetail();
+      setTimeout(()=>document.getElementById("detail").scrollIntoView({behavior:"smooth",block:"nearest"}),60);
+    });
+    addTilt(el);
+    const heatEl=el.querySelector(".heat");
+    if(heatEl) addHeatHover(heatEl);
+  });
+}
+
+/* ── RENDER NETWORK VIEW ── */
+function renderNetwork(){
+  const container=document.getElementById('net-view');
+  const W=container.clientWidth||900, H=Math.max(500, W*0.62);
+  container.style.height=H+'px';
+  const cx=W/2, cy=H/2, R=Math.min(W,H)*0.36;
+  const activeS=SCENARIOS.find(s=>s.id===state.scenario);
+
+  const ids=CHAPTERS.map(c=>c.id);
+  const pos={};
+  ids.forEach((id,i)=>{
+    const angle=(i/ids.length)*Math.PI*2 - Math.PI/2;
+    pos[id]={x:cx+R*Math.cos(angle), y:cy+R*Math.sin(angle)};
+  });
+
+  const edges=[];
+  ids.forEach(id=>{
+    const im=INTERACTION_MAP[id];
+    if(im) im.downstream.forEach(tid=>{
+      if(pos[tid]) edges.push({from:id,to:tid});
+    });
+  });
+
+  const im=INTERACTION_MAP[state.chapter]||{upstream:[],downstream:[]};
+
+  const edgeSVG=edges.map(e=>{
+    const f=pos[e.from],t=pos[e.to];
+    const isHot=e.from===state.chapter||e.to===state.chapter;
+    const isUp=e.to===state.chapter;
+    const color=isHot?(isUp?'#ffb454':'#79e08c'):'var(--line-2)';
+    const op=isHot?.8:.28;
+    const sw=isHot?1.5:0.8;
+    const mx=(f.x+t.x)/2+(t.y-f.y)*0.15;
+    const my=(f.y+t.y)/2-(t.x-f.x)*0.15;
+    return `<path d="M${f.x},${f.y} Q${mx},${my} ${t.x},${t.y}" fill="none" stroke="${color}" stroke-width="${sw}" opacity="${op}" marker-end="url(#arr)"/>`;
+  }).join('');
+
+  const nodeSVG=ids.map(id=>{
+    const c=CHAPTERS.find(x=>x.id===id);
+    if(!c) return '';
+    const p=pos[id];
+    const isActive=id===state.chapter;
+    const isUp=im.upstream.includes(id);
+    const isDn=im.downstream.includes(id);
+    const r=isActive?22:isUp||isDn?16:12;
+    const fill=isActive?'var(--bg-2)':isUp?'rgba(255,180,84,.08)':isDn?'rgba(121,224,140,.08)':'var(--bg-1)';
+    const stroke=isActive?'var(--hot)':isUp?'#ffb454':isDn?'#79e08c':'var(--line)';
+    const sw=isActive?2:isUp||isDn?1.5:1;
+    const numColor=isActive?'var(--hot)':isUp?'#ffb454':isDn?'#79e08c':'var(--ink-3)';
+    return `<g class="net-node-g${isActive?' active':''}" data-id="${id}" transform="translate(${p.x},${p.y})">
+      <circle r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}" class="net-node-circle"/>
+      <text text-anchor="middle" dy=".35em" font-family="'Fraunces',serif" font-size="${isActive?13:10}" fill="${numColor}" font-style="italic" class="net-node-num">${c.num}</text>
+      <text text-anchor="middle" dy="${r+12}" font-family="var(--mono)" font-size="8" fill="var(--ink-4)" class="net-node-label">${c.t.split(' ').slice(0,2).join(' ')}</text>
+    </g>`;
+  }).join('');
+
+  container.innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
+    <defs>
+      <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="var(--ink-4)" opacity=".5"/>
+      </marker>
+    </defs>
+    ${edgeSVG}
+    ${nodeSVG}
+  </svg>`;
+
+  container.querySelectorAll('.net-node-g').forEach(el=>{
+    el.addEventListener('click',()=>{
+      state.chapter=el.dataset.id;
+      renderNetwork();
+      renderDetail();
+      setTimeout(()=>document.getElementById('detail').scrollIntoView({behavior:'smooth',block:'nearest'}),60);
+    });
+  });
+}
+
+/* ── VIEW TOGGLE ── */
+document.getElementById('vtGrid').addEventListener('click',()=>{
+  document.getElementById('chapters').style.display='';
+  document.getElementById('net-view').style.display='none';
+  document.getElementById('vtGrid').classList.add('active');
+  document.getElementById('vtNet').classList.remove('active');
+});
+document.getElementById('vtNet').addEventListener('click',()=>{
+  document.getElementById('chapters').style.display='none';
+  document.getElementById('net-view').style.display='block';
+  document.getElementById('vtGrid').classList.remove('active');
+  document.getElementById('vtNet').classList.add('active');
+  renderNetwork();
+});
+
+/* ── RENDER TIMELINE (visual matrix) ── */
+let prevYear = state.year;
+function renderTimeline(){
+  const tl=document.getElementById("timeline");
+  const yrs=Array.from({length:10},(_,i)=>2026+i);
+  prevYear=state.year;
+  const head=`<div class="tlv-head">
+    <div>Scenario</div>
+    ${yrs.map(y=>`<div class="yh ${y===state.year?'ya':''}">${y}</div>`).join("")}
+  </div>`;
+  const rows=SCENARIOS.map(s=>{
+    const isActive=s.id===state.scenario;
+    const cells=TIMELINE[s.id].map(d=>{
+      const isYr=d.y===state.year;
+      const h=isActive?(isYr?46:20):12;
+      const op=isActive?(isYr?.92:.38):.22;
+      return `<div class="tlv-cell ${isYr?'ya':''}">
+        <div class="tlv-bar" style="height:${h}px;background:${s.color};opacity:${op};"></div>
+        <div class="tlv-tip"><b style="color:${s.color};font-size:9px;letter-spacing:.1em;">${d.y}</b><br>${d.t}</div>
+      </div>`;
+    }).join("");
+    return `<div class="tlv-row" style="opacity:${isActive?'1':'.36'}">
+      <div class="tlv-label">
+        <div class="ll">
+          <span style="width:7px;height:7px;border-radius:50%;background:${s.color};box-shadow:0 0 6px ${s.color};flex-shrink:0;display:inline-block;"></span>
+          ${s.label}
+        </div>
+        <small class="ko">${s.ko} · ${s.prob}</small>
+      </div>
+      ${cells}
+    </div>`;
+  }).join("");
+  tl.innerHTML=`<div class="tlv-wrap">${head}${rows}</div>`;
+}
+
+/* ── RENDER DETAIL ── */
+function renderDetail(){
+  const c=CHAPTERS.find(x=>x.id===state.chapter);
+  const sigs=SIGNALS[c.id]||[
+    {y:2026,t:`${c.t} — baseline established`,sub:"v0.8 corpus",c:"m"},
+    {y:2030,t:`${c.t} — mid-decade re-baseline`,sub:"scheduled",c:"m"},
+    {y:2035,t:`${c.t} — horizon evaluation`,sub:"prediction log",c:"l"}
+  ];
+  const refs=(CROSS[c.id]||["13_scenarios","10_intl_orgs","00_foundations"]).slice(0,6);
+  const det=document.getElementById("detail");
+  det.classList.remove("open");
+
+  const activeS=SCENARIOS.find(s=>s.id===state.scenario);
+  const oneliner=state.scenario==="accelerated"?(UP_L[c.id]||"Accelerated path: assumptions resolve favourably.")
+                :state.scenario==="delayed"||state.scenario==="bifurcated"?(DN_L[c.id]||"Delayed path: shocks compound.")
+                :(BASE_L[c.id]||"Most-likely trajectory between 2026–2035.");
+
+  const scenProbs=[
+    {name:"Base",    pct:52,color:"#ffb454",text:BASE_L[c.id]||""},
+    {name:"Upside",  pct:20,color:"#79e08c",text:UP_L[c.id]||""},
+    {name:"Downside",pct:18,color:"#74d2ff",text:DN_L[c.id]||""},
+  ];
+
+  det.innerHTML=`
+    <div class="dl">
+      <div class="det-eyebrow">CH ${c.num} · ${c.ko}</div>
+      <h3 class="det-title">${c.t}</h3>
+      <p class="det-summary">${SUMMARIES[c.id]||c.desc}</p>
+
+      <div class="prob-section">
+        <div class="prob-lbl">Scenario outlook · independent probabilities</div>
+        ${scenProbs.map(p=>`
+          <div class="prob-row">
+            <span class="prob-name">${p.name}</span>
+            <div class="prob-track"><div class="prob-fill" style="width:0%;background:${p.color};" data-w="${p.pct}"></div></div>
+            <span class="prob-pct">${p.pct}%</span>
+          </div>
+        `).join("")}
+      </div>
+
+      <div class="spark-wrap">
+        <svg class="spark-svg" viewBox="0 0 120 36" preserveAspectRatio="none">
+          <rect x="2"  y="${36 - 52*36/100}" width="32" height="${52*36/100}" fill="#ffb454" opacity=".85" rx="1"/>
+          <rect x="44" y="${36 - 20*36/100}" width="32" height="${20*36/100}" fill="#79e08c" opacity=".85" rx="1"/>
+          <rect x="86" y="${36 - 18*36/100}" width="32" height="${18*36/100}" fill="#74d2ff" opacity=".85" rx="1"/>
+          <text x="18"  y="34" text-anchor="middle" fill="#ffb454" font-size="6" font-family="monospace">52%</text>
+          <text x="60"  y="34" text-anchor="middle" fill="#79e08c" font-size="6" font-family="monospace">20%</text>
+          <text x="102" y="34" text-anchor="middle" fill="#74d2ff" font-size="6" font-family="monospace">18%</text>
+        </svg>
+        <div class="spark-labels">
+          <span>Base</span><span>Up</span><span>Down</span>
+        </div>
+      </div>
+
+      <div class="scen-callout">
+        <strong style="color:${activeS.color};">${activeS.label}</strong>${oneliner}
+      </div>
+    </div>
+
+    <div class="dr">
+      <div class="sig-section">
+        <div class="sig-head">Signals to watch</div>
+        <div class="sig-vtl">
+          ${sigs.map(s=>`
+            <div class="sig-item c${s.c}">
+              <div class="sig-dot"></div>
+              <div class="sig-yr">
+                <span>${s.y}</span>
+                <span class="sig-conf ${s.c}">${s.c==='h'?'HIGH':s.c==='m'?'MED':'LOW'}</span>
+              </div>
+              <div class="sig-text">${s.t}</div>
+              <div class="sig-src">${s.sub}</div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+      <div class="xrefs">
+        <div class="xlabel">Cross-references</div>
+        <div class="xref-chips">${refs.map(x=>`<span class="chip">${x}</span>`).join("")}</div>
+      </div>
+      <div class="det-actions">
+        <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">↗ Open CH ${c.num} in repo</a>
+        <a href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20signal%20subscription">↗ Subscribe to signals</a>
+      </div>
+    </div>
+  `;
+
+  /* append threads panel spanning full width below the 2-col grid */
+  const im = INTERACTION_MAP[c.id];
+  if(im){
+    const upChips = im.upstream.length
+      ? im.upstream.map(id=>{
+          const ch=CHAPTERS.find(x=>x.id===id);
+          if(!ch) return '';
+          const entry=INTERACTION_MAP[id];
+          const power=entry?entry.downstream.length:0;
+          const cls=power>=4?'tc-hot':power>=2?'tc-mid':'';
+          const badge=power>0?`<span class="tc-count">↓${power}</span>`:'';
+          return `<div class="thread-chip ${cls}" data-cid="${id}"><span class="tc-num">CH ${ch.num}</span>${ch.t}${badge}</div>`;
+        }).join('')
+      : '<div class="threads-none">No upstream dependencies</div>';
+    const dnChips = im.downstream.length
+      ? im.downstream.map(id=>{
+          const ch=CHAPTERS.find(x=>x.id===id);
+          if(!ch) return '';
+          const entry=INTERACTION_MAP[id];
+          const depth=entry?entry.upstream.length:0;
+          const cls=depth>=3?'tc-hot':depth>=2?'tc-mid':'';
+          const badge=depth>0?`<span class="tc-count">↑${depth}</span>`:'';
+          return `<div class="thread-chip ${cls}" data-cid="${id}"><span class="tc-num">CH ${ch.num}</span>${ch.t}${badge}</div>`;
+        }).join('')
+      : '<div class="threads-none">No downstream impact</div>';
+    const threadsHTML = `<div class="threads" style="grid-column:1/-1;">
+      <div class="threads-head">Convergence Threads</div>
+      <div class="threads-body">
+        <div class="threads-col">
+          <div class="threads-col-label">← Upstream (depends on)</div>
+          ${upChips}
+        </div>
+        <div class="threads-col-mid">
+          <div style="text-align:center;">
+            <div style="font-family:'Fraunces',serif;font-size:22px;font-weight:200;color:var(--hot);letter-spacing:-.02em;">${c.num}</div>
+            <div style="font-size:8.5px;color:var(--ink-4);letter-spacing:.1em;text-transform:uppercase;margin-top:2px;">${c.t}</div>
+          </div>
+        </div>
+        <div class="threads-col">
+          <div class="threads-col-label">→ Downstream (enables)</div>
+          ${dnChips}
+        </div>
+      </div>
+      <div class="threads-reason">${im.reason}</div>
+    </div>`;
+    det.insertAdjacentHTML('beforeend', threadsHTML);
+    det.querySelectorAll('.thread-chip').forEach(el=>{
+      el.addEventListener('click',()=>{state.chapter=el.dataset.cid;renderChapters();renderDetail();setTimeout(()=>document.getElementById('detail').scrollIntoView({behavior:'smooth',block:'nearest'}),60);});
+    });
+  }
+
+  /* animate probability bars after paint */
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    det.classList.add("open");
+    det.querySelectorAll(".prob-fill").forEach(el=>{
+      el.style.width=el.dataset.w+"%";
+    });
+  }));
+}
+
+/* ── UNIFIED DOMAIN ANALYSER ── */
+(function(){
+  const PROVIDERS = {
+    anthropic:  { label:'Anthropic',       placeholder:'sk-ant-api03-…', models:[{id:'claude-haiku-4-5-20251001',label:'Claude Haiku 4.5'},{id:'claude-sonnet-4-6',label:'Claude Sonnet 4.6'},{id:'claude-opus-4-7',label:'Claude Opus 4.7'}] },
+    openrouter: { label:'OpenRouter',      placeholder:'sk-or-…',        models:[{id:'anthropic/claude-haiku',label:'Claude Haiku (OR)'},{id:'google/gemini-2.0-flash-001',label:'Gemini 2.0 Flash (OR)'},{id:'openai/gpt-4o-mini',label:'GPT-4o Mini (OR)'},{id:'meta-llama/llama-3.1-8b-instruct',label:'Llama 3.1 8B (OR)'}] },
+    google:     { label:'Google AI Studio',placeholder:'AIzaSy…',        models:[{id:'gemini-2.0-flash',label:'Gemini 2.0 Flash'},{id:'gemini-1.5-flash',label:'Gemini 1.5 Flash'},{id:'gemini-1.5-pro',label:'Gemini 1.5 Pro'}] },
+    openai:     { label:'OpenAI',          placeholder:'sk-…',           models:[{id:'gpt-4o-mini',label:'GPT-4o Mini'},{id:'gpt-4o',label:'GPT-4o'},{id:'gpt-4.1-mini',label:'GPT-4.1 Mini'}] }
+  };
+
+  const provSel  = document.getElementById('aiProvider');
+  const modSel   = document.getElementById('aiModel');
+  const keyInput = document.getElementById('aiKey');
+  const keySave  = document.getElementById('aiKeySave');
+  const roadmap  = document.getElementById('aiRoadmap');
+  const quickBtn = document.getElementById('ydBtn');
+  const aiBtn    = document.getElementById('aiAnalyse');
+  const out      = document.getElementById('ydOut');
+  const badge    = document.getElementById('aiBadge');
+  const domInput = document.getElementById('ydInput');
+
+  const lsKey = p => 'e2035_key_'+p;
+  const lsMod = p => 'e2035_mod_'+p;
+
+  function switchProvider(p){
+    const cfg = PROVIDERS[p];
+    modSel.innerHTML = cfg.models.map(m=>`<option value="${m.id}">${m.label}</option>`).join('');
+    const sm = localStorage.getItem(lsMod(p));
+    if(sm && cfg.models.find(m=>m.id===sm)) modSel.value = sm;
+    keyInput.value = localStorage.getItem(lsKey(p)) || (p==='anthropic'?localStorage.getItem('e2035_apikey')||'':'');
+    keyInput.placeholder = cfg.placeholder;
+    if(badge) badge.textContent = cfg.label+' · Analyse →';
+  }
+
+  provSel.addEventListener('change',()=>{ localStorage.setItem('e2035_provider',provSel.value); switchProvider(provSel.value); });
+  modSel.addEventListener('change',()=>{ localStorage.setItem(lsMod(provSel.value),modSel.value); });
+  keySave.addEventListener('click',()=>{
+    const v=keyInput.value.trim();
+    if(!v){out.innerHTML='<span class="ai-err">No key entered.</span>';return;}
+    localStorage.setItem(lsKey(provSel.value),v);
+    keySave.textContent='Saved ✓'; setTimeout(()=>{keySave.textContent='Save';},1800);
+  });
+
+  /* Enhancement B — parse "CH 02" / "CH 13" patterns into clickable chips */
+  function parseChLinks(text){
+    return text.replace(/CH\s*(\d{2})/g,(m,num)=>{
+      const ch=CHAPTERS.find(c=>c.num===num||c.id===num||c.id===num.replace(/^0/,''));
+      if(!ch) return m;
+      return `<span class="ch-link" data-cid="${ch.id}" title="${ch.t}">${m}</span>`;
+    });
+  }
+
+  /* Quick map rules */
+  const RULES=[
+    {k:["semi","chip","fab","tsmc","wafer","반도체"],        chs:["02","09","06"],scen:"bifurcated",ch1:"Taiwan-strait single-point exposure",ch2:"Equipment & EDA access"},
+    {k:["energy","grid","power","fusion","smr","solar","battery","에너지"],chs:["03","02","08"],scen:"base",ch1:"Permitting & transmission lead-time",ch2:"AI-DC + electrification load stack"},
+    {k:["pharma","drug","health","medic","bio","clinical","제약"],chs:["11","02","10"],scen:"accelerated",ch1:"AI-designed drug pipeline mgmt",ch2:"Regulator + payer alignment"},
+    {k:["auto","ev","car","mobility","ride","tesla","자동차"],chs:["04","09","02"],scen:"base",ch1:"Battery cost vs autonomy curve",ch2:"Cross-bloc supply of cells & magnets"},
+    {k:["space","launch","satellite","spacex","orbit","우주"],chs:["05","07","09"],scen:"accelerated",ch1:"Launch cadence & insurance",ch2:"Dual-use export controls"},
+    {k:["bank","finance","cbdc","stablecoin","payment","금융"],chs:["08","06","10"],scen:"bifurcated",ch1:"Non-dollar settlement migration",ch2:"PQC migration timing"},
+    {k:["climate","carbon","esg","insurance","catastrophe","기후"],chs:["01","08","11"],scen:"emergency",ch1:"Re-rating of risk capital",ch2:"Adaptation capex & sovereign limits"},
+    {k:["defense","military","cyber","nato","weapon","방산"],chs:["07","06","09"],scen:"delayed",ch1:"Autonomy + cyber compounding",ch2:"Industrial-base scale-up gap"},
+    {k:["sovereign","national","government","policy","regul","정책"],chs:["06","10","12"],scen:"bifurcated",ch1:"Sovereign AI stack pick",ch2:"Standards reciprocity"},
+    {k:["ship","port","maritime","logistic","trade","조선","해운"],chs:["06","08","04"],scen:"delayed",ch1:"Choke-point reroute cost",ch2:"Industrial subsidy regime"},
+    {k:["korea","kor","seoul","한국","ksa","saudi","uae","japan","india"],chs:["06","09","15"],scen:"base",ch1:"Bloc-positioning ambiguity",ch2:"Talent & energy supply"},
+    {k:["ai","model","llm","agent","generative","인공지능"],chs:["02","09","12"],scen:"accelerated",ch1:"Compute & data ceiling",ch2:"Trust, safety & regulation"},
+    {k:["law","legal","compliance","규정","준수"],chs:["06","10","15"],scen:"bifurcated",ch1:"Cross-jurisdiction AI liability",ch2:"EU AI Act compliance window"},
+  ];
+
+  quickBtn.addEventListener('click',()=>{
+    const q=(domInput.value||roadmap.value||'').toLowerCase();
+    if(!q.trim()){out.innerHTML='<span class="ai-err">Enter a domain above.</span>';return;}
+    const pick=RULES.find(r=>r.k.some(k=>q.includes(k)))||{chs:["00","13","15"],scen:"base",ch1:"Domain-context discovery",ch2:"Source-policy adoption"};
+    const chs=pick.chs.map(id=>CHAPTERS.find(c=>c.id===id)).filter(Boolean);
+    const scen=SCENARIOS.find(s=>s.id===pick.scen);
+    out.innerHTML=`<div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px;">
+      ${chs.map(c=>`<span class="chip" style="color:var(--ink);border-color:var(--line-2);">CH ${c.num} · ${c.t}</span>`).join("")}
+      <span class="chip" style="border-color:${scen.color};color:${scen.color};">${scen.label} (${scen.prob})</span>
+    </div>
+    <div style="color:var(--ink-2);font-size:11.5px;">Most-exposed scenario: <b style="color:${scen.color}">${scen.label}</b>. Two challenges:
+      <ul><li><b>${pick.ch1}</b></li><li><b>${pick.ch2}</b></li></ul>
+      <span style="color:var(--ink-3);font-size:10px;">// Open the matching chapters above · or run AI Analyse for deep synthesis.</span>
+    </div>`;
+  });
+
+  domInput.addEventListener('keypress',e=>{if(e.key==='Enter') quickBtn.click();});
+
+  const SYS=`You are a strategic foresight analyst for EARTH/2035 — a source-grounded corpus covering 16 domains from 2026 to 2035. Domains: 01 Climate & planetary boundaries | 02 AI, semiconductors & compute | 03 Energy systems | 04 Mobility & EVs | 05 Space economy | 06 Geopolitics & great-power competition | 07 Defense & security | 08 Finance & monetary systems | 09 Supply chains & manufacturing | 10 Regulation & governance | 11 Life sciences & health | 12 Labor & society | 13 Real estate & infrastructure | 14 Food & agriculture | 15 Opportunity intelligence | 16 Wildcards & tail risks. Scenarios: Base 52%, Accelerated 20%, Delayed 18%, Bifurcated 10%, Climate Emergency (tail). Given the user's domain roadmap: (1) which domains (reference as CH 01 etc.) intersect most critically, (2) which scenario the plan implicitly assumes, (3) top 3 corpus milestones that threaten or enable the plan, (4) one decision to reconsider. Specific, concise, bullet points, under 350 words. Reference chapter numbers as CH 02, CH 06 etc. so they can be made interactive.`;
+  const USER_MSG=t=>`My domain roadmap:\n\n${t}\n\nAnalyse this against the EARTH/2035 corpus.`;
+
+  async function doAnthropic(key,model,text){
+    const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+      headers:{'content-type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model,max_tokens:600,stream:true,system:SYS,messages:[{role:'user',content:USER_MSG(text)}]})});
+    if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(`${r.status}: ${(e.error||{}).message||r.statusText}`);}
+    return {r,chunk:ev=>ev.type==='content_block_delta'&&ev.delta?.type==='text_delta'?ev.delta.text:null};
+  }
+  async function doOAICompat(url,key,model,text,extra={}){
+    const r=await fetch(url,{method:'POST',
+      headers:{'content-type':'application/json','Authorization':'Bearer '+key,...extra},
+      body:JSON.stringify({model,max_tokens:600,stream:true,messages:[{role:'system',content:SYS},{role:'user',content:USER_MSG(text)}]})});
+    if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(`${r.status}: ${(e.error||{}).message||r.statusText}`);}
+    return {r,chunk:ev=>(ev.choices?.[0]?.delta?.content)||null};
+  }
+  async function doGoogle(key,model,text){
+    const r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${key}`,{method:'POST',
+      headers:{'content-type':'application/json'},
+      body:JSON.stringify({system_instruction:{parts:[{text:SYS}]},contents:[{role:'user',parts:[{text:USER_MSG(text)}]}]})});
+    if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error(`${r.status}: ${(e.error||{}).message||r.statusText}`);}
+    return {r,chunk:ev=>{try{return ev.candidates[0].content.parts[0].text;}catch(e){return null;}}};
+  }
+
+  async function streamResponse({r,chunk}){
+    const reader=r.body.getReader(),dec=new TextDecoder();
+    let buf='',full='';
+    out.innerHTML='';
+    const cur=document.createElement('span');cur.className='ai-cursor';cur.textContent=' ';out.appendChild(cur);
+    while(true){
+      const {done,value}=await reader.read();if(done) break;
+      buf+=dec.decode(value,{stream:true});
+      const lines=buf.split('\n');buf=lines.pop();
+      for(const line of lines){
+        if(!line.startsWith('data: ')) continue;
+        const d=line.slice(6).trim();if(d==='[DONE]') continue;
+        try{const ev=JSON.parse(d),t=chunk(ev);if(t){full+=t;out.textContent=full;out.appendChild(cur);out.scrollTop=out.scrollHeight;}}catch(e){}
+      }
+    }
+    cur.remove();
+    /* Enhancement B: convert CH references to clickable chips */
+    out.innerHTML=parseChLinks(full);
+    out.querySelectorAll('.ch-link').forEach(el=>{
+      el.addEventListener('click',()=>{
+        state.chapter=el.dataset.cid;
+        renderChapters();renderDetail();
+        setTimeout(()=>document.getElementById('detail').scrollIntoView({behavior:'smooth',block:'nearest'}),60);
+      });
+    });
+  }
+
+  aiBtn.addEventListener('click',async()=>{
+    const p=provSel.value;
+    const key=(keyInput.value.trim())||localStorage.getItem(lsKey(p))||'';
+    if(!key){out.innerHTML=`<span class="ai-err">Enter and save your ${PROVIDERS[p].label} API key.</span>`;return;}
+    const text=(roadmap.value.trim())||(domInput.value.trim());
+    if(!text){out.innerHTML='<span class="ai-err">Paste a roadmap or enter a domain to analyse.</span>';return;}
+    const model=modSel.value;
+    aiBtn.disabled=true;out.innerHTML='<span class="ai-cursor"> </span>';
+    try{
+      let handle;
+      if(p==='anthropic') handle=await doAnthropic(key,model,text);
+      else if(p==='openrouter') handle=await doOAICompat('https://openrouter.ai/api/v1/chat/completions',key,model,text,{'HTTP-Referer':'https://earth2035.foresight','X-Title':'EARTH/2035'});
+      else if(p==='google') handle=await doGoogle(key,model,text);
+      else handle=await doOAICompat('https://api.openai.com/v1/chat/completions',key,model,text);
+      await streamResponse(handle);
+    }catch(e){out.innerHTML=`<span class="ai-err">Error: ${e.message}</span>`;}
+    aiBtn.disabled=false;
+  });
+
+  const initProv=localStorage.getItem('e2035_provider')||'anthropic';
+  provSel.value=initProv;
+  switchProvider(initProv);
+})();
+
+/* ── ROOT RENDER ── */
+function render(){
+  document.querySelectorAll(".scen-pill").forEach(p=>{
+    const active=p.dataset.id===state.scenario;
+    if(active) p.setAttribute("aria-current","true"); else p.removeAttribute("aria-current");
+  });
+  yVal.textContent=state.year; yReadable.textContent=state.year; ySlider.value=state.year;
+  renderTimeline(); renderChapters(); renderDetail();
+}
+render();
+</script>
+</body>
+</html>

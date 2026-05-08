@@ -13,6 +13,8 @@ Last updated: 2026-05-09
 - [x] GitHub에 missing real-economy sector PRD issue와 sector vertical-slice issues 생성
 - [x] PRD planning issue `#1`은 child sector backlog `#2-#11` 생성 후 close하여 stale local PRD markdown 대신 GitHub 기록으로 보존
 - [ ] 검증 갭: `internal_link_audit.py`, `freshness_audit.py`는 통과했으나 `structure_audit.py`, `source_audit.py`는 기존 non-template 문서들 때문에 실패 중
+- [x] TDD-style `sector_issue_audit.py` 추가: issue #2-#12의 expected files/content/source/annual rows를 red→green으로 검증
+- [x] Open sector/feature issues #2-#12 구현 파일 생성 후 Closes 커밋 준비
 
 ## 2026-04-26 QA pass
 - [x] Local OMX/OMC runtime state excluded from git status via `.git/info/exclude`

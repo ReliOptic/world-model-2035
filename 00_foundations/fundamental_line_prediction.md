@@ -216,6 +216,22 @@ divergence_pct = (current_implied_expectation - fundamental_line_value) / fundam
 signal = threshold(divergence_pct)
 ```
 
+
+## 1년 단위 전망 (2026->2035)
+
+| 연도 | Base 마일스톤 | Upside 시나리오 | Downside 시나리오 | 확률 |
+|---|---|---|---|---|
+| 2026 | 기준 데이터와 2026 현재 병목을 확정한다 | 정책·CAPEX 공시가 조기 정렬된다 | 데이터 공백으로 baseline이 provisional에 머문다 | 82% |
+| 2027 | 선행지표를 분기별로 추적한다 | 병목 완화 투자가 계획보다 빠르게 집행된다 | 금리·허가·공급망 지연이 누적된다 | 78% |
+| 2028 | 2030 checkpoint의 1차 검증이 가능해진다 | 생산성·자동화가 capacity score를 끌어올린다 | 비용 상승이 demand score를 깎는다 | 62% |
+| 2029 | Base path와 실제 투자의 괴리율을 산출한다 | 정책 보조와 민간 CAPEX가 동시에 증가한다 | 지정학 분절로 조달 비용이 상승한다 | 55% |
+| 2030 | 2035 line의 중간 checkpoint를 재보정한다 | 병목 투자가 실물 capacity로 전환된다 | 주요 프로젝트가 1-2년 지연된다 | 48% |
+| 2031 | 부족한 하위 병목을 별도 issue로 분해한다 | 표준화와 학습효과가 단가를 낮춘다 | 노동·인허가가 계속 binding constraint다 | 42% |
+| 2032 | Base와 Downside의 분기 여부가 관측된다 | 공급망 이중화가 resilience를 높인다 | 자본비용이 높은 상태로 유지된다 | 38% |
+| 2033 | 2035 physical ceiling을 재계산한다 | 병목 완화가 demand growth를 따라잡는다 | shock 시나리오가 Base를 압박한다 | 34% |
+| 2034 | 2035 직전 line을 확정한다 | 확장 투자가 다음 10년 line으로 넘어간다 | 과잉 기대가 asset price divergence를 키운다 | 30% |
+| 2035 | Base line과 실제 결과를 retrospective로 평가한다 | Upside band가 실현되어 capacity 상단을 검증한다 | Downside band가 실현되어 bottleneck model을 강화한다 | 26% |
+
 ## Implementation boundary
 
 This method is document-native first. A later software implementation may move the schema into CSV, JSON, or Python, but it must preserve:

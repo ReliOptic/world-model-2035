@@ -9,6 +9,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 EXCLUDED_DIRS = {".git", ".omx", ".omc", "node_modules", "dist", "build", ".cache", ".github"}
 GLOBAL_EXCLUDED_FILES = {
+    "AGENTS.md",
     "README.md",
     "METHODOLOGY.md",
     "CLAUDE.md",

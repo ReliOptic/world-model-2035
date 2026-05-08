@@ -28,6 +28,7 @@ HEADER_RE = re.compile(
 
 EXCLUDED_DIRS = {".git", "node_modules", ".github", ".omc"}
 EXCLUDED_FILES = {
+    "AGENTS.md",
     "README.md",
     "METHODOLOGY.md",
     "CLAUDE.md",

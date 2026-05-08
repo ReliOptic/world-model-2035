@@ -1,11 +1,18 @@
 # Progress
 
-Last updated: 2026-04-26
+Last updated: 2026-05-09
 
 ## Session handoff
 - [x] `2026-04-24` 기준 `🔴 스켈레톤 0개` 달성. 전체 블루프린트 파일이 🟡 source-backed 상태로 전환 완료
 - [x] 소스 백업 완료 파일 수: `~240`개 (템플릿·브리프 제외 모든 콘텐츠 파일)
 - [ ] 다음 세션: 확률 열 분산 규칙(`≥2 >75% AND ≥2 <40%`) 전체 파일 재검증, 관측된 예측 결과(P26-01 등)의 `14_predictions_log/2026_predictions.md` 갱신
+
+## 2026-05-09 issue-driven sector workflow
+- [x] CONTRIBUTING에 PRD issue → sector issue → audit → closed issue → commit trailer 운영 방식을 추가
+- [x] AGENTS.md에 에이전트용 repo-local 요약 규칙 추가
+- [x] GitHub에 missing real-economy sector PRD issue와 sector vertical-slice issues 생성
+- [x] PRD planning issue `#1`은 child sector backlog `#2-#11` 생성 후 close하여 stale local PRD markdown 대신 GitHub 기록으로 보존
+- [ ] 검증 갭: `internal_link_audit.py`, `freshness_audit.py`는 통과했으나 `structure_audit.py`, `source_audit.py`는 기존 non-template 문서들 때문에 실패 중
 
 ## 2026-04-26 QA pass
 - [x] Local OMX/OMC runtime state excluded from git status via `.git/info/exclude`

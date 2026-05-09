@@ -169,4 +169,6 @@ Last updated: 2026-05-09
 - [x] Previous UX child issues `#16-#20` marked with stale/insufficient outcome comments: technically passed audits, but failed product comprehension.
 - [x] Opened remodel PRD `#21`: the app must make the fundamental line and divergence visually primary.
 - [x] Opened design-first child issues `#22-#25` for visual metaphor, above-the-fold composition, interaction model, and remodel UX audit gates.
-- [ ] Implementation is intentionally blocked until design acceptance criteria are resolved.
+- [x] Closed design-first child issues `#22-#25` with repo-native design notes under `docs/design/`.
+- [x] Added `flp_remodel_design_audit.py` as the TDD gate for closing the design package.
+- [ ] Implementation remains intentionally blocked until a new implementation issue uses the remodel UX audit gates.

@@ -44,6 +44,8 @@
 4. 관련 산업·에너지·지정학 문서를 함께 읽어 한 부문의 전망이 다른 부문 병목에 막히는지 확인한다.
 5. 주장을 인용하거나 의사결정에 쓰기 전, 문서 하단의 `정보 출처`와 신선도 메타데이터를 확인한다.
 
+행동 경로가 필요하면 [`onboarding/reader_contributor_analyst_paths.md`](onboarding/reader_contributor_analyst_paths.md)를 먼저 선택한다. repo entry 기준 경로는 `docs/onboarding/reader_contributor_analyst_paths.md`다. 특정 섹터를 읽거나 고칠 때는 [`onboarding/sector_how_to_use_template.md`](onboarding/sector_how_to_use_template.md)를 기준으로 현재 상태, 공식 로드맵, 병목, 예측 후보를 확인한다.
+
 ## 예측 로그 활용
 [`../14_predictions_log/2026_predictions.md`](../14_predictions_log/2026_predictions.md)는 예측 품질을 사후 평가하기 위한 핵심 문서다.
 
@@ -105,6 +107,9 @@
 - [`../00_foundations/axioms.md`](../00_foundations/axioms.md)
 - [`../00_foundations/biases.md`](../00_foundations/biases.md)
 - [`../14_predictions_log/template.md`](../14_predictions_log/template.md)
+- [`onboarding/reader_contributor_analyst_paths.md`](onboarding/reader_contributor_analyst_paths.md)
+- [`onboarding/sector_how_to_use_template.md`](onboarding/sector_how_to_use_template.md)
+- [`onboarding/close_evidence_checklist.md`](onboarding/close_evidence_checklist.md)
 
 ## 정보 출처
 - IPCC, AR6 Synthesis Report: https://www.ipcc.ch/report/ar6/syr/ [접근: 2026-05-09]

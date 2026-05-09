@@ -172,3 +172,10 @@ Last updated: 2026-05-09
 - [x] Closed design-first child issues `#22-#25` with repo-native design notes under `docs/design/`.
 - [x] Added `flp_remodel_design_audit.py` as the TDD gate for closing the design package.
 - [ ] Implementation remains intentionally blocked until a new implementation issue uses the remodel UX audit gates.
+
+## 2026-05-09 Onboarding behavior-system PR track
+- [x] Opened parent issue `#31` and child issues `#32-#41` for turning onboarding into a behavior system.
+- [x] Added RED/GREEN onboarding audits for behavior gates and cross-file drift.
+- [x] Added reader/contributor/analyst paths, sector-use template, domain protocols, failure modes, and close evidence checklist.
+- [x] Added Pages navigation design notes separating the World Model landing page from the FLP pilot viewer.
+- [ ] Close `#31-#41` through the PR merge that lands this branch.

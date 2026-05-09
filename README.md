@@ -25,6 +25,9 @@ The project tracks how that convergence changes climate science, energy systems,
 
 ## Starting points
 - [Onboarding and advisory guide](docs/user_guide_advisory_report.md)
+- [Onboarding paths](docs/onboarding/reader_contributor_analyst_paths.md)
+- [Sector-use template](docs/onboarding/sector_how_to_use_template.md)
+- [Close evidence checklist](docs/onboarding/close_evidence_checklist.md)
 - [METHODOLOGY.md](METHODOLOGY.md)
 - [progress.md](progress.md)
 - [00_foundations/axioms.md](00_foundations/axioms.md)
@@ -52,4 +55,3 @@ The repository is now in a **v0.8 full-draft corpus** state. The blueprint-level
 - normalize any files that still deviate from the annual-forecast template
 - resolve prediction-log entries when their evaluation windows close
 - promote the highest-risk domains from first-pass draft to reviewed synthesis
-

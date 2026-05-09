@@ -63,6 +63,8 @@ def is_forecast(path: Path) -> bool:
         return False
     if rel.startswith("docs/design/"):
         return False
+    if rel.startswith("docs/onboarding/"):
+        return False
     return True
 
 

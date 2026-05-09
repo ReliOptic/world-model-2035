@@ -20,6 +20,9 @@
 ## Operational rule
 - Start with the [onboarding and advisory guide](docs/user_guide_advisory_report.md)
   before opening or updating a workstream.
+- Follow the [reader/contributor/analyst paths](docs/onboarding/reader_contributor_analyst_paths.md)
+  and the [close evidence checklist](docs/onboarding/close_evidence_checklist.md);
+  every close should include changed files, audit evidence, known gaps, and prediction-log impact.
 - Update [progress.md](progress.md) when a new workstream is materially completed or blocked.
 
 ## Issue-driven research workflow

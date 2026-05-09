@@ -6,6 +6,8 @@ precedence.
 
 ## Default workflow
 
+- Start from the [onboarding and advisory guide](docs/user_guide_advisory_report.md)
+  when orienting to the repo or advisory workflow.
 - Work in small, reviewable vertical slices.
 - Use official or primary sources before adding substantive claims.
 - Separate present-state facts, repo inference, and 2035 scenarios.

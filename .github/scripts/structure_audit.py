@@ -29,6 +29,7 @@ NON_FORECAST_PATHS = {
     "06_geopolitics/SYNTHESIS.md",
     "14_predictions_log/2026_predictions.md",
     "14_predictions_log/template.md",
+    "docs/user_guide_advisory_report.md",
 }
 REQUIRED_COMMON = ["**정보 신선도:**", "## 연결 문서", "## 정보 출처"]
 REQUIRED_FORECAST = ["## 2026년 4월 현재 상태", "## 1년 단위 전망", "## 2035 전망 요약"]

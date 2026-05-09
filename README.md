@@ -24,6 +24,7 @@ The project tracks how that convergence changes climate science, energy systems,
 - Every file should end with `## 정보 출처`.
 
 ## Starting points
+- [Onboarding and advisory guide](docs/user_guide_advisory_report.md)
 - [METHODOLOGY.md](METHODOLOGY.md)
 - [progress.md](progress.md)
 - [00_foundations/axioms.md](00_foundations/axioms.md)

@@ -18,6 +18,8 @@
 - If a forecast changes, note why it changed.
 
 ## Operational rule
+- Start with the [onboarding and advisory guide](docs/user_guide_advisory_report.md)
+  before opening or updating a workstream.
 - Update [progress.md](progress.md) when a new workstream is materially completed or blocked.
 
 ## Issue-driven research workflow

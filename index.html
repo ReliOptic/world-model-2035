@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="EARTH/2035 is a source-grounded world-model repository for 2026–2035 scenarios, sector roadmaps, prediction logs, freshness tracking, and the Fundamental Line pilot."/>
+<link rel="canonical" href="https://relioptic.github.io/world-model-2035/"/>
 <title>EARTH/2035 — Source-grounded foresight. Sixteen domains. One decade.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +42,13 @@ body{
 .serif{font-family:"Fraunces","Times New Roman",serif;}
 a{color:inherit;text-decoration:none;}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;padding:0;}
+.skip-link{
+  position:fixed;left:16px;top:12px;z-index:1000;
+  transform:translateY(-160%);transition:transform .18s;
+  background:var(--ink);color:var(--bg);border:1px solid var(--line);
+  border-radius:999px;padding:8px 12px;font-weight:700;
+}
+.skip-link:focus{transform:translateY(0);}
 
 /* lang switch */
 [lang="ko"] .en-only{display:none!important;}
@@ -175,6 +184,27 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;pad
   position:absolute;bottom:calc(7vh + 24px);right:48px;z-index:5;
   text-align:right;opacity:0;animation:fIn .5s ease forwards 1.9s;
 }
+
+/* ── START HERE LINKS ── */
+.start-panel{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(135deg,rgba(255,91,31,.10),rgba(116,210,255,.07));
+}
+.start-grid{
+  display:grid;grid-template-columns:1.05fr 1.4fr;gap:28px;align-items:start;
+}
+.start-copy p{color:var(--ink-2);max-width:680px;margin-top:14px;}
+.start-links{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+}
+.start-card{
+  border:1px solid var(--line);background:rgba(255,255,255,.035);
+  border-radius:16px;padding:14px 15px;display:block;min-height:96px;
+  transition:transform .16s,border-color .16s,background .16s;
+}
+.start-card:hover{transform:translateY(-2px);border-color:var(--hot);background:rgba(255,91,31,.08);}
+.start-card b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;}
+.start-card span{display:block;color:var(--ink-2);font-size:12px;line-height:1.5;}
 .hero-counters .c-row{display:flex;gap:32px;justify-content:flex-end;}
 .hero-counters .c-item{display:flex;flex-direction:column;gap:3px;}
 .hero-counters .c-val{font-family:"Fraunces",serif;font-size:32px;font-weight:300;letter-spacing:-.03em;line-height:1;}
@@ -580,6 +610,7 @@ footer a:hover{color:var(--ink);}
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   .thesis-layout,.practice-grid,.domain-tool,.detail,.scen-strip{grid-template-columns:1fr!important;}
+  .start-grid,.start-links{grid-template-columns:1fr;}
   .chapters{grid-template-columns:repeat(2,1fr);}
   .detail .dl{border-right:none;border-bottom:1px solid var(--line);}
   .domain-tool>div:first-child{border-right:none;border-bottom:1px solid var(--line);}
@@ -655,6 +686,7 @@ footer a:hover{color:var(--ink);}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#hero">Skip to main content</a>
 
 <!-- ── TOPBAR ── -->
 <header class="topbar" id="topbar">
@@ -682,6 +714,9 @@ footer a:hover{color:var(--ink);}
   </div>
 
   <nav id="nav">
+    <button data-target="start-here">
+      <span class="en-only">Start</span><span class="ko-only">시작</span>
+    </button>
     <button data-target="hero" aria-current="true">
       <span class="en-only">Thesis</span><span class="ko-only">테제</span>
     </button>
@@ -765,6 +800,30 @@ footer a:hover{color:var(--ink);}
 
   <div class="hero-scroll-cue" id="heroScroll">
     <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ── START HERE ── -->
+<section class="s start-panel" id="start-here" aria-labelledby="start-title">
+  <div class="s-inner start-grid">
+    <div class="start-copy reveal">
+      <div class="s-head" style="margin-bottom:0;">
+        <h2 id="start-title" class="serif">Start here</h2>
+        <span class="meta">REPO NAVIGATION</span>
+      </div>
+      <p class="en-only">Use the landing page as the map, then jump into the repo workflow: onboarding, sector templates, prediction logs, freshness, and the FLP pilot.</p>
+      <p class="ko-only ko">이 페이지는 전체 repo의 지도다. 온보딩, 섹터 템플릿, 예측 로그, 신선도, FLP pilot로 바로 들어간다.</p>
+    </div>
+    <div class="start-links reveal" aria-label="Repository quick links">
+      <a class="start-card" href="docs/user_guide_advisory_report.md"><b>User guide</b><span>How to use this repo before reading sectors or forecasts.</span></a>
+      <a class="start-card" href="docs/onboarding/reader_contributor_analyst_paths.md"><b>Onboarding paths</b><span>Reader, contributor, and analyst action paths.</span></a>
+      <a class="start-card" href="docs/onboarding/sector_how_to_use_template.md"><b>Sector template</b><span>Reusable “How to use this sector” checklist.</span></a>
+      <a class="start-card" href="docs/index.html"><b>FLP pilot app</b><span>Fundamental Line viewer for the AI infrastructure pilot.</span></a>
+      <a class="start-card" href="METHODOLOGY.md"><b>Methodology</b><span>Source hierarchy, scenarios, and freshness rules.</span></a>
+      <a class="start-card" href="14_predictions_log/2026_predictions.md"><b>Predictions log</b><span>Pending, scored, and reviewable forecast claims.</span></a>
+      <a class="start-card" href="docs/design/prediction_freshness_dashboards.md"><b>Dashboard design</b><span>Prediction and freshness dashboard design contract.</span></a>
+      <a class="start-card" href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener"><b>GitHub repo</b><span>Open issues, source files, commits, and PR history.</span></a>
+    </div>
   </div>
 </section>
 
@@ -927,7 +986,7 @@ footer a:hover{color:var(--ink);}
             <h4 class="serif ko-only">오픈 저장소<br/>포크</h4>
             <p class="en-only">Everything above the consulting layer is open-source. Clone the corpus, append your sub-domain, follow the source policy. PRs welcome.</p>
             <p class="ko-only ko">컨설팅 레이어 위의 모든 것은 오픈소스. 코퍼스 클론, 서브도메인 추가, 소스 정책 준수. PR 환영.</p>
-            <a class="cta" href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">github / world-model-2035</a>
+            <a class="cta" href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener">github / world-model-2035</a>
           </div>
         </div>
         <div class="domain-unified">
@@ -976,22 +1035,22 @@ footer a:hover{color:var(--ink);}
 <footer>
   <div>
     <h5>EARTH/2035</h5>
-    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">About the corpus</a>
-    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/00_foundations/methodology.md" target="_blank" rel="noopener">Methodology</a>
-    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">Information freshness</a>
-    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/00_foundations/source_policy.md" target="_blank" rel="noopener">Source policy</a>
+    <a href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener">About the corpus</a>
+    <a href="https://github.com/ReliOptic/world-model-2035/blob/main/METHODOLOGY.md" target="_blank" rel="noopener">Methodology</a>
+    <a href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener">Information freshness</a>
+    <a href="https://github.com/ReliOptic/world-model-2035/blob/main/00_foundations/source_policy.md" target="_blank" rel="noopener">Source policy</a>
   </div>
   <div>
     <h5><span class="en-only">Read</span><span class="ko-only">읽기</span></h5>
-    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">16 chapters · index</a>
+    <a href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener">16 chapters · index</a>
     <a href="#explorer">5 scenarios</a>
-    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/14_predictions_log/" target="_blank" rel="noopener">Predictions log</a>
-    <a href="https://github.com/ReliOptic/world-in-2035/blob/main/12_wildcards/" target="_blank" rel="noopener">Wildcards</a>
+    <a href="https://github.com/ReliOptic/world-model-2035/blob/main/14_predictions_log/" target="_blank" rel="noopener">Predictions log</a>
+    <a href="https://github.com/ReliOptic/world-model-2035/blob/main/12_wildcards/" target="_blank" rel="noopener">Wildcards</a>
   </div>
   <div>
     <h5><span class="en-only">Practice</span><span class="ko-only">실행</span></h5>
     <a href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20consulting">Consulting brief</a>
-    <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">Open repo · github</a>
+    <a href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener">Open repo · github</a>
     <a href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20newsletter">Newsletter</a>
     <a href="mailto:ckiwon7@gmail.com">Contact</a>
   </div>
@@ -1559,7 +1618,7 @@ function renderDetail(){
         <div class="xref-chips">${refs.map(x=>`<span class="chip">${x}</span>`).join("")}</div>
       </div>
       <div class="det-actions">
-        <a href="https://github.com/ReliOptic/world-in-2035" target="_blank" rel="noopener">↗ Open CH ${c.num} in repo</a>
+        <a href="https://github.com/ReliOptic/world-model-2035" target="_blank" rel="noopener">↗ Open CH ${c.num} in repo</a>
         <a href="mailto:ckiwon7@gmail.com?subject=EARTH/2035%20signal%20subscription">↗ Subscribe to signals</a>
       </div>
     </div>

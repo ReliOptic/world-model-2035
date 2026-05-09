@@ -164,3 +164,9 @@ Last updated: 2026-05-09
 - [x] GitHub publishing is no longer structurally blocked; `origin` is configured.
 - [x] Full-repo source backfill is complete at first-pass level.
 - [ ] No hard content blocker remains; next work is QA, source-quality review, and synthesis polish by domain wave.
+
+## 2026-05-09 FLP Pages remodel design reset
+- [x] Previous UX child issues `#16-#20` marked with stale/insufficient outcome comments: technically passed audits, but failed product comprehension.
+- [x] Opened remodel PRD `#21`: the app must make the fundamental line and divergence visually primary.
+- [x] Opened design-first child issues `#22-#25` for visual metaphor, above-the-fold composition, interaction model, and remodel UX audit gates.
+- [ ] Implementation is intentionally blocked until design acceptance criteria are resolved.

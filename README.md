@@ -26,6 +26,7 @@ The project tracks how that convergence changes climate science, energy systems,
 ## Starting points
 - [Onboarding and advisory guide](docs/user_guide_advisory_report.md)
 - [Onboarding paths](docs/onboarding/reader_contributor_analyst_paths.md)
+- [Hermes Agent cloud hosting FAQ](docs/onboarding/hermes_agent_cloud_hosting_faq.md)
 - [Sector-use template](docs/onboarding/sector_how_to_use_template.md)
 - [Close evidence checklist](docs/onboarding/close_evidence_checklist.md)
 - [METHODOLOGY.md](METHODOLOGY.md)

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 공모전 작업 공간 (premortem/)
+    url: https://github.com/ReliOptic/world-model-2035/tree/main/premortem
+    about: 규정·일정·후보·템플릿·체크리스트는 여기에서 시작하세요.
+  - name: KAIST 실패연구소
+    url: https://caf.kaist.ac.kr/
+    about: 공모전 주관처 공식 홈페이지·문의처.

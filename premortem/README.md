@@ -19,10 +19,16 @@
 |---|---|
 | [competition-brief.md](competition-brief.md) | 공모전 규정·일정·심사기준·제출요건의 단일 기준 문서 |
 | [failure-candidates.md](failure-candidates.md) | 코퍼스에서 발굴한 '예견된 실패' 후보 5종 (아이디어 출발점) |
+| [map-slice-01-ai-infra-baseline.md](map-slice-01-ai-infra-baseline.md) | **첫 Coupling Map 슬라이스** — 방법론으로 발견한 상관 실패 후보 C6 |
 | [proposal-template.md](proposal-template.md) | 1페이지 제안서 골격 (필수 3요소 + 3줄 요약) |
 | [judging-checklist.md](judging-checklist.md) | 제출 전 심사기준(35/35/20/10) 자가채점 |
 | [workflow.md](workflow.md) | 주간 모임 + GitHub Issues 아이디어 수집 운영 모델 |
 | [submission-checklist.md](submission-checklist.md) | 제출 직전 최종 점검 게이트 |
+
+## 방법론 (예측 엔진)
+레포를 **상시 디스커션 엔진**으로 쓴다 — 복합 로드맵에서 화두를 던지고(Seeder), 담화가 로드맵과 정합한지 점검한다(Guardrail). 실패 후보는 *고르는 게 아니라* Coupling Map이 **발견**한다.
+- [../CONTEXT.md](../CONTEXT.md) — 예측 용어 사전 (Fundamental Line, Divergence, Coupling Map / Hub, 내시균형 vs 가능성 천장, 자원 경합 캐스케이드)
+- [../docs/adr/0001](../docs/adr/0001-chain-a-spine-chain-b-layer.md) Chain A 척추+B 레이어 · [0002](../docs/adr/0002-game-theory-as-causal-frame.md) 게임 인과프레임 · [0003](../docs/adr/0003-fixed-resource-axis-variable-emphasis.md) 고정 자원 좌표축
 
 ## 다음 행동
 1. 세 명이 각자 [failure-candidates.md](failure-candidates.md)를 읽고, 끌리는 후보/새 후보를 **GitHub Issue**로 등록 (라벨 `idea`).

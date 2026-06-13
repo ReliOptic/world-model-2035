@@ -29,6 +29,7 @@ The project tracks how that convergence changes climate science, energy systems,
 - [Hermes Agent cloud hosting FAQ](docs/onboarding/hermes_agent_cloud_hosting_faq.md)
 - [Sector-use template](docs/onboarding/sector_how_to_use_template.md)
 - [Close evidence checklist](docs/onboarding/close_evidence_checklist.md)
+- [Repo reactivation review — 2026-06-13](docs/onboarding/repo_reactivation_review_2026_06_13.md)
 - [METHODOLOGY.md](METHODOLOGY.md)
 - [progress.md](progress.md)
 - [00_foundations/axioms.md](00_foundations/axioms.md)

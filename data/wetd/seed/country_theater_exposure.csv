@@ -8,6 +8,7 @@ NLD,taiwan_strait,0.75,production,2026-06-01,,EUV and tooling exposure,12_early_
 IRN,middle_east,1.00,sanctions,2026-06-01,,Sanctioned procurement escalation node,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z
 ISR,middle_east,0.85,military,2026-06-01,,Dual-use AI defense node,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z
 ARE,middle_east,0.70,finance,2026-06-01,,Finance compute and re-export corridor,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z
+SAU,middle_east,0.75,energy,2026-06-01,,Energy capital and defense-industrial connector,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z
 RUS,arctic,0.95,arctic_access,2026-06-01,,Arctic military energy and route actor,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z
 CAN,arctic,0.80,arctic_access,2026-06-01,,Arctic route and infrastructure actor,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z
 USA,arctic,0.75,arctic_access,2026-06-01,,Arctic military infrastructure actor,12_early_warning/wetd_theater_scenarios.md,2026-06-25T00:00:00Z

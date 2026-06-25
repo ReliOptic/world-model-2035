@@ -8,10 +8,10 @@ Data basis: 152 official API/CSV rows plus 201 World Bank fallback proxy rows. K
 
 ## Highest Base War-Economy Transition scores
 
-- United Arab Emirates (ARE): 76.6
+- United Arab Emirates (ARE): 82.0
 - China (CHN): 76.2
 - Canada (CAN): 71.4
-- Netherlands (NLD): 64.6
+- South Korea (KOR): 64.6
 - Japan (JPN): 64.6
 
 ## Highest theater-adjusted scores
@@ -19,8 +19,8 @@ Data basis: 152 official API/CSV rows plus 201 World Bank fallback proxy rows. K
 - China (CHN) / taiwan_strait: 94.11
 - Taiwan (TWN) / taiwan_strait: 80.86
 - Iran (IRN) / middle_east: 78.72
+- United Arab Emirates (ARE) / middle_east: 70.6
 - United States (USA) / taiwan_strait: 69.03
-- South Korea (KOR) / taiwan_strait: 67.18
 
 ## What inference this adds
 
@@ -49,11 +49,18 @@ Data basis: 152 official API/CSV rows plus 201 World Bank fallback proxy rows. K
 - China (CHN) / Civilian-to-military allocation: score=65.0, confidence=medium
 - China (CHN) / Strategic stockpiling: score=75.0, confidence=medium
 - China (CHN) / Route rewiring: score=70.0, confidence=medium
-- United Arab Emirates (ARE) / Self-reliance pressure: score=70.0, confidence=medium
+- United Arab Emirates (ARE) / Self-reliance pressure: score=82.0, confidence=medium
 - United Arab Emirates (ARE) / Permissioning and access control: score=75.0, confidence=medium
 - United Arab Emirates (ARE) / Civilian-to-military allocation: score=75.0, confidence=medium
-- United Arab Emirates (ARE) / Strategic stockpiling: score=85.0, confidence=medium
-- United Arab Emirates (ARE) / Route rewiring: score=78.0, confidence=medium
+- United Arab Emirates (ARE) / Strategic stockpiling: score=92.0, confidence=medium
+- United Arab Emirates (ARE) / Route rewiring: score=86.0, confidence=medium
+
+## Saudi Arabia narrative note
+
+- 체제 준비: Energy-security allocation + capital/defense-industrial readiness
+- 관측 동향: Saudi Arabia is treated as a Middle East energy/capital connector: the dashboard watches whether energy rents, sovereign capital, logistics, and defense-industrial procurement begin to behave like strategic allocation rather than ordinary market expansion.
+- 왜 단순 인과가 아닌가: It is not labeled war-economy because one source says so. The inference is theater exposure: energy leverage plus capital allocation plus regional security procurement can change the meaning of otherwise normal investment and trade rows.
+- 검증해야 할 것: Validate with EIA/OPEC-grade energy data, Comtrade route data, defense procurement, sovereign AI/compute investment, and sanctions/corridor exposure before making a strong claim.
 
 ## Data quality notes
 

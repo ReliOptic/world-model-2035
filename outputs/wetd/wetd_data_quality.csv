@@ -1,12 +1,12 @@
 source_name,status,rows_loaded,source_url,message,observed_at
-UN Comtrade,missing_key,0,https://comtradeapi.un.org/,COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key.,2026-06-25 15:15:38
-World Bank trade fallback,ok,185,https://api.worldbank.org/v2/,Loaded no-auth trade proxy indicators for immediate War-Economy Transition Dashboard execution.,2026-06-25 15:15:38
-Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=semiconductor+export+control,Loaded term 'semiconductor export control'.,2026-06-25 15:15:38
-Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=artificial+intelligence+data+center,Loaded term 'artificial intelligence data center'.,2026-06-25 15:15:38
-Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=foreign+investment+semiconductor,Loaded term 'foreign investment semiconductor'.,2026-06-25 15:15:38
-Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=advanced+computing+export,Loaded term 'advanced computing export'.,2026-06-25 15:15:38
-Treasury OFAC SDN,ok,25,https://www.treasury.gov/ofac/downloads/sdn.csv,Loaded sanctions rows from official OFAC CSV fallback.,2026-06-25 15:15:38
-USAspending,ok,25,https://api.usaspending.gov/api/v2/search/spending_by_award/,Loaded public procurement rows without authorization.,2026-06-25 15:15:38
-EIA Open Data,missing_key,0,https://www.eia.gov/opendata/documentation.php,EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used.,2026-06-25 15:15:38
-World Bank energy/minerals,ok,16,https://api.worldbank.org/v2/,Loaded no-auth energy/minerals fallback indicators.,2026-06-25 15:15:38
-NSIDC Sea Ice Index v4,ok,2,https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv,Loaded latest Arctic daily extent 2026-06-24.,2026-06-25 15:15:38
+UN Comtrade,missing_key,0,https://comtradeapi.un.org/,COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key.,2026-06-25 23:19:51
+World Bank trade fallback,ok,185,https://api.worldbank.org/v2/,Loaded no-auth trade proxy indicators for immediate War-Economy Transition Dashboard execution.,2026-06-25 23:19:51
+Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=semiconductor+export+control,Loaded term 'semiconductor export control'.,2026-06-25 23:19:51
+Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=artificial+intelligence+data+center,Loaded term 'artificial intelligence data center'.,2026-06-25 23:19:51
+Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=foreign+investment+semiconductor,Loaded term 'foreign investment semiconductor'.,2026-06-25 23:19:51
+Federal Register,ok,25,https://www.federalregister.gov/api/v1/documents.json?per_page=25&order=newest&conditions%5Bterm%5D=advanced+computing+export,Loaded term 'advanced computing export'.,2026-06-25 23:19:51
+Treasury OFAC SDN,ok,25,https://www.treasury.gov/ofac/downloads/sdn.csv,Loaded sanctions rows from official OFAC CSV fallback.,2026-06-25 23:19:51
+USAspending,ok,25,https://api.usaspending.gov/api/v2/search/spending_by_award/,Loaded public procurement rows without authorization.,2026-06-25 23:19:51
+EIA Open Data,missing_key,0,https://www.eia.gov/opendata/documentation.php,EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used.,2026-06-25 23:19:51
+World Bank energy/minerals,ok,16,https://api.worldbank.org/v2/,Loaded no-auth energy/minerals fallback indicators.,2026-06-25 23:19:51
+NSIDC Sea Ice Index v4,ok,2,https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv,Loaded latest Arctic daily extent 2026-06-24.,2026-06-25 23:19:51

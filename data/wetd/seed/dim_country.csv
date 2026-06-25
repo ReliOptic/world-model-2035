@@ -16,6 +16,7 @@ SGP,Singapore,corridor_watch,false
 MYS,Malaysia,corridor_watch,false
 ARE,United Arab Emirates,corridor_watch,false
 VNM,Vietnam,corridor_watch,false
+SAU,Saudi Arabia,middle_east_node,false
 IRN,Iran,middle_east_node,false
 ISR,Israel,middle_east_node,false
 WLD,World,global_proxy,false

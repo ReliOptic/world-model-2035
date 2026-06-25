@@ -412,7 +412,7 @@ def ingest_trade(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> list[Quality
         ("TM.VAL.MMTL.ZS.UN", "ores_metals_imports_proxy", "import", "ores_metals_imports_percent_merchandise_imports"),
         ("TX.VAL.TECH.MF.ZS", "semiconductor_equipment", "export", "high_technology_exports_percent_manufactured_exports"),
     ]
-    wb_countries = ["USA", "CHN", "JPN", "KOR", "DEU", "GBR", "FRA", "CAN", "NLD", "SGP", "MYS", "ARE", "VNM", "WLD"]
+    wb_countries = ["USA", "CHN", "JPN", "KOR", "DEU", "GBR", "FRA", "CAN", "NLD", "SGP", "MYS", "ARE", "SAU", "VNM", "WLD"]
     loaded = 0
     for indicator, product_id, flow, metric in indicators:
         countries = ";".join(wb_countries)
@@ -566,7 +566,7 @@ def ingest_energy_minerals(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> li
         ("EG.USE.PCAP.KG.OE", "energy", "energy_use_kg_oil_equivalent_per_capita", "kg_oil_equivalent_per_capita"),
         ("TM.VAL.MMTL.ZS.UN", "ores_metals", "ores_metals_imports_percent_merchandise_imports", "percent"),
     ]
-    countries = ["USA", "CHN", "JPN", "KOR", "DEU", "GBR", "FRA", "CAN", "NLD", "WLD"]
+    countries = ["USA", "CHN", "JPN", "KOR", "DEU", "GBR", "FRA", "CAN", "NLD", "ARE", "SAU", "WLD"]
     loaded = 0
     for indicator, commodity, metric, unit in indicators:
         url = f"https://api.worldbank.org/v2/country/{';'.join(countries)}/indicator/{indicator}?format=json&per_page=500"
@@ -646,7 +646,13 @@ def score_pipeline(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> None:
     con.execute("DELETE FROM wetd_data.fact_wet_signal_score")
     con.execute("DELETE FROM wetd_data.fact_theater_multiplier")
     date_month = month_start(as_of)
-    countries = [r[0] for r in con.execute("SELECT country_iso3 FROM wetd_data.dim_country WHERE is_mvp_country OR country_iso3 IN ('IRN','ISR','ARE')").fetchall()]
+    countries = [r[0] for r in con.execute("""
+        SELECT DISTINCT country_iso3
+        FROM wetd_data.dim_country
+        WHERE is_mvp_country
+           OR country_iso3 IN (SELECT country_iso3 FROM wetd_data.country_theater_exposure)
+           OR country_iso3 IN ('IRN','ISR','ARE','SAU')
+    """).fetchall()]
     policy_count = con.execute("SELECT COUNT(*) FROM wetd_data.fact_policy_event").fetchone()[0]
     procurement_total = con.execute("SELECT COALESCE(SUM(value_usd),0) FROM wetd_data.fact_procurement").fetchone()[0] or 0
     sanctions_by_country = dict(con.execute("SELECT country_iso3, COUNT(*) FROM wetd_data.fact_sanctions GROUP BY 1").fetchall())
@@ -671,12 +677,13 @@ def score_pipeline(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> None:
         energy_value = float(energy_by_country.get(iso, 0) or 0)
         is_corridor = iso in {"TWN", "SGP", "MYS", "ARE", "VNM", "KOR", "JPN", "NLD"}
         is_tech_actor = iso in {"USA", "CHN", "TWN", "KOR", "JPN", "NLD", "DEU", "EUU"}
-        is_middle_east = iso in {"IRN", "ISR", "ARE"}
+        is_middle_east = iso in {"IRN", "ISR", "ARE", "SAU"}
+        is_energy_capital_connector = iso in {"SAU", "ARE"}
         is_arctic = iso in {"USA", "CAN", "RUS"}
         signal_values = {
             "autarky": (40 + min(policy_count, 20) * 1.5 + (8 if is_tech_actor else 0) + min(energy_value / 10, 12), "medium" if policy_count else "low", refs["policy"] + refs["energy"]),
-            "stockpiling": (35 + min(trade_count, 10) * 4 + (10 if is_corridor else 0) + (8 if is_arctic and arctic_anomaly < 0 else 0), "low" if trade_count == 0 else "medium", refs["trade"] + refs["arctic"]),
-            "trade_rewiring": (30 + min(trade_count, 10) * 3 + (18 if is_corridor else 0) + (10 if sanction_count else 0), "medium" if is_corridor or trade_count else "low", refs["trade"] + refs["sanctions"]),
+            "stockpiling": (35 + min(trade_count, 10) * 4 + (10 if is_corridor else 0) + (7 if is_energy_capital_connector else 0) + (8 if is_arctic and arctic_anomaly < 0 else 0), "low" if trade_count == 0 and not is_energy_capital_connector else "medium", refs["trade"] + refs["arctic"]),
+            "trade_rewiring": (30 + min(trade_count, 10) * 3 + (18 if is_corridor else 0) + (8 if is_energy_capital_connector else 0) + (10 if sanction_count else 0), "medium" if is_corridor or trade_count or is_energy_capital_connector else "low", refs["trade"] + refs["sanctions"]),
             "capital_access_control": (35 + min(policy_count, 20) * 2 + min(sanction_count, 20) * 3, "high" if sanction_count else "medium", refs["policy"] + refs["sanctions"]),
             "civilian_military_allocation": (30 + min(procurement_total / 25_000_000, 35) + (12 if iso == "USA" else 0) + (10 if is_middle_east else 0), "medium" if procurement_total else "low", refs["proc"]),
         }
@@ -856,6 +863,82 @@ SIGNAL_EXPLAINERS = {
 }
 
 
+COUNTRY_NARRATIVES = {
+    "SAU": {
+        "regime": "Energy-security allocation + capital/defense-industrial readiness",
+        "trend": "Saudi Arabia is treated as a Middle East energy/capital connector: the dashboard watches whether energy rents, sovereign capital, logistics, and defense-industrial procurement begin to behave like strategic allocation rather than ordinary market expansion.",
+        "why": "It is not labeled war-economy because one source says so. The inference is theater exposure: energy leverage plus capital allocation plus regional security procurement can change the meaning of otherwise normal investment and trade rows.",
+        "watch": "Validate with EIA/OPEC-grade energy data, Comtrade route data, defense procurement, sovereign AI/compute investment, and sanctions/corridor exposure before making a strong claim.",
+    },
+    "ARE": {
+        "regime": "Finance, compute, and re-export corridor readiness",
+        "trend": "The UAE is monitored as a corridor where finance, logistics, compute infrastructure, and re-export behavior can make sanctions/access-control pressure visible before it appears as a direct conflict signal.",
+        "why": "The non-obvious inference is route and capital intermediation: ordinary trade or data-center growth can become strategically meaningful when it sits inside a Middle East theater exposure graph.",
+        "watch": "Check corridor-specific trade, re-export, cloud/compute investment, and sanctions-screening rows.",
+    },
+    "IRN": {
+        "regime": "Sanctioned procurement and substitution readiness",
+        "trend": "Iran is monitored as a sanctions and procurement escalation node where access-control pressure, domestic substitution, and dual-use procurement can reinforce each other.",
+        "why": "The inference comes from pressure adaptation: sanctions alone are not the point; the point is whether procurement and rerouting behavior move with sanctions pressure.",
+        "watch": "Separate confirmed sanctions rows from inferred procurement/rerouting claims.",
+    },
+    "ISR": {
+        "regime": "Dual-use AI/defense allocation readiness",
+        "trend": "Israel is monitored as a dual-use defense node where civilian AI, cyber, cloud, ISR, and secure compute can enter defense-priority allocation.",
+        "why": "The inference is civilian-to-military conversion: the same AI/compute investment carries different meaning in a theater with active defense allocation.",
+        "watch": "Check procurement, defense AI, and secure-cloud rows before escalating the note.",
+    },
+    "CHN": {
+        "regime": "Self-reliance and access-control response system",
+        "trend": "China is monitored for self-reliance, export-control response, route rewiring, and strategic stockpiling around advanced compute and semiconductor constraints.",
+        "why": "The inference is co-movement across policy, trade, and theater exposure rather than a single export-control row.",
+        "watch": "Separate policy rhetoric from measurable trade, stockpiling, and procurement rows.",
+    },
+    "USA": {
+        "regime": "Export-control and defense-allocation rulemaking system",
+        "trend": "The United States is monitored as a rulemaking and procurement actor whose policy and defense-spending rows can shift open-market access into permissioned allocation.",
+        "why": "The inference is institutional conversion: public rules and procurement can reorganize market access without requiring a military event.",
+        "watch": "Check Federal Register, USAspending, and source_row_refs before interpreting score movement.",
+    },
+    "TWN": {
+        "regime": "Semiconductor keystone resilience system",
+        "trend": "Taiwan is monitored as a production keystone where semiconductor capacity, route stress, and defense allocation can change global compute access.",
+        "why": "The inference is theater lift: similar signal values mean more in Taiwan Strait exposure than in a generic industrial-policy context.",
+        "watch": "Validate with product-specific semiconductor trade and tooling data.",
+    },
+    "KOR": {
+        "regime": "Memory/HBM and allied production redundancy system",
+        "trend": "South Korea is monitored for memory, HBM, advanced manufacturing, and allied redundancy pressure in the Taiwan Strait production graph.",
+        "why": "The inference is dependency graph position: production exposure can make ordinary industrial-policy rows strategically important.",
+        "watch": "Check HBM/memory-specific trade, procurement, and export-control rows.",
+    },
+    "JPN": {
+        "regime": "Materials, equipment, and allied redundancy system",
+        "trend": "Japan is monitored for semiconductor materials, equipment, and strategic redundancy in a Taiwan Strait shock pathway.",
+        "why": "The inference is supply-chain chokepoint position, not the existence of one policy row.",
+        "watch": "Validate product-level tooling/materials data.",
+    },
+    "NLD": {
+        "regime": "EUV/tooling chokepoint permissioning system",
+        "trend": "The Netherlands is monitored for tooling and EUV-related access-control pressure inside the advanced semiconductor graph.",
+        "why": "The inference is that tool access can become a permissioned strategic resource even without broad economic decoupling.",
+        "watch": "Validate tool-specific policy and export-control rows.",
+    },
+    "CAN": {
+        "regime": "Arctic route/resource infrastructure readiness",
+        "trend": "Canada is monitored as an Arctic route, resource, cable, and infrastructure actor where physical access changes the strategic meaning of logistics and energy rows.",
+        "why": "The inference is spatial multiplier: Arctic access can turn ordinary infrastructure into theater-relevant allocation.",
+        "watch": "Check Arctic access, resource, infrastructure, and defense rows separately.",
+    },
+    "RUS": {
+        "regime": "Arctic energy/military route readiness",
+        "trend": "Russia is monitored for Arctic route, energy, and military infrastructure coupling.",
+        "why": "The inference is that Arctic spatial access and sanctions pressure can reinforce each other.",
+        "watch": "Separate sanctions rows from physical Arctic access indicators.",
+    },
+}
+
+
 def signal_explainers_html() -> str:
     cards = ['<div class="signal-grid">']
     for slug, (label, question, evidence) in SIGNAL_EXPLAINERS.items():
@@ -894,6 +977,68 @@ def country_signal_drilldown_html(con: duckdb.DuckDBPyConnection) -> str:
         )
     out.append("</tbody></table>")
     return "\n".join(out)
+
+
+def signal_chips_html(signals: list[tuple[str, float, str]]) -> str:
+    chips = ['<div class="signal-chips">']
+    for signal, score, confidence in signals:
+        label, question, evidence = SIGNAL_EXPLAINERS.get(signal, (signal, "", ""))
+        cls = "ok" if confidence == "high" else "warn" if confidence == "low" else "mutedbadge"
+        chips.append(
+            f'<span class="signal-chip {cls}" title="{html.escape(question + " Evidence: " + evidence)}">'
+            f'{html.escape(label)} <strong>{float(score):.1f}</strong></span>'
+        )
+    chips.append('</div>')
+    return "\n".join(chips)
+
+
+def country_narratives_html(con: duckdb.DuckDBPyConnection) -> str:
+    rows = con.execute("""
+        WITH ranked AS (
+            SELECT c.country_iso3, d.country_name, d.country_group,
+                   ROUND(c.base_wet_score, 1) AS base_score,
+                   MAX(ROUND(t.final_wet_score, 1)) AS max_theater_score,
+                   STRING_AGG(DISTINCT t.theater_id, ', ') AS theaters
+            FROM wetd_data.vw_country_month_wet_score c
+            JOIN wetd_data.dim_country d USING(country_iso3)
+            LEFT JOIN wetd_data.vw_theater_adjusted_score t USING(country_iso3)
+            WHERE c.is_complete_score
+            GROUP BY c.country_iso3, d.country_name, d.country_group, c.base_wet_score
+        )
+        SELECT *
+        FROM ranked
+        WHERE country_iso3 IN (
+            SELECT country_iso3 FROM ranked ORDER BY base_score DESC NULLS LAST LIMIT 8
+        )
+           OR country_iso3 IN ('SAU','ARE','IRN','ISR')
+        ORDER BY CASE WHEN country_iso3 = 'SAU' THEN 0 ELSE 1 END,
+                 COALESCE(max_theater_score, base_score) DESC NULLS LAST,
+                 base_score DESC NULLS LAST
+    """).fetchall()
+    signal_rows = con.execute("""
+        SELECT country_iso3, signal_type, normalized_score, confidence
+        FROM wetd_data.fact_wet_signal_score
+        ORDER BY country_iso3, normalized_score DESC
+    """).fetchall()
+    signals_by_country: dict[str, list[tuple[str, float, str]]] = {}
+    for iso, signal, score, confidence in signal_rows:
+        signals_by_country.setdefault(iso, []).append((signal, float(score or 0), str(confidence)))
+    parts = ['<div class="country-accordion">']
+    for iso, name, group, base_score, max_theater_score, theaters in rows:
+        narrative = COUNTRY_NARRATIVES.get(iso, {
+            "regime": "Strategic allocation review candidate",
+            "trend": "This country is in the review queue because several War-Economy Transition signals are present in the same month.",
+            "why": "The inference should be read as co-movement across signals, not as a deterministic causal conclusion.",
+            "watch": "Inspect signal rows, source_row_refs, source URLs, and data-quality warnings before escalation.",
+        })
+        top_signals = signals_by_country.get(iso, [])[:5]
+        score_label = f"base {float(base_score or 0):.1f}"
+        if max_theater_score is not None:
+            score_label += f" · theater {float(max_theater_score):.1f}"
+        open_attr = " open" if iso == "SAU" else ""
+        parts.append(f'''<details class="country-detail"{open_attr}><summary><span class="country-title">{html.escape(name)} <span class="tiny">{html.escape(iso)}</span></span><span class="summary-tags"><span>{html.escape(score_label)}</span><span>{html.escape(str(theaters or group).replace("_", " "))}</span></span></summary><div class="country-body"><div><h3>체제 준비</h3><p>{html.escape(narrative["regime"])}</p></div><div><h3>관측 동향</h3><p>{html.escape(narrative["trend"])}</p></div><div><h3>왜 단순 인과가 아닌가</h3><p>{html.escape(narrative["why"])}</p></div><div><h3>검증해야 할 것</h3><p>{html.escape(narrative["watch"])}</p></div><div class="country-signals"><h3>5-signal fingerprint</h3>{signal_chips_html(top_signals)}</div></div></details>''')
+    parts.append('</div>')
+    return "\n".join(parts)
 
 
 def provenance_cards_html(con: duckdb.DuckDBPyConnection) -> str:
@@ -1022,6 +1167,16 @@ def generate_commander_note(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> s
     for name, iso, signal, score, confidence in signal_detail:
         label = SIGNAL_EXPLAINERS.get(signal, (signal, "", ""))[0]
         lines.append(f"- {name} ({iso}) / {label}: score={score}, confidence={confidence}")
+    sau = COUNTRY_NARRATIVES["SAU"]
+    lines += [
+        "",
+        "## Saudi Arabia narrative note",
+        "",
+        f"- 체제 준비: {sau['regime']}",
+        f"- 관측 동향: {sau['trend']}",
+        f"- 왜 단순 인과가 아닌가: {sau['why']}",
+        f"- 검증해야 할 것: {sau['watch']}",
+    ]
     lines += ["", "## Data quality notes", ""]
     for source, status, rows, msg, url in dq:
         lines.append(f"- {source}: {status}, rows={rows} — {msg} Source: {url}")
@@ -1045,8 +1200,8 @@ def export_outputs(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> None:
     theater_score_count = con.execute("SELECT COUNT(*) FROM wetd_data.vw_theater_adjusted_score WHERE final_wet_score IS NOT NULL").fetchone()[0]
     html_doc = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>War-Economy Transition Dashboard (WETD) Monthly Batch</title><style>
-body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#07111f;color:#e2e8f0}}main{{max-width:1180px;margin:0 auto;padding:32px}}h1,h2,h3{{color:#f8fafc;margin-top:0}}.hero{{background:radial-gradient(circle at top left,#1e3a8a,#0f172a 52%,#111827);border-bottom:1px solid #334155;padding:42px 32px}}.hero-inner{{max-width:1180px;margin:0 auto}}.abbr{{font-size:.72em;color:#bfdbfe}}.subtitle{{color:#bfdbfe;max-width:860px;font-size:18px;line-height:1.55}}.kpis{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px}}.kpi{{background:rgba(15,23,42,.82);border:1px solid #334155;border-radius:16px;padding:16px}}.kpi .num{{font-size:28px;font-weight:800;color:#93c5fd;display:block}}.card{{background:#111827;border:1px solid #334155;border-radius:18px;padding:22px;margin:20px 0;box-shadow:0 10px 28px rgba(0,0,0,.22)}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{border-bottom:1px solid #334155;padding:8px 10px;vertical-align:top}}th{{text-align:left;color:#93c5fd;background:#172554;position:sticky;top:0}}a{{color:#7dd3fc}}code{{color:#fbbf24}}pre{{white-space:pre-wrap;color:#dbeafe}}.muted{{color:#94a3b8}}.tiny{{color:#94a3b8;font-size:11px;word-break:break-all}}.badge{{border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700;display:inline-block}}.ok{{background:#064e3b;color:#a7f3d0}}.warn{{background:#713f12;color:#fde68a}}.mutedbadge{{background:#334155;color:#cbd5e1}}.bars{{display:grid;gap:11px}}.bar-row{{display:grid;grid-template-columns:250px 1fr 58px;gap:12px;align-items:center}}.bar-label span{{display:block;color:#94a3b8;font-size:12px;margin-top:3px}}.bar-track{{height:18px;background:#1e293b;border-radius:999px;overflow:hidden;border:1px solid #334155}}.bar-fill{{height:100%;background:linear-gradient(90deg,#38bdf8,#f97316);border-radius:999px}}.bar-score{{font-weight:800;color:#fbbf24}}.bubble-chart{{width:100%;min-height:420px;background:#0b1220;border:1px solid #334155;border-radius:16px}}.svg-label{{fill:#bfdbfe;font-size:18px;font-weight:800}}.svg-axis{{stroke:#334155;stroke-width:2;stroke-dasharray:4 6}}.svg-country{{fill:#e2e8f0;font-size:15px;font-weight:700}}.svg-score{{fill:#fbbf24;font-weight:800}}.source-grid,.inference-grid,.signal-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}}.source-card,.inference-card,.signal-card{{background:#0b1220;border:1px solid #334155;border-radius:14px;padding:15px}}.source-head{{display:flex;justify-content:space-between;gap:10px;align-items:center}}.source-type{{color:#bfdbfe}}.trust{{margin-top:8px;color:#fbbf24;font-size:12px;font-weight:800;text-transform:uppercase}}.grid2{{display:grid;grid-template-columns:1fr;gap:18px}}
-</style></head><body><section class="hero"><div class="hero-inner"><h1>War-Economy Transition Dashboard <span class="abbr">(WETD)</span></h1><p class="subtitle"><strong>What this is for:</strong> War-Economy Transition means the shift from open-market allocation toward national-security allocation. This dashboard is an analyst queue for spotting whether strategic goods are moving from market allocation toward security permissioning, stockpiling, route rewiring, sanctions pressure, and civilian-to-military allocation. It is not a war prediction and not a black-box truth score.</p><div class="kpis"><div class="kpi"><span class="num">{official_rows}</span><span>official API/CSV rows loaded</span></div><div class="kpi"><span class="num">{proxy_rows}</span><span>fallback proxy rows, visibly labeled</span></div><div class="kpi"><span class="num">{complete_country_count}</span><span>countries with complete 5-signal scores</span></div><div class="kpi"><span class="num">{theater_score_count}</span><span>country-theater adjusted scores</span></div></div><p class="muted">Generated {html.escape(now_utc())}. WETD = War-Economy Transition Dashboard. DuckDB batch artifact; verify each source in the provenance cards below.</p></div></section><main><div class="grid2"><div class="card"><h2>Top country War-Economy Transition scores</h2>{score_bars_html(con)}</div><div class="card"><h2>Theater-adjusted risk bubbles</h2>{theater_bubbles_html(con)}</div></div><div class="card"><h2>What inference this adds</h2><p class="muted">This section avoids obvious cause-effect claims. It shows the added inference: co-movement, theater lift, confidence limits, and data gaps that are not visible from any one raw source row.</p>{inference_cards_html(con)}</div><div class="card"><h2>The five War-Economy Transition signals</h2><p class="muted">Each country score is built from these five interpretable signals. The signal cards state what is being tested before the country drilldown shows country-specific rows.</p>{signal_explainers_html()}</div><div class="card"><h2>Country-by-country signal drilldown</h2><p class="muted">For the top complete-score countries, this table explains which of the five signals is present, what it means, the score, confidence, and the generated explanation.</p>{country_signal_drilldown_html(con)}</div><div class="card"><h2>Data provenance and trust board</h2><p class="muted">Green cards are official/public rows loaded into DuckDB. Amber cards are key-gated sources or fallback proxy rows; do not read them as high-resolution trade/energy data.</p>{provenance_cards_html(con)}</div><div class="card"><h2>Commander note</h2><pre>{html.escape(note)}</pre></div><div class="card"><h2>Country-month War-Economy Transition score table with full names</h2>{table_html(con, 'SELECT c.country_iso3, d.country_name, c.signal_count, c.missing_signal_types, ROUND(c.base_wet_score,2) AS base_wet_score, c.is_complete_score FROM wetd_data.vw_country_month_wet_score c JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY c.base_wet_score DESC NULLS LAST', 25)}</div><div class="card"><h2>Theater-adjusted War-Economy Transition score table</h2>{table_html(con, 'SELECT t.country_iso3, d.country_name, t.theater_id, ROUND(t.base_wet_score,2) AS base_wet_score, t.exposure_weight, ROUND(t.multiplier_value,3) AS multiplier, ROUND(t.final_wet_score,2) AS final_wet_score FROM wetd_data.vw_theater_adjusted_score t JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY t.final_wet_score DESC NULLS LAST', 25)}</div><div class="card"><h2>Source URL audit table</h2>{table_html(con, 'SELECT source_name, status, rows_loaded, source_url, message FROM wetd_data.data_quality_event ORDER BY observed_at', 50)}</div><div class="card"><h2>Artifacts</h2><ul><li><a href="wetd_country_month_scores.csv">wetd_country_month_scores.csv</a></li><li><a href="wetd_theater_adjusted_scores.csv">wetd_theater_adjusted_scores.csv</a></li><li><a href="wetd_signal_scores.csv">wetd_signal_scores.csv</a></li><li><a href="wetd_data_quality.csv">wetd_data_quality.csv</a></li><li><a href="commander_note_{as_of.strftime('%Y_%m')}.md">commander_note_{as_of.strftime('%Y_%m')}.md</a></li></ul></div></main></body></html>'''
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#07111f;color:#e2e8f0}}main{{max-width:1180px;margin:0 auto;padding:32px}}h1,h2,h3{{color:#f8fafc;margin-top:0}}.hero{{background:radial-gradient(circle at top left,#1e3a8a,#0f172a 52%,#111827);border-bottom:1px solid #334155;padding:42px 32px}}.hero-inner{{max-width:1180px;margin:0 auto}}.abbr{{font-size:.72em;color:#bfdbfe}}.subtitle{{color:#bfdbfe;max-width:920px;font-size:18px;line-height:1.55}}.kpis{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px}}.kpi{{background:rgba(15,23,42,.82);border:1px solid #334155;border-radius:16px;padding:16px}}.kpi .num{{font-size:28px;font-weight:800;color:#93c5fd;display:block}}.mece{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:20px}}.mece div{{background:#0b1220;border:1px solid #334155;border-radius:14px;padding:12px}}.card{{background:#111827;border:1px solid #334155;border-radius:18px;padding:22px;margin:20px 0;box-shadow:0 10px 28px rgba(0,0,0,.22)}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{border-bottom:1px solid #334155;padding:8px 10px;vertical-align:top}}th{{text-align:left;color:#93c5fd;background:#172554;position:sticky;top:0}}a{{color:#7dd3fc}}code{{color:#fbbf24}}pre{{white-space:pre-wrap;color:#dbeafe}}.muted{{color:#94a3b8}}.tiny{{color:#94a3b8;font-size:11px;word-break:break-all}}.badge{{border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700;display:inline-block}}.ok{{background:#064e3b;color:#a7f3d0}}.warn{{background:#713f12;color:#fde68a}}.mutedbadge{{background:#334155;color:#cbd5e1}}.bars{{display:grid;gap:11px}}.bar-row{{display:grid;grid-template-columns:250px 1fr 58px;gap:12px;align-items:center}}.bar-label span{{display:block;color:#94a3b8;font-size:12px;margin-top:3px}}.bar-track{{height:18px;background:#1e293b;border-radius:999px;overflow:hidden;border:1px solid #334155}}.bar-fill{{height:100%;background:linear-gradient(90deg,#38bdf8,#f97316);border-radius:999px}}.bar-score{{font-weight:800;color:#fbbf24}}.bubble-chart{{width:100%;min-height:420px;background:#0b1220;border:1px solid #334155;border-radius:16px}}.svg-label{{fill:#bfdbfe;font-size:18px;font-weight:800}}.svg-axis{{stroke:#334155;stroke-width:2;stroke-dasharray:4 6}}.svg-country{{fill:#e2e8f0;font-size:15px;font-weight:700}}.svg-score{{fill:#fbbf24;font-weight:800}}.source-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}}.source-card{{background:#0b1220;border:1px solid #334155;border-radius:14px;padding:15px}}.source-head{{display:flex;justify-content:space-between;gap:10px;align-items:center}}.source-type{{color:#bfdbfe}}.trust{{margin-top:8px;color:#fbbf24;font-size:12px;font-weight:800;text-transform:uppercase}}.grid2{{display:grid;grid-template-columns:1fr;gap:18px}}.country-accordion{{display:grid;gap:12px}}details.country-detail{{background:#0b1220;border:1px solid #334155;border-radius:16px;overflow:hidden}}details.country-detail[open]{{border-color:#60a5fa}}.country-detail summary{{cursor:pointer;list-style:none;padding:16px 18px;display:flex;justify-content:space-between;gap:12px;align-items:center}}.country-detail summary::-webkit-details-marker{{display:none}}.country-title{{font-size:18px;font-weight:800}}.summary-tags{{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}}.summary-tags span{{background:#172554;color:#bfdbfe;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700}}.country-body{{border-top:1px solid #334155;padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}}.country-body h3{{font-size:14px;color:#93c5fd;margin-bottom:6px}}.country-body p{{margin-top:0;color:#dbeafe;line-height:1.45}}.country-signals{{grid-column:1/-1}}.signal-chips{{display:flex;flex-wrap:wrap;gap:8px}}.signal-chip{{border-radius:999px;padding:7px 10px;font-size:12px;font-weight:700}}.compact-note{{font-size:13px;color:#cbd5e1;line-height:1.5}}
+</style></head><body><section class="hero"><div class="hero-inner"><h1>War-Economy Transition Dashboard <span class="abbr">(WETD)</span></h1><p class="subtitle"><strong>What this is for:</strong> War-Economy Transition means the shift from open-market allocation toward national-security allocation. The dashboard is a review queue: it should show <em>what moved</em>, <em>where it matters</em>, <em>why the inference is non-obvious</em>, and <em>which source limits still apply</em>.</p><div class="kpis"><div class="kpi"><span class="num">{official_rows}</span><span>official API/CSV rows loaded</span></div><div class="kpi"><span class="num">{proxy_rows}</span><span>fallback proxy rows, visibly labeled</span></div><div class="kpi"><span class="num">{complete_country_count}</span><span>countries with complete 5-signal scores</span></div><div class="kpi"><span class="num">{theater_score_count}</span><span>country-theater adjusted scores</span></div></div><div class="mece"><div><strong>1. Metric</strong><br><span class="muted">Scores and bubbles show what moved.</span></div><div><strong>2. Narrative</strong><br><span class="muted">Country accordions explain the regime-preparation hypothesis.</span></div><div><strong>3. Evidence</strong><br><span class="muted">Source cards show what is measured vs fallback.</span></div><div><strong>4. Action</strong><br><span class="muted">Commander note and artifacts support analyst review.</span></div></div><p class="muted">Generated {html.escape(now_utc())}. WETD = War-Economy Transition Dashboard. DuckDB batch artifact; verify each source in the provenance cards below.</p></div></section><main><div class="grid2"><div class="card"><h2>Metric layer: country scores</h2><p class="compact-note">Visual scores stay at the top because they are intuitive; they do not claim causality by themselves.</p>{score_bars_html(con)}</div><div class="card"><h2>Metric layer: theater-adjusted risk bubbles</h2><p class="compact-note">The same country score can mean something different inside Taiwan Strait, Middle East, or Arctic exposure.</p>{theater_bubbles_html(con)}</div></div><div class="card"><h2>Narrative layer: country regime-preparation hypotheses</h2><p class="muted">Open each country to see the MECE narrative: 체제 준비, 관측 동향, why it is not a simple cause-effect claim, what to verify, and the five-signal fingerprint. Saudi Arabia is included as a Middle East energy/capital connector rather than hidden in a generic score.</p>{country_narratives_html(con)}</div><div class="card"><h2>Evidence layer: data provenance and trust board</h2><p class="muted">Green cards are official/public rows loaded into DuckDB. Amber cards are key-gated sources or fallback proxy rows; do not read them as high-resolution trade/energy data.</p>{provenance_cards_html(con)}</div><div class="card"><h2>Action layer: commander note</h2><pre>{html.escape(note)}</pre></div><div class="card"><h2>Audit tables</h2><details><summary>Country-month score table</summary>{table_html(con, 'SELECT c.country_iso3, d.country_name, c.signal_count, c.missing_signal_types, ROUND(c.base_wet_score,2) AS base_wet_score, c.is_complete_score FROM wetd_data.vw_country_month_wet_score c JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY c.base_wet_score DESC NULLS LAST', 25)}</details><details><summary>Theater-adjusted score table</summary>{table_html(con, 'SELECT t.country_iso3, d.country_name, t.theater_id, ROUND(t.base_wet_score,2) AS base_wet_score, t.exposure_weight, ROUND(t.multiplier_value,3) AS multiplier, ROUND(t.final_wet_score,2) AS final_wet_score FROM wetd_data.vw_theater_adjusted_score t JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY t.final_wet_score DESC NULLS LAST', 25)}</details><details><summary>Source URL audit table</summary>{table_html(con, 'SELECT source_name, status, rows_loaded, source_url, message FROM wetd_data.data_quality_event ORDER BY observed_at', 50)}</details></div><div class="card"><h2>Artifacts</h2><ul><li><a href="wetd_country_month_scores.csv">wetd_country_month_scores.csv</a></li><li><a href="wetd_theater_adjusted_scores.csv">wetd_theater_adjusted_scores.csv</a></li><li><a href="wetd_signal_scores.csv">wetd_signal_scores.csv</a></li><li><a href="wetd_data_quality.csv">wetd_data_quality.csv</a></li><li><a href="commander_note_{as_of.strftime('%Y_%m')}.md">commander_note_{as_of.strftime('%Y_%m')}.md</a></li></ul></div></main></body></html>'''
     (OUT_DIR / "index.html").write_text(html_doc, encoding="utf-8")
 
 

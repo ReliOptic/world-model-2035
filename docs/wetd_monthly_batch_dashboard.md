@@ -67,6 +67,17 @@ outputs/wetd/commander_note_YYYY_MM.md
 - **Confidence constraint:** 높은 점수라도 low/fallback confidence면 확신이 아니라 검토 우선순위로 읽는다.
 - **Data gap as finding:** Comtrade/EIA 같은 key-gated source가 빠지면 결론의 상한을 낮추고 fallback proxy라고 표시한다.
 
+## Dashboard MECE layout
+
+HTML dashboard는 네 층으로만 읽게 재배치한다.
+
+1. **Metric:** country score bar와 theater bubble은 “무엇이 움직였나”만 보여준다.
+2. **Narrative:** country accordion은 “어떤 체제 준비 가설인가”를 국가별로 접었다 펼쳐 보여준다.
+3. **Evidence:** provenance cards는 official rows, fallback proxy, key-gated source를 분리한다.
+4. **Action:** commander note와 CSV artifacts는 analyst review에 넘긴다.
+
+사우디아라비아는 Middle East energy/capital connector로 seed와 theater exposure에 포함한다. 기본 화면에서 Saudi Arabia accordion을 열어 두며, `체제 준비`, `관측 동향`, `왜 단순 인과가 아닌가`, `검증해야 할 것`, `5-signal fingerprint`를 한 장표 안에서 확인한다.
+
 ## 5개 War-Economy Transition signal
 
 | Signal | Plain meaning | 국가별 부연에서 확인할 내용 |

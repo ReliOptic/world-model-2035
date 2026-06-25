@@ -1,0 +1,4 @@
+theater_id,theater_name,theater_type,default_multiplier_low,default_multiplier_high,primary_risk
+taiwan_strait,Taiwan Strait,keystone,1.20,1.50,Semiconductor and AI-compute chokepoint shock
+middle_east,Middle East,escalation_belt,1.10,1.40,Energy sanctions and dual-use procurement shock
+arctic,Arctic,spatial_multiplier,1.10,1.30,Polar route resource infrastructure and military-access competition

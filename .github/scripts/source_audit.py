@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-EXCLUDED_DIRS = {".git", ".omx", ".omc", "node_modules", "dist", "build", ".cache", ".github"}
+EXCLUDED_DIRS = {".git", ".omx", ".omc", "node_modules", "dist", "build", ".cache", ".github", "outputs"}
 EXCLUDED_FILES = {"AGENTS.md", "README.md", "METHODOLOGY.md", "CLAUDE.md", "CONTRIBUTING.md", "progress.md", "The world in 2035.md"}
 URL_RE = re.compile(r"https?://[^\s\])>]+")
 HIGH_RISK_PATH_MARKERS = (

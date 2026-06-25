@@ -1,0 +1,6 @@
+config_id,signal_type,weight,effective_from,effective_to,rationale,source_url
+wetd_default_2026q2,autarky,0.20,2026-06-01,,Equal baseline until backtesting exists,12_early_warning/wetd_2035_scope.md
+wetd_default_2026q2,stockpiling,0.20,2026-06-01,,Equal baseline until backtesting exists,12_early_warning/wetd_2035_scope.md
+wetd_default_2026q2,trade_rewiring,0.20,2026-06-01,,Equal baseline until backtesting exists,12_early_warning/wetd_2035_scope.md
+wetd_default_2026q2,capital_access_control,0.20,2026-06-01,,Equal baseline until backtesting exists,12_early_warning/wetd_2035_scope.md
+wetd_default_2026q2,civilian_military_allocation,0.20,2026-06-01,,Equal baseline until backtesting exists,12_early_warning/wetd_2035_scope.md

@@ -9,3 +9,12 @@ dist/
 build/
 .cache/
 
+
+# WETD generated local database/raw pulls
+data/wetd/*.duckdb
+data/wetd/*.duckdb.*
+data/wetd/raw/
+
+# Python cache
+__pycache__/
+*.py[cod]

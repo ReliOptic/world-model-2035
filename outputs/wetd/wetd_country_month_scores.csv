@@ -1,0 +1,17 @@
+date_month,country_iso3,config_id,signal_count,missing_signal_types,base_wet_score,is_complete_score
+2026-06-01,ARE,wetd_default_2026q2,5,,76.6,True
+2026-06-01,CHN,wetd_default_2026q2,5,,76.2,True
+2026-06-01,CAN,wetd_default_2026q2,5,,71.4,True
+2026-06-01,JPN,wetd_default_2026q2,5,,64.6,True
+2026-06-01,NLD,wetd_default_2026q2,5,,64.6,True
+2026-06-01,KOR,wetd_default_2026q2,5,,64.6,True
+2026-06-01,IRN,wetd_default_2026q2,5,,64.0,True
+2026-06-01,TWN,wetd_default_2026q2,5,,62.2,True
+2026-06-01,DEU,wetd_default_2026q2,5,,61.800000000000004,True
+2026-06-01,USA,wetd_default_2026q2,5,,59.0,True
+2026-06-01,GBR,wetd_default_2026q2,5,,57.400000000000006,True
+2026-06-01,FRA,wetd_default_2026q2,5,,57.400000000000006,True
+2026-06-01,ISR,wetd_default_2026q2,5,,57.0,True
+2026-06-01,EUU,wetd_default_2026q2,5,,56.6,True
+2026-06-01,RUS,wetd_default_2026q2,5,,55.0,True
+2026-06-01,ITA,wetd_default_2026q2,5,,55.0,True

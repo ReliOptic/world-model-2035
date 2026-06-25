@@ -1,17 +1,17 @@
-# WETD Data Schema
+# War-Economy Transition Dashboard (WETD) Data Schema
 
 **정보 신선도:** 🟢 | **최종 갱신:** 2026-06 | **다음 갱신:** 2026-09
 
 ## Purpose
 
-This is a non-forecast data contract for WETD. It defines stable keys, source-row references, bridge tables, score-completeness guards, and scenario-mapping tables. The framework name is WETD; `2026–2035` is the model period used by the adjacent forecast documents.
+This is a non-forecast data contract for the War-Economy Transition Dashboard (WETD). It defines stable keys, source-row references, bridge tables, score-completeness guards, and scenario-mapping tables. The framework name is WETD; War-Economy Transition is the scored phenomenon; `2026–2035` is the model period used by the adjacent forecast documents.
 
 ## 연결 문서
 
 - [wetd_2035_scope.md](wetd_2035_scope.md) — forecast-heavy scope and annual 2026–2035 logic.
 - [wetd_theater_scenarios.md](wetd_theater_scenarios.md) — theater narratives that consume this schema.
 - [wetd_etl_dashboard_contract.md](wetd_etl_dashboard_contract.md) — ETL and dashboard implementation contract.
-- [CONTEXT.md](../CONTEXT.md) — WETD rows are `Divergence Signal` evidence within a `Coupling Map`.
+- [CONTEXT.md](../CONTEXT.md) — War-Economy Transition Dashboard rows are `Divergence Signal` evidence within a `Coupling Map`.
 
 ## Contract conventions
 
@@ -19,7 +19,7 @@ This is a non-forecast data contract for WETD. It defines stable keys, source-ro
 - Every ingested row stores `source_name`, `source_url`, `retrieved_at`, and where possible `source_record_id`.
 - `source_row_refs` is an array of strings formatted as `<table_name>:<primary_key>`, for example `fact_trade:trade_uncomtrade_2026_04_USA_CHN_8542_import`.
 - Analyst-derived scores must reference source rows; raw source rows must not depend on score rows.
-- WETD-specific seeds and calibration live in `dim_*`, `config_*`, or `seed_*` tables, not in generic source fact tables.
+- War-Economy Transition Dashboard-specific seeds and calibration live in `dim_*`, `config_*`, or `seed_*` tables, not in generic source fact tables.
 
 ## Entity model
 
@@ -243,7 +243,7 @@ Primary key: `wet_signal_score_id`.
 | date_month | date | yes | Month bucket |
 | country_iso3 | string | yes | Country |
 | product_id | string | no | Optional product scope |
-| signal_type | enum | yes | One of five WET signals |
+| signal_type | enum | yes | One of five War-Economy Transition signals |
 | raw_value | decimal | no | Source-specific statistic |
 | z_score | decimal | no | Anomaly score |
 | normalized_score | decimal | yes | 0-100 score |
@@ -279,14 +279,14 @@ Primary key: `scenario_mapping_id`. This table includes Base/Upside/Downside ins
 | upside_2035 | text | yes | Upside scenario |
 | downside_2035 | text | yes | Downside scenario |
 | response_concept | text | yes | Response option |
-| linked_signal_types | array | yes | WET signal types |
+| linked_signal_types | array | yes | War-Economy Transition signal types |
 | last_reviewed | date | yes | Review date |
 
 ## Initial dashboard views
 
 ### vw_country_month_wet_score
 
-Complete score guard: do not emit a complete Base WET Score unless all five signals are present for the country-month/config. Expose `signal_count` and `missing_signal_types` for incomplete rows.
+Complete score guard: do not emit a complete Base War-Economy Transition Score unless all five signals are present for the country-month/config. Expose `signal_count` and `missing_signal_types` for incomplete rows.
 
 ```sql
 WITH expected AS (

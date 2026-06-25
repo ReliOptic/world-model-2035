@@ -1,14 +1,14 @@
-# WETD Scope and Theater Framework
+# War-Economy Transition Dashboard (WETD) Scope and Theater Framework
 
 **정보 신선도:** 🟢 | **최종 갱신:** 2026-06 | **다음 갱신:** 2026-09
 
 ## Purpose
 
-WETD means **War-Economy Transition Dashboard**. `WETD` is the framework name; `2026–2035` is the forecast period used by this repository. The dashboard does not predict war directly. It tracks whether open-market allocation is shifting toward national-security allocation: self-reliance, stockpiling, route rewiring, access controls, sanctions adaptation, and civilian technology moving into defense or intelligence priority lanes.
+**War-Economy Transition Dashboard (WETD)** is the framework name. **War-Economy Transition (WET)** means the measured shift from open-market allocation toward national-security allocation; `2026–2035` is the forecast period used by this repository. The dashboard does not predict war directly. It tracks whether open-market allocation is shifting toward national-security allocation: self-reliance, stockpiling, route rewiring, access controls, sanctions adaptation, and civilian technology moving into defense or intelligence priority lanes.
 
 ## 연결 문서
 
-- [CONTEXT.md](../CONTEXT.md) — WETD is a `Map Slice` / `Coupling Map` early-warning surface; WET scores are `Divergence Signal` evidence, not facts by themselves.
+- [CONTEXT.md](../CONTEXT.md) — War-Economy Transition Dashboard (WETD) is a `Map Slice` / `Coupling Map` early-warning surface; War-Economy Transition scores are `Divergence Signal` evidence, not facts by themselves.
 - [METHODOLOGY.md](../METHODOLOGY.md) — forecast-heavy files must separate present facts, repo inference, and scenarios.
 - [wetd_theater_scenarios.md](wetd_theater_scenarios.md) — theater narratives and annual forecast rows.
 - [wetd_data_schema.md](wetd_data_schema.md) — non-forecast data contract for keys, facts, weights, and views.
@@ -21,11 +21,13 @@ WETD means **War-Economy Transition Dashboard**. `WETD` is the framework name; `
 
 **Repo inference.** The repository already treats compute, semiconductors, energy, logistics, and critical minerals as coupled constraints. WETD turns that inference into a monthly `Coupling Map` view: country-month signal rows, theater multipliers, and a commander note explaining why a score changed.
 
-**Scenario boundary.** A WET warning should not fire from one noisy row. It requires either at least three of five WET signals rising together, or one major theater shock plus two rising base signals.
+**Scenario boundary.** A War-Economy Transition warning should not fire from one noisy row. It requires either at least three of five War-Economy Transition signals rising together, or one major theater shock plus two rising base signals.
+
+**Inference boundary.** The dashboard should not merely list obvious causal claims such as "control exists, therefore risk." Its inference value comes from co-movement across independent signals, theater-adjusted changes in meaning, confidence limits, and explicit source gaps. A high score is a review queue, not a conclusion.
 
 ## MVP actor and goods scope
 
-| Scope | Included in the first WETD pass | Why it stays in scope |
+| Scope | Included in the first War-Economy Transition Dashboard pass | Why it stays in scope |
 |---|---|---|
 | Core powers | United States, China, Russia | AI, sanctions, energy, military, and war-economy transition centers |
 | G7 / advanced bloc | United States, Japan, Germany, UK, France, Italy, Canada, EU | Rulemaking, export controls, sanctions, industrial policy, financial controls |
@@ -33,7 +35,7 @@ WETD means **War-Economy Transition Dashboard**. `WETD` is the framework name; `
 | Corridor watch states | Taiwan, Singapore, Malaysia, UAE, Vietnam | Route rewiring, re-export, finance/logistics, sanctions adaptation sensors |
 | Strategic goods | HBM/GPU proxies, semiconductor equipment, EUV/metrology, EDA proxy, energy, rare earths, copper, power equipment, data-center cooling | Shared resource/coupling-node candidates |
 
-## Five WET signals
+## Five War-Economy Transition signals
 
 | Signal | Core question | Example evidence |
 |---|---|---|
@@ -60,7 +62,7 @@ The following values are starting hypotheses, not final model truths. They must 
 | Year | Base | Upside | Downside |
 |---|---|---|---|
 | 2026 | WETD remains a prototype Map Slice: source feeds, signal definitions, and theater exposure tables are created. | Official APIs cover enough rows for transparent monthly scorecards. | Sparse source coverage forces analyst-heavy scoring and weak comparability. |
-| 2027 | Semiconductor, sanctions, procurement, and energy feeds support the first country-month WET score. | Corridor watch states expose early route rewiring before policy shocks become visible. | Equal-weight defaults are mistaken for truth and hide uncertainty. |
+| 2027 | Semiconductor, sanctions, procurement, and energy feeds support the first country-month War-Economy Transition score. | Corridor watch states expose early route rewiring before policy shocks become visible. | Equal-weight defaults are mistaken for truth and hide uncertainty. |
 | 2028 | Theater multipliers begin to show different meanings for the same base signal. | Taiwan, Middle East, and Arctic indicators are audited separately and kept explainable. | One theater dominates the narrative and crowds out cross-theater coupling. |
 | 2029 | WETD becomes a repeatable monthly early-warning product with commander notes. | Backtesting separates noisy policy events from durable economic-security transition signals. | Data gaps around EDA, HBM, and dual-use procurement create false confidence. |
 | 2030 | Intermediate transition pathways show whether markets are still allocating strategic goods or permission systems are taking over. | Allied redundancy and transparency reduce block-formation risk. | Hoarding and rerouting turn AI compute and semiconductor capacity into bloc-governed resources. |
@@ -68,7 +70,7 @@ The following values are starting hypotheses, not final model truths. They must 
 | 2032 | The dashboard distinguishes ordinary industrial policy from war-economy transition. | Weight/config revisions become evidence-driven rather than narrative-driven. | Strategic stockpiling and route rewiring become normal enough to escape alarm thresholds. |
 | 2033 | Cross-theater comparison reveals whether shocks are local or system-wide. | Corridor audits reduce opaque rerouting and sanctions leakage. | Middle East energy/security shocks compound compute-infrastructure costs. |
 | 2034 | WETD becomes a governance checklist for strategic goods transparency and redundancy. | Response concepts are linked to each measured signal, limiting overreaction. | Arctic, energy, cable, and military infrastructure indicators converge into a new escalation lane. |
-| 2035 | The model separates observed WET transition from scenario interpretation. | WETD supports targeted buffers without defaulting to full bloc exclusion. | Strategic allocation replaces price allocation across compute, semiconductors, energy, and chokepoints. |
+| 2035 | The model separates observed War-Economy Transition movement from scenario interpretation. | WETD supports targeted buffers without defaulting to full bloc exclusion. | Strategic allocation replaces price allocation across compute, semiconductors, energy, and chokepoints. |
 
 ## 2035 전망 요약
 
@@ -83,7 +85,7 @@ The following values are starting hypotheses, not final model truths. They must 
 - Present-state facts are source rows or official policy/procurement events.
 - Repo inference is the coupling claim that multiple sectors can become one economic-security system.
 - 2035 scenarios are conditional narratives, not measurements.
-- WET scores must expose signal count, missing signal types, source references, confidence, weights, and theater exposure.
+- War-Economy Transition scores must expose signal count, missing signal types, source references, confidence, weights, and theater exposure.
 
 ## 정보 출처
 

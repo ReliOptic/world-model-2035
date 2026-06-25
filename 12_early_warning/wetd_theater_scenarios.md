@@ -1,14 +1,14 @@
-# WETD Theater Scenarios
+# War-Economy Transition Dashboard (WETD) Theater Scenarios
 
 **정보 신선도:** 🟢 | **최종 갱신:** 2026-06 | **다음 갱신:** 2026-09
 
 ## Purpose
 
-This file maps WETD into three theater-level scenarios for the 2026–2035 model period. The framework name is WETD; the scenarios are 2035 outcomes. Each theater uses the same five WET signals but interprets them through a different geopolitical multiplier.
+This file maps the War-Economy Transition Dashboard (WETD) into three theater-level scenarios for the 2026–2035 model period. The framework name is WETD; the scenarios are 2035 outcomes. Each theater uses the same five War-Economy Transition signals but interprets them through a different geopolitical multiplier.
 
 ## 연결 문서
 
-- [wetd_2035_scope.md](wetd_2035_scope.md) — scope, signals, calibration hypotheses, and annual WETD forecast.
+- [wetd_2035_scope.md](wetd_2035_scope.md) — scope, signals, calibration hypotheses, and annual War-Economy Transition Dashboard forecast.
 - [wetd_data_schema.md](wetd_data_schema.md) — tables that keep theater exposure, weights, and source references auditable.
 - [wetd_etl_dashboard_contract.md](wetd_etl_dashboard_contract.md) — monthly ETL/dashboard contract.
 - [CONTEXT.md](../CONTEXT.md) — `Coupling Map`, `Map Slice`, `Divergence Signal`, and scenario terminology.
@@ -27,7 +27,7 @@ This file maps WETD into three theater-level scenarios for the 2026–2035 model
 | Layer | Meaning | Evidence discipline |
 |---|---|---|
 | 2026 observable base | Current measurable row or official policy/procurement event | Source row with URL and retrieved date |
-| Early-warning signal | One of the five WET signals moves | Score row with source_row_refs and confidence |
+| Early-warning signal | One of the five War-Economy Transition signals moves | Score row with source_row_refs and confidence |
 | 2030 transition pathway | Plausible intermediate state | Repo inference, marked separately from facts |
 | 2035 scenario | Base/Upside/Downside outcome | Scenario, not measurement |
 
@@ -39,7 +39,7 @@ Taiwan is treated as a semiconductor keystone theater, not only as a sovereignty
 
 ### Early-warning signals
 
-| WET signal | Taiwan Strait indicator candidates |
+| War-Economy Transition signal | Taiwan Strait indicator candidates |
 |---|---|
 | Autarky | Semiconductor self-reliance programs intensify in China, US, Japan, Korea, EU, and Taiwan |
 | Strategic stockpiling | HBM, memory IC, GPU, AI-server, and semiconductor-equipment imports rise above demand proxies |
@@ -62,7 +62,7 @@ The Middle East theater links energy shocks, sanctions, dual-use AI and defense 
 
 ### Early-warning signals
 
-| WET signal | Middle East indicator candidates |
+| War-Economy Transition signal | Middle East indicator candidates |
 |---|---|
 | Autarky | Iran and regional actors expand domestic substitutes; Gulf states pursue sovereign AI infrastructure |
 | Strategic stockpiling | Oil, LNG, critical components, drone/missile inputs, and compute capacity show abnormal accumulation |
@@ -85,7 +85,7 @@ The Arctic theater is a spatial multiplier: lower sea ice, ship traffic, resourc
 
 ### Early-warning signals
 
-| WET signal | Arctic indicator candidates |
+| War-Economy Transition signal | Arctic indicator candidates |
 |---|---|
 | Autarky | Arctic states frame energy, ports, cables, and minerals as sovereign infrastructure |
 | Strategic stockpiling | Energy, critical minerals, ice-class vessels, radar, and communications assets receive abnormal investment |
@@ -105,14 +105,14 @@ The Arctic theater is a spatial multiplier: lower sea ice, ship traffic, resourc
 |---|---|---|---|
 | 2026 | Three theater definitions and exposure tables are drafted as WETD hypotheses. | The theater layer remains transparent about source-backed facts versus repo inference. | Multipliers are mistaken for measured probabilities. |
 | 2027 | Taiwan, Middle East, and Arctic source feeds start producing monthly theater notes. | Missing data is explicit, reducing false precision. | Sparse feeds push analysts toward narrative scoring. |
-| 2028 | Theater exposure begins changing how country-month WET scores are interpreted. | Taiwan semiconductor, Middle East energy/sanctions, and Arctic spatial variables stay separable. | One theater storyline crowds out cross-theater comparison. |
+| 2028 | Theater exposure begins changing how country-month War-Economy Transition scores are interpreted. | Taiwan semiconductor, Middle East energy/sanctions, and Arctic spatial variables stay separable. | One theater storyline crowds out cross-theater comparison. |
 | 2029 | Corridor-state evidence improves route-rewiring detection. | Early corridor anomalies trigger audit, not automatic escalation. | Re-export and mirror-trade gaps become opaque enough to weaken controls. |
 | 2030 | Intermediate pathways show whether strategic goods remain market-allocated or permission-allocated. | Redundancy investments reduce Taiwan Strait compute shock severity. | AI compute hoarding and emergency allocation become normalized. |
 | 2031 | Middle East procurement, sanctions, energy, and compute signals are read as one coupled system when evidence supports it. | Sanctions analytics and corridor audits limit leakage. | Dual-use supply chains split into opaque blocs. |
 | 2032 | Arctic route and infrastructure signals are separated from generic energy monitoring. | Governance catches cable, port, and resource-risk buildup early. | Polar access competition becomes a persistent military-economic risk lane. |
 | 2033 | Cross-theater compression becomes measurable through simultaneous signal movement. | WETD supports targeted buffers and avoids broad exclusion. | Energy, compute, and defense-procurement shocks reinforce each other. |
 | 2034 | Theater notes become scenario-maintenance records rather than one-off essays. | Calibration reviews reduce overreaction to single events. | Theater multipliers rise faster than institutions can verify. |
-| 2035 | WETD can explain which theater changed a WET score and why. | Transparency creates de-escalatory response concepts. | Three-theater compression turns compute, energy, routes, and dual-use tech into strategic allocation systems. |
+| 2035 | WETD can explain which theater changed a War-Economy Transition score and why. | Transparency creates de-escalatory response concepts. | Three-theater compression turns compute, energy, routes, and dual-use tech into strategic allocation systems. |
 
 ## 2035 전망 요약
 

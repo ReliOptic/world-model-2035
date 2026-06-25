@@ -1,17 +1,17 @@
-# WETD ETL and Dashboard Contract
+# War-Economy Transition Dashboard (WETD) ETL and Dashboard Contract
 
 **정보 신선도:** 🟢 | **최종 갱신:** 2026-06 | **다음 갱신:** 2026-09
 
 ## Purpose
 
-This is a non-forecast implementation contract for the first monthly WETD dashboard. The framework name is WETD; `2026–2035` belongs to adjacent forecast/scenario documents. The first implementation is a monthly analytical dashboard, not a real-time alerting platform.
+This is a non-forecast implementation contract for the first monthly War-Economy Transition Dashboard (WETD). The framework name is WETD; War-Economy Transition is the scored phenomenon; `2026–2035` belongs to adjacent forecast/scenario documents. The first implementation is a monthly analytical dashboard, not a real-time alerting platform.
 
 ## 연결 문서
 
 - [wetd_2035_scope.md](wetd_2035_scope.md) — forecast-heavy scope and model discipline.
 - [wetd_theater_scenarios.md](wetd_theater_scenarios.md) — theater scenario outputs consumed by the dashboard.
 - [wetd_data_schema.md](wetd_data_schema.md) — source fact tables, keys, source references, weights, and complete-score guard.
-- [CONTEXT.md](../CONTEXT.md) — WETD is a `Coupling Map` / `Divergence Signal` early-warning surface.
+- [CONTEXT.md](../CONTEXT.md) — War-Economy Transition Dashboard (WETD) is a `Coupling Map` / `Divergence Signal` early-warning surface.
 - [../docs/wetd_monthly_batch_dashboard.md](../docs/wetd_monthly_batch_dashboard.md) — executable DuckDB monthly batch runbook.
 
 ## Data-source priority
@@ -42,9 +42,9 @@ The Arctic pipeline remains separate from ordinary energy monitoring because it 
 2. Normalize country, product, corridor, and theater keys.
 3. Map goods and keywords to strategic product IDs.
 4. Compute source-level metrics.
-5. Convert metrics to 0-100 WET signal scores with source_row_refs.
+5. Convert metrics to 0-100 War-Economy Transition signal scores with source_row_refs.
 6. Apply config_signal_weight instead of hard-coded equal weights.
-7. Emit Base WET Score only when all five signals are present; otherwise expose signal_count and missing_signal_types.
+7. Emit Base War-Economy Transition Score only when all five signals are present; otherwise expose signal_count and missing_signal_types.
 8. Compute theater-month multipliers.
 9. Join country_theater_exposure to produce theater-adjusted scores.
 10. Update Base/Upside/Downside 2035 scenario-mapping rows.
@@ -65,7 +65,7 @@ The Arctic pipeline remains separate from ordinary energy monitoring because it 
 
 | Page | Required elements |
 |---|---|
-| Executive WET map | Country-month WET score, theater-adjusted WET score, top movers, highest-confidence signals, commander note |
+| Executive War-Economy Transition map | Country-month War-Economy Transition score, theater-adjusted War-Economy Transition score, top movers, highest-confidence signals, commander note |
 | Strategic goods monitor | HBM/GPU/equipment/EUV-metrology/EDA panel; energy/rare earth/copper/power equipment/cooling panel; import dependence and stockpiling anomalies |
 | Corridor watch | Taiwan, Singapore, Malaysia, UAE, Vietnam rows; direct versus indirect route ratios; mirror-trade gap flags; China/Russia/Iran/Taiwan-linked route patterns |
 | Policy and access-control timeline | Export controls, sanctions, FDI screening, data-center rules, AI/cloud/model restrictions with source URLs |
@@ -87,7 +87,7 @@ The Arctic pipeline remains separate from ordinary energy monitoring because it 
 
 - No real-time alerting.
 - No classified or scraped-only source dependency.
-- No single black-box WET score without components.
+- No single black-box War-Economy Transition score without components.
 - No theater multiplier hidden inside a product category.
 - No permanent assumption that equal weights are correct.
 

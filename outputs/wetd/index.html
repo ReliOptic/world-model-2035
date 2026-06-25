@@ -1,115 +1,143 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WETD Monthly Batch Dashboard</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 32px; background: #0f172a; color: #e2e8f0; }
-    h1, h2 { color: #f8fafc; }
-    .card { background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 20px; margin: 18px 0; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
-    table { border-collapse: collapse; width: 100%; font-size: 14px; }
-    th, td { border-bottom: 1px solid #334155; padding: 8px 10px; vertical-align: top; }
-    th { text-align: left; color: #93c5fd; background: #172554; }
-    a { color: #7dd3fc; }
-    code { color: #fbbf24; }
-    .muted { color: #94a3b8; }
-  </style>
-</head>
-<body>
-  <h1>WETD Monthly Batch Dashboard</h1>
-  <p class="muted">Generated 2026-06-25T09:33:19Z. This run uses DuckDB plus public/no-auth source fallbacks and records key-gated sources in data-quality output.</p>
-  <div class="card"><h2>Commander note</h2><pre># WETD Commander Note — 2026-06-25
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WETD Monthly Batch Dashboard</title><style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#07111f;color:#e2e8f0}main{max-width:1180px;margin:0 auto;padding:32px}h1,h2,h3{color:#f8fafc;margin-top:0}.hero{background:radial-gradient(circle at top left,#1e3a8a,#0f172a 52%,#111827);border-bottom:1px solid #334155;padding:42px 32px}.hero-inner{max-width:1180px;margin:0 auto}.subtitle{color:#bfdbfe;max-width:860px;font-size:18px;line-height:1.55}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px}.kpi{background:rgba(15,23,42,.82);border:1px solid #334155;border-radius:16px;padding:16px}.kpi .num{font-size:28px;font-weight:800;color:#93c5fd;display:block}.card{background:#111827;border:1px solid #334155;border-radius:18px;padding:22px;margin:20px 0;box-shadow:0 10px 28px rgba(0,0,0,.22)}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #334155;padding:8px 10px;vertical-align:top}th{text-align:left;color:#93c5fd;background:#172554;position:sticky;top:0}a{color:#7dd3fc}code{color:#fbbf24}pre{white-space:pre-wrap;color:#dbeafe}.muted{color:#94a3b8}.tiny{color:#94a3b8;font-size:11px;word-break:break-all}.badge{border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700;display:inline-block}.ok{background:#064e3b;color:#a7f3d0}.warn{background:#713f12;color:#fde68a}.mutedbadge{background:#334155;color:#cbd5e1}.bars{display:grid;gap:11px}.bar-row{display:grid;grid-template-columns:250px 1fr 58px;gap:12px;align-items:center}.bar-label span{display:block;color:#94a3b8;font-size:12px;margin-top:3px}.bar-track{height:18px;background:#1e293b;border-radius:999px;overflow:hidden;border:1px solid #334155}.bar-fill{height:100%;background:linear-gradient(90deg,#38bdf8,#f97316);border-radius:999px}.bar-score{font-weight:800;color:#fbbf24}.bubble-chart{width:100%;min-height:420px;background:#0b1220;border:1px solid #334155;border-radius:16px}.svg-label{fill:#bfdbfe;font-size:18px;font-weight:800}.svg-axis{stroke:#334155;stroke-width:2;stroke-dasharray:4 6}.svg-country{fill:#e2e8f0;font-size:15px;font-weight:700}.svg-score{fill:#fbbf24;font-weight:800}.source-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.source-card{background:#0b1220;border:1px solid #334155;border-radius:14px;padding:15px}.source-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.source-type{color:#bfdbfe}.trust{margin-top:8px;color:#fbbf24;font-size:12px;font-weight:800;text-transform:uppercase}.grid2{display:grid;grid-template-columns:1fr;gap:18px}
+</style></head><body><section class="hero"><div class="hero-inner"><h1>WETD Monthly Batch Dashboard</h1><p class="subtitle"><strong>What this is for:</strong> WETD is an analyst queue for spotting whether strategic goods are moving from market allocation toward security permissioning, stockpiling, route rewiring, sanctions pressure, and civilian-to-military allocation. It is not a war prediction and not a black-box truth score.</p><div class="kpis"><div class="kpi"><span class="num">152</span><span>official API/CSV rows loaded</span></div><div class="kpi"><span class="num">201</span><span>fallback proxy rows, visibly labeled</span></div><div class="kpi"><span class="num">16</span><span>countries with complete 5-signal scores</span></div><div class="kpi"><span class="num">12</span><span>country-theater adjusted scores</span></div></div><p class="muted">Generated 2026-06-25T15:05:15Z. DuckDB batch artifact; verify each source in the provenance cards below.</p></div></section><main><div class="grid2"><div class="card"><h2>Top country WET scores</h2><div class="bars" role="img" aria-label="Top country WET scores as horizontal bars">
+<div class="bar-row"><div class="bar-label"><strong>United Arab Emirates</strong><span>ARE · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:76.6%"></div></div><div class="bar-score">76.6</div></div>
+<div class="bar-row"><div class="bar-label"><strong>China</strong><span>CHN · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:76.2%"></div></div><div class="bar-score">76.2</div></div>
+<div class="bar-row"><div class="bar-label"><strong>Canada</strong><span>CAN · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:71.4%"></div></div><div class="bar-score">71.4</div></div>
+<div class="bar-row"><div class="bar-label"><strong>Netherlands</strong><span>NLD · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:64.6%"></div></div><div class="bar-score">64.6</div></div>
+<div class="bar-row"><div class="bar-label"><strong>South Korea</strong><span>KOR · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:64.6%"></div></div><div class="bar-score">64.6</div></div>
+<div class="bar-row"><div class="bar-label"><strong>Japan</strong><span>JPN · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:64.6%"></div></div><div class="bar-score">64.6</div></div>
+<div class="bar-row"><div class="bar-label"><strong>Iran</strong><span>IRN · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:64.0%"></div></div><div class="bar-score">64.0</div></div>
+<div class="bar-row"><div class="bar-label"><strong>Taiwan</strong><span>TWN · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:62.2%"></div></div><div class="bar-score">62.2</div></div>
+<div class="bar-row"><div class="bar-label"><strong>Germany</strong><span>DEU · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:61.8%"></div></div><div class="bar-score">61.8</div></div>
+<div class="bar-row"><div class="bar-label"><strong>United States</strong><span>USA · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:59.0%"></div></div><div class="bar-score">59.0</div></div>
+<div class="bar-row"><div class="bar-label"><strong>United Kingdom</strong><span>GBR · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:57.4%"></div></div><div class="bar-score">57.4</div></div>
+<div class="bar-row"><div class="bar-label"><strong>France</strong><span>FRA · 5/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:57.4%"></div></div><div class="bar-score">57.4</div></div>
+</div></div><div class="card"><h2>Theater-adjusted risk bubbles</h2><svg class="bubble-chart" viewBox="0 0 920 330" role="img" aria-label="Theater adjusted WET score bubble chart">
+<text x="180" y="26" text-anchor="middle" class="svg-label">Taiwan Strait</text>
+<line x1="180" y1="42" x2="180" y2="300" class="svg-axis"/>
+<text x="460" y="26" text-anchor="middle" class="svg-label">Middle East</text>
+<line x1="460" y1="42" x2="460" y2="300" class="svg-axis"/>
+<text x="740" y="26" text-anchor="middle" class="svg-label">Arctic</text>
+<line x1="740" y1="42" x2="740" y2="300" class="svg-axis"/>
+<circle cx="180" cy="65" r="28.0" fill="#38bdf8" fill-opacity="0.78"><title>China (CHN) score 94.1, exposure 0.95, multiplier 1.3</title></circle>
+<text x="216.0" y="69" class="svg-country">China <tspan class="svg-score">94.1</tspan></text>
+<circle cx="180" cy="103" r="25.8" fill="#38bdf8" fill-opacity="0.78"><title>Taiwan (TWN) score 80.9, exposure 1.0, multiplier 1.3</title></circle>
+<text x="213.8" y="107" class="svg-country">Taiwan <tspan class="svg-score">80.9</tspan></text>
+<circle cx="460" cy="65" r="25.4" fill="#f97316" fill-opacity="0.78"><title>Iran (IRN) score 78.7, exposure 1.0, multiplier 1.23</title></circle>
+<text x="493.4" y="69" class="svg-country">Iran <tspan class="svg-score">78.7</tspan></text>
+<circle cx="180" cy="141" r="23.7" fill="#38bdf8" fill-opacity="0.78"><title>United States (USA) score 69.0, exposure 0.9, multiplier 1.3</title></circle>
+<text x="211.7" y="145" class="svg-country">United States <tspan class="svg-score">69.0</tspan></text>
+<circle cx="180" cy="179" r="23.4" fill="#38bdf8" fill-opacity="0.78"><title>South Korea (KOR) score 67.2, exposure 0.8, multiplier 1.3</title></circle>
+<text x="211.4" y="183" class="svg-country">South Korea <tspan class="svg-score">67.2</tspan></text>
+<circle cx="460" cy="103" r="23.2" fill="#f97316" fill-opacity="0.78"><title>United Arab Emirates (ARE) score 66.0, exposure 0.7, multiplier 1.23</title></circle>
+<text x="491.2" y="107" class="svg-country">United Arab Emirates <tspan class="svg-score">66.0</tspan></text>
+<circle cx="180" cy="217" r="22.7" fill="#38bdf8" fill-opacity="0.78"><title>Netherlands (NLD) score 63.0, exposure 0.75, multiplier 1.3</title></circle>
+<text x="210.7" y="221" class="svg-country">Netherlands <tspan class="svg-score">63.0</tspan></text>
+<circle cx="740" cy="65" r="22.7" fill="#a78bfa" fill-opacity="0.78"><title>Canada (CAN) score 62.8, exposure 0.8, multiplier 1.1</title></circle>
+<text x="770.7" y="69" class="svg-country">Canada <tspan class="svg-score">62.8</tspan></text>
+<circle cx="460" cy="141" r="22.1" fill="#f97316" fill-opacity="0.78"><title>Israel (ISR) score 59.6, exposure 0.85, multiplier 1.23</title></circle>
+<text x="490.1" y="145" class="svg-country">Israel <tspan class="svg-score">59.6</tspan></text>
+<circle cx="180" cy="255" r="22.0" fill="#38bdf8" fill-opacity="0.78"><title>Japan (JPN) score 58.8, exposure 0.7, multiplier 1.3</title></circle>
+<text x="210.0" y="259" class="svg-country">Japan <tspan class="svg-score">58.8</tspan></text>
+<circle cx="740" cy="103" r="21.8" fill="#a78bfa" fill-opacity="0.78"><title>Russia (RUS) score 57.5, exposure 0.95, multiplier 1.1</title></circle>
+<text x="769.8" y="107" class="svg-country">Russia <tspan class="svg-score">57.5</tspan></text>
+<circle cx="740" cy="141" r="20.3" fill="#a78bfa" fill-opacity="0.78"><title>United States (USA) score 48.7, exposure 0.75, multiplier 1.1</title></circle>
+<text x="768.3" y="145" class="svg-country">United States <tspan class="svg-score">48.7</tspan></text>
+</svg></div></div><div class="card"><h2>Data provenance and trust board</h2><p class="muted">Green cards are official/public rows loaded into DuckDB. Amber cards are key-gated sources or fallback proxy rows; do not read them as high-resolution trade/energy data.</p><div class="source-grid">
+<div class="source-card"><div class="source-head"><strong>UN Comtrade</strong><span class="badge warn">missing_key</span></div><p class="source-type">key-gated source · rows loaded: <strong>0</strong></p><p>COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key.</p><a href="https://comtradeapi.un.org/" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://comtradeapi.un.org/</div><div class="trust">Key required / fallback used</div></div>
+<div class="source-card"><div class="source-head"><strong>World Bank trade fallback</strong><span class="badge warn">ok</span></div><p class="source-type">fallback proxy · rows loaded: <strong>185</strong></p><p>Loaded no-auth trade proxy indicators for immediate WETD execution.</p><a href="https://api.worldbank.org/v2/" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://api.worldbank.org/v2/</div><div class="trust">Proxy fallback rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>Federal Register</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>25</strong></p><p>Loaded term &#x27;semiconductor export control&#x27;.</p><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=semiconductor+export+control" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=semiconductor+export+control</div><div class="trust">Official/public rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>Federal Register</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>25</strong></p><p>Loaded term &#x27;artificial intelligence data center&#x27;.</p><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=artificial+intelligence+data+center" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=artificial+intelligence+data+center</div><div class="trust">Official/public rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>Federal Register</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>25</strong></p><p>Loaded term &#x27;foreign investment semiconductor&#x27;.</p><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=foreign+investment+semiconductor" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=foreign+investment+semiconductor</div><div class="trust">Official/public rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>Federal Register</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>25</strong></p><p>Loaded term &#x27;advanced computing export&#x27;.</p><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=advanced+computing+export" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=advanced+computing+export</div><div class="trust">Official/public rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>Treasury OFAC SDN</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>25</strong></p><p>Loaded sanctions rows from official OFAC CSV fallback.</p><a href="https://www.treasury.gov/ofac/downloads/sdn.csv" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://www.treasury.gov/ofac/downloads/sdn.csv</div><div class="trust">Official/public rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>USAspending</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>25</strong></p><p>Loaded public procurement rows without authorization.</p><a href="https://api.usaspending.gov/api/v2/search/spending_by_award/" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://api.usaspending.gov/api/v2/search/spending_by_award/</div><div class="trust">Official/public rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>EIA Open Data</strong><span class="badge warn">missing_key</span></div><p class="source-type">key-gated source · rows loaded: <strong>0</strong></p><p>EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used.</p><a href="https://www.eia.gov/opendata/documentation.php" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://www.eia.gov/opendata/documentation.php</div><div class="trust">Key required / fallback used</div></div>
+<div class="source-card"><div class="source-head"><strong>World Bank energy/minerals</strong><span class="badge warn">ok</span></div><p class="source-type">fallback proxy · rows loaded: <strong>16</strong></p><p>Loaded no-auth energy/minerals fallback indicators.</p><a href="https://api.worldbank.org/v2/" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://api.worldbank.org/v2/</div><div class="trust">Proxy fallback rows loaded</div></div>
+<div class="source-card"><div class="source-head"><strong>NSIDC Sea Ice Index v4</strong><span class="badge ok">ok</span></div><p class="source-type">official API/CSV · rows loaded: <strong>2</strong></p><p>Loaded latest Arctic daily extent 2026-06-24.</p><a href="https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv</div><div class="trust">Official/public rows loaded</div></div>
+</div></div><div class="card"><h2>Commander note</h2><pre># WETD Commander Note — 2026-06-25
 
 ## Executive read
 
 This is a monthly batch early-warning run. It does not predict war; it identifies whether economic allocation is moving from market pricing toward security permissioning, stockpiling, rerouting, and defense allocation.
 
+Data basis: 152 official API/CSV rows plus 201 World Bank fallback proxy rows. Key-gated sources are visible in the data-quality notes instead of being hidden.
+
 ## Highest Base WET scores
 
-- ARE: 76.6
-- CHN: 76.2
-- CAN: 71.4
-- NLD: 64.6
-- KOR: 64.6
+- United Arab Emirates (ARE): 76.6
+- China (CHN): 76.2
+- Canada (CAN): 71.4
+- Netherlands (NLD): 64.6
+- Japan (JPN): 64.6
 
 ## Highest theater-adjusted scores
 
-- CHN / taiwan_strait: 94.11
-- TWN / taiwan_strait: 80.86
-- IRN / middle_east: 78.72
-- USA / taiwan_strait: 69.03
-- KOR / taiwan_strait: 67.18
+- China (CHN) / taiwan_strait: 94.11
+- Taiwan (TWN) / taiwan_strait: 80.86
+- Iran (IRN) / middle_east: 78.72
+- United States (USA) / taiwan_strait: 69.03
+- South Korea (KOR) / taiwan_strait: 67.18
 
 ## Data quality notes
 
-- UN Comtrade: missing_key, rows=0 — COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key.
-- World Bank trade fallback: ok, rows=185 — Loaded no-auth trade proxy indicators for immediate WETD execution.
-- Federal Register: ok, rows=25 — Loaded term &#x27;semiconductor export control&#x27;.
-- Federal Register: ok, rows=25 — Loaded term &#x27;artificial intelligence data center&#x27;.
-- Federal Register: ok, rows=25 — Loaded term &#x27;foreign investment semiconductor&#x27;.
-- Federal Register: ok, rows=25 — Loaded term &#x27;advanced computing export&#x27;.
-- Treasury OFAC SDN: ok, rows=25 — Loaded sanctions rows from official OFAC CSV fallback.
-- USAspending: ok, rows=25 — Loaded public procurement rows without authorization.
-- EIA Open Data: missing_key, rows=0 — EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used.
-- World Bank energy/minerals: ok, rows=16 — Loaded no-auth energy/minerals fallback indicators.
-- NSIDC Sea Ice Index v4: ok, rows=2 — Loaded latest Arctic daily extent 2026-06-23.
+- UN Comtrade: missing_key, rows=0 — COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key. Source: https://comtradeapi.un.org/
+- World Bank trade fallback: ok, rows=185 — Loaded no-auth trade proxy indicators for immediate WETD execution. Source: https://api.worldbank.org/v2/
+- Federal Register: ok, rows=25 — Loaded term &#x27;semiconductor export control&#x27;. Source: https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=semiconductor+export+control
+- Federal Register: ok, rows=25 — Loaded term &#x27;artificial intelligence data center&#x27;. Source: https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=artificial+intelligence+data+center
+- Federal Register: ok, rows=25 — Loaded term &#x27;foreign investment semiconductor&#x27;. Source: https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=foreign+investment+semiconductor
+- Federal Register: ok, rows=25 — Loaded term &#x27;advanced computing export&#x27;. Source: https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=advanced+computing+export
+- Treasury OFAC SDN: ok, rows=25 — Loaded sanctions rows from official OFAC CSV fallback. Source: https://www.treasury.gov/ofac/downloads/sdn.csv
+- USAspending: ok, rows=25 — Loaded public procurement rows without authorization. Source: https://api.usaspending.gov/api/v2/search/spending_by_award/
+- EIA Open Data: missing_key, rows=0 — EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used. Source: https://www.eia.gov/opendata/documentation.php
+- World Bank energy/minerals: ok, rows=16 — Loaded no-auth energy/minerals fallback indicators. Source: https://api.worldbank.org/v2/
+- NSIDC Sea Ice Index v4: ok, rows=2 — Loaded latest Arctic daily extent 2026-06-24. Source: https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv
 
 ## Decision use
 
-Use top scores as a queue for analyst review, not as automatic alarms. Check source_row_refs and missing_signal_types before escalating a country/theater note.
-</pre></div>
-  <div class="card"><h2>Country-month Base WET score</h2><table><thead><tr><th>country_iso3</th><th>signal_count</th><th>missing_signal_types</th><th>base_wet_score</th><th>is_complete_score</th></tr></thead><tbody>
-<tr><td>ARE</td><td>5</td><td></td><td>76.6</td><td>True</td></tr>
-<tr><td>CHN</td><td>5</td><td></td><td>76.2</td><td>True</td></tr>
-<tr><td>CAN</td><td>5</td><td></td><td>71.4</td><td>True</td></tr>
-<tr><td>KOR</td><td>5</td><td></td><td>64.6</td><td>True</td></tr>
-<tr><td>JPN</td><td>5</td><td></td><td>64.6</td><td>True</td></tr>
-<tr><td>NLD</td><td>5</td><td></td><td>64.6</td><td>True</td></tr>
-<tr><td>IRN</td><td>5</td><td></td><td>64.0</td><td>True</td></tr>
-<tr><td>TWN</td><td>5</td><td></td><td>62.2</td><td>True</td></tr>
-<tr><td>DEU</td><td>5</td><td></td><td>61.8</td><td>True</td></tr>
-<tr><td>USA</td><td>5</td><td></td><td>59.0</td><td>True</td></tr>
-<tr><td>FRA</td><td>5</td><td></td><td>57.4</td><td>True</td></tr>
-<tr><td>GBR</td><td>5</td><td></td><td>57.4</td><td>True</td></tr>
-<tr><td>ISR</td><td>5</td><td></td><td>57.0</td><td>True</td></tr>
-<tr><td>EUU</td><td>5</td><td></td><td>56.6</td><td>True</td></tr>
-<tr><td>RUS</td><td>5</td><td></td><td>55.0</td><td>True</td></tr>
-<tr><td>ITA</td><td>5</td><td></td><td>55.0</td><td>True</td></tr>
-</tbody></table></div>
-  <div class="card"><h2>Theater-adjusted WET score</h2><table><thead><tr><th>country_iso3</th><th>theater_id</th><th>base_wet_score</th><th>exposure_weight</th><th>multiplier</th><th>final_wet_score</th></tr></thead><tbody>
-<tr><td>CHN</td><td>taiwan_strait</td><td>76.2</td><td>0.95</td><td>1.3</td><td>94.11</td></tr>
-<tr><td>TWN</td><td>taiwan_strait</td><td>62.2</td><td>1.0</td><td>1.3</td><td>80.86</td></tr>
-<tr><td>IRN</td><td>middle_east</td><td>64.0</td><td>1.0</td><td>1.23</td><td>78.72</td></tr>
-<tr><td>USA</td><td>taiwan_strait</td><td>59.0</td><td>0.9</td><td>1.3</td><td>69.03</td></tr>
-<tr><td>KOR</td><td>taiwan_strait</td><td>64.6</td><td>0.8</td><td>1.3</td><td>67.18</td></tr>
-<tr><td>ARE</td><td>middle_east</td><td>76.6</td><td>0.7</td><td>1.23</td><td>65.95</td></tr>
-<tr><td>NLD</td><td>taiwan_strait</td><td>64.6</td><td>0.75</td><td>1.3</td><td>62.99</td></tr>
-<tr><td>CAN</td><td>arctic</td><td>71.4</td><td>0.8</td><td>1.1</td><td>62.83</td></tr>
-<tr><td>ISR</td><td>middle_east</td><td>57.0</td><td>0.85</td><td>1.23</td><td>59.59</td></tr>
-<tr><td>JPN</td><td>taiwan_strait</td><td>64.6</td><td>0.7</td><td>1.3</td><td>58.79</td></tr>
-<tr><td>RUS</td><td>arctic</td><td>55.0</td><td>0.95</td><td>1.1</td><td>57.48</td></tr>
-<tr><td>USA</td><td>arctic</td><td>59.0</td><td>0.75</td><td>1.1</td><td>48.68</td></tr>
-</tbody></table></div>
-  <div class="card"><h2>Data quality board</h2><table><thead><tr><th>source_name</th><th>status</th><th>rows_loaded</th><th>message</th></tr></thead><tbody>
-<tr><td>UN Comtrade</td><td>missing_key</td><td>0</td><td>COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key.</td></tr>
-<tr><td>World Bank trade fallback</td><td>ok</td><td>185</td><td>Loaded no-auth trade proxy indicators for immediate WETD execution.</td></tr>
-<tr><td>Federal Register</td><td>ok</td><td>25</td><td>Loaded term &#x27;semiconductor export control&#x27;.</td></tr>
-<tr><td>Federal Register</td><td>ok</td><td>25</td><td>Loaded term &#x27;artificial intelligence data center&#x27;.</td></tr>
-<tr><td>Federal Register</td><td>ok</td><td>25</td><td>Loaded term &#x27;foreign investment semiconductor&#x27;.</td></tr>
-<tr><td>Federal Register</td><td>ok</td><td>25</td><td>Loaded term &#x27;advanced computing export&#x27;.</td></tr>
-<tr><td>Treasury OFAC SDN</td><td>ok</td><td>25</td><td>Loaded sanctions rows from official OFAC CSV fallback.</td></tr>
-<tr><td>USAspending</td><td>ok</td><td>25</td><td>Loaded public procurement rows without authorization.</td></tr>
-<tr><td>EIA Open Data</td><td>missing_key</td><td>0</td><td>EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used.</td></tr>
-<tr><td>World Bank energy/minerals</td><td>ok</td><td>16</td><td>Loaded no-auth energy/minerals fallback indicators.</td></tr>
-<tr><td>NSIDC Sea Ice Index v4</td><td>ok</td><td>2</td><td>Loaded latest Arctic daily extent 2026-06-23.</td></tr>
-</tbody></table></div>
-  <div class="card"><h2>Artifacts</h2><ul>
-    <li><a href="wetd_country_month_scores.csv">wetd_country_month_scores.csv</a></li>
-    <li><a href="wetd_theater_adjusted_scores.csv">wetd_theater_adjusted_scores.csv</a></li>
-    <li><a href="wetd_signal_scores.csv">wetd_signal_scores.csv</a></li>
-    <li><a href="wetd_data_quality.csv">wetd_data_quality.csv</a></li>
-    <li><a href="commander_note_2026_06.md">commander_note_2026_06.md</a></li>
-  </ul></div>
-</body>
-</html>
+Use top scores as a queue for analyst review, not as automatic alarms. Check source_row_refs, source URLs, proxy/fallback labels, and missing_signal_types before escalating a country/theater note.
+</pre></div><div class="card"><h2>Country-month score table with full names</h2><table><thead><tr><th>country_iso3</th><th>country_name</th><th>signal_count</th><th>missing_signal_types</th><th>base_wet_score</th><th>is_complete_score</th></tr></thead><tbody>
+<tr><td>ARE</td><td>United Arab Emirates</td><td>5</td><td></td><td>76.6</td><td>True</td></tr>
+<tr><td>CHN</td><td>China</td><td>5</td><td></td><td>76.2</td><td>True</td></tr>
+<tr><td>CAN</td><td>Canada</td><td>5</td><td></td><td>71.4</td><td>True</td></tr>
+<tr><td>KOR</td><td>South Korea</td><td>5</td><td></td><td>64.6</td><td>True</td></tr>
+<tr><td>JPN</td><td>Japan</td><td>5</td><td></td><td>64.6</td><td>True</td></tr>
+<tr><td>NLD</td><td>Netherlands</td><td>5</td><td></td><td>64.6</td><td>True</td></tr>
+<tr><td>IRN</td><td>Iran</td><td>5</td><td></td><td>64.0</td><td>True</td></tr>
+<tr><td>TWN</td><td>Taiwan</td><td>5</td><td></td><td>62.2</td><td>True</td></tr>
+<tr><td>DEU</td><td>Germany</td><td>5</td><td></td><td>61.8</td><td>True</td></tr>
+<tr><td>USA</td><td>United States</td><td>5</td><td></td><td>59.0</td><td>True</td></tr>
+<tr><td>FRA</td><td>France</td><td>5</td><td></td><td>57.4</td><td>True</td></tr>
+<tr><td>GBR</td><td>United Kingdom</td><td>5</td><td></td><td>57.4</td><td>True</td></tr>
+<tr><td>ISR</td><td>Israel</td><td>5</td><td></td><td>57.0</td><td>True</td></tr>
+<tr><td>EUU</td><td>European Union</td><td>5</td><td></td><td>56.6</td><td>True</td></tr>
+<tr><td>RUS</td><td>Russia</td><td>5</td><td></td><td>55.0</td><td>True</td></tr>
+<tr><td>ITA</td><td>Italy</td><td>5</td><td></td><td>55.0</td><td>True</td></tr>
+</tbody></table></div><div class="card"><h2>Theater-adjusted score table</h2><table><thead><tr><th>country_iso3</th><th>country_name</th><th>theater_id</th><th>base_wet_score</th><th>exposure_weight</th><th>multiplier</th><th>final_wet_score</th></tr></thead><tbody>
+<tr><td>CHN</td><td>China</td><td>taiwan_strait</td><td>76.2</td><td>0.95</td><td>1.3</td><td>94.11</td></tr>
+<tr><td>TWN</td><td>Taiwan</td><td>taiwan_strait</td><td>62.2</td><td>1.0</td><td>1.3</td><td>80.86</td></tr>
+<tr><td>IRN</td><td>Iran</td><td>middle_east</td><td>64.0</td><td>1.0</td><td>1.23</td><td>78.72</td></tr>
+<tr><td>USA</td><td>United States</td><td>taiwan_strait</td><td>59.0</td><td>0.9</td><td>1.3</td><td>69.03</td></tr>
+<tr><td>KOR</td><td>South Korea</td><td>taiwan_strait</td><td>64.6</td><td>0.8</td><td>1.3</td><td>67.18</td></tr>
+<tr><td>ARE</td><td>United Arab Emirates</td><td>middle_east</td><td>76.6</td><td>0.7</td><td>1.23</td><td>65.95</td></tr>
+<tr><td>NLD</td><td>Netherlands</td><td>taiwan_strait</td><td>64.6</td><td>0.75</td><td>1.3</td><td>62.99</td></tr>
+<tr><td>CAN</td><td>Canada</td><td>arctic</td><td>71.4</td><td>0.8</td><td>1.1</td><td>62.83</td></tr>
+<tr><td>ISR</td><td>Israel</td><td>middle_east</td><td>57.0</td><td>0.85</td><td>1.23</td><td>59.59</td></tr>
+<tr><td>JPN</td><td>Japan</td><td>taiwan_strait</td><td>64.6</td><td>0.7</td><td>1.3</td><td>58.79</td></tr>
+<tr><td>RUS</td><td>Russia</td><td>arctic</td><td>55.0</td><td>0.95</td><td>1.1</td><td>57.48</td></tr>
+<tr><td>USA</td><td>United States</td><td>arctic</td><td>59.0</td><td>0.75</td><td>1.1</td><td>48.68</td></tr>
+</tbody></table></div><div class="card"><h2>Source URL audit table</h2><table><thead><tr><th>source_name</th><th>status</th><th>rows_loaded</th><th>source_url</th><th>message</th></tr></thead><tbody>
+<tr><td>UN Comtrade</td><td><span class="badge warn">missing_key</span></td><td>0</td><td><a href="https://comtradeapi.un.org/" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://comtradeapi.un.org/</span></td><td>COMTRADE_SUBSCRIPTION_KEY not set; UN Comtrade returned 401 when tested without a key.</td></tr>
+<tr><td>World Bank trade fallback</td><td><span class="badge ok">ok</span></td><td>185</td><td><a href="https://api.worldbank.org/v2/" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://api.worldbank.org/v2/</span></td><td>Loaded no-auth trade proxy indicators for immediate WETD execution.</td></tr>
+<tr><td>Federal Register</td><td><span class="badge ok">ok</span></td><td>25</td><td><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=semiconductor+export+control" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;condition</span></td><td>Loaded term &#x27;semiconductor export control&#x27;.</td></tr>
+<tr><td>Federal Register</td><td><span class="badge ok">ok</span></td><td>25</td><td><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=artificial+intelligence+data+center" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;condition</span></td><td>Loaded term &#x27;artificial intelligence data center&#x27;.</td></tr>
+<tr><td>Federal Register</td><td><span class="badge ok">ok</span></td><td>25</td><td><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=foreign+investment+semiconductor" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;condition</span></td><td>Loaded term &#x27;foreign investment semiconductor&#x27;.</td></tr>
+<tr><td>Federal Register</td><td><span class="badge ok">ok</span></td><td>25</td><td><a href="https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;conditions%5Bterm%5D=advanced+computing+export" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://www.federalregister.gov/api/v1/documents.json?per_page=25&amp;order=newest&amp;condition</span></td><td>Loaded term &#x27;advanced computing export&#x27;.</td></tr>
+<tr><td>Treasury OFAC SDN</td><td><span class="badge ok">ok</span></td><td>25</td><td><a href="https://www.treasury.gov/ofac/downloads/sdn.csv" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://www.treasury.gov/ofac/downloads/sdn.csv</span></td><td>Loaded sanctions rows from official OFAC CSV fallback.</td></tr>
+<tr><td>USAspending</td><td><span class="badge ok">ok</span></td><td>25</td><td><a href="https://api.usaspending.gov/api/v2/search/spending_by_award/" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://api.usaspending.gov/api/v2/search/spending_by_award/</span></td><td>Loaded public procurement rows without authorization.</td></tr>
+<tr><td>EIA Open Data</td><td><span class="badge warn">missing_key</span></td><td>0</td><td><a href="https://www.eia.gov/opendata/documentation.php" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://www.eia.gov/opendata/documentation.php</span></td><td>EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used.</td></tr>
+<tr><td>World Bank energy/minerals</td><td><span class="badge ok">ok</span></td><td>16</td><td><a href="https://api.worldbank.org/v2/" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://api.worldbank.org/v2/</span></td><td>Loaded no-auth energy/minerals fallback indicators.</td></tr>
+<tr><td>NSIDC Sea Ice Index v4</td><td><span class="badge ok">ok</span></td><td>2</td><td><a href="https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv" target="_blank" rel="noreferrer">source</a><br><span class="tiny">https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv</span></td><td>Loaded latest Arctic daily extent 2026-06-24.</td></tr>
+</tbody></table></div><div class="card"><h2>Artifacts</h2><ul><li><a href="wetd_country_month_scores.csv">wetd_country_month_scores.csv</a></li><li><a href="wetd_theater_adjusted_scores.csv">wetd_theater_adjusted_scores.csv</a></li><li><a href="wetd_signal_scores.csv">wetd_signal_scores.csv</a></li><li><a href="wetd_data_quality.csv">wetd_data_quality.csv</a></li><li><a href="commander_note_2026_06.md">commander_note_2026_06.md</a></li></ul></div></main></body></html>

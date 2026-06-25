@@ -740,9 +740,17 @@ def export_csv(con: duckdb.DuckDBPyConnection, query: str, path: Path) -> None:
     rows = con.execute(query).fetchall()
     cols = [d[0] for d in con.description]
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(cols)
         writer.writerows(rows)
+
+
+def format_value(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, float):
+        return str(round(value, 3))
+    return str(value)
 
 
 def table_html(con: duckdb.DuckDBPyConnection, query: str, limit: int = 20) -> str:
@@ -750,91 +758,145 @@ def table_html(con: duckdb.DuckDBPyConnection, query: str, limit: int = 20) -> s
     cols = [d[0] for d in con.description]
     out = ["<table><thead><tr>" + "".join(f"<th>{html.escape(str(c))}</th>" for c in cols) + "</tr></thead><tbody>"]
     for row in rows:
-        out.append("<tr>" + "".join(f"<td>{html.escape('' if v is None else str(round(v, 3) if isinstance(v, float) else v))}</td>" for v in row) + "</tr>")
+        cells = []
+        for col, value in zip(cols, row):
+            rendered = format_value(value)
+            if col == "source_url" and rendered.startswith("http"):
+                safe = html.escape(rendered)
+                cells.append(f'<td><a href="{safe}" target="_blank" rel="noreferrer">source</a><br><span class="tiny">{safe[:96]}</span></td>')
+            elif col in {"status", "source_type"}:
+                cls = "ok" if rendered in {"ok", "official_api", "official_csv"} else "warn" if rendered in {"missing_key", "fallback_proxy", "proxy"} else "mutedbadge"
+                cells.append(f'<td><span class="badge {cls}">{html.escape(rendered)}</span></td>')
+            else:
+                cells.append(f"<td>{html.escape(rendered)}</td>")
+        out.append("<tr>" + "".join(cells) + "</tr>")
     out.append("</tbody></table>")
     return "\n".join(out)
 
 
+def score_bars_html(con: duckdb.DuckDBPyConnection) -> str:
+    rows = con.execute("""
+        SELECT d.country_name, c.country_iso3, ROUND(c.base_wet_score, 1) AS score, c.signal_count
+        FROM wetd_data.vw_country_month_wet_score c
+        JOIN wetd_data.dim_country d USING(country_iso3)
+        WHERE c.is_complete_score
+        ORDER BY c.base_wet_score DESC NULLS LAST
+        LIMIT 12
+    """).fetchall()
+    parts = ['<div class="bars" role="img" aria-label="Top country WET scores as horizontal bars">']
+    for name, iso, score, signal_count in rows:
+        width = max(0, min(100, float(score or 0)))
+        parts.append(f'''<div class="bar-row"><div class="bar-label"><strong>{html.escape(name)}</strong><span>{html.escape(iso)} · {signal_count}/5 signals</span></div><div class="bar-track"><div class="bar-fill" style="width:{width:.1f}%"></div></div><div class="bar-score">{width:.1f}</div></div>''')
+    parts.append('</div>')
+    return "\n".join(parts)
+
+
+def theater_bubbles_html(con: duckdb.DuckDBPyConnection) -> str:
+    rows = con.execute("""
+        SELECT d.country_name, t.country_iso3, t.theater_id, ROUND(t.final_wet_score, 1) AS score,
+               ROUND(t.exposure_weight, 2) AS exposure_weight, ROUND(t.multiplier_value, 2) AS multiplier
+        FROM wetd_data.vw_theater_adjusted_score t
+        JOIN wetd_data.dim_country d USING(country_iso3)
+        WHERE t.final_wet_score IS NOT NULL
+        ORDER BY t.final_wet_score DESC
+        LIMIT 12
+    """).fetchall()
+    if not rows:
+        return '<p class="muted">No theater-adjusted scores available.</p>'
+    max_score = max(float(r[3] or 0) for r in rows) or 1
+    w, h = 920, 330
+    col = {"taiwan_strait": 180, "middle_east": 460, "arctic": 740}
+    counts = {k: 0 for k in col}
+    colors = {"taiwan_strait": "#38bdf8", "middle_east": "#f97316", "arctic": "#a78bfa"}
+    svg = [f'<svg class="bubble-chart" viewBox="0 0 {w} {h}" role="img" aria-label="Theater adjusted WET score bubble chart">']
+    for theater, x in col.items():
+        svg.append(f'<text x="{x}" y="26" text-anchor="middle" class="svg-label">{html.escape(theater.replace("_", " " ).title())}</text>')
+        svg.append(f'<line x1="{x}" y1="42" x2="{x}" y2="300" class="svg-axis"/>')
+    for name, iso, theater, score, exposure, multiplier in rows:
+        counts[theater] = counts.get(theater, 0) + 1
+        x = col.get(theater, 460)
+        y = 65 + (counts[theater] - 1) * 38
+        radius = 12 + (float(score or 0) / max_score) * 16
+        color = colors.get(theater, "#60a5fa")
+        label = f"{name} ({iso}) score {score}, exposure {exposure}, multiplier {multiplier}"
+        svg.append(f'<circle cx="{x}" cy="{y}" r="{radius:.1f}" fill="{color}" fill-opacity="0.78"><title>{html.escape(label)}</title></circle>')
+        svg.append(f'<text x="{x + radius + 8:.1f}" y="{y + 4}" class="svg-country">{html.escape(name)} <tspan class="svg-score">{score}</tspan></text>')
+    svg.append('</svg>')
+    return "\n".join(svg)
+
+
+def provenance_cards_html(con: duckdb.DuckDBPyConnection) -> str:
+    rows = con.execute("SELECT source_name, status, rows_loaded, source_url, message FROM wetd_data.data_quality_event ORDER BY observed_at").fetchall()
+    cards = ['<div class="source-grid">']
+    for source, status, rows, url, message in rows:
+        status_text = str(status)
+        is_fallback = "World Bank" in source
+        is_ok = status_text == "ok" and not is_fallback
+        is_key = status_text == "missing_key"
+        label = "Proxy fallback rows loaded" if is_fallback else "Official/public rows loaded" if is_ok else "Key required / fallback used" if is_key else "Check required"
+        badge = "warn" if is_fallback or is_key else "ok" if is_ok else "mutedbadge"
+        source_type = "official API/CSV" if source in {"Federal Register", "USAspending", "Treasury OFAC SDN", "NSIDC Sea Ice Index v4"} else "fallback proxy" if is_fallback else "key-gated source"
+        cards.append(f'''<div class="source-card"><div class="source-head"><strong>{html.escape(source)}</strong><span class="badge {badge}">{html.escape(status_text)}</span></div><p class="source-type">{html.escape(source_type)} · rows loaded: <strong>{rows}</strong></p><p>{html.escape(message)}</p><a href="{html.escape(str(url))}" target="_blank" rel="noreferrer">Verify source</a><div class="tiny">{html.escape(str(url))}</div><div class="trust">{html.escape(label)}</div></div>''')
+    cards.append('</div>')
+    return "\n".join(cards)
+
+
 def generate_commander_note(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> str:
     top = con.execute("""
-        SELECT country_iso3, ROUND(base_wet_score, 2) AS score
-        FROM wetd_data.vw_country_month_wet_score
-        WHERE is_complete_score
-        ORDER BY base_wet_score DESC
+        SELECT d.country_name, c.country_iso3, ROUND(c.base_wet_score, 2) AS score
+        FROM wetd_data.vw_country_month_wet_score c
+        JOIN wetd_data.dim_country d USING(country_iso3)
+        WHERE c.is_complete_score
+        ORDER BY c.base_wet_score DESC
         LIMIT 5
     """).fetchall()
     theater = con.execute("""
-        SELECT country_iso3, theater_id, ROUND(final_wet_score, 2) AS score
-        FROM wetd_data.vw_theater_adjusted_score
-        WHERE final_wet_score IS NOT NULL
-        ORDER BY final_wet_score DESC
+        SELECT d.country_name, t.country_iso3, t.theater_id, ROUND(t.final_wet_score, 2) AS score
+        FROM wetd_data.vw_theater_adjusted_score t
+        JOIN wetd_data.dim_country d USING(country_iso3)
+        WHERE t.final_wet_score IS NOT NULL
+        ORDER BY t.final_wet_score DESC
         LIMIT 5
     """).fetchall()
-    dq = con.execute("SELECT source_name, status, rows_loaded, message FROM wetd_data.data_quality_event ORDER BY observed_at").fetchall()
+    dq = con.execute("SELECT source_name, status, rows_loaded, message, source_url FROM wetd_data.data_quality_event ORDER BY observed_at").fetchall()
+    official_rows = sum(int(rows or 0) for source, status, rows, *_ in dq if status == "ok" and source in {"Federal Register", "USAspending", "Treasury OFAC SDN", "NSIDC Sea Ice Index v4"})
+    proxy_rows = sum(int(rows or 0) for source, status, rows, *_ in dq if status == "ok" and "World Bank" in source)
     lines = [
-        f"# WETD Commander Note — {as_of.isoformat()}",
-        "",
-        "## Executive read",
-        "",
-        "This is a monthly batch early-warning run. It does not predict war; it identifies whether economic allocation is moving from market pricing toward security permissioning, stockpiling, rerouting, and defense allocation.",
-        "",
-        "## Highest Base WET scores",
-        "",
+        f"# WETD Commander Note — {as_of.isoformat()}", "", "## Executive read", "",
+        "This is a monthly batch early-warning run. It does not predict war; it identifies whether economic allocation is moving from market pricing toward security permissioning, stockpiling, rerouting, and defense allocation.", "",
+        f"Data basis: {official_rows} official API/CSV rows plus {proxy_rows} World Bank fallback proxy rows. Key-gated sources are visible in the data-quality notes instead of being hidden.", "",
+        "## Highest Base WET scores", "",
     ]
-    for iso, score in top:
-        lines.append(f"- {iso}: {score}")
+    for name, iso, score in top:
+        lines.append(f"- {name} ({iso}): {score}")
     lines += ["", "## Highest theater-adjusted scores", ""]
-    for iso, theater_id, score in theater:
-        lines.append(f"- {iso} / {theater_id}: {score}")
+    for name, iso, theater_id, score in theater:
+        lines.append(f"- {name} ({iso}) / {theater_id}: {score}")
     lines += ["", "## Data quality notes", ""]
-    for source, status, rows, msg in dq:
-        lines.append(f"- {source}: {status}, rows={rows} — {msg}")
-    lines += ["", "## Decision use", "", "Use top scores as a queue for analyst review, not as automatic alarms. Check source_row_refs and missing_signal_types before escalating a country/theater note."]
+    for source, status, rows, msg, url in dq:
+        lines.append(f"- {source}: {status}, rows={rows} — {msg} Source: {url}")
+    lines += ["", "## Decision use", "", "Use top scores as a queue for analyst review, not as automatic alarms. Check source_row_refs, source URLs, proxy/fallback labels, and missing_signal_types before escalating a country/theater note."]
     return "\n".join(lines) + "\n"
 
 
 def export_outputs(con: duckdb.DuckDBPyConnection, as_of: dt.date) -> None:
-    export_csv(con, "SELECT * FROM wetd_data.vw_country_month_wet_score ORDER BY base_wet_score DESC NULLS LAST", OUT_DIR / "wetd_country_month_scores.csv")
-    export_csv(con, "SELECT * FROM wetd_data.vw_theater_adjusted_score ORDER BY final_wet_score DESC NULLS LAST", OUT_DIR / "wetd_theater_adjusted_scores.csv")
-    export_csv(con, "SELECT * FROM wetd_data.data_quality_event ORDER BY observed_at", OUT_DIR / "wetd_data_quality.csv")
-    export_csv(con, "SELECT * FROM wetd_data.fact_wet_signal_score ORDER BY country_iso3, signal_type", OUT_DIR / "wetd_signal_scores.csv")
+    export_csv(con, "SELECT c.date_month, c.country_iso3, d.country_name, c.config_id, c.signal_count, c.missing_signal_types, c.base_wet_score, c.is_complete_score FROM wetd_data.vw_country_month_wet_score c JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY c.base_wet_score DESC NULLS LAST", OUT_DIR / "wetd_country_month_scores.csv")
+    export_csv(con, "SELECT t.date_month, t.country_iso3, d.country_name, t.theater_id, t.base_wet_score, t.signal_count, t.missing_signal_types, t.is_complete_score, t.exposure_weight, t.multiplier_value, t.final_wet_score FROM wetd_data.vw_theater_adjusted_score t JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY t.final_wet_score DESC NULLS LAST", OUT_DIR / "wetd_theater_adjusted_scores.csv")
+    export_csv(con, "SELECT source_name, status, rows_loaded, source_url, message, observed_at FROM wetd_data.data_quality_event ORDER BY observed_at", OUT_DIR / "wetd_data_quality.csv")
+    export_csv(con, "SELECT s.*, d.country_name FROM wetd_data.fact_wet_signal_score s JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY s.country_iso3, s.signal_type", OUT_DIR / "wetd_signal_scores.csv")
     note = generate_commander_note(con, as_of)
     (OUT_DIR / f"commander_note_{as_of.strftime('%Y_%m')}.md").write_text(note, encoding="utf-8")
-    html_doc = f"""<!doctype html>
-<html lang=\"en\">
-<head>
-  <meta charset=\"utf-8\">
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-  <title>WETD Monthly Batch Dashboard</title>
-  <style>
-    body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 32px; background: #0f172a; color: #e2e8f0; }}
-    h1, h2 {{ color: #f8fafc; }}
-    .card {{ background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 20px; margin: 18px 0; box-shadow: 0 8px 24px rgba(0,0,0,.18); }}
-    table {{ border-collapse: collapse; width: 100%; font-size: 14px; }}
-    th, td {{ border-bottom: 1px solid #334155; padding: 8px 10px; vertical-align: top; }}
-    th {{ text-align: left; color: #93c5fd; background: #172554; }}
-    a {{ color: #7dd3fc; }}
-    code {{ color: #fbbf24; }}
-    .muted {{ color: #94a3b8; }}
-  </style>
-</head>
-<body>
-  <h1>WETD Monthly Batch Dashboard</h1>
-  <p class=\"muted\">Generated {html.escape(now_utc())}. This run uses DuckDB plus public/no-auth source fallbacks and records key-gated sources in data-quality output.</p>
-  <div class=\"card\"><h2>Commander note</h2><pre>{html.escape(note)}</pre></div>
-  <div class=\"card\"><h2>Country-month Base WET score</h2>{table_html(con, 'SELECT country_iso3, signal_count, missing_signal_types, ROUND(base_wet_score,2) AS base_wet_score, is_complete_score FROM wetd_data.vw_country_month_wet_score ORDER BY base_wet_score DESC NULLS LAST', 25)}</div>
-  <div class=\"card\"><h2>Theater-adjusted WET score</h2>{table_html(con, 'SELECT country_iso3, theater_id, ROUND(base_wet_score,2) AS base_wet_score, exposure_weight, ROUND(multiplier_value,3) AS multiplier, ROUND(final_wet_score,2) AS final_wet_score FROM wetd_data.vw_theater_adjusted_score ORDER BY final_wet_score DESC NULLS LAST', 25)}</div>
-  <div class=\"card\"><h2>Data quality board</h2>{table_html(con, 'SELECT source_name, status, rows_loaded, message FROM wetd_data.data_quality_event ORDER BY observed_at', 50)}</div>
-  <div class=\"card\"><h2>Artifacts</h2><ul>
-    <li><a href=\"wetd_country_month_scores.csv\">wetd_country_month_scores.csv</a></li>
-    <li><a href=\"wetd_theater_adjusted_scores.csv\">wetd_theater_adjusted_scores.csv</a></li>
-    <li><a href=\"wetd_signal_scores.csv\">wetd_signal_scores.csv</a></li>
-    <li><a href=\"wetd_data_quality.csv\">wetd_data_quality.csv</a></li>
-    <li><a href=\"commander_note_{as_of.strftime('%Y_%m')}.md\">commander_note_{as_of.strftime('%Y_%m')}.md</a></li>
-  </ul></div>
-</body>
-</html>
-"""
+    official_rows = con.execute("""
+        SELECT COALESCE(SUM(rows_loaded),0) FROM wetd_data.data_quality_event
+        WHERE status='ok' AND source_name IN ('Federal Register','USAspending','Treasury OFAC SDN','NSIDC Sea Ice Index v4')
+    """).fetchone()[0]
+    proxy_rows = con.execute("SELECT COALESCE(SUM(rows_loaded),0) FROM wetd_data.data_quality_event WHERE status='ok' AND source_name LIKE 'World Bank%'").fetchone()[0]
+    complete_country_count = con.execute("SELECT COUNT(*) FROM wetd_data.vw_country_month_wet_score WHERE is_complete_score").fetchone()[0]
+    theater_score_count = con.execute("SELECT COUNT(*) FROM wetd_data.vw_theater_adjusted_score WHERE final_wet_score IS NOT NULL").fetchone()[0]
+    html_doc = f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>WETD Monthly Batch Dashboard</title><style>
+body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin:0;background:#07111f;color:#e2e8f0}}main{{max-width:1180px;margin:0 auto;padding:32px}}h1,h2,h3{{color:#f8fafc;margin-top:0}}.hero{{background:radial-gradient(circle at top left,#1e3a8a,#0f172a 52%,#111827);border-bottom:1px solid #334155;padding:42px 32px}}.hero-inner{{max-width:1180px;margin:0 auto}}.subtitle{{color:#bfdbfe;max-width:860px;font-size:18px;line-height:1.55}}.kpis{{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:22px}}.kpi{{background:rgba(15,23,42,.82);border:1px solid #334155;border-radius:16px;padding:16px}}.kpi .num{{font-size:28px;font-weight:800;color:#93c5fd;display:block}}.card{{background:#111827;border:1px solid #334155;border-radius:18px;padding:22px;margin:20px 0;box-shadow:0 10px 28px rgba(0,0,0,.22)}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{border-bottom:1px solid #334155;padding:8px 10px;vertical-align:top}}th{{text-align:left;color:#93c5fd;background:#172554;position:sticky;top:0}}a{{color:#7dd3fc}}code{{color:#fbbf24}}pre{{white-space:pre-wrap;color:#dbeafe}}.muted{{color:#94a3b8}}.tiny{{color:#94a3b8;font-size:11px;word-break:break-all}}.badge{{border-radius:999px;padding:3px 8px;font-size:12px;font-weight:700;display:inline-block}}.ok{{background:#064e3b;color:#a7f3d0}}.warn{{background:#713f12;color:#fde68a}}.mutedbadge{{background:#334155;color:#cbd5e1}}.bars{{display:grid;gap:11px}}.bar-row{{display:grid;grid-template-columns:250px 1fr 58px;gap:12px;align-items:center}}.bar-label span{{display:block;color:#94a3b8;font-size:12px;margin-top:3px}}.bar-track{{height:18px;background:#1e293b;border-radius:999px;overflow:hidden;border:1px solid #334155}}.bar-fill{{height:100%;background:linear-gradient(90deg,#38bdf8,#f97316);border-radius:999px}}.bar-score{{font-weight:800;color:#fbbf24}}.bubble-chart{{width:100%;min-height:420px;background:#0b1220;border:1px solid #334155;border-radius:16px}}.svg-label{{fill:#bfdbfe;font-size:18px;font-weight:800}}.svg-axis{{stroke:#334155;stroke-width:2;stroke-dasharray:4 6}}.svg-country{{fill:#e2e8f0;font-size:15px;font-weight:700}}.svg-score{{fill:#fbbf24;font-weight:800}}.source-grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}}.source-card{{background:#0b1220;border:1px solid #334155;border-radius:14px;padding:15px}}.source-head{{display:flex;justify-content:space-between;gap:10px;align-items:center}}.source-type{{color:#bfdbfe}}.trust{{margin-top:8px;color:#fbbf24;font-size:12px;font-weight:800;text-transform:uppercase}}.grid2{{display:grid;grid-template-columns:1fr;gap:18px}}
+</style></head><body><section class="hero"><div class="hero-inner"><h1>WETD Monthly Batch Dashboard</h1><p class="subtitle"><strong>What this is for:</strong> WETD is an analyst queue for spotting whether strategic goods are moving from market allocation toward security permissioning, stockpiling, route rewiring, sanctions pressure, and civilian-to-military allocation. It is not a war prediction and not a black-box truth score.</p><div class="kpis"><div class="kpi"><span class="num">{official_rows}</span><span>official API/CSV rows loaded</span></div><div class="kpi"><span class="num">{proxy_rows}</span><span>fallback proxy rows, visibly labeled</span></div><div class="kpi"><span class="num">{complete_country_count}</span><span>countries with complete 5-signal scores</span></div><div class="kpi"><span class="num">{theater_score_count}</span><span>country-theater adjusted scores</span></div></div><p class="muted">Generated {html.escape(now_utc())}. DuckDB batch artifact; verify each source in the provenance cards below.</p></div></section><main><div class="grid2"><div class="card"><h2>Top country WET scores</h2>{score_bars_html(con)}</div><div class="card"><h2>Theater-adjusted risk bubbles</h2>{theater_bubbles_html(con)}</div></div><div class="card"><h2>Data provenance and trust board</h2><p class="muted">Green cards are official/public rows loaded into DuckDB. Amber cards are key-gated sources or fallback proxy rows; do not read them as high-resolution trade/energy data.</p>{provenance_cards_html(con)}</div><div class="card"><h2>Commander note</h2><pre>{html.escape(note)}</pre></div><div class="card"><h2>Country-month score table with full names</h2>{table_html(con, 'SELECT c.country_iso3, d.country_name, c.signal_count, c.missing_signal_types, ROUND(c.base_wet_score,2) AS base_wet_score, c.is_complete_score FROM wetd_data.vw_country_month_wet_score c JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY c.base_wet_score DESC NULLS LAST', 25)}</div><div class="card"><h2>Theater-adjusted score table</h2>{table_html(con, 'SELECT t.country_iso3, d.country_name, t.theater_id, ROUND(t.base_wet_score,2) AS base_wet_score, t.exposure_weight, ROUND(t.multiplier_value,3) AS multiplier, ROUND(t.final_wet_score,2) AS final_wet_score FROM wetd_data.vw_theater_adjusted_score t JOIN wetd_data.dim_country d USING(country_iso3) ORDER BY t.final_wet_score DESC NULLS LAST', 25)}</div><div class="card"><h2>Source URL audit table</h2>{table_html(con, 'SELECT source_name, status, rows_loaded, source_url, message FROM wetd_data.data_quality_event ORDER BY observed_at', 50)}</div><div class="card"><h2>Artifacts</h2><ul><li><a href="wetd_country_month_scores.csv">wetd_country_month_scores.csv</a></li><li><a href="wetd_theater_adjusted_scores.csv">wetd_theater_adjusted_scores.csv</a></li><li><a href="wetd_signal_scores.csv">wetd_signal_scores.csv</a></li><li><a href="wetd_data_quality.csv">wetd_data_quality.csv</a></li><li><a href="commander_note_{as_of.strftime('%Y_%m')}.md">commander_note_{as_of.strftime('%Y_%m')}.md</a></li></ul></div></main></body></html>'''
     (OUT_DIR / "index.html").write_text(html_doc, encoding="utf-8")
 
 

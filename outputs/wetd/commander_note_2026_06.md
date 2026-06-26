@@ -74,7 +74,7 @@ Data basis: 152 official API/CSV rows plus 201 World Bank fallback proxy rows. K
 - USAspending: ok, rows=25 — Loaded public procurement rows without authorization. Source: https://api.usaspending.gov/api/v2/search/spending_by_award/
 - EIA Open Data: missing_key, rows=0 — EIA_API_KEY not set; EIA official docs require an API key. World Bank fallback used. Source: https://www.eia.gov/opendata/documentation.php
 - World Bank energy/minerals: ok, rows=16 — Loaded no-auth energy/minerals fallback indicators. Source: https://api.worldbank.org/v2/
-- NSIDC Sea Ice Index v4: ok, rows=2 — Loaded latest Arctic daily extent 2026-06-24. Source: https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv
+- NSIDC Sea Ice Index v4: ok, rows=2 — Loaded latest Arctic daily extent 2026-06-25. Source: https://noaadata.apps.nsidc.org/NOAA/G02135/north/daily/data/N_seaice_extent_daily_v4.0.csv
 
 ## Decision use
 

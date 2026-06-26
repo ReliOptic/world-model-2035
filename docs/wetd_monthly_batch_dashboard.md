@@ -80,6 +80,10 @@ HTML dashboard는 네 층으로만 읽게 재배치한다.
 
 ## 5개 War-Economy Transition signal
 
+대시보드 상단에는 `5-signal fingerprint` 접근법을 먼저 설명한다. 이 다섯 가지는 “전시경제인가?”를 단정하기 위한 체크리스트가 아니라, 시장 배분이 국가안보 배분으로 바뀔 때 반복적으로 나타나는 최소 MECE 관측축이다. 따라서 단일 사건의 선명한 인과관계가 아니라, 여러 독립 신호가 theater exposure 안에서 같이 움직이는지를 review queue로 올린다.
+
+현재 batch의 데이터 기반은 DuckDB에 적재된 공개 row다. Federal Register 정책 event, Treasury OFAC sanctions, USAspending procurement, NSIDC Arctic access, World Bank fallback trade/energy/mineral proxy를 사용한다. UN Comtrade/EIA 같은 고해상도 key-gated source는 붙지 않았으면 data-quality board에 gap으로 남기며, fallback proxy를 실제 고해상도 trade/energy data처럼 숨겨 쓰지 않는다.
+
 | Signal | Plain meaning | 국가별 부연에서 확인할 내용 |
 |---|---|---|
 | Autarky / self-reliance pressure | 시장 조달보다 국내 대체·자립·주권 언어가 강해지는가 | 해당 국가의 정책 event와 에너지/광물 dependency row가 같이 점수를 만들었는지 |

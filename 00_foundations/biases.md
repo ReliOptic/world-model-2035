@@ -1,5 +1,5 @@
 # Biases
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## Purpose
 This file lists the explicit forecast biases that should be corrected during drafting.

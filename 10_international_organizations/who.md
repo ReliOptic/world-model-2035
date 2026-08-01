@@ -1,5 +1,5 @@
 # WHO
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - WHO의 Programme Budget 2026-2027은 GPW14에 완전히 맞춘 첫 예산으로, 총 envelope를 `US$ 6,206.7 million`으로 제시한다. 이 중 base programmes는 `US$ 4,267.1 million`, emergency operations and appeals는 `US$ 1,000 million`이다.

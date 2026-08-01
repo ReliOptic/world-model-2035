@@ -1,5 +1,5 @@
 # Multiplanetary Thesis
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - SpaceX의 2025년 5월 Mars update는 Starship이 `multi-planetary species` 전환의 핵심 transport 플랫폼이며, Starlink 수익이 Mars 프로그램 자금 조달 동력임을 공식화했다.

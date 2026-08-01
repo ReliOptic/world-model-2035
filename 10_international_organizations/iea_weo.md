@@ -1,5 +1,5 @@
 # IEA World Energy Outlook
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - IEA `World Energy Outlook 2025`는 에너지 안보를 경제·국가안보의 핵심 이슈로 재정의하며, 분석틀을 `Current Policies Scenario (CPS)`, `Stated Policies Scenario (STEPS)`, `Net Zero Emissions by 2050 (NZE)`로 제시한다.

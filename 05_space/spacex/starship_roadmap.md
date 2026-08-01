@@ -1,5 +1,5 @@
 # Starship Roadmap
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - SpaceX의 공식 Starship 페이지 기준으로 Starship/Super Heavy는 `완전 재사용`을 목표로 하며, Starship은 `100~150t` fully reusable, `250t` expendable payload를 제시한다. 시스템 전체 높이는 `123m`다.

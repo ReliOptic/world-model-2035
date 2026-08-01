@@ -1,5 +1,5 @@
 # Space Debris Problem
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 2026-02 Space-Track.org public catalog 기준 추적 orbital 물체는 `29,790`개, debris surveillance network 추적 대상(10cm+)은 `43,000+`, active payloads는 약 `9,300`, spent rocket stages는 `2,000+`로 집계된다.

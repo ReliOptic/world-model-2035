@@ -1,5 +1,5 @@
 # UN SDG and AI
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - UN `High-Level Advisory Body on AI`는 `2023년 10월`에 `33개국 39명` 전문가로 구성됐고, `2024년 9월` 최종 보고서 `Governing AI for Humanity`에서 7대 권고를 제시했다. 권고는 `International Scientific Panel on AI`, `Policy Dialogue on AI Governance`, `AI Standards Exchange`, `Capacity Development Network`, `Global Fund for AI`, `Global AI Data Framework`, `AI Office in the UN Secretariat`이다.

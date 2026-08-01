@@ -1,5 +1,5 @@
 # Scoring
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## Purpose
 Track forecast quality over time instead of leaving predictions as unscored prose.

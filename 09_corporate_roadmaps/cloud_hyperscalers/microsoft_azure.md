@@ -1,5 +1,5 @@
 # Microsoft Azure
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Microsoft FY26 Q2 공식 실적에서 전체 매출은 `81.3B 달러`, Intelligent Cloud 매출 증가는 `+29%`, Azure and other cloud services 성장은 `+39%`였다. Azure는 여전히 Microsoft의 핵심 성장축이다.

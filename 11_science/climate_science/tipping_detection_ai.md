@@ -1,5 +1,5 @@
 # Tipping Point Detection and AI
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - Ditlevsen & Ditlevsen의 2023 Nature Communications 논문은 북대서양 SST fingerprint에 기반한 데이터 주도 추정기로 `AMOC collapse 가능성을 2025-2095 구간`으로 제시했다. 해석은 SST fingerprint 구성 방식에 민감하며, 예측 구간은 `2024-2180`까지도 열려 있다.

@@ -1,5 +1,5 @@
 # WTO Digital Trade
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - WTO `Joint Statement Initiative on E-commerce (JSI)`는 `2024년 7월 26일 stabilised text`를 공개한 뒤, `2024년 12월 5일 71개 공동제안국`이 `WT/GC/W/955` 문서로 `Agreement on E-Commerce`의 최종 본문을 회람했다.

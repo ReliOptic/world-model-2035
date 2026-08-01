@@ -1,5 +1,5 @@
 # Climate Prediction Resolution (Science)
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - ECMWF는 `2025-02-25`에 AI 기반 `AIFS(Artificial Intelligence Forecasting System)`를 operational로 전환했고, `2025-07-01`에는 앙상블 버전 `AIFS ENS`도 operational이 됐다. AIFS는 기존 물리모델 `IFS`와 병렬 운영되며 grid spacing은 `0.25°(~28 km)`, timestep `6h`다.

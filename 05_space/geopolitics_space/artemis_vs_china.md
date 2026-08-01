@@ -1,5 +1,5 @@
 # Artemis vs China
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-04  |  **다음 갱신:** 2026-07
 
 ## 2026년 4월 현재 상태
 - 2026-01 NASA는 Artemis III를 `NET 2028`로 공식 연기했으나, 2026-02-27 administrator Jared Isaacman은 Artemis III를 `2027 중반`으로 재가속화하되 달 착륙이 아닌 LEO rendezvous·docking 테스트로 재정의했다. Artemis IV가 최초 crewed lunar landing으로 재지정됐다.

@@ -1,6 +1,15 @@
 # 팀 운영 모델 — 주간 모임 + GitHub 비동기 협업
 
+**정보 신선도:** 🟢 | **최종 갱신:** 2026-06 | **다음 갱신:** 2026-09
+
 3인 팀이 주 1회 모이되, 모임 사이의 아이디어 수집·토론은 GitHub Issues로 비동기 진행한다.
+
+## 연결 문서
+
+- [README.md](README.md) — premortem workspace 개요와 후보 ID namespace.
+- [failure-candidates.md](failure-candidates.md) — `Corpus C1`~`Corpus C6` 후보 목록.
+- [map-slice-01-ai-infra-baseline.md](map-slice-01-ai-infra-baseline.md) — `Map C6` 후보.
+- [submission-checklist.md](submission-checklist.md) — 제출 전 최종 게이트.
 
 ## 원칙
 - **모든 아이디어는 Issue로 남긴다.** 모임의 말은 휘발되지만 Issue는 역추적(이 공모전 자체가 역추적이다)을 가능하게 한다.
@@ -25,7 +34,7 @@
 
 ### 아이디어 등록
 - Issue 템플릿 `Pre-Mortem 아이디어`(`.github/ISSUE_TEMPLATE/premortem-idea.yml`)로 등록 → 예견된 실패/원인/대응/층위 칸을 채운다.
-- 출발점이 필요하면 [failure-candidates.md](failure-candidates.md)의 C1~C5를 각자 Issue로 옮기거나 변형한다.
+- 출발점이 필요하면 [failure-candidates.md](failure-candidates.md)의 `Corpus C1`~`Corpus C6` 또는 `Map C6`를 각자 Issue로 옮기거나 변형한다.
 
 ## 주간 사이클 (마감까지 ~약 8주 운영 구간)
 주간 모임은 한 시간이면 충분하다. 매주 같은 골격:
@@ -55,3 +64,8 @@
 - 공모전은 보완 자료를 외부 링크(GitHub 허용)로 받고, '모든 사용자 열람 가능'을 요구한다.
 - 제출 전 레포가 **public**인지 확인하고, README에서 `premortem/`로 가는 경로가 살아 있게 둔다.
 - 제안서의 원인 진단은 코퍼스 파일을 출처로 인용 → "근거가 공개 레포에 있다"가 인과성·신뢰도 점수에 기여한다.
+
+## 정보 출처
+
+- GitHub Issues documentation, https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues, 2026-06 확인.
+- GitHub labels documentation, https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels, 2026-06 확인.

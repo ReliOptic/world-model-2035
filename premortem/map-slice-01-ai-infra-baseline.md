@@ -1,7 +1,16 @@
 # Map Slice 01 — AI 인프라 빌드아웃 (Base 2035)
 
+**정보 신선도:** 🟢 | **최종 갱신:** 2026-06 | **다음 갱신:** 2026-09
+
 > **이것은 무엇인가:** [CONTEXT.md](../CONTEXT.md)의 **Coupling Map** schema를 *Base Case 시나리오*에 인스턴스화한 첫 **Map Slice**다. 방법론은 [ADR 0001~0003](../docs/adr/) 참조. 주간 디스커션의 **화두(Seeder)** 이자, 공모전 '예견된 실패' 후보를 *발견*하는 장치.
 > **읽는 법:** 행=행위자(비대칭 게임), 열=자원 어휘 v1(고정 좌표축). 셀=그 행위자가 그 자원을 어떻게 청구/통제하나 + 이 시나리오에서의 강조. **Hub는 고르지 않고 발견한다** — 결합이 가장 몰린 열이 표적.
+
+## 연결 문서
+
+- [README.md](README.md) — premortem workspace와 후보 ID namespace.
+- [failure-candidates.md](failure-candidates.md) — `Corpus C1`~`Corpus C6` 후보 목록.
+- [../CONTEXT.md](../CONTEXT.md) — Coupling Map / Map Slice / Divergence Signal 용어.
+- [../13_scenarios/fundamental_line_pilot_ai_infra.md](../13_scenarios/fundamental_line_pilot_ai_infra.md) — AI 인프라 divergence 정량 앵커.
 
 ## 슬라이스 격자 (행위자 × 자원 v1)
 
@@ -37,9 +46,9 @@
 
 ## 여기서 떠오른 실패 장면 후보
 
-> **C6 (지도 발견형):** 2036년, 2020년대 말 합리적 과청구가 누적된 전력·구리 Hub가 동시에 조인다. 좌초된 데이터센터·지연된 그리드·청산되는 자산가격이 **상관되어** 터지고(아무도 단독으론 막을 수 없었다 — 각자 최적이었으니까), 국민연금이 떠안은 AI 인프라 익스포저가 은퇴 세대를 직격한다. **균형이 곧 실패였다.**
+> **Map C6 (지도 발견형):** 2036년, 2020년대 말 합리적 과청구가 누적된 전력·구리 Hub가 동시에 조인다. 좌초된 데이터센터·지연된 그리드·청산되는 자산가격이 **상관되어** 터지고(아무도 단독으론 막을 수 없었다 — 각자 최적이었으니까), 국민연금이 떠안은 AI 인프라 익스포저가 은퇴 세대를 직격한다. **균형이 곧 실패였다.**
 
-이 C6은 기존 [failure-candidates.md](failure-candidates.md)의 C1~C5와 달리 *단일 서사가 아니라 Coupling Map이 발견한 상관 실패*다 — "AI×실패"의 인과를 게임이론으로 구현한 가장 비-뻔한 후보.
+이 `Map C6`은 [failure-candidates.md](failure-candidates.md)의 `Corpus C1`~`Corpus C6`와 달리 *단일 서사가 아니라 Coupling Map이 발견한 상관 실패*다 — "AI×실패"의 인과를 게임이론으로 구현한 가장 비-뻔한 후보.
 
 ## 다음 액션
 - [ ] 모임에서 Hub 1개 수렴(전력 / 구리 / 융합) → `selected` 라벨
@@ -49,5 +58,5 @@
 
 ## 정보 출처
 - 행위자×자원 앵커는 레포 소스백 파일 집계: [bottleneck_map.md](../15_opportunity_intelligence/bottleneck_map.md)(병목 1·3·10, 누가아픈가/누가돈내나/한국기회), [fundamental_line_pilot_ai_infra.md](../13_scenarios/fundamental_line_pilot_ai_infra.md)(divergence 38.7%), [SYNTHESIS_2035_QUANTITATIVE.md](../13_scenarios/SYNTHESIS_2035_QUANTITATIVE.md)(거시·반도체·전력 앵커), [copper.md](../17_materials_and_mining/copper.md), [electrical_equipment.md](../16_industrial_base/electrical_equipment.md), [nps_scenarios.md](../06_geopolitics/06_korea/nps_scenarios.md)(국민연금 1,200조·자산배분 2030).
-- 1차 출처(글로벌 고신뢰): IEA *Energy and AI* / *Electricity 2026: Grids* / *Global Critical Minerals Outlook 2025*, IMF WEO — 각 도메인 파일의 `정보 출처`에 보존.
+- 1차 출처(글로벌 고신뢰): IEA *Energy and AI* (https://www.iea.org/reports/energy-and-ai) / *Electricity 2026: Grids* (https://www.iea.org/reports/electricity-2026/grids) / *Global Critical Minerals Outlook 2025* (https://www.iea.org/reports/global-critical-minerals-outlook-2025), IMF WEO (https://www.imf.org/en/Publications/WEO) — 각 도메인 파일의 `정보 출처`에 보존.
 - Slice 강조·Hub 발견·게임 프레임 해석은 repo inference(ADR 0001~0003 방법론). divergence 38.7%는 FLP-0.1 결정론적 출력.

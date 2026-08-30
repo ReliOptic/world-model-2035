@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-EXCLUDED_DIRS = {".git", ".omx", ".omc", "node_modules", "dist", "build", ".cache", ".github"}
+EXCLUDED_DIRS = {".git", ".omx", ".omc", "node_modules", "dist", "build", ".cache", ".github", "outputs"}
 GLOBAL_EXCLUDED_FILES = {
     "AGENTS.md",
     "README.md",
@@ -29,6 +29,11 @@ NON_FORECAST_PATHS = {
     "06_geopolitics/SYNTHESIS.md",
     "14_predictions_log/2026_predictions.md",
     "14_predictions_log/template.md",
+    "premortem/failure-candidates.md",
+    "premortem/workflow.md",
+    "premortem/map-slice-01-ai-infra-baseline.md",
+    "12_early_warning/wetd_data_schema.md",
+    "12_early_warning/wetd_etl_dashboard_contract.md",
     "docs/user_guide_advisory_report.md",
 }
 REQUIRED_COMMON = ["**정보 신선도:**", "## 연결 문서", "## 정보 출처"]

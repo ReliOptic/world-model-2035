@@ -1,0 +1,22 @@
+country_iso3,country_name,country_group,is_mvp_country
+USA,United States,core_power,true
+CHN,China,core_power,true
+RUS,Russia,core_power,true
+JPN,Japan,g7_advanced_bloc,true
+DEU,Germany,g7_advanced_bloc,true
+GBR,United Kingdom,g7_advanced_bloc,true
+FRA,France,g7_advanced_bloc,true
+ITA,Italy,g7_advanced_bloc,true
+CAN,Canada,g7_advanced_bloc,true
+EUU,European Union,g7_advanced_bloc,true
+TWN,Taiwan,frontline_tech_ally,true
+KOR,South Korea,frontline_tech_ally,true
+NLD,Netherlands,frontline_tech_ally,true
+SGP,Singapore,corridor_watch,false
+MYS,Malaysia,corridor_watch,false
+ARE,United Arab Emirates,corridor_watch,false
+VNM,Vietnam,corridor_watch,false
+SAU,Saudi Arabia,middle_east_node,false
+IRN,Iran,middle_east_node,false
+ISR,Israel,middle_east_node,false
+WLD,World,global_proxy,false

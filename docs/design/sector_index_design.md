@@ -1,6 +1,6 @@
 # Pages Design: Sector Index and Domain Entry Points
 
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
 **Issue scope:** #31, #38. Design only; implementation follows the navigation PRD.
 
 ## Sector index grouping

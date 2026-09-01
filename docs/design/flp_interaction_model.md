@@ -1,6 +1,6 @@
 # FLP Interaction Model
 
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
 **Issue scope:** #21 parent, closes design criteria for #24. Do not implement the remodel in this issue.
 
 ## Interaction principle

@@ -1,6 +1,6 @@
 # Sector Failure Modes and Reject Conditions
 
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
 **Issue scope:** #31, #36. This file defines what should block issue closure.
 
 ## Reject conditions

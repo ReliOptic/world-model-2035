@@ -1,6 +1,6 @@
 # Sector Template: How to use this sector
 
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
 **Issue scope:** #31, #34. Copy this block into sector-level entry docs when a domain needs reader guidance.
 
 ## How to use this sector

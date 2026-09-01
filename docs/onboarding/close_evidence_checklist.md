@@ -1,6 +1,6 @@
 # Close Evidence Checklist
 
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
 **Issue scope:** #31, #41. Use this checklist before closing onboarding, sector, audit, or Pages work.
 
 ## Close evidence checklist

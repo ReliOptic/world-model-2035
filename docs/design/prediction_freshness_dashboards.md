@@ -1,6 +1,6 @@
 # Pages Design: Prediction and Freshness Dashboards
 
-**정보 신선도:** 🟢  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
+**정보 신선도:** 🟡  |  **최종 갱신:** 2026-05  |  **다음 갱신:** 2026-08  
 **Issue scope:** #31, #39. Design only; implementation should be generated or audit-backed.
 
 ## Prediction dashboard
